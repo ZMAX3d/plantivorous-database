@@ -70,7 +70,7 @@ async function downloadImage(url, filePath) {
   await pipeline(resp.body, fileStream);
 }
 
-const speciesList = process.argv.slice(2);
+const speciesList = process.argv.slice(2).map(s => s.startsWith("Drosera ") || s.startsWith("Nepenthes ") ? s : `Drosera ${s}`);
 let added = 0;
 let skipped = 0;
 let failed = 0;
@@ -81,13 +81,12 @@ for (const species of speciesList) {
     continue;
   }
   try {
-    const credit = await searchCommons("Drosera", species);
+    const credit = await searchCommons("Drosera", species.split(" ")[1]);
     if (!credit) {
       failed++;
       console.log(`  SKIP (no photo): ${species}`);
       continue;
     }
-    // Re-fetch to get the direct image URL
     const url2 = new URL("https://commons.wikimedia.org/w/api.php");
     url2.searchParams.set("action", "query");
     url2.searchParams.set("format", "json");

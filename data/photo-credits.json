@@ -880,42 +880,6 @@
       "alt": "Photograph of Drosera caduca"
     },
     {
-      "species": "Drosera cistiflora",
-      "file": "assets/img/species/drosera-cistiflora.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_cistiflora.jpg",
-      "original": "Drosera_cistiflora.jpg",
-      "artist": "Joseph Dalton Hooker",
-      "credit": "Curtis's botanical magazine vol. 116 tab. 7100",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "Illustration of Drosera cistiflora",
-      "alt": "Photograph of Drosera cistiflora"
-    },
-    {
-      "species": "Drosera collinsiae",
-      "file": "assets/img/species/drosera-collinsiae.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_collinsiae_inflorescence_Darwiniana.jpg",
-      "original": "Drosera_collinsiae_inflorescence_Darwiniana.jpg",
-      "artist": "Michal Rubeš",
-      "credit": "Photo by Michal Rubeš",
-      "license": "CC BY 3.0 cz",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
-      "description": "Drosera collinsiae inflorescence",
-      "alt": "Photograph of Drosera collinsiae"
-    },
-    {
-      "species": "Drosera dielsiana",
-      "file": "assets/img/species/drosera-dielsiana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_dielsiana_1.jpg",
-      "original": "Drosera_dielsiana_1.jpg",
-      "artist": "Alexander Fischermans",
-      "credit": "Photo by Alexander Fischermans",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "Drosera dielsiana",
-      "alt": "Photograph of Drosera dielsiana"
-    },
-    {
       "species": "Drosera dilatatopetiolaris",
       "file": "assets/img/species/drosera-dilatato-petiolaris.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_dilatatio-petiolaris_Flora.jpg",
@@ -938,30 +902,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "Drosera erythrorhiza - red ink sundew",
       "alt": "Photograph of Drosera erythrorhiza"
-    },
-    {
-      "species": "Drosera falconeri",
-      "file": "assets/img/species/drosera-falconeri.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_falconeri_Darwiniana.jpg",
-      "original": "Drosera_falconeri_Darwiniana.jpg",
-      "artist": "Rosůra Kracík",
-      "credit": "Photo by Rosůra Kracík",
-      "license": "CC BY 3.0 cz",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
-      "description": "Drosera falconeri",
-      "alt": "Photograph of Drosera falconeri"
-    },
-    {
-      "species": "Drosera filiformis",
-      "file": "assets/img/species/drosera-filiformis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_filiformis_ne1.jpg",
-      "original": "Drosera_filiformis_ne1.jpg",
-      "artist": "Noah Elhardt",
-      "credit": "Own work by Noah Elhardt",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "Drosera filiformis - thread-leaved sundew",
-      "alt": "Photograph of Drosera filiformis"
     },
     {
       "species": "Drosera albonotata",
@@ -1036,42 +976,6 @@
       "alt": "Photograph of Drosera cuneifolia"
     },
     {
-      "species": "Drosera dielsiana",
-      "file": "assets/img/species/drosera-dielsiana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_dielsiana_1.jpg",
-      "original": "Drosera_dielsiana_1.jpg",
-      "artist": "Alexander Fischermans",
-      "credit": "Photo by Alexander Fischermans",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "Drosera dielsiana",
-      "alt": "Photograph of Drosera dielsiana"
-    },
-    {
-      "species": "Drosera dilatatopetiolaris",
-      "file": "assets/img/species/drosera-dilatato-petiolaris.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_dilatatio-petiolaris_Flora.jpg",
-      "original": "Drosera_dilatatio-petiolaris_Flora.jpg",
-      "artist": "Denis Barthel",
-      "credit": "Own work by Denis Barthel",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "Drosera dilatato-petiolaris",
-      "alt": "Photograph of Drosera dilatato-petiolaris"
-    },
-    {
-      "species": "Drosera erythrorhiza",
-      "file": "assets/img/species/drosera-erythrorhiza.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:DroseraErythrorhiza.jpg",
-      "original": "DroseraErythrorhiza.jpg",
-      "artist": "Wikimedia Commons",
-      "credit": "Own work",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "Drosera erythrorhiza - red ink sundew",
-      "alt": "Photograph of Drosera erythrorhiza"
-    },
-    {
       "species": "Drosera citrina",
       "file": "assets/img/species/drosera-citrina.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_citrina_(entire_plant).jpg",
@@ -1094,90 +998,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "Drosera closterostigma",
       "alt": "Photograph of Drosera closterostigma"
-    },
-    {
-      "species": "Drosera citrina",
-      "file": "assets/img/species/drosera-citrina.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_nivea.svg",
-      "original": "Drosera nivea.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "citrina photograph",
-      "alt": "Photograph of citrina"
-    },
-    {
-      "species": "Drosera closterostigma",
-      "file": "assets/img/species/drosera-closterostigma.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:DroseraClosterostigma.JPG",
-      "original": "DroseraClosterostigma.JPG",
-      "artist": "Wikimedia Commons",
-      "credit": "Own work by Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "closterostigma photograph",
-      "alt": "Photograph of closterostigma"
-    },
-    {
-      "species": "viridis",
-      "file": "assets/img/species/viridis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Dissertationes_academicae_Upsaliae_habitae_(IA_dissertationesac03thun_0).pdf",
-      "original": "Dissertationes academicae Upsaliae habitae (IA dissertationesac03thun 0).pdf",
-      "artist": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
-      "credit": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "viridis photograph",
-      "alt": "Photograph of viridis"
-    },
-    {
-      "species": "walyunga",
-      "file": "assets/img/species/walyunga.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_walyunga.svg",
-      "original": "Drosera walyunga.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "walyunga photograph",
-      "alt": "Photograph of walyunga"
-    },
-    {
-      "species": "yilgarnensis",
-      "file": "assets/img/species/yilgarnensis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_yilgarnensis.jpg",
-      "original": "Drosera yilgarnensis.jpg",
-      "artist": "Hugo Innes",
-      "credit": "Hugo Innes",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "description": "yilgarnensis photograph",
-      "alt": "Photograph of yilgarnensis"
-    },
-    {
-      "species": "zigzagia",
-      "file": "assets/img/species/zigzagia.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_zigzagia.jpg",
-      "original": "Drosera zigzagia.jpg",
-      "artist": "Hugo Innes",
-      "credit": "Hugo Innes",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "description": "zigzagia photograph",
-      "alt": "Photograph of zigzagia"
-    },
-    {
-      "species": "zonaria",
-      "file": "assets/img/species/zonaria.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:DroseraZonariaTuber1.JPG",
-      "original": "DroseraZonariaTuber1.JPG",
-      "artist": "No machine-readable author provided. Denis Barthel assumed (based on copyright claims).",
-      "credit": "No machine-readable author provided. Denis Barthel assumed (based on copyright claims).",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "zonaria photograph",
-      "alt": "Photograph of zonaria"
     },
     {
       "species": "Drosera afra",
@@ -1348,30 +1168,6 @@
       "alt": "Photograph of chrysolepis"
     },
     {
-      "species": "Drosera citrina",
-      "file": "assets/img/species/citrina.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_nivea.svg",
-      "original": "Drosera nivea.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "citrina photograph",
-      "alt": "Photograph of citrina"
-    },
-    {
-      "species": "Drosera closterostigma",
-      "file": "assets/img/species/closterostigma.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:DroseraClosterostigma.JPG",
-      "original": "DroseraClosterostigma.JPG",
-      "artist": "Wikimedia Commons",
-      "credit": "Own work by Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "closterostigma photograph",
-      "alt": "Photograph of closterostigma"
-    },
-    {
       "species": "Drosera colombiana",
       "file": "assets/img/species/colombiana.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_encyclopedia_of_pure_materia_medica-_a_record_of_the_positive_effects_of_drugs_upon_the_healthy_human_organism_(Index)_(IA_64240040RX11.nlm.nih.gov).pdf",
@@ -1466,18 +1262,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "dichrosepala photograph",
       "alt": "Photograph of dichrosepala"
-    },
-    {
-      "species": "Drosera dilatatopetiolaris",
-      "file": "assets/img/species/dilatatopetiolaris.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:DroseraDilatatiopetiolarisJuvenilHabit.jpg",
-      "original": "DroseraDilatatiopetiolarisJuvenilHabit.jpg",
-      "artist": "Denis Barthel",
-      "credit": "Denis Barthel",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "dilatatopetiolaris photograph",
-      "alt": "Photograph of dilatatopetiolaris"
     },
     {
       "species": "Drosera echinoblastus",
@@ -2272,18 +2056,6 @@
       "alt": "Photograph of pycnoblasta"
     },
     {
-      "species": "Drosera pygmaea",
-      "file": "assets/img/species/pygmaea.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_pygmaea_1.jpg",
-      "original": "Drosera pygmaea 1.jpg",
-      "artist": "Marius Grathwohl - Bigg(g)er 21:23, 22 November 2006 (UTC)",
-      "credit": "Marius Grathwohl - Bigg(g)er 21:23, 22 November 2006 (UTC)",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "pygmaea photograph",
-      "alt": "Photograph of pygmaea"
-    },
-    {
       "species": "Drosera radicans",
       "file": "assets/img/species/radicans.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Botanische_Zeitung_(IA_botanischezeitun05mohl).pdf",
@@ -2606,6 +2378,102 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
       "description": "villosa photograph",
       "alt": "Photograph of villosa"
+    },
+    {
+      "species": "Nepenthes adnata",
+      "file": "assets/img/species/drosera-adnata.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_adnata1.jpg",
+      "original": "Nepenthes_adnata1.jpg",
+      "artist": "Alfindra Primaldhi",
+      "credit": "Photo by Alfindra Primaldhi",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "Drosera adnata",
+      "alt": "Photograph of Drosera adnata"
+    },
+    {
+      "species": "Nepenthes bicalcarata",
+      "file": "assets/img/species/drosera-bicalcarata.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_bicalcarata_(cultivated1).jpg",
+      "original": "Nepenthes_bicalcarata_(cultivated1).jpg",
+      "artist": "Philiptdotcom",
+      "credit": "Photo by Philiptdotcom",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Drosera bicalcarata - cultivated",
+      "alt": "Photograph of Drosera bicalcarata"
+    },
+    {
+      "species": "Nepenthes rafflesiana",
+      "file": "assets/img/species/drosera-rafflesiana.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rafflesiana_Dzbanecznik_2010-08-01_02.jpg",
+      "original": "Drosera_rafflesiana_Dzbanecznik_2010-08-01_02.jpg",
+      "artist": "Nova",
+      "credit": "Photo by Nova",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Drosera rafflesiana",
+      "alt": "Photograph of Drosera rafflesiana"
+    },
+    {
+      "species": "Drosera viridis",
+      "file": "assets/img/species/viridis.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dissertationes_academicae_Upsaliae_habitae_(IA_dissertationesac03thun_0).pdf",
+      "original": "Dissertationes academicae Upsaliae habitae (IA dissertationesac03thun 0).pdf",
+      "artist": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
+      "credit": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "description": "viridis photograph",
+      "alt": "Photograph of viridis"
+    },
+    {
+      "species": "Drosera walyunga",
+      "file": "assets/img/species/walyunga.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Drosera_walyunga.svg",
+      "original": "Drosera walyunga.svg",
+      "artist": "Florian Findeiss",
+      "credit": "Florian Findeiss",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "description": "walyunga photograph",
+      "alt": "Photograph of walyunga"
+    },
+    {
+      "species": "Drosera yilgarnensis",
+      "file": "assets/img/species/yilgarnensis.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Drosera_yilgarnensis.jpg",
+      "original": "Drosera yilgarnensis.jpg",
+      "artist": "Hugo Innes",
+      "credit": "Hugo Innes",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "yilgarnensis photograph",
+      "alt": "Photograph of yilgarnensis"
+    },
+    {
+      "species": "Drosera zigzagia",
+      "file": "assets/img/species/zigzagia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Drosera_zigzagia.jpg",
+      "original": "Drosera zigzagia.jpg",
+      "artist": "Hugo Innes",
+      "credit": "Hugo Innes",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "zigzagia photograph",
+      "alt": "Photograph of zigzagia"
+    },
+    {
+      "species": "Drosera zonaria",
+      "file": "assets/img/species/zonaria.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:DroseraZonariaTuber1.JPG",
+      "original": "DroseraZonariaTuber1.JPG",
+      "artist": "No machine-readable author provided. Denis Barthel assumed (based on copyright claims).",
+      "credit": "No machine-readable author provided. Denis Barthel assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "zonaria photograph",
+      "alt": "Photograph of zonaria"
     }
   ]
 }

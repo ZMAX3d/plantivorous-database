@@ -1012,126 +1012,6 @@
       "alt": "Photograph of afra"
     },
     {
-      "species": "Drosera amazonica",
-      "file": "assets/img/species/amazonica.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Gartenflora_(IA_gartenflora65russ).pdf",
-      "original": "Gartenflora (IA gartenflora65russ).pdf",
-      "artist": "Russischer Gartenbau-Verein in St. Petersburg\nKaiserliche Russischer Gartenbau-Verein in St. Petersburg\nDeutsche Gartenbau-Gesellschaft\nVerein zur Befrderung des Gartenbaues in den Kniglich Preussischen Staaten",
-      "credit": "Russischer Gartenbau-Verein in St. Petersburg\nKaiserliche Russischer Gartenbau-Verein in St. Petersburg\nDeutsche Gartenbau-Gesellschaft\nVerein zur Befrderung des Gartenbaues in den Kniglich Preussischen Staaten",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "amazonica photograph",
-      "alt": "Photograph of amazonica"
-    },
-    {
-      "species": "Drosera androsacea",
-      "file": "assets/img/species/androsacea.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_androsacea.svg",
-      "original": "Drosera androsacea.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "androsacea photograph",
-      "alt": "Photograph of androsacea"
-    },
-    {
-      "species": "Drosera aquatica",
-      "file": "assets/img/species/aquatica.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanisk_Tidsskrift._004,_1870-1871_(IA_botanisktidsskri4187dans).pdf",
-      "original": "Botanisk Tidsskrift. 004, 1870-1871 (IA botanisktidsskri4187dans).pdf",
-      "artist": "various authors",
-      "credit": "various authors",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "aquatica photograph",
-      "alt": "Photograph of aquatica"
-    },
-    {
-      "species": "Drosera arenicola",
-      "file": "assets/img/species/arenicola.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Flora_Washingtonensis;_a_catalogue_of_the_Phaenogamia_and_Pteridophyta_of_the_state_of_Washington_(IA_cu31924001737000).pdf",
-      "original": "Flora Washingtonensis; a catalogue of the Phaenogamia and Pteridophyta of the state of Washington (IA cu31924001737000).pdf",
-      "artist": "Suksdorf, Wilhelm N",
-      "credit": "Suksdorf, Wilhelm N",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "arenicola photograph",
-      "alt": "Photograph of arenicola"
-    },
-    {
-      "species": "Drosera biflora",
-      "file": "assets/img/species/biflora.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:A_catalogue_of_plants_growing_without_cultivation_in_the_vicinity_of_Amherst_College_(IA_catamherst00hitc).pdf",
-      "original": "A catalogue of plants growing without cultivation in the vicinity of Amherst College (IA catamherst00hitc).pdf",
-      "artist": "Hitchcock, Edward, 1793-1864",
-      "credit": "Hitchcock, Edward, 1793-1864",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "biflora photograph",
-      "alt": "Photograph of biflora"
-    },
-    {
-      "species": "Drosera bindoon",
-      "file": "assets/img/species/bindoon.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Plant_explorations_-_ornamentals_in_Australia_(IA_plantexploration3433spal).pdf",
-      "original": "Plant explorations - ornamentals in Australia (IA plantexploration3433spal).pdf",
-      "artist": "Spalding, George H",
-      "credit": "Spalding, George H",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "bindoon photograph",
-      "alt": "Photograph of bindoon"
-    },
-    {
-      "species": "Drosera browniana",
-      "file": "assets/img/species/browniana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Földtani_közlöny_(IA_foldtanikozlony1318magy).pdf",
-      "original": "Földtani közlöny (IA foldtanikozlony1318magy).pdf",
-      "artist": "Magyar Földtani Társulat",
-      "credit": "Magyar Földtani Társulat",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "browniana photograph",
-      "alt": "Photograph of browniana"
-    },
-    {
-      "species": "Drosera bulbigena",
-      "file": "assets/img/species/bulbigena.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_bulbigena.svg",
-      "original": "Drosera bulbigena.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "bulbigena photograph",
-      "alt": "Photograph of bulbigena"
-    },
-    {
-      "species": "Drosera burkeana",
-      "file": "assets/img/species/burkeana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Preliminary_catalogue_of_indigenous_Natal_plants_(IA_preliminarycatal00wood).pdf",
-      "original": "Preliminary catalogue of indigenous Natal plants (IA preliminarycatal00wood).pdf",
-      "artist": "Wood, John Medley, 1827-1915.",
-      "credit": "Wood, John Medley, 1827-1915.",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "burkeana photograph",
-      "alt": "Photograph of burkeana"
-    },
-    {
-      "species": "Drosera cayennensis",
-      "file": "assets/img/species/cayennensis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:DROSERACEAE_Drosera_cayennensis_Sagot_ex_Diels,_MPEG_(MG019419).pdf",
-      "original": "DROSERACEAE Drosera cayennensis Sagot ex Diels, MPEG (MG019419).pdf",
-      "artist": "Museu Paraense Emílio Goeldi (MPEG)",
-      "credit": "Museu Paraense Emílio Goeldi (MPEG)",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "description": "cayennensis photograph",
-      "alt": "Photograph of cayennensis"
-    },
-    {
       "species": "Drosera cendeensis",
       "file": "assets/img/species/cendeensis.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Rare_wild_flower_(230446901).jpg",
@@ -1144,18 +1024,6 @@
       "alt": "Photograph of cendeensis"
     },
     {
-      "species": "Drosera chimaera",
-      "file": "assets/img/species/chimaera.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Hamburger_Garten-_und_Blumenzeitung_(IA_hamburgergartenu46hamb).pdf",
-      "original": "Hamburger Garten- und Blumenzeitung (IA hamburgergartenu46hamb).pdf",
-      "artist": "Wikimedia Commons",
-      "credit": "Own work by Wikimedia Commons",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "chimaera photograph",
-      "alt": "Photograph of chimaera"
-    },
-    {
       "species": "Drosera chrysolepis",
       "file": "assets/img/species/chrysolepis.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_chrysolepis_flower_Darwiniana.jpg",
@@ -1166,42 +1034,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
       "description": "chrysolepis photograph",
       "alt": "Photograph of chrysolepis"
-    },
-    {
-      "species": "Drosera colombiana",
-      "file": "assets/img/species/colombiana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_encyclopedia_of_pure_materia_medica-_a_record_of_the_positive_effects_of_drugs_upon_the_healthy_human_organism_(Index)_(IA_64240040RX11.nlm.nih.gov).pdf",
-      "original": "The encyclopedia of pure materia medica- a record of the positive effects of drugs upon the healthy human organism (Index) (IA 64240040RX11.nlm.nih.gov).pdf",
-      "artist": "Allen, Timothy Field, 1837-1902\nHughes, Richard, 1836-1902\nNational Center for Homoeopathy (U.S.), donor\nAmerican Foundation for Homoeopathy, former owner",
-      "credit": "Allen, Timothy Field, 1837-1902\nHughes, Richard, 1836-1902\nNational Center for Homoeopathy (U.S.), donor\nAmerican Foundation for Homoeopathy, former owner",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "colombiana photograph",
-      "alt": "Photograph of colombiana"
-    },
-    {
-      "species": "Drosera condor",
-      "file": "assets/img/species/condor.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Uebersicht_der_Aemter-Vertheilung_und_wissenschaftlichen_Thätigkeit_des_Naturwissenschaftlichen_Vereins_zu_Hamburg-Altona_(IA_uebersichtderaem1865natu).pdf",
-      "original": "Uebersicht der Aemter-Vertheilung und wissenschaftlichen Thätigkeit des Naturwissenschaftlichen Vereins zu Hamburg-Altona (IA uebersichtderaem1865natu).pdf",
-      "artist": "Naturwissenschaftlicher Verein in Hamburg",
-      "credit": "Naturwissenschaftlicher Verein in Hamburg",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "condor photograph",
-      "alt": "Photograph of condor"
-    },
-    {
-      "species": "Drosera cucullata",
-      "file": "assets/img/species/cucullata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Catalogue_of_the_flowering_plants_and_ferns_of_Ohio_(IA_catalogueoh00newb).pdf",
-      "original": "Catalogue of the flowering plants and ferns of Ohio (IA catalogueoh00newb).pdf",
-      "artist": "Newberry, J. S. (John Strong), 1822-1892",
-      "credit": "Newberry, J. S. (John Strong), 1822-1892",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "cucullata photograph",
-      "alt": "Photograph of cucullata"
     },
     {
       "species": "Drosera curvipes",
@@ -1226,18 +1058,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "description": "darwinensis photograph",
       "alt": "Photograph of darwinensis"
-    },
-    {
-      "species": "Drosera depauperata",
-      "file": "assets/img/species/depauperata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Naturalientausch,_&c_(IA_naturalientausch8182opiz).pdf",
-      "original": "Naturalientausch, &c (IA naturalientausch8182opiz).pdf",
-      "artist": "Opiz, Philipp Maximilian",
-      "credit": "Opiz, Philipp Maximilian",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "depauperata photograph",
-      "alt": "Photograph of depauperata"
     },
     {
       "species": "Drosera derbyensis",
@@ -1274,18 +1094,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "echinoblastus photograph",
       "alt": "Photograph of echinoblastus"
-    },
-    {
-      "species": "Drosera elongata",
-      "file": "assets/img/species/elongata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanische_Bemerkungen_-gesammelt_von_Karl_Bor._Presl._(IA_mobot31753000469111).pdf",
-      "original": "Botanische Bemerkungen -gesammelt von Karl Bor. Presl. (IA mobot31753000469111).pdf",
-      "artist": "Presl, Karel Bor?iwog,",
-      "credit": "Presl, Karel Bor?iwog,",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "elongata photograph",
-      "alt": "Photograph of elongata"
     },
     {
       "species": "Drosera eneabba",
@@ -1348,42 +1156,6 @@
       "alt": "Photograph of fimbriata"
     },
     {
-      "species": "Drosera fragrans",
-      "file": "assets/img/species/fragrans.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Journal_of_horticulture,_cottage_gardener_and_country_gentlemen_(IA_journalofhorticu1874lond).pdf",
-      "original": "The Journal of horticulture, cottage gardener and country gentlemen (IA journalofhorticu1874lond).pdf",
-      "artist": "Wikimedia Commons",
-      "credit": "Own work by Wikimedia Commons",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "fragrans photograph",
-      "alt": "Photograph of fragrans"
-    },
-    {
-      "species": "Drosera fulva",
-      "file": "assets/img/species/fulva.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_fulva.svg",
-      "original": "Drosera fulva.svg",
-      "artist": "NoahElhardt",
-      "credit": "NoahElhardt",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "fulva photograph",
-      "alt": "Photograph of fulva"
-    },
-    {
-      "species": "Drosera gibsonii",
-      "file": "assets/img/species/gibsonii.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_gibsonii.svg",
-      "original": "Drosera gibsonii.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "gibsonii photograph",
-      "alt": "Photograph of gibsonii"
-    },
-    {
       "species": "Drosera glabripes",
       "file": "assets/img/species/glabripes.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_glabripes.jpg",
@@ -1408,18 +1180,6 @@
       "alt": "Photograph of graminifolia"
     },
     {
-      "species": "Drosera graniticola",
-      "file": "assets/img/species/graniticola.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_graniticola.svg",
-      "original": "Drosera graniticola.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "graniticola photograph",
-      "alt": "Photograph of graniticola"
-    },
-    {
       "species": "Drosera grantsaui",
       "file": "assets/img/species/grantsaui.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_grantsaui.jpg",
@@ -1430,18 +1190,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "description": "grantsaui photograph",
       "alt": "Photograph of grantsaui"
-    },
-    {
-      "species": "Drosera grievei",
-      "file": "assets/img/species/grievei.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_grievei.svg",
-      "original": "Drosera grievei.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "grievei photograph",
-      "alt": "Photograph of grievei"
     },
     {
       "species": "Drosera hamiltonii",
@@ -1516,18 +1264,6 @@
       "alt": "Photograph of hirtella"
     },
     {
-      "species": "Drosera huegelii",
-      "file": "assets/img/species/huegelii.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_huegelii.svg",
-      "original": "Drosera huegelii.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "huegelii photograph",
-      "alt": "Photograph of huegelii"
-    },
-    {
       "species": "Drosera hyperostigma",
       "file": "assets/img/species/hyperostigma.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:DroseraHyperostigmaHabitus.jpg",
@@ -1538,18 +1274,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "hyperostigma photograph",
       "alt": "Photograph of hyperostigma"
-    },
-    {
-      "species": "Drosera intricata",
-      "file": "assets/img/species/intricata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanische_Zeitung_(IA_botanischezeitun05mohl).pdf",
-      "original": "Botanische Zeitung (IA botanischezeitun05mohl).pdf",
-      "artist": "Mohl, Hugo von, 1805-1872\nSchlechtendal, D. F. L. von (Diederich Franz Leonhard), 1794-1866",
-      "credit": "Mohl, Hugo von, 1805-1872\nSchlechtendal, D. F. L. von (Diederich Franz Leonhard), 1794-1866",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "intricata photograph",
-      "alt": "Photograph of intricata"
     },
     {
       "species": "Drosera kaieteurensis",
@@ -1612,18 +1336,6 @@
       "alt": "Photograph of leucoblasta"
     },
     {
-      "species": "Drosera lowriei",
-      "file": "assets/img/species/lowriei.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Western_Australia_in_Australia.svg",
-      "original": "Western Australia in Australia.svg",
-      "artist": "TUBS",
-      "credit": "TUBS",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "description": "lowriei photograph",
-      "alt": "Photograph of lowriei"
-    },
-    {
       "species": "Drosera macrantha",
       "file": "assets/img/species/macrantha.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:DroseraMacranthaInflorescence.jpg",
@@ -1660,18 +1372,6 @@
       "alt": "Photograph of magnifica"
     },
     {
-      "species": "Drosera makinoi",
-      "file": "assets/img/species/makinoi.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_botanical_magazine_=_Shokubutsugaku_zasshi_(IA_botanicalmagazin81894toky).pdf",
-      "original": "The botanical magazine = Shokubutsugaku zasshi (IA botanicalmagazin81894toky).pdf",
-      "artist": "Tokyo Shokubutsu Gakkai\nNihon Shokubutsu Gakkai",
-      "credit": "Tokyo Shokubutsu Gakkai\nNihon Shokubutsu Gakkai",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "makinoi photograph",
-      "alt": "Photograph of makinoi"
-    },
-    {
       "species": "Drosera mannii",
       "file": "assets/img/species/mannii.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:DroseraManniiFlora1.jpg",
@@ -1694,54 +1394,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "meristocaulis photograph",
       "alt": "Photograph of meristocaulis"
-    },
-    {
-      "species": "Drosera micra",
-      "file": "assets/img/species/micra.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Quarterly_journal_of_microscopical_science_(IA_quarterlyjournal128lond).pdf",
-      "original": "Quarterly journal of microscopical science (IA quarterlyjournal128lond).pdf",
-      "artist": "Wikimedia Commons",
-      "credit": "Own work by Wikimedia Commons",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "micra photograph",
-      "alt": "Photograph of micra"
-    },
-    {
-      "species": "Drosera miniata",
-      "file": "assets/img/species/miniata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_miniata.svg",
-      "original": "Drosera miniata.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "miniata photograph",
-      "alt": "Photograph of miniata"
-    },
-    {
-      "species": "Drosera modesta",
-      "file": "assets/img/species/modesta.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Edward_Gillett's_ninth_annual_catalogue_of_North_American_wild_flowers,_orchids,_alpine,_shrubs,_aquatic,_climbers_and_bog_plants_rare_ferns,_etc._for_1886_(IA_edwardgillettsni1886henr).pdf",
-      "original": "Edward Gillett's ninth annual catalogue of North American wild flowers, orchids, alpine, shrubs, aquatic, climbers and bog plants rare ferns, etc. for 1886 (IA edwardgillettsni1886henr).pdf",
-      "artist": "Southwick, Mass. : Edward Gillett",
-      "credit": "Southwick, Mass. : Edward Gillett",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "modesta photograph",
-      "alt": "Photograph of modesta"
-    },
-    {
-      "species": "Drosera moorei",
-      "file": "assets/img/species/moorei.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Phytologist-_a_popular_botanical_miscellany_(IA_phytologistpopul54luxf).pdf",
-      "original": "The Phytologist- a popular botanical miscellany (IA phytologistpopul54luxf).pdf",
-      "artist": "Luxford, George, 1807-1854\nNewman, Edward, 1801-1876",
-      "credit": "Luxford, George, 1807-1854\nNewman, Edward, 1801-1876",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "moorei photograph",
-      "alt": "Photograph of moorei"
     },
     {
       "species": "Drosera murfetii",
@@ -1768,18 +1420,6 @@
       "alt": "Photograph of myriantha"
     },
     {
-      "species": "Drosera nana",
-      "file": "assets/img/species/nana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanisk_Tidsskrift._004,_1870-1871_(IA_botanisktidsskri4187dans).pdf",
-      "original": "Botanisk Tidsskrift. 004, 1870-1871 (IA botanisktidsskri4187dans).pdf",
-      "artist": "various authors",
-      "credit": "various authors",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "nana photograph",
-      "alt": "Photograph of nana"
-    },
-    {
       "species": "Drosera natalensis",
       "file": "assets/img/species/natalensis.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_natalensis_flower_Darwiniana.jpg",
@@ -1790,18 +1430,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
       "description": "natalensis photograph",
       "alt": "Photograph of natalensis"
-    },
-    {
-      "species": "Drosera neesii",
-      "file": "assets/img/species/neesii.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanische_Zeitung_(IA_botanischezeitun05mohl).pdf",
-      "original": "Botanische Zeitung (IA botanischezeitun05mohl).pdf",
-      "artist": "Mohl, Hugo von, 1805-1872\nSchlechtendal, D. F. L. von (Diederich Franz Leonhard), 1794-1866",
-      "credit": "Mohl, Hugo von, 1805-1872\nSchlechtendal, D. F. L. von (Diederich Franz Leonhard), 1794-1866",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "neesii photograph",
-      "alt": "Photograph of neesii"
     },
     {
       "species": "Drosera neocaledonica",
@@ -1840,18 +1468,6 @@
       "alt": "Photograph of nitidula"
     },
     {
-      "species": "Drosera oblanceolata",
-      "file": "assets/img/species/oblanceolata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Contributions_from_the_New_York_Botanical_Garden._(IA_mobot31753002287180).pdf",
-      "original": "Contributions from the New York Botanical Garden. (IA mobot31753002287180).pdf",
-      "artist": "New York Botanical Garden.",
-      "credit": "New York Botanical Garden.",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "oblanceolata photograph",
-      "alt": "Photograph of oblanceolata"
-    },
-    {
       "species": "Drosera occidentalis",
       "file": "assets/img/species/occidentalis.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_australis_(flower).jpg",
@@ -1862,18 +1478,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "occidentalis photograph",
       "alt": "Photograph of occidentalis"
-    },
-    {
-      "species": "Drosera orbiculata",
-      "file": "assets/img/species/orbiculata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Canadian_record_of_science_(IA_canadianrecordof7unse).pdf",
-      "original": "The Canadian record of science (IA canadianrecordof7unse).pdf",
-      "artist": "Natural History Society of Montreal",
-      "credit": "Natural History Society of Montreal",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "orbiculata photograph",
-      "alt": "Photograph of orbiculata"
     },
     {
       "species": "Drosera ordensis",
@@ -1924,18 +1528,6 @@
       "alt": "Photograph of pallida"
     },
     {
-      "species": "Drosera panamensis",
-      "file": "assets/img/species/panamensis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Journal_of_the_Royal_Microscopical_Society_(IA_journalofroyalmi188913roya).pdf",
-      "original": "Journal of the Royal Microscopical Society (IA journalofroyalmi188913roya).pdf",
-      "artist": "Royal Microscopical Society (Great Britain)",
-      "credit": "Royal Microscopical Society (Great Britain)",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "panamensis photograph",
-      "alt": "Photograph of panamensis"
-    },
-    {
       "species": "Drosera parvula",
       "file": "assets/img/species/parvula.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_paleacea_habitus.jpg",
@@ -1958,30 +1550,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "pedicellaris photograph",
       "alt": "Photograph of pedicellaris"
-    },
-    {
-      "species": "Drosera petiolaris",
-      "file": "assets/img/species/petiolaris.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_petiolaris.svg",
-      "original": "Drosera petiolaris.svg",
-      "artist": "NoahElhardt",
-      "credit": "NoahElhardt",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "petiolaris photograph",
-      "alt": "Photograph of petiolaris"
-    },
-    {
-      "species": "Drosera pilosa",
-      "file": "assets/img/species/pilosa.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanische_Bemerkungen_-gesammelt_von_Karl_Bor._Presl._(IA_mobot31753000469111).pdf",
-      "original": "Botanische Bemerkungen -gesammelt von Karl Bor. Presl. (IA mobot31753000469111).pdf",
-      "artist": "Presl, Karel Bor?iwog,",
-      "credit": "Presl, Karel Bor?iwog,",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "pilosa photograph",
-      "alt": "Photograph of pilosa"
     },
     {
       "species": "Drosera platypoda",
@@ -2008,30 +1576,6 @@
       "alt": "Photograph of platystigma"
     },
     {
-      "species": "Drosera prolifera",
-      "file": "assets/img/species/prolifera.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_prolifera.svg",
-      "original": "Drosera prolifera.svg",
-      "artist": "NoahElhardt",
-      "credit": "NoahElhardt",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "prolifera photograph",
-      "alt": "Photograph of prolifera"
-    },
-    {
-      "species": "Drosera prostratoscaposa",
-      "file": "assets/img/species/prostratoscaposa.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_prostratoscaposa.png",
-      "original": "Drosera prostratoscaposa.png",
-      "artist": "Royal Botanic Gardens, Kew",
-      "credit": "Royal Botanic Gardens, Kew",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "description": "prostratoscaposa photograph",
-      "alt": "Photograph of prostratoscaposa"
-    },
-    {
       "species": "Drosera pulchella",
       "file": "assets/img/species/pulchella.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_pulchella_Darwiniana.jpg",
@@ -2056,18 +1600,6 @@
       "alt": "Photograph of pycnoblasta"
     },
     {
-      "species": "Drosera radicans",
-      "file": "assets/img/species/radicans.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Botanische_Zeitung_(IA_botanischezeitun05mohl).pdf",
-      "original": "Botanische Zeitung (IA botanischezeitun05mohl).pdf",
-      "artist": "Mohl, Hugo von, 1805-1872\nSchlechtendal, D. F. L. von (Diederich Franz Leonhard), 1794-1866",
-      "credit": "Mohl, Hugo von, 1805-1872\nSchlechtendal, D. F. L. von (Diederich Franz Leonhard), 1794-1866",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "radicans photograph",
-      "alt": "Photograph of radicans"
-    },
-    {
       "species": "Drosera ramellosa",
       "file": "assets/img/species/ramellosa.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_ramellosa_Darwiniana.jpg",
@@ -2078,42 +1610,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
       "description": "ramellosa photograph",
       "alt": "Photograph of ramellosa"
-    },
-    {
-      "species": "Drosera ramentacea",
-      "file": "assets/img/species/ramentacea.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Die_Vegetation_der_Erde._Sammlung_pflanzengeographischer_Monographien._Bd._09_(Bd._I,_Heft_2-3)_1910_(IA_mobot31753002290077).pdf",
-      "original": "Die Vegetation der Erde. Sammlung pflanzengeographischer Monographien. Bd. 09 (Bd. I, Heft 2-3) 1910 (IA mobot31753002290077).pdf",
-      "artist": "Adolf Engler",
-      "credit": "Adolf Engler",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "ramentacea photograph",
-      "alt": "Photograph of ramentacea"
-    },
-    {
-      "species": "Drosera rechingeri",
-      "file": "assets/img/species/rechingeri.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_rechingeri.svg",
-      "original": "Drosera rechingeri.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "rechingeri photograph",
-      "alt": "Photograph of rechingeri"
-    },
-    {
-      "species": "Drosera riparia",
-      "file": "assets/img/species/riparia.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Catalogue_of_phaenogamous_and_vascular_cryptogamous_plants_collected_during_the_summers_of_1873_and_1874_in_Dakota_and_Montana_(IA_cataloguedak00chic).pdf",
-      "original": "Catalogue of phaenogamous and vascular cryptogamous plants collected during the summers of 1873 and 1874 in Dakota and Montana (IA cataloguedak00chic).pdf",
-      "artist": "Chickering, John White, 1831-1913\nCoues, Elliott, 1842-1899\nDawson, George Mercer, 1849-1901",
-      "credit": "Chickering, John White, 1831-1913\nCoues, Elliott, 1842-1899\nDawson, George Mercer, 1849-1901",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "riparia photograph",
-      "alt": "Photograph of riparia"
     },
     {
       "species": "Drosera roraimae",
@@ -2138,18 +1634,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "description": "rosulata photograph",
       "alt": "Photograph of rosulata"
-    },
-    {
-      "species": "Drosera salina",
-      "file": "assets/img/species/salina.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_swamps_of_Oswego_County,_N.Y.,_and_their_flora_(IA_swampsofoswegoco00rowl).pdf",
-      "original": "The swamps of Oswego County, N.Y., and their flora (IA swampsofoswegoco00rowl).pdf",
-      "artist": "Rowlee, Willard Winfield, b. 1861",
-      "credit": "Rowlee, Willard Winfield, b. 1861",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "salina photograph",
-      "alt": "Photograph of salina"
     },
     {
       "species": "Drosera schizandra",
@@ -2188,18 +1672,6 @@
       "alt": "Photograph of scorpioides"
     },
     {
-      "species": "Drosera serpens",
-      "file": "assets/img/species/serpens.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Dissertationes_academicae_Upsaliae_habitae_(IA_dissertationesac03thun_0).pdf",
-      "original": "Dissertationes academicae Upsaliae habitae (IA dissertationesac03thun 0).pdf",
-      "artist": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
-      "credit": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "serpens photograph",
-      "alt": "Photograph of serpens"
-    },
-    {
       "species": "Drosera sessilifolia",
       "file": "assets/img/species/sessilifolia.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Sessilifolia.JPG",
@@ -2212,18 +1684,6 @@
       "alt": "Photograph of sessilifolia"
     },
     {
-      "species": "Drosera sewelliae",
-      "file": "assets/img/species/sewelliae.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_sewelliae.svg",
-      "original": "Drosera sewelliae.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "sewelliae photograph",
-      "alt": "Photograph of sewelliae"
-    },
-    {
       "species": "Drosera slackii",
       "file": "assets/img/species/slackii.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Drosera_slackii_leaf_Darwiniana.jpg",
@@ -2234,30 +1694,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cz/deed.en",
       "description": "slackii photograph",
       "alt": "Photograph of slackii"
-    },
-    {
-      "species": "Drosera solaris",
-      "file": "assets/img/species/solaris.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Homoeopathic_therapeia_of_intermittent_and_other_fevers_(IA_homoeopathicther00bnni).pdf",
-      "original": "Homoeopathic therapeia of intermittent and other fevers (IA homoeopathicther00bnni).pdf",
-      "artist": "Bönninghausen, Clemens Maria Franz von, 1785-1864\nKorndoerfer, A. (Augustus), b. 1843",
-      "credit": "Bönninghausen, Clemens Maria Franz von, 1785-1864\nKorndoerfer, A. (Augustus), b. 1843",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "solaris photograph",
-      "alt": "Photograph of solaris"
-    },
-    {
-      "species": "Drosera spilos",
-      "file": "assets/img/species/spilos.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_spilos.svg",
-      "original": "Drosera spilos.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "spilos photograph",
-      "alt": "Photograph of spilos"
     },
     {
       "species": "Drosera stenopetala",
@@ -2306,18 +1742,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "description": "subhirtella photograph",
       "alt": "Photograph of subhirtella"
-    },
-    {
-      "species": "Drosera subtilis",
-      "file": "assets/img/species/subtilis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Notes_on_distribution_of_vascular_plants_of_Newfoundland,_Labrador,_and_adjacent_Quebec_(IA_notesondistribu00fern).pdf",
-      "original": "Notes on distribution of vascular plants of Newfoundland, Labrador, and adjacent Quebec (IA notesondistribu00fern).pdf",
-      "artist": "Fernald, Merritt Lyndon,1873-1950,author",
-      "credit": "Fernald, Merritt Lyndon,1873-1950,author",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "subtilis photograph",
-      "alt": "Photograph of subtilis"
     },
     {
       "species": "Drosera tentaculata",
@@ -2390,54 +1814,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "description": "Drosera adnata",
       "alt": "Photograph of Drosera adnata"
-    },
-    {
-      "species": "Nepenthes bicalcarata",
-      "file": "assets/img/species/drosera-bicalcarata.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_bicalcarata_(cultivated1).jpg",
-      "original": "Nepenthes_bicalcarata_(cultivated1).jpg",
-      "artist": "Philiptdotcom",
-      "credit": "Photo by Philiptdotcom",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "description": "Drosera bicalcarata - cultivated",
-      "alt": "Photograph of Drosera bicalcarata"
-    },
-    {
-      "species": "Nepenthes rafflesiana",
-      "file": "assets/img/species/drosera-rafflesiana.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rafflesiana_Dzbanecznik_2010-08-01_02.jpg",
-      "original": "Drosera_rafflesiana_Dzbanecznik_2010-08-01_02.jpg",
-      "artist": "Nova",
-      "credit": "Photo by Nova",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "description": "Drosera rafflesiana",
-      "alt": "Photograph of Drosera rafflesiana"
-    },
-    {
-      "species": "Drosera viridis",
-      "file": "assets/img/species/viridis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Dissertationes_academicae_Upsaliae_habitae_(IA_dissertationesac03thun_0).pdf",
-      "original": "Dissertationes academicae Upsaliae habitae (IA dissertationesac03thun 0).pdf",
-      "artist": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
-      "credit": "Thunberg, Carl Peter, 1743-1828, praeses\nPersoon, C. H. (Christiaan Hendrik), 1755-1837, ed",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "description": "viridis photograph",
-      "alt": "Photograph of viridis"
-    },
-    {
-      "species": "Drosera walyunga",
-      "file": "assets/img/species/walyunga.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drosera_walyunga.svg",
-      "original": "Drosera walyunga.svg",
-      "artist": "Florian Findeiss",
-      "credit": "Florian Findeiss",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "description": "walyunga photograph",
-      "alt": "Photograph of walyunga"
     },
     {
       "species": "Drosera yilgarnensis",

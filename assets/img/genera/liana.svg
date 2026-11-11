@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Liana (Triphyophyllum group) illustration">
+<circle cx="200" cy="148" r="124" fill="#4F7A3A" opacity=".065"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 262 C120 226 118 180 158 148 C198 116 190 78 226 54 C252 36 288 34 316 44" fill="none" stroke="#7d5b3c" stroke-width="2.4" stroke-linecap="round"/><path d="M158 148 C142 140 128 144 120 156 C132 160 146 156 152 148" fill="none" stroke="#7d5b3c" stroke-width="1.3"/><path d="M226 54 C240 48 254 50 262 60" fill="none" stroke="#7d5b3c" stroke-width="1.3"/><path d="M262 60 C268 52 276 50 282 54" fill="none" stroke="#7d5b3c" stroke-width="1.1"/><g transform="translate(96 238) rotate(-40)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#cfe3bd" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><g transform="translate(128 200) rotate(30)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><g transform="translate(154 156) rotate(62)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#cfe3bd" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><g transform="translate(188 126) rotate(18)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><g transform="translate(210 92) rotate(-28)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#cfe3bd" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><g transform="translate(244 66) rotate(24)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><g transform="translate(284 50) rotate(-12)">
+      <path d="M0 0 C-14 -10 -22 -26 -18 -44 C-4 -38 10 -22 12 -6 C8 -2 4 0 0 0Z" fill="#cfe3bd" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+      <path d="M0 0 C-2 -14 0 -28 10 -40" fill="none" stroke="#6b8570" stroke-width=".9"/>
+      <circle cx="-4" cy="-12" r=".9" fill="#b4553f"/><circle cx="-1" cy="-17" r=".9" fill="#b4553f"/><circle cx="2" cy="-22" r=".9" fill="#b4553f"/><circle cx="5" cy="-27" r=".9" fill="#b4553f"/><circle cx="8" cy="-32" r=".9" fill="#b4553f"/>
+    </g><ellipse cx="200" cy="266" rx="92" ry="9" fill="#2f4a35" opacity=".08"/>
+</g>
+</svg>

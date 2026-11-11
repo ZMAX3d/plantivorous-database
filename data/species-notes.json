@@ -1,0 +1,549 @@
+{
+  "generated": "2026-11-09",
+  "note": "Editorial notes written for Plantivorous. All descriptions are original summaries; links point to sources for further reading.",
+  "species": {
+    "Dionaea muscipula": {
+      "commonName": "Venus flytrap",
+      "summary": "The world's most famous snap trap: two hinged lobes, three trigger hairs on each lobe, and a lightning-fast closing mechanism.",
+      "description": "Dionaea muscipula forms a rosette of leaves whose broad petioles end in paired, jaw-like lobes. Each lobe carries three sensitive trigger hairs; two touches within about twenty seconds cause the trap to snap shut, and further stimulation begins digestion. The trap is a highly modified leaf, not a flower, and the plant uses it to supplement the nutrients it cannot get from its poor, acidic soil. In the wild it is confined to a small part of the Carolinas, where it grows in wet pine savanna that depends on periodic fire.",
+      "etymology": "Dionaea honours Dione, a Greek goddess associated with Aphrodite; muscipula means 'mouse trap'.",
+      "discoveredBy": "Brought to European attention by Governor Arthur Dobbs in the 1750s and described in John Ellis's 1768 account, with the name attributed to Daniel Solander.",
+      "careGroup": "temperate",
+      "careNotes": "Full sun, rainwater, peat and perlite, and a cool winter dormancy. Do not keep it warm and wet indoors through winter; that is the fastest way to lose a Venus flytrap.",
+      "tags": ["beginner", "temperate", "snap trap", "North America", "classic"],
+      "featured": true,
+      "conservationNote": "Wild populations are declining and the species is protected. Buy nursery-propagated plants, never wild-collected ones.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Dionaea%20muscipula" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Venus_flytrap" }
+      ]
+    },
+    "Drosera capensis": {
+      "commonName": "Cape sundew",
+      "summary": "The forgiving gateway sundew: long, dewy leaves, pink flowers and a remarkable ability to curl around its prey.",
+      "description": "Drosera capensis is a rosette-forming sundew from the permanently wet Cape lowlands. Its narrow leaves are covered with stalked glands that produce a bead of sticky mucilage; insects that land are trapped, and the leaf slowly rolls inward to bring more glands into contact with the prey. It flowers freely, self-seeds readily and has become one of the most widely cultivated carnivorous plants in the world.",
+      "etymology": "capensis means 'from the Cape', referring to South Africa's Cape region.",
+      "careGroup": "subtropical",
+      "careNotes": "Stand it in rainwater, give it full sun and repot every year or two. It is tolerant of a wide range of conditions but dislikes hard water and dry roots.",
+      "tags": ["beginner", "subtropical", "flypaper", "South Africa", "easy"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20capensis" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_capensis" }
+      ]
+    },
+    "Drosera regia": {
+      "commonName": "King sundew",
+      "summary": "A giant, dramatic sundew with long, snaking leaves and a crown of dewy tentacles.",
+      "description": "Drosera regia is one of the largest sundews, forming a rosette of long, narrow leaves that can reach half a metre or more. The leaves are armed with prominent tentacles and the plant has a distinctly regal, almost prehistoric look. It is restricted to a handful of mountain sites in the Western Cape and is considered one of the genus's most threatened species.",
+      "etymology": "regia means 'royal' or 'kingly', a reference to its size and stature.",
+      "careGroup": "subtropical",
+      "careNotes": "Grow it cool and very bright, with a large pot and consistently moist, airy soil. It resents hot roots and stagnant water. This is not the easiest sundew, despite its size.",
+      "tags": ["advanced", "subtropical", "flypaper", "South Africa", "rare"],
+      "featured": true,
+      "conservationNote": "Restricted to a few wild sites and threatened by habitat loss, fire suppression and invasive plants.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20regia" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_regia" }
+      ]
+    },
+    "Drosera aliciae": {
+      "commonName": "Alice sundew",
+      "summary": "A neat, clump-forming rosette with spoon-shaped leaves and a generous display of dew.",
+      "description": "Drosera aliciae forms tight rosettes of wedge-shaped leaves that are densely covered with red-tipped glands. It is native to the Cape and grows in wet, sandy seeps. Mature plants produce offsets and can form impressive clumps. The small pink flowers are produced on tall scapes and the plant self-seeds readily.",
+      "etymology": "Named for Alice, a name associated with the plant's discoverer or a botanical patron; the original dedication is not fully documented.",
+      "careGroup": "subtropical",
+      "careNotes": "A very forgiving sundew for a bright windowsill or unheated greenhouse. Keep it wet, use mineral-free water and give it a cool winter rest.",
+      "tags": ["beginner", "subtropical", "flypaper", "South Africa"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20aliciae" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_aliciae" }
+      ]
+    },
+    "Drosera binata": {
+      "commonName": "Forked sundew",
+      "summary": "Elegant forked leaves that unfurl like a green fountain, each tip loaded with sticky glands.",
+      "description": "Drosera binata is a temperate sundew with long, narrow leaves that divide once, twice or many times at the tip, giving it a distinctive forked or antler-like appearance. It grows in wet heath and swamp margins in Australia and New Zealand and dies back to a resting bud in winter. Large specimens can be spectacular in a bog garden or a deep pot.",
+      "etymology": "binata means 'paired' or 'twofold', referring to the forked leaf tips.",
+      "careGroup": "temperate",
+      "careNotes": "Give it full sun and wet feet in summer, then a cool, moist winter dormancy. It can be grown outdoors in a sheltered bog in mild climates.",
+      "tags": ["temperate", "flypaper", "Australia", "New Zealand", "bog garden"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20binata" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_binata" }
+      ]
+    },
+    "Drosera rotundifolia": {
+      "commonName": "Round-leaved sundew",
+      "summary": "The classic circumboreal sundew: a tiny rosette of round, red, dew-covered leaves.",
+      "description": "Drosera rotundifolia is one of the most widespread carnivorous plants in the Northern Hemisphere, growing in acid bogs from North America to Europe and Asia. Its round leaves lie flat to the ground and are covered with red tentacles. In summer it sends up a tall scape of small white flowers. It is a lovely plant for a cool bog garden but dislikes warm, stagnant conditions.",
+      "etymology": "rotundifolia means 'round-leaved'.",
+      "careGroup": "temperate",
+      "careNotes": "An outdoor bog plant. Keep it in full sun, in live sphagnum or peat and sand, with cool, clean water. It needs a cold winter dormancy.",
+      "tags": ["temperate", "flypaper", "circumboreal", "bog garden"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20rotundifolia" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_rotundifolia" }
+      ]
+    },
+    "Drosera cistiflora": {
+      "commonName": "Poppy-flowered sundew",
+      "summary": "A winter-growing Cape sundew with some of the largest and most spectacular flowers in the genus.",
+      "description": "Drosera cistiflora is a winter-growing South African sundew with upright stems and narrow, dewy leaves. Its flowers are unusually large for a sundew and come in shades of pink, purple, white or red. The plant dies back to a rootstock in the dry Cape summer and resumes growth with the winter rains. It is a rewarding but specialised species for growers who can provide a Mediterranean cycle.",
+      "etymology": "cistiflora means 'with flowers like a Cistus', referring to the large, poppy-like blooms.",
+      "careGroup": "cape",
+      "careNotes": "Wet, cool winter growth followed by a dry summer dormancy. Use a deep, very sandy mix and keep the rootstock completely dry but not baked in summer.",
+      "tags": ["intermediate", "cape", "flypaper", "South Africa", "winter-growing"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20cistiflora" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_cistiflora" }
+      ]
+    },
+    "Drosera burmanni": {
+      "commonName": "Burmann's sundew",
+      "summary": "A fast-growing tropical annual that forms a tight, jewel-like rosette and self-seeds freely.",
+      "description": "Drosera burmanni is a small annual sundew widespread from tropical Asia to northern Australia. It forms a flat rosette of wedge-shaped leaves that can turn deep red in strong light. The plant completes its life cycle quickly and self-seeds, making it a lively addition to a warm terrarium or windowsill collection.",
+      "etymology": "Named for Johannes Burman, an 18th-century Dutch botanist.",
+      "careGroup": "annual",
+      "careNotes": "Keep it warm and wet, with bright light. Let it self-seed; the next generation will appear around the parent plants.",
+      "tags": ["beginner", "annual", "flypaper", "Asia", "Australia"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20burmanni" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_burmannii" }
+      ]
+    },
+    "Drosera paradoxa": {
+      "commonName": "Paradox sundew",
+      "summary": "A striking petiolaris-complex sundew with a hairy stem and a crown of long, dewy leaves.",
+      "description": "Drosera paradoxa comes from the Kimberley region of Western Australia and belongs to the petiolaris complex, a group adapted to a hot, monsoonal climate. It forms an upright, hairy stem topped with a rosette of long leaves. During the dry season it may die back to a hairy resting bud. The contrast between the furry stem and the glistening traps is unforgettable.",
+      "etymology": "paradoxa means 'unexpected' or 'paradoxical', perhaps referring to its unusual appearance for a sundew.",
+      "careGroup": "petiolaris",
+      "careNotes": "Hot, very bright and wet during the growing season, then a pronounced dry dormancy. This is a specialist plant for a warm terrarium.",
+      "tags": ["advanced", "petiolaris", "flypaper", "Australia", "tropical"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosera%20paradoxa" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_paradoxa" }
+      ]
+    },
+    "Nepenthes rajah": {
+      "commonName": "Rajah pitcher plant",
+      "summary": "The giant of the pitcher plants: enormous, blood-red pitchers that can hold litres of fluid.",
+      "description": "Nepenthes rajah is a highland species from the slopes of Mount Kinabalu and neighbouring mountains in Sabah, Borneo. It produces some of the largest pitchers in the genus, capable of holding several litres of digestive fluid. The pitchers are often reddish and have a massive, ribbed peristome. The species is slow-growing, long-lived and highly prized by collectors, but it is also one of the most threatened.",
+      "etymology": "rajah means 'king' or 'prince' in Malay, a reference to the extraordinary size of the pitchers.",
+      "discoveredBy": "Discovered by Hugh Low in 1851 and described by Joseph Dalton Hooker in 1859.",
+      "careGroup": "highland",
+      "careNotes": "Cool nights, high humidity, bright filtered light and a large, airy pot. It is slow and expensive to grow; buy only legal, nursery-propagated plants.",
+      "tags": ["advanced", "highland", "pitfall", "Borneo", "giant"],
+      "featured": true,
+      "conservationNote": "Endemic to a small area of Sabah and threatened by habitat disturbance and collection. Protected under CITES.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20rajah" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_rajah" }
+      ]
+    },
+    "Nepenthes attenboroughii": {
+      "commonName": "Attenborough's pitcher plant",
+      "summary": "A recently discovered giant from Palawan, with pitchers large enough to trap rats.",
+      "description": "Nepenthes attenboroughii was discovered on Mount Victoria in Palawan, Philippines, and described in 2009. It is a highland species with massive, bell-shaped pitchers and a distinctive, almost sculptural peristome. The pitchers can be among the largest in the genus and are capable of trapping small vertebrates. It grows on ultramafic soil and is highly localised.",
+      "etymology": "Named in honour of Sir David Attenborough, naturalist and broadcaster.",
+      "discoveredBy": "Found by Alastair Robinson, Stewart McPherson and Volker Heinrich during a 2007 expedition; described in 2009.",
+      "careGroup": "highland",
+      "careNotes": "A demanding highland species: cool nights, high humidity and very bright light. It is not a beginner plant and is best left to experienced growers.",
+      "tags": ["advanced", "highland", "pitfall", "Philippines", "recent"],
+      "featured": true,
+      "conservationNote": "Known from a single mountain and assessed as Critically Endangered. Collection from the wild is illegal.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20attenboroughii" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_attenboroughii" }
+      ]
+    },
+    "Nepenthes lowii": {
+      "commonName": "Low's pitcher plant",
+      "summary": "A bizarre highland pitcher with a wide, flared mouth and a lid that produces a sugary exudate.",
+      "description": "Nepenthes lowii is a highland species from Borneo with distinctive upper pitchers that are narrow at the base and flare into a wide, almost funnel-like mouth. The lid produces a sweet exudate that attracts tree shrews; the animals feed at the pitcher and defecate into it, providing the plant with nutrients. It is one of the most remarkable examples of plant-animal mutualism in the genus.",
+      "etymology": "Named for Hugh Low, the Victorian plant collector who first discovered many Bornean pitcher plants.",
+      "discoveredBy": "Discovered by Hugh Low and described by Joseph Dalton Hooker in 1859.",
+      "careGroup": "highland",
+      "careNotes": "Highland conditions with a pronounced night drop, high humidity and bright filtered light. It is slow-growing and best for experienced growers.",
+      "tags": ["advanced", "highland", "pitfall", "Borneo", "mutualism"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20lowii" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_lowii" }
+      ]
+    },
+    "Nepenthes ampullaria": {
+      "commonName": "Flask-shaped pitcher plant",
+      "summary": "A lowland species with squat, flask-shaped pitchers that collect leaf litter and become a miniature ecosystem.",
+      "description": "Nepenthes ampullaria is unusual among pitcher plants because its lower pitchers are squat and flask-shaped, with a small lid that barely covers the opening. In the wild the pitchers collect falling leaves and detritus, and the plant obtains nutrients from the decaying litter and the organisms that live in it. It grows in wet, shaded lowland forest and can form dense carpets.",
+      "etymology": "ampullaria means 'flask-shaped', referring to the pitcher.",
+      "careGroup": "lowland",
+      "careNotes": "Warm, humid and shaded lowland conditions. Keep the mix moist and the air moving. It is more tolerant of shade than many Nepenthes.",
+      "tags": ["intermediate", "lowland", "pitfall", "South-East Asia", "detritivore"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20ampullaria" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_ampullaria" }
+      ]
+    },
+    "Nepenthes truncata": {
+      "commonName": "Truncate pitcher plant",
+      "summary": "A giant lowland pitcher from Mindanao with a broad, truncated lid and impressive proportions.",
+      "description": "Nepenthes truncata is a robust species from the Philippines, named for the flat, truncated top of its lid. It produces large, thick-walled pitchers that can be green, orange or red. It is one of the easier large Nepenthes to grow and is popular with collectors, though it needs space and time to reach its full size.",
+      "etymology": "truncata means 'truncated', referring to the flat-topped lid.",
+      "careGroup": "intermediate",
+      "careNotes": "Warm to intermediate temperatures, bright filtered light and a large pot. It is slow but forgiving once established.",
+      "tags": ["intermediate", "pitfall", "Philippines", "large"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20truncata" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_truncata" }
+      ]
+    },
+    "Nepenthes veitchii": {
+      "commonName": "Veitch's pitcher plant",
+      "summary": "A Bornean highlander famous for its broad, flared peristome and striking striped pitchers.",
+      "description": "Nepenthes veitchii is a variable species from Borneo, often growing as an epiphyte on mossy trees. Its pitchers have an exceptionally wide, flared peristome, sometimes striped in red and yellow. Lower and upper pitchers can look quite different. It is a highland to intermediate species and a favourite among collectors for its sculptural peristome.",
+      "etymology": "Named for the Veitch nursery family, who sponsored many Victorian plant collectors.",
+      "careGroup": "highland",
+      "careNotes": "Cool nights, high humidity and a loose, airy epiphytic mix. Give it a large basket or pot and strong indirect light.",
+      "tags": ["advanced", "highland", "pitfall", "Borneo", "peristome"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20veitchii" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_veitchii" }
+      ]
+    },
+    "Nepenthes villosa": {
+      "commonName": "Villous pitcher plant",
+      "summary": "A hairy, high-altitude Kinabalu specialist with thick, leathery pitchers.",
+      "description": "Nepenthes villosa is a highland species from Mount Kinabalu and nearby peaks in Sabah. It is named for the dense covering of hairs on its stems, leaves and pitchers. The pitchers are thick, leathery and often reddish, with a prominent peristome. It grows slowly in cool, misty habitats and is considered a challenging plant in cultivation.",
+      "etymology": "villosa means 'hairy' or 'shaggy'.",
+      "careGroup": "highland",
+      "careNotes": "Cool nights, constant humidity and very bright light. It is slow-growing and unforgiving of warm, stagnant conditions.",
+      "tags": ["advanced", "highland", "pitfall", "Borneo", "hairy"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Nepenthes%20villosa" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nepenthes_villosa" }
+      ]
+    },
+    "Sarracenia purpurea": {
+      "commonName": "Purple pitcher plant",
+      "summary": "The squat, purple-veined pitcher of cold bogs, hardy enough for an outdoor bog garden.",
+      "description": "Sarracenia purpurea is the most widespread North American pitcher plant and the floral emblem of Newfoundland and Labrador. Its pitchers are short, squat and often heavily veined with purple, with a hood that keeps out rain. It grows in cold, acidic bogs and is one of the hardiest carnivorous plants, making it a favourite for outdoor bog gardens.",
+      "etymology": "purpurea means 'purple', referring to the colour of the pitchers and flowers.",
+      "careGroup": "temperate",
+      "careNotes": "Full sun, permanently wet peat and a cold winter. It is one of the best pitcher plants for a cool climate bog garden.",
+      "tags": ["beginner", "temperate", "pitfall", "North America", "hardy"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Sarracenia%20purpurea" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sarracenia_purpurea" }
+      ]
+    },
+    "Sarracenia flava": {
+      "commonName": "Yellow trumpet pitcher",
+      "summary": "Tall, elegant yellow-green trumpets with a nectar-rich rim that attracts a steady stream of insects.",
+      "description": "Sarracenia flava is one of the tallest North American pitcher plants, forming bold, yellow-green trumpets that can reach a metre in good conditions. The hood is upright and the rim secretes nectar that lures insects into the pitcher. In spring the plant produces large, nodding yellow flowers. It is a striking and relatively easy species for a sunny bog.",
+      "etymology": "flava means 'yellow', referring to the flowers and often the pitchers.",
+      "careGroup": "temperate",
+      "careNotes": "Full sun, wet feet and a cold winter dormancy. Give it plenty of space; it is a tall grower.",
+      "tags": ["beginner", "temperate", "pitfall", "North America", "tall"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Sarracenia%20flava" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sarracenia_flava" }
+      ]
+    },
+    "Sarracenia leucophylla": {
+      "commonName": "White-topped pitcher",
+      "summary": "A late-season beauty with white-frosted tops and dark red veins.",
+      "description": "Sarracenia leucophylla is admired for its tall pitchers with white, translucent tops and intricate red veining. It flowers in spring, but its best pitchers are produced in late summer and autumn, making it a highlight of the carnivorous plant year. It grows in wet pine savannas in the south-eastern USA and is vulnerable to habitat loss.",
+      "etymology": "leucophylla means 'white-leaved', referring to the pale upper pitchers.",
+      "careGroup": "temperate",
+      "careNotes": "Full sun, wet peat and a cold winter. The best autumn pitchers reward a long, sunny growing season.",
+      "tags": ["intermediate", "temperate", "pitfall", "North America", "autumn"],
+      "featured": true,
+      "conservationNote": "Threatened by habitat loss and poaching across its Gulf Coast range.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Sarracenia%20leucophylla" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sarracenia_leucophylla" }
+      ]
+    },
+    "Sarracenia psittacina": {
+      "commonName": "Parrot pitcher plant",
+      "summary": "A low, decumbent pitcher that works like a lobster pot, with a hooded opening and inward-pointing hairs.",
+      "description": "Sarracenia psittacina is unlike the tall trumpet pitchers: its pitchers lie flat or arch close to the ground, with a hooded opening that resembles a parrot's beak. Insects enter through the hood and are guided inward by downward-pointing hairs, unable to find their way out. It grows in wet pine savannas and bogs in the south-eastern USA.",
+      "etymology": "psittacina means 'parrot-like', referring to the shape of the pitcher opening.",
+      "careGroup": "temperate",
+      "careNotes": "Keep it wet and in full sun, with a cold winter dormancy. It appreciates a shallow water level and can be grown at the edge of a bog.",
+      "tags": ["intermediate", "temperate", "pitfall", "North America", "ground-hugging"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Sarracenia%20psittacina" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sarracenia_psittacina" }
+      ]
+    },
+    "Sarracenia minor": {
+      "commonName": "Hooded pitcher plant",
+      "summary": "A neat, hooded pitcher with translucent windows that confuse trapped insects.",
+      "description": "Sarracenia minor produces slender, hooded pitchers with white patches near the top. Sunlight passes through these translucent windows, confusing insects inside the pitcher and encouraging them to tire and fall into the digestive fluid. It is native to the coastal plain of the south-eastern USA and is a charming, manageable species for a bog garden.",
+      "etymology": "minor means 'smaller', distinguishing it from its larger relatives.",
+      "careGroup": "temperate",
+      "careNotes": "Full sun, wet feet and a cool winter rest. A good choice for a smaller bog or a large container.",
+      "tags": ["beginner", "temperate", "pitfall", "North America", "windows"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Sarracenia%20minor" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sarracenia_minor" }
+      ]
+    },
+    "Cephalotus follicularis": {
+      "commonName": "Albany pitcher plant",
+      "summary": "A small, reptilian pitcher from Western Australia with a toothed rim and a domed lid.",
+      "description": "Cephalotus follicularis is the sole member of its family and one of the most distinctive carnivorous plants. It produces two kinds of leaves: flat, ordinary leaves and modified pitcher leaves with a toothed peristome and a lid. The pitchers are small but beautifully patterned in green, red and purple. It grows in peaty swamps near Albany in Western Australia and is highly sought after by collectors.",
+      "etymology": "Cephalotus comes from the Greek kephale ('head'), referring to the head-like anthers; follicularis means 'with small bags' or 'follicles'.",
+      "discoveredBy": "Collected in Western Australia in 1801 and described by Jacques Labillardière in 1806.",
+      "careGroup": "default",
+      "careNotes": "Cool roots, bright light, sandy peat and mineral-free water. Avoid hot, stagnant conditions and keep the crown above the wet mix.",
+      "tags": ["intermediate", "pitfall", "Australia", "collector"],
+      "featured": true,
+      "conservationNote": "Endemic to a small part of south-west Western Australia and vulnerable to habitat loss and illegal collection.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Cephalotus%20follicularis" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cephalotus" }
+      ]
+    },
+    "Darlingtonia californica": {
+      "commonName": "Cobra lily",
+      "summary": "A hooded, cobra-shaped pitcher that needs cool, flowing water and a cool root run.",
+      "description": "Darlingtonia californica is a striking pitcher plant from the cold seeps of northern California and south-western Oregon. Its tubular leaves arch over into a hooded head with a forked appendage that resembles a snake's tongue. Insects enter through openings beneath the hood and are guided down into the pitcher. The plant depends on cool, flowing water and is challenging to grow in warm climates.",
+      "etymology": "Darlingtonia honours William Darlington, an American botanist; californica refers to California.",
+      "discoveredBy": "Discovered by William D. Brackenridge during the Wilkes Expedition in 1841 and described by John Torrey in 1853.",
+      "careGroup": "default",
+      "careNotes": "Cool, moving water and cool roots are essential. Use a tall pot, live sphagnum and bright light, and protect it from summer heat.",
+      "tags": ["advanced", "pitfall", "North America", "cool roots"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Darlingtonia%20californica" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Darlingtonia_californica" }
+      ]
+    },
+    "Heliamphora nutans": {
+      "commonName": "Nodding sun pitcher",
+      "summary": "A highland tepui pitcher with nodding white flowers and elegant, red-veined pitchers.",
+      "description": "Heliamphora nutans is the classic sun pitcher from Mount Roraima and neighbouring tepuis in the Guiana Highlands. Its pitchers are formed from rolled leaves with a small, nectar-secreting lid, and the white flowers nod on tall scapes. It grows in wet, peaty, nutrient-poor soil and depends on cool nights and high humidity.",
+      "etymology": "nutans means 'nodding', referring to the flowers.",
+      "discoveredBy": "Collected by Robert Schomburgk on Mount Roraima and described by George Bentham in 1840.",
+      "careGroup": "default",
+      "careNotes": "Highland conditions: cool nights, high humidity, strong light and constantly moist, airy peat. Warm nights are the main risk.",
+      "tags": ["advanced", "pitfall", "Guiana Highlands", "highland"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Heliamphora%20nutans" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Heliamphora_nutans" }
+      ]
+    },
+    "Heliamphora chimantensis": {
+      "commonName": "Chimantá sun pitcher",
+      "summary": "A tepui endemic with stout, red-tinged pitchers and a small, spoon-shaped lid.",
+      "description": "Heliamphora chimantensis is endemic to the Chimantá massif in Venezuela. It produces stout, reddish pitchers with a small lid and grows in open, wet, peaty habitats on the tepui summits. Like other Heliamphora, it is a highland plant that depends on cool nights and constant humidity.",
+      "etymology": "Named after the Chimantá massif, its only known home.",
+      "careGroup": "default",
+      "careNotes": "Grow it cool and bright, with high humidity and a loose, acidic mix. It is not a beginner plant.",
+      "tags": ["advanced", "pitfall", "Venezuela", "tepui"],
+      "conservationNote": "A narrow endemic of the Chimantá tepuis; habitat is protected but the plant is vulnerable to collection.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Heliamphora%20chimantensis" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Heliamphora_chimantensis" }
+      ]
+    },
+    "Pinguicula gigantea": {
+      "commonName": "Giant butterwort",
+      "summary": "One of the largest butterworts, with broad, pale green leaves that can span a dinner plate.",
+      "description": "Pinguicula gigantea is a Mexican butterwort and one of the largest species in the genus. Its rosettes of broad, fleshy leaves are covered with sticky glands and can become very large in cultivation. In winter it forms a smaller, succulent rosette. It is a rewarding plant for a bright windowsill or terrarium.",
+      "etymology": "gigantea means 'giant', referring to the size of the rosette.",
+      "careGroup": "mexican",
+      "careNotes": "Wet and actively growing in summer; much drier in winter when the succulent rosette forms. Use a mineral-rich, well-drained mix.",
+      "tags": ["intermediate", "mexican", "flypaper", "Mexico", "large"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Pinguicula%20gigantea" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pinguicula_gigantea" }
+      ]
+    },
+    "Pinguicula grandiflora": {
+      "commonName": "Large-flowered butterwort",
+      "summary": "A European bog butterwort with handsome violet flowers and a cold winter hibernaculum.",
+      "description": "Pinguicula grandiflora is a temperate butterwort from wet, calcareous habitats in western Europe. It forms a rosette of pale green, sticky leaves and produces large, violet flowers in spring. In winter it dies back to a tight hibernaculum. It is a good choice for a cool bog garden or an unheated greenhouse.",
+      "etymology": "grandiflora means 'large-flowered'.",
+      "careGroup": "temperate",
+      "careNotes": "Keep it wet and cool, with bright light and a cold winter dormancy. It dislikes warm, stagnant conditions.",
+      "tags": ["beginner", "temperate", "flypaper", "Europe", "bog garden"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Pinguicula%20grandiflora" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pinguicula_grandiflora" }
+      ]
+    },
+    "Utricularia sandersonii": {
+      "commonName": "Sanderson's bladderwort",
+      "summary": "A cheerful terrestrial bladderwort with tiny violet flowers that look like rabbits' faces.",
+      "description": "Utricularia sandersonii is a small terrestrial bladderwort from South Africa. It spreads into a bright green carpet of leaves and produces pale violet flowers with a distinctive rabbit-like shape. The actual traps are tiny bladders hidden in the soil. It is one of the easiest bladderworts and a favourite for terrariums and windowsills.",
+      "etymology": "Named after John Sanderson, a 19th-century plant collector in South Africa.",
+      "careGroup": "terrestrial",
+      "careNotes": "Keep it wet, bright and warm. It spreads readily and can become a weed in a shared terrarium, so give it its own pot.",
+      "tags": ["beginner", "terrestrial", "bladder", "South Africa", "flowers"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Utricularia%20sandersonii" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Utricularia_sandersonii" }
+      ]
+    },
+    "Utricularia vulgaris": {
+      "commonName": "Common bladderwort",
+      "summary": "A free-floating aquatic bladderwort that fills summer ponds with yellow flowers and invisible traps.",
+      "description": "Utricularia vulgaris is a widespread aquatic bladderwort of Eurasia. It floats just below the surface, producing finely divided leaves and small bladder traps that capture tiny aquatic invertebrates. In summer it sends up yellow flowers above the water. It is a beautiful pond plant but can spread aggressively in rich water.",
+      "etymology": "vulgaris means 'common'.",
+      "careGroup": "aquatic",
+      "careNotes": "Grow it in soft, acidic water in full sun. It needs a cold winter rest and may form turions.",
+      "tags": ["intermediate", "aquatic", "bladder", "Eurasia", "pond"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Utricularia%20vulgaris" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Utricularia_vulgaris" }
+      ]
+    },
+    "Aldrovanda vesiculosa": {
+      "commonName": "Waterwheel plant",
+      "summary": "A rootless aquatic snap trap that floats in whorls and snaps shut on tiny water fleas.",
+      "description": "Aldrovanda vesiculosa is a free-floating aquatic carnivore with whorls of leaves that resemble the paddles of a waterwheel. Each leaf ends in a small, translucent snap trap with trigger hairs. The plant has no roots and survives winter as a turion. Once widespread across the Old World, it is now rare and threatened throughout much of its range.",
+      "etymology": "Aldrovanda honours Ulisse Aldrovandi, an Italian naturalist; vesiculosa means 'with small bladders'.",
+      "careGroup": "default",
+      "careNotes": "Soft, acidic water, strong light and a cool winter rest. It is a specialist plant and not recommended for beginners.",
+      "tags": ["advanced", "aquatic", "snap trap", "Old World", "rare"],
+      "featured": true,
+      "conservationNote": "Widely declining and locally extinct across much of its former range; wetland conservation is essential.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Aldrovanda%20vesiculosa" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Aldrovanda" }
+      ]
+    },
+    "Byblis gigantea": {
+      "commonName": "Giant rainbow plant",
+      "summary": "A tall, shrubby rainbow plant from Western Australia with long, sticky leaves and purple flowers.",
+      "description": "Byblis gigantea is a perennial rainbow plant from the sandplains of south-western Australia. It develops a woody base and can grow into a substantial shrub covered with long, sticky leaves. The leaves glitter in the sun and trap small insects. It is a beautiful but challenging plant that needs a Mediterranean cycle and excellent drainage.",
+      "etymology": "gigantea means 'giant', referring to its size relative to other Byblis.",
+      "careGroup": "perennial",
+      "careNotes": "Grow it in a deep, very well-drained sandy peat mix, with full sun and a dry summer rest. It resents root disturbance.",
+      "tags": ["advanced", "perennial", "flypaper", "Australia", "shrub"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Byblis%20gigantea" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Byblis_gigantea" }
+      ]
+    },
+    "Byblis liniflora": {
+      "commonName": "Slender rainbow plant",
+      "summary": "A dainty annual rainbow plant that grows fast, flowers young and self-seeds.",
+      "description": "Byblis liniflora is a small annual from northern Australia and New Guinea. It has slender, sticky leaves and produces pale violet flowers when only a few centimetres tall. It completes its life cycle in a single season and self-seeds readily, making it one of the easiest Byblis to grow.",
+      "etymology": "liniflora means 'flax-flowered'.",
+      "careGroup": "annual",
+      "careNotes": "Warm, bright and wet. Sow fresh seed on the surface of sandy peat and let the colony self-seed.",
+      "tags": ["beginner", "annual", "flypaper", "Australia", "easy"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Byblis%20liniflora" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Byblis_liniflora" }
+      ]
+    },
+    "Drosophyllum lusitanicum": {
+      "commonName": "Dewy pine",
+      "summary": "A woody, sun-loving Mediterranean carnivore that catches insects on long, dewy leaves.",
+      "description": "Drosophyllum lusitanicum is a shrubby carnivore from the dry south-western corner of Europe and north-western Morocco. Its long, narrow leaves are covered with sticky glands and curl slightly at the tips. Unlike most carnivores, it grows in relatively dry, often alkaline soils. It is famous among growers for being difficult to transplant.",
+      "etymology": "Drosophyllum means 'dew-leaf'; lusitanicum means 'from Lusitania', an old name for Portugal.",
+      "careGroup": "default",
+      "careNotes": "Deep pot, very free-draining mineral mix, full sun and careful watering. Never disturb the roots; sow in the final container.",
+      "tags": ["advanced", "flypaper", "Mediterranean", "woody"],
+      "featured": true,
+      "conservationNote": "Threatened by habitat loss, afforestation and collection across its small European and North African range.",
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Drosophyllum%20lusitanicum" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosophyllum" }
+      ]
+    },
+    "Roridula gorgonias": {
+      "commonName": "Dewstick",
+      "summary": "A sticky South African shrub that outsources digestion to resident assassin bugs.",
+      "description": "Roridula gorgonias is a woody shrub from the Cape fynbos with long, narrow leaves covered in sticky glands. It traps insects, but instead of digesting them directly it relies on resident Pameridea bugs that feed on the catch; the plant absorbs nutrients from the bugs' droppings. This indirect carnivory is a remarkable example of mutualism.",
+      "etymology": "Roridula means 'slightly dewy'; gorgonias may refer to the Gorgons, perhaps because of the plant's striking, snaky appearance.",
+      "careGroup": "default",
+      "careNotes": "A Mediterranean shrub for a cool, sunny greenhouse. Use very sandy, acidic soil, keep air moving and avoid disturbing the resident insects.",
+      "tags": ["advanced", "flypaper", "South Africa", "mutualism"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Roridula%20gorgonias" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Roridula" }
+      ]
+    },
+    "Triphyophyllum peltatum": {
+      "commonName": "Triphyophyllum",
+      "summary": "A West African liana that becomes carnivorous only during part of its life cycle.",
+      "description": "Triphyophyllum peltatum is a tropical liana and one of the few known facultative carnivores. Juvenile plants produce sticky, glandular leaves that trap insects; as the plant matures it switches to ordinary leaves and a climbing habit. It is a fascinating botanical curiosity and is not cultivated as a houseplant.",
+      "etymology": "Triphyophyllum means 'three-leaf-types', referring to its three distinct leaf forms; peltatum means 'shield-shaped'.",
+      "careGroup": "default",
+      "careNotes": "Not recommended for cultivation. It needs tropical rainforest conditions and a large climbing structure.",
+      "tags": ["expert", "flypaper", "West Africa", "facultative"],
+      "featured": true,
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Triphyophyllum%20peltatum" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Triphyophyllum" }
+      ]
+    },
+    "Genlisea violacea": {
+      "commonName": "Violet corkscrew plant",
+      "summary": "A tiny Brazilian corkscrew plant with underground lobster-pot traps and violet flowers.",
+      "description": "Genlisea violacea is a small rosette plant from the wet campos rupestres of Brazil. Its most remarkable feature is underground: spiral, lobster-pot traps that guide tiny invertebrates into a digestive chamber. The plant produces violet flowers on tall scapes. It is a delicate terrarium subject for growers who enjoy the miniature side of carnivory.",
+      "etymology": "violacea means 'violet-coloured', referring to the flowers.",
+      "careGroup": "default",
+      "careNotes": "Wet, bright and warm, with a loose sandy peat mix and live sphagnum on the surface. Keep the mix very wet but aerated.",
+      "tags": ["intermediate", "lobster", "Brazil", "miniature"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Genlisea%20violacea" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Genlisea" }
+      ]
+    },
+    "Proboscidea louisianica": {
+      "commonName": "Devil's claw",
+      "summary": "A sticky summer annual with mauve flowers and dramatic, hooked seed pods.",
+      "description": "Proboscidea louisianica is a fast-growing annual from the south-central USA and Mexico. Its large, sticky leaves trap small insects, and its flowers are followed by woody seed pods with long, curved claws that inspired the common name. It is an easy and unusual summer annual for a sunny garden.",
+      "etymology": "Proboscidea means 'like a proboscis', referring to the long, curved seed pods; louisianica refers to Louisiana.",
+      "careGroup": "default",
+      "careNotes": "Full sun, moderate water and poor, well-drained soil. Sow after the last frost and let the pods dry on the plant.",
+      "tags": ["beginner", "annual", "flypaper", "North America", "seed pods"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Proboscidea%20louisianica" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Proboscidea_louisianica" }
+      ]
+    },
+    "Ibicella lutea": {
+      "commonName": "Yellow unicorn plant",
+      "summary": "A sticky South American annual with yellow flowers and large, clawed seed pods.",
+      "description": "Ibicella lutea is a sprawling annual from South America, now naturalised in warm regions elsewhere. Its soft, sticky leaves and stems trap small insects, but the plant is only weakly carnivorous. The yellow flowers are followed by large, woody seed pods with curved claws. It is an easy curiosity for a warm, sunny garden.",
+      "etymology": "Ibicella is a diminutive of Ibicella's related genus; lutea means 'yellow'.",
+      "careGroup": "default",
+      "careNotes": "Full sun, poor sandy soil and moderate water. It self-seeds readily in warm climates.",
+      "tags": ["beginner", "annual", "flypaper", "South America", "seed pods"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Ibicella%20lutea" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Ibicella" }
+      ]
+    },
+    "Martynia annua": {
+      "commonName": "Devil's claw",
+      "summary": "A sticky tropical annual with pink flowers and the classic two-clawed seed pod.",
+      "description": "Martynia annua is a coarse annual from Mexico and Central America, now widespread in the tropics. Its opposite, sticky-hairy leaves trap small insects, and its pinkish flowers are followed by woody seed pods with two curved claws. It is grown mainly as a curiosity and for its dramatic pods.",
+      "etymology": "Martynia honours John Martyn, an 18th-century English botanist; annua means 'annual'.",
+      "careGroup": "default",
+      "careNotes": "Warm, sunny and well-drained. Easy from seed; do not overwater.",
+      "tags": ["beginner", "annual", "flypaper", "Mexico", "seed pods"],
+      "sourceLinks": [
+        { "label": "ICPS record", "url": "https://cpnames.carnivorousplants.org/?name=Martynia%20annua" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Martynia" }
+      ]
+    }
+  }
+}

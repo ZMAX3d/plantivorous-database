@@ -1,0 +1,38 @@
+{
+  "generated": "2026-11-09",
+  "snapshot": {
+    "date": "2026-11-09",
+    "source": "ICPS Carnivorous Plant Names Resource",
+    "sourceUrl": "https://cpnames.carnivorousplants.org/",
+    "acceptedTaxa": 751,
+    "genera": 21,
+    "families": 10,
+    "provisionalTaxa": 9
+  },
+  "entries": [
+    {
+      "date": "2026-11-09",
+      "type": "baseline",
+      "title": "Database baseline published",
+      "summary": "Initial snapshot of 751 accepted species and natural hybrids across 21 genera, compiled from the ICPS Carnivorous Plant Names Resource. Every accepted name on the 21 genus pages was captured, including natural hybrids and nested infraspecific taxa.",
+      "count": 751
+    },
+    {
+      "date": "2026-11-09",
+      "type": "watchlist",
+      "title": "Nine recent descriptions added to the watchlist",
+      "summary": "Recent species accepted in the primary literature but not yet present in the ICPS snapshot are shown as provisional entries. They are excluded from the 751 ICPS count and are promoted automatically when ICPS lists them.",
+      "taxa": [
+        "Drosera magnifica",
+        "Nepenthes pongoides",
+        "Nepenthes kampalili",
+        "Nepenthes higaonon",
+        "Nepenthes maagnawense",
+        "Nepenthes megastoma",
+        "Nepenthes candalaga",
+        "Nepenthes nebularum",
+        "Nepenthes maximoides"
+      ]
+    }
+  ]
+}

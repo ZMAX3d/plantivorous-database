@@ -1,0 +1,245 @@
+{
+  "updated": "2026-11-09",
+  "note": "Curated watchlist of recently published carnivorous-plant species that are accepted in the primary literature but were not present in the 9 November 2026 ICPS Carnivorous Plant Names Resource snapshot. These are shown as provisional entries, clearly distinguished from the 751 ICPS-accepted taxa. The list is not exhaustive; the updater promotes names automatically once ICPS lists them.",
+  "taxa": [
+    {
+      "name": "Drosera magnifica",
+      "genus": "Drosera",
+      "authors": "Rivadavia & Gonella",
+      "year": 2015,
+      "family": "Droseraceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Phytotaxa 220: 257 (2015)",
+      "typeLocality": "Pico do Padre Ângelo, eastern Minas Gerais, Brazil",
+      "countries": ["Brazil"],
+      "provinces": [],
+      "originPoints": [
+        { "label": "Pico do Padre Ângelo, Minas Gerais (approx.)", "lat": -18.9, "lon": -41.6, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "subtropical",
+      "summary": "One of the largest sundews in the world, discovered through photographs posted on Facebook and described from a single mountain top in Minas Gerais.",
+      "description": "Drosera magnifica is a giant sundew with a climbing or scrambling stem that can exceed a metre, long dewy leaves and a candelabrum-like inflorescence. It is known from a single mountain top in eastern Minas Gerais, where it grows among sandstone outcrops. The species was described in 2015 after photographs taken by an orchid hunter were recognised as an undescribed sundew, making it one of the first plants discovered through social media.",
+      "etymology": "magnifica means 'magnificent', referring to the plant's striking size and appearance.",
+      "discoveredBy": "Recognised from photographs posted on Facebook by Reginaldo Vasconcelos and described by Fernando Rivadavia and Paulo Gonella.",
+      "careNotes": "Treat as a warm-temperate to subtropical sundew with a very open, sandy mix and strong light. It is large and vigorous in cultivation but has a tiny wild range; propagation material should be traceable and never wild-collected.",
+      "tags": ["recently described", "giant", "Brazil", "Critically Endangered", "watchlist"],
+      "conservationNote": "Assessed as Critically Endangered in the protologue. Its single known locality is vulnerable to fire, mining and habitat clearance.",
+      "sourceLinks": [
+        { "label": "Phytotaxa paper", "url": "https://doi.org/10.11646/phytotaxa.220.3.4" },
+        { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Drosera_magnifica" }
+      ]
+    },
+    {
+      "name": "Nepenthes pongoides",
+      "genus": "Nepenthes",
+      "authors": "Damit, Yusof, Jumian & A.S.Rob.",
+      "year": 2024,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Australian Systematic Botany 37: BT24050 (2024)",
+      "typeLocality": "Meliau Range, central Sabah, Borneo, Malaysia",
+      "countries": ["Malaysia"],
+      "provinces": ["Borneo"],
+      "originPoints": [
+        { "label": "Meliau Range, Sabah (approx.)", "lat": 5.1, "lon": 117.0, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "lowland",
+      "summary": "A recently described giant lowland pitcher plant from an ultramafic peak in Sabah, known from only two subpopulations.",
+      "description": "Nepenthes pongoides is one of the largest Nepenthes described in recent years, with a massive rosette, peltate tendril insertion and a dense, persistent covering of long reddish hairs. It is known from the low-elevation Meliau Range in central Sabah, where only a few dozen mature individuals have been observed. The species was formally described in 2024 and assessed as Critically Endangered.",
+      "etymology": "The epithet refers to the orangutan (Pongo), reflecting the plant's reddish, hairy appearance.",
+      "discoveredBy": "Described by Alviana Damit, S. Yusof, J. Jumian and Alastair S. Robinson in 2024.",
+      "careNotes": "A warm lowland species. Provide steady warmth, high humidity, bright filtered light and an open epiphytic mix. It is not yet widely established in cultivation.",
+      "tags": ["recently described", "giant", "Borneo", "Critically Endangered", "watchlist"],
+      "conservationNote": "Known from two subpopulations and assessed as Critically Endangered. Habitat protection is the priority; horticultural material is extremely limited.",
+      "sourceLinks": [
+        { "label": "Publication", "url": "https://doi.org/10.1071/BT24050" }
+      ]
+    },
+    {
+      "name": "Nepenthes kampalili",
+      "genus": "Nepenthes",
+      "authors": "Lagunday & V.B.Amoroso",
+      "year": 2024,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Phytotaxa 644: 163 (2024)",
+      "typeLocality": "Mt. Kampalili, Maragusan, Davao de Oro, Mindanao, Philippines",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Mt. Kampalili, Mindanao (approx.)", "lat": 7.3, "lon": 126.1, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "highland",
+      "summary": "A montane pitcher plant from the limestone karst forests of eastern Mindanao, described in 2024.",
+      "description": "Nepenthes kampalili belongs to section Villosa and grows in the limestone karst bonsai forest of the eastern Mindanao biodiversity corridor. It differs from close relatives in its densely pubescent ground pitchers and lid, and in details of the tendril and spur. The species was assessed as Critically Endangered in its description.",
+      "discoveredBy": "Described by Noel E. Lagunday, Aimanuelzon P. Yorong and Victor B. Amoroso in 2024.",
+      "careNotes": "A highland species: cool nights, high humidity and very open, airy roots. Treat as an advanced collection plant until cultivation is better documented.",
+      "tags": ["recently described", "Mindanao", "highland", "Critically Endangered", "watchlist"],
+      "conservationNote": "Assessed as Critically Endangered, with poaching and habitat loss identified as the main threats.",
+      "sourceLinks": [
+        { "label": "Phytotaxa paper", "url": "https://doi.org/10.11646/phytotaxa.644.2.8" }
+      ]
+    },
+    {
+      "name": "Nepenthes higaonon",
+      "genus": "Nepenthes",
+      "authors": "Lagunday, Baul, Ansihagan & Amoroso",
+      "year": 2025,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Phytotaxa 689: 285 (2025)",
+      "typeLocality": "northern Mindanao, Misamis Oriental, Philippines",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Misamis Oriental, Mindanao (approx.)", "lat": 8.5, "lon": 124.8, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "lowland",
+      "summary": "A 2025 species from the gravel substrates of northern Mindanao, assessed as Critically Endangered.",
+      "description": "Nepenthes higaonon is a climbing pitcher plant in section Alatae, known from the gravel substrates of northern Mindanao. It is similar to N. viridis but differs in leaf attachment, leaf shape, venation, pitcher shape and inflorescence structure. The species was described in 2025 and assessed as Critically Endangered.",
+      "discoveredBy": "Described by Noel E. Lagunday, Melbert James G. Baul, Ramil P. Ansihagan and Victor B. Amoroso in 2025.",
+      "careNotes": "Warm lowland conditions, bright filtered light and an open mix. Newly described species should be treated as conservation material, not a commodity.",
+      "tags": ["recently described", "Mindanao", "lowland", "Critically Endangered", "watchlist"],
+      "conservationNote": "Faces poaching, shifting cultivation and habitat loss, with no legislative protection at the type locality.",
+      "sourceLinks": [
+        { "label": "Phytotaxa paper", "url": "https://doi.org/10.11646/phytotaxa.689.2.12" }
+      ]
+    },
+    {
+      "name": "Nepenthes maagnawense",
+      "genus": "Nepenthes",
+      "authors": "Lagunday & Amoroso",
+      "year": 2025,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Phytotaxa 693: 87 (2025)",
+      "typeLocality": "Mt. Maagnaw, Kitanglad Range, Bukidnon, Mindanao, Philippines, 2300–2700 m",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Mt. Maagnaw, Mindanao (approx.)", "lat": 8.2, "lon": 124.9, "kind": "locality" }
+      ],
+      "redList": "EN",
+      "careGroup": "highland",
+      "summary": "A high-elevation pitcher plant from the Kitanglad Range, described in 2025 and assessed as Endangered.",
+      "description": "Nepenthes maagnawense grows in shrubland at 2300–2700 m on Mt. Maagnaw in the Kitanglad Range. It is a member of section Alatae and differs from N. kitanglad in stem shape, venation, pitcher proportions and lid appendage. The species is known only from the type locality and is estimated to number fewer than 250 mature individuals.",
+      "discoveredBy": "Described by Noel E. Lagunday and Victor B. Amoroso in 2025.",
+      "careNotes": "A true highland species. Cool nights, strong light, high humidity and excellent drainage are essential. It is not a beginner plant.",
+      "tags": ["recently described", "Mindanao", "highland", "Endangered", "watchlist"],
+      "conservationNote": "Assessed as Endangered, with a population of fewer than 250 mature individuals and a very restricted range.",
+      "sourceLinks": [
+        { "label": "Phytotaxa paper", "url": "https://doi.org/10.11646/phytotaxa.693.1.6" }
+      ]
+    },
+    {
+      "name": "Nepenthes megastoma",
+      "genus": "Nepenthes",
+      "authors": "A.S.Rob., R.Bustam. & Altomonte",
+      "year": 2025,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Phytotaxa 728: 101 (2025)",
+      "typeLocality": "Mount Saint Paul karst, Puerto Princesa Subterranean River National Park, Palawan, Philippines, c. 250 m",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Puerto Princesa, Palawan (approx.)", "lat": 10.2, "lon": 118.9, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "lowland",
+      "summary": "A micro-endemic pitcher plant from vertical limestone walls in Palawan, described in 2025.",
+      "description": "Nepenthes megastoma is known from three locations on vertical limestone walls in the Mount Saint Paul karst formation on Palawan. It has highly branched stems, campanulate pitchers, peltate tendril insertion and dimorphic upper pitchers. The species is assessed as Critically Endangered and appears to be closely related to the Palawan endemic N. philippinensis.",
+      "discoveredBy": "Described by Alastair S. Robinson, R. Bustamante and Charles Altomonte in 2025.",
+      "careNotes": "A warm, humid lowland species from limestone. It is not established in general cultivation and should be treated as a conservation-sensitive plant.",
+      "tags": ["recently described", "Palawan", "lowland", "Critically Endangered", "watchlist"],
+      "conservationNote": "Known from three subpopulations with few individuals; fire, typhoons and poaching are immediate threats.",
+      "sourceLinks": [
+        { "label": "Phytotaxa paper", "url": "https://doi.org/10.11646/phytotaxa.728.2.1" }
+      ]
+    },
+    {
+      "name": "Nepenthes candalaga",
+      "genus": "Nepenthes",
+      "authors": "Lagunday, Dela Rosa, Cleofei, Patano, Coritico & Amoroso",
+      "year": 2022,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Phytotaxa 554: 285 (2022)",
+      "typeLocality": "Mt. Candalaga, Maragusan, Davao de Oro, Mindanao, Philippines, 1800–2100 m",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Mt. Candalaga, Mindanao (approx.)", "lat": 7.4, "lon": 126.2, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "highland",
+      "summary": "A montane pitcher plant from Mt. Candalaga in eastern Mindanao, described in 2022.",
+      "description": "Nepenthes candalaga is a member of section Alatae from the tropical upper montane forest of Mt. Candalaga. It resembles N. justinae but differs in leaf venation, lid shape, spur tip, lid appendage, trap wings and the upper pitcher rim. The species was assessed as Critically Endangered.",
+      "discoveredBy": "Described by Noel E. Lagunday and colleagues in 2022.",
+      "careNotes": "Highland conditions with cool nights and high humidity. It is a conservation-sensitive species with a very small known range.",
+      "tags": ["recently described", "Mindanao", "highland", "Critically Endangered", "watchlist"],
+      "conservationNote": "Assessed as Critically Endangered; deforestation and habitat loss are the main threats.",
+      "sourceLinks": [
+        { "label": "Phytotaxa paper", "url": "https://doi.org/10.11646/phytotaxa.554.3.7" }
+      ]
+    },
+    {
+      "name": "Nepenthes nebularum",
+      "genus": "Nepenthes",
+      "authors": "G.Mansell & W.Suarez",
+      "year": 2016,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "Carnivorous Plant Newsletter 45: 132 (2016)",
+      "typeLocality": "south-eastern Mindanao, Philippines, up to 1800 m",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Mt. Mayo, Mindanao (approx.)", "lat": 7.0, "lon": 126.3, "kind": "locality" }
+      ],
+      "redList": "DD",
+      "careGroup": "highland",
+      "summary": "A highland pitcher plant from south-eastern Mindanao, closely related to N. truncata and N. robcantleyi.",
+      "description": "Nepenthes nebularum is a highland species from mossy forest in south-eastern Mindanao, recorded with certainty from only a few mountains. It has a dense, woolly reddish indumentum on the petiole wings, tendrils and traps, and is closely related to N. truncata and N. robcantleyi. Its conservation status has been treated as Data Deficient.",
+      "discoveredBy": "Described by Geoff Mansell and Wally Suarez in 2016.",
+      "careNotes": "Cool highland conditions, high humidity and an open epiphytic mix. It can be grown as an epiphyte or lithophyte.",
+      "tags": ["recently described", "Mindanao", "highland", "Data Deficient", "watchlist"],
+      "conservationNote": "Data Deficient; its small known range and montane habitat make it vulnerable to collection and habitat loss.",
+      "sourceLinks": [
+        { "label": "CPN article", "url": "https://cpn.carnivorousplants.org/articles/CPNv45n4p132_139.pdf" },
+        { "label": "Kew POWO", "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77159051-1" }
+      ]
+    },
+    {
+      "name": "Nepenthes maximoides",
+      "genus": "Nepenthes",
+      "authors": "King & Cheek",
+      "year": 2020,
+      "family": "Nepenthaceae",
+      "status": "Published, pending ICPS inclusion",
+      "publication": "PeerJ 8: e9899 (2020)",
+      "typeLocality": "Luzon, Philippines, possibly Mt. Banahaw",
+      "countries": ["Philippines"],
+      "provinces": ["Philippines"],
+      "originPoints": [
+        { "label": "Mt. Banahaw, Luzon (approx.)", "lat": 14.1, "lon": 121.5, "kind": "locality" }
+      ],
+      "redList": "CR",
+      "careGroup": "highland",
+      "summary": "A possibly extinct pitcher plant known from a single herbarium specimen collected more than a century ago.",
+      "description": "Nepenthes maximoides is known from a single historical specimen from Luzon, probably collected on Mt. Banahaw, and had not been recorded for about 110 years when it was described in 2020. Its large, narrowly funnel-shaped upper pitchers and unusual lid appendages resemble those of N. maxima, a striking case of convergent evolution. It is assessed as Critically Endangered (Possibly Extinct).",
+      "discoveredBy": "Recognised in herbarium material by Charles King and Martin Cheek and described in 2020.",
+      "careNotes": "Not known in cultivation. Any material would be of extreme conservation value; do not expect this species in the horticultural trade.",
+      "tags": ["recently described", "Luzon", "possibly extinct", "Critically Endangered", "watchlist"],
+      "conservationNote": "Assessed as Critically Endangered (Possibly Extinct). The only known specimen is historical, and the suspected type locality has been heavily disturbed.",
+      "sourceLinks": [
+        { "label": "PeerJ paper", "url": "https://doi.org/10.7717/peerj.9899" },
+        { "label": "Kew story", "url": "https://www.kew.org/read-and-watch/nepenthes-carnivorous-plants-philippines" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3224 @@
+{
+  "generated": "2026-11-09T10:35:07.990Z",
+  "source": "mledoze/countries (ODbL); centroids are approximate country centres",
+  "countries": {
+    "United States of America": [
+      38,
+      -97
+    ],
+    "United Kingdom of Great Britain and Northern Ireland": [
+      54,
+      -2
+    ],
+    "Russian Federation": [
+      60,
+      100
+    ],
+    "Viet Nam": [
+      16.16666666,
+      107.83333333
+    ],
+    "United Republic of Tanzania": [
+      -6,
+      35
+    ],
+    "Brunei Darussalam": [
+      4.5,
+      114.66666666
+    ],
+    "Lao People's Democratic Republic": [
+      18,
+      105
+    ],
+    "Cote d'Ivoire": [
+      8,
+      -5
+    ],
+    "Swaziland": [
+      -26.5,
+      31.5
+    ],
+    "Macedonia": [
+      41.83333333,
+      22
+    ],
+    "Korea": [
+      37,
+      127.5
+    ],
+    "Congo": [
+      -1,
+      15
+    ],
+    "AN": [
+      12.116667,
+      -68.933333
+    ],
+    "Turkey": [
+      39,
+      35
+    ],
+    "United States of America)": [
+      38,
+      -97
+    ],
+    "Aruba": [
+      12.5,
+      -69.96666666
+    ],
+    "Afghanistan": [
+      33,
+      65
+    ],
+    "Angola": [
+      -12.5,
+      18.5
+    ],
+    "Anguilla": [
+      18.25,
+      -63.16666666
+    ],
+    "Åland Islands": [
+      60.116667,
+      19.9
+    ],
+    "Albania": [
+      41,
+      20
+    ],
+    "Andorra": [
+      42.5,
+      1.5
+    ],
+    "United Arab Emirates": [
+      24,
+      54
+    ],
+    "Argentina": [
+      -34,
+      -64
+    ],
+    "Armenia": [
+      40,
+      45
+    ],
+    "American Samoa": [
+      -14.33333333,
+      -170
+    ],
+    "Antarctica": [
+      -90,
+      0
+    ],
+    "French Southern and Antarctic Lands": [
+      -49.25,
+      69.167
+    ],
+    "Antigua and Barbuda": [
+      17.05,
+      -61.8
+    ],
+    "Australia": [
+      -27,
+      133
+    ],
+    "Austria": [
+      47.33333333,
+      13.33333333
+    ],
+    "Azerbaijan": [
+      40.5,
+      47.5
+    ],
+    "Burundi": [
+      -3.5,
+      30
+    ],
+    "Belgium": [
+      50.83333333,
+      4
+    ],
+    "Benin": [
+      9.5,
+      2.25
+    ],
+    "Burkina Faso": [
+      13,
+      -2
+    ],
+    "Bangladesh": [
+      24,
+      90
+    ],
+    "Bulgaria": [
+      43,
+      25
+    ],
+    "Bahrain": [
+      26,
+      50.55
+    ],
+    "Bahamas": [
+      24.25,
+      -76
+    ],
+    "Bosnia and Herzegovina": [
+      44,
+      18
+    ],
+    "Saint Barthélemy": [
+      18.5,
+      -63.41666666
+    ],
+    "Saint Helena, Ascension and Tristan da Cunha": [
+      -15.95,
+      -5.72
+    ],
+    "Belarus": [
+      53,
+      28
+    ],
+    "Belize": [
+      17.25,
+      -88.75
+    ],
+    "Bermuda": [
+      32.33333333,
+      -64.75
+    ],
+    "Bolivia": [
+      -17,
+      -65
+    ],
+    "Caribbean Netherlands": [
+      12.18,
+      -68.25
+    ],
+    "Brazil": [
+      -10,
+      -55
+    ],
+    "Barbados": [
+      13.16666666,
+      -59.53333333
+    ],
+    "Brunei": [
+      4.5,
+      114.66666666
+    ],
+    "Bhutan": [
+      27.5,
+      90.5
+    ],
+    "Bouvet Island": [
+      -54.43333333,
+      3.4
+    ],
+    "Botswana": [
+      -22,
+      24
+    ],
+    "Central African Republic": [
+      7,
+      21
+    ],
+    "Canada": [
+      60,
+      -95
+    ],
+    "Cocos (Keeling) Islands": [
+      -12.5,
+      96.83333333
+    ],
+    "Switzerland": [
+      47,
+      8
+    ],
+    "Chile": [
+      -30,
+      -71
+    ],
+    "China": [
+      35,
+      105
+    ],
+    "Ivory Coast": [
+      8,
+      -5
+    ],
+    "Cameroon": [
+      6,
+      12
+    ],
+    "DR Congo": [
+      0,
+      25
+    ],
+    "Cook Islands": [
+      -21.23333333,
+      -159.76666666
+    ],
+    "Colombia": [
+      4,
+      -72
+    ],
+    "Comoros": [
+      -12.16666666,
+      44.25
+    ],
+    "Cape Verde": [
+      16,
+      -24
+    ],
+    "Costa Rica": [
+      10,
+      -84
+    ],
+    "Cuba": [
+      21.5,
+      -80
+    ],
+    "Curaçao": [
+      12.116667,
+      -68.933333
+    ],
+    "Christmas Island": [
+      -10.5,
+      105.66666666
+    ],
+    "Cayman Islands": [
+      19.5,
+      -80.5
+    ],
+    "Cyprus": [
+      35,
+      33
+    ],
+    "Czechia": [
+      49.75,
+      15.5
+    ],
+    "Germany": [
+      51,
+      9
+    ],
+    "Djibouti": [
+      11.5,
+      43
+    ],
+    "Dominica": [
+      15.41666666,
+      -61.33333333
+    ],
+    "Denmark": [
+      56,
+      10
+    ],
+    "Dominican Republic": [
+      19,
+      -70.66666666
+    ],
+    "Algeria": [
+      28,
+      3
+    ],
+    "Ecuador": [
+      -2,
+      -77.5
+    ],
+    "Egypt": [
+      27,
+      30
+    ],
+    "Eritrea": [
+      15,
+      39
+    ],
+    "Western Sahara": [
+      24.5,
+      -13
+    ],
+    "Spain": [
+      40,
+      -4
+    ],
+    "Estonia": [
+      59,
+      26
+    ],
+    "Ethiopia": [
+      8,
+      38
+    ],
+    "Finland": [
+      64,
+      26
+    ],
+    "Fiji": [
+      -18,
+      175
+    ],
+    "Falkland Islands": [
+      -51.75,
+      -59
+    ],
+    "France": [
+      46,
+      2
+    ],
+    "Faroe Islands": [
+      62,
+      -7
+    ],
+    "Micronesia": [
+      6.91666666,
+      158.25
+    ],
+    "Gabon": [
+      -1,
+      11.75
+    ],
+    "United Kingdom": [
+      54,
+      -2
+    ],
+    "Georgia": [
+      42,
+      43.5
+    ],
+    "Guernsey": [
+      49.46666666,
+      -2.58333333
+    ],
+    "Ghana": [
+      8,
+      -2
+    ],
+    "Gibraltar": [
+      36.13333333,
+      -5.35
+    ],
+    "Guinea": [
+      11,
+      -10
+    ],
+    "Guadeloupe": [
+      16.25,
+      -61.583333
+    ],
+    "Gambia": [
+      13.46666666,
+      -16.56666666
+    ],
+    "Guinea-Bissau": [
+      12,
+      -15
+    ],
+    "Equatorial Guinea": [
+      2,
+      10
+    ],
+    "Greece": [
+      39,
+      22
+    ],
+    "Grenada": [
+      12.11666666,
+      -61.66666666
+    ],
+    "Greenland": [
+      72,
+      -40
+    ],
+    "Guatemala": [
+      15.5,
+      -90.25
+    ],
+    "French Guiana": [
+      4,
+      -53
+    ],
+    "Guam": [
+      13.46666666,
+      144.78333333
+    ],
+    "Guyana": [
+      5,
+      -59
+    ],
+    "Hong Kong": [
+      22.267,
+      114.188
+    ],
+    "Heard Island and McDonald Islands": [
+      -53.1,
+      72.51666666
+    ],
+    "Honduras": [
+      15,
+      -86.5
+    ],
+    "Croatia": [
+      45.16666666,
+      15.5
+    ],
+    "Haiti": [
+      19,
+      -72.41666666
+    ],
+    "Hungary": [
+      47,
+      20
+    ],
+    "Indonesia": [
+      -5,
+      120
+    ],
+    "Isle of Man": [
+      54.25,
+      -4.5
+    ],
+    "India": [
+      20,
+      77
+    ],
+    "British Indian Ocean Territory": [
+      -6,
+      71.5
+    ],
+    "Ireland": [
+      53,
+      -8
+    ],
+    "Iran": [
+      32,
+      53
+    ],
+    "Iraq": [
+      33,
+      44
+    ],
+    "Iceland": [
+      65,
+      -18
+    ],
+    "Israel": [
+      31.47,
+      35.13
+    ],
+    "Italy": [
+      42.83333333,
+      12.83333333
+    ],
+    "Jamaica": [
+      18.25,
+      -77.5
+    ],
+    "Jersey": [
+      49.25,
+      -2.16666666
+    ],
+    "Jordan": [
+      31,
+      36
+    ],
+    "Japan": [
+      36,
+      138
+    ],
+    "Kazakhstan": [
+      48,
+      68
+    ],
+    "Kenya": [
+      1,
+      38
+    ],
+    "Kyrgyzstan": [
+      41,
+      75
+    ],
+    "Cambodia": [
+      13,
+      105
+    ],
+    "Kiribati": [
+      1.41666666,
+      173
+    ],
+    "Saint Kitts and Nevis": [
+      17.33333333,
+      -62.75
+    ],
+    "South Korea": [
+      37,
+      127.5
+    ],
+    "Kosovo": [
+      42.666667,
+      21.166667
+    ],
+    "Kuwait": [
+      29.5,
+      45.75
+    ],
+    "Laos": [
+      18,
+      105
+    ],
+    "Lebanon": [
+      33.83333333,
+      35.83333333
+    ],
+    "Liberia": [
+      6.5,
+      -9.5
+    ],
+    "Libya": [
+      25,
+      17
+    ],
+    "Saint Lucia": [
+      13.88333333,
+      -60.96666666
+    ],
+    "Liechtenstein": [
+      47.26666666,
+      9.53333333
+    ],
+    "Sri Lanka": [
+      7,
+      81
+    ],
+    "Lesotho": [
+      -29.5,
+      28.5
+    ],
+    "Lithuania": [
+      56,
+      24
+    ],
+    "Luxembourg": [
+      49.75,
+      6.16666666
+    ],
+    "Latvia": [
+      57,
+      25
+    ],
+    "Macau": [
+      22.16666666,
+      113.55
+    ],
+    "Saint Martin": [
+      18.08333333,
+      -63.95
+    ],
+    "Morocco": [
+      32,
+      -5
+    ],
+    "Monaco": [
+      43.73333333,
+      7.4
+    ],
+    "Moldova": [
+      47,
+      29
+    ],
+    "Madagascar": [
+      -20,
+      47
+    ],
+    "Maldives": [
+      3.25,
+      73
+    ],
+    "Mexico": [
+      23,
+      -102
+    ],
+    "Marshall Islands": [
+      9,
+      168
+    ],
+    "North Macedonia": [
+      41.83333333,
+      22
+    ],
+    "Mali": [
+      17,
+      -4
+    ],
+    "Malta": [
+      35.83333333,
+      14.58333333
+    ],
+    "Myanmar": [
+      22,
+      98
+    ],
+    "Montenegro": [
+      42.5,
+      19.3
+    ],
+    "Mongolia": [
+      46,
+      105
+    ],
+    "Northern Mariana Islands": [
+      15.2,
+      145.75
+    ],
+    "Mozambique": [
+      -18.25,
+      35
+    ],
+    "Mauritania": [
+      20,
+      -12
+    ],
+    "Montserrat": [
+      16.75,
+      -62.2
+    ],
+    "Martinique": [
+      14.666667,
+      -61
+    ],
+    "Mauritius": [
+      -20.28333333,
+      57.55
+    ],
+    "Malawi": [
+      -13.5,
+      34
+    ],
+    "Malaysia": [
+      2.5,
+      112.5
+    ],
+    "Mayotte": [
+      -12.83333333,
+      45.16666666
+    ],
+    "Namibia": [
+      -22,
+      17
+    ],
+    "New Caledonia": [
+      -21.5,
+      165.5
+    ],
+    "Niger": [
+      16,
+      8
+    ],
+    "Norfolk Island": [
+      -29.03333333,
+      167.95
+    ],
+    "Nigeria": [
+      10,
+      8
+    ],
+    "Nicaragua": [
+      13,
+      -85
+    ],
+    "Niue": [
+      -19.03333333,
+      -169.86666666
+    ],
+    "Netherlands": [
+      52.5,
+      5.75
+    ],
+    "Norway": [
+      62,
+      10
+    ],
+    "Nepal": [
+      28,
+      84
+    ],
+    "Nauru": [
+      -0.53333333,
+      166.91666666
+    ],
+    "New Zealand": [
+      -41,
+      174
+    ],
+    "Oman": [
+      21,
+      57
+    ],
+    "Pakistan": [
+      30,
+      70
+    ],
+    "Panama": [
+      9,
+      -80
+    ],
+    "Pitcairn Islands": [
+      -25.06666666,
+      -130.1
+    ],
+    "Peru": [
+      -10,
+      -76
+    ],
+    "Philippines": [
+      13,
+      122
+    ],
+    "Palau": [
+      7.5,
+      134.5
+    ],
+    "Papua New Guinea": [
+      -6,
+      147
+    ],
+    "Poland": [
+      52,
+      20
+    ],
+    "Puerto Rico": [
+      18.25,
+      -66.5
+    ],
+    "North Korea": [
+      40,
+      127
+    ],
+    "Portugal": [
+      39.5,
+      -8
+    ],
+    "Paraguay": [
+      -23,
+      -58
+    ],
+    "Palestine": [
+      31.9,
+      35.2
+    ],
+    "French Polynesia": [
+      -15,
+      -140
+    ],
+    "Qatar": [
+      25.5,
+      51.25
+    ],
+    "Réunion": [
+      -21.15,
+      55.5
+    ],
+    "Romania": [
+      46,
+      25
+    ],
+    "Russia": [
+      60,
+      100
+    ],
+    "Rwanda": [
+      -2,
+      30
+    ],
+    "Saudi Arabia": [
+      25,
+      45
+    ],
+    "Sudan": [
+      15,
+      30
+    ],
+    "Senegal": [
+      14,
+      -14
+    ],
+    "Singapore": [
+      1.36666666,
+      103.8
+    ],
+    "South Georgia": [
+      -54.5,
+      -37
+    ],
+    "Svalbard and Jan Mayen": [
+      78,
+      20
+    ],
+    "Solomon Islands": [
+      -8,
+      159
+    ],
+    "Sierra Leone": [
+      8.5,
+      -11.5
+    ],
+    "El Salvador": [
+      13.83333333,
+      -88.91666666
+    ],
+    "San Marino": [
+      43.76666666,
+      12.41666666
+    ],
+    "Somalia": [
+      10,
+      49
+    ],
+    "Saint Pierre and Miquelon": [
+      46.83333333,
+      -56.33333333
+    ],
+    "Serbia": [
+      44,
+      21
+    ],
+    "South Sudan": [
+      7,
+      30
+    ],
+    "São Tomé and Príncipe": [
+      1,
+      7
+    ],
+    "Suriname": [
+      4,
+      -56
+    ],
+    "Slovakia": [
+      48.66666666,
+      19.5
+    ],
+    "Slovenia": [
+      46.11666666,
+      14.81666666
+    ],
+    "Sweden": [
+      62,
+      15
+    ],
+    "Eswatini": [
+      -26.5,
+      31.5
+    ],
+    "Sint Maarten": [
+      18.033333,
+      -63.05
+    ],
+    "Seychelles": [
+      -4.58333333,
+      55.66666666
+    ],
+    "Syria": [
+      35,
+      38
+    ],
+    "Turks and Caicos Islands": [
+      21.75,
+      -71.58333333
+    ],
+    "Chad": [
+      15,
+      19
+    ],
+    "Togo": [
+      8,
+      1.16666666
+    ],
+    "Thailand": [
+      15,
+      100
+    ],
+    "Tajikistan": [
+      39,
+      71
+    ],
+    "Tokelau": [
+      -9,
+      -172
+    ],
+    "Turkmenistan": [
+      40,
+      60
+    ],
+    "Timor-Leste": [
+      -8.83333333,
+      125.91666666
+    ],
+    "Tonga": [
+      -20,
+      -175
+    ],
+    "Trinidad and Tobago": [
+      11,
+      -61
+    ],
+    "Tunisia": [
+      34,
+      9
+    ],
+    "Türkiye": [
+      39,
+      35
+    ],
+    "Tuvalu": [
+      -8,
+      178
+    ],
+    "Taiwan": [
+      23.5,
+      121
+    ],
+    "Tanzania": [
+      -6,
+      35
+    ],
+    "Uganda": [
+      1,
+      32
+    ],
+    "Ukraine": [
+      49,
+      32
+    ],
+    "United States Minor Outlying Islands": [
+      19.3,
+      166.633333
+    ],
+    "Uruguay": [
+      -33,
+      -56
+    ],
+    "United States": [
+      38,
+      -97
+    ],
+    "Uzbekistan": [
+      41,
+      64
+    ],
+    "Vatican City": [
+      41.9,
+      12.45
+    ],
+    "Saint Vincent and the Grenadines": [
+      13.25,
+      -61.2
+    ],
+    "Venezuela": [
+      8,
+      -66
+    ],
+    "British Virgin Islands": [
+      18.431383,
+      -64.62305
+    ],
+    "United States Virgin Islands": [
+      18.35,
+      -64.933333
+    ],
+    "Vietnam": [
+      16.16666666,
+      107.83333333
+    ],
+    "Vanuatu": [
+      -16,
+      167
+    ],
+    "Wallis and Futuna": [
+      -13.3,
+      -176.2
+    ],
+    "Samoa": [
+      -13.58333333,
+      -172.33333333
+    ],
+    "Yemen": [
+      15,
+      48
+    ],
+    "South Africa": [
+      -29,
+      24
+    ],
+    "Zambia": [
+      -15,
+      30
+    ],
+    "Zimbabwe": [
+      -20,
+      30
+    ]
+  },
+  "countryMeta": {
+    "United States of America": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "US",
+      "canonical": "United States"
+    },
+    "United Kingdom of Great Britain and Northern Ireland": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "GB",
+      "canonical": "United Kingdom"
+    },
+    "Russian Federation": {
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "iso2": "RU",
+      "canonical": "Russia"
+    },
+    "Viet Nam": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "VN",
+      "canonical": "Vietnam"
+    },
+    "United Republic of Tanzania": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "TZ",
+      "canonical": "Tanzania"
+    },
+    "Brunei Darussalam": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "BN",
+      "canonical": "Brunei"
+    },
+    "Lao People's Democratic Republic": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "LA",
+      "canonical": "Laos"
+    },
+    "Cote d'Ivoire": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "CI",
+      "canonical": "Ivory Coast"
+    },
+    "Swaziland": {
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "iso2": "SZ",
+      "canonical": "Eswatini"
+    },
+    "Macedonia": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "MK",
+      "canonical": "North Macedonia"
+    },
+    "Korea": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "KR",
+      "canonical": "South Korea"
+    },
+    "Congo": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "CG",
+      "canonical": "Congo"
+    },
+    "AN": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "CW",
+      "canonical": "Curaçao"
+    },
+    "Turkey": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "TR",
+      "canonical": "Türkiye"
+    },
+    "United States of America)": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "US",
+      "canonical": "United States"
+    },
+    "Aruba": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "AW",
+      "canonical": "Aruba"
+    },
+    "Afghanistan": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "AF",
+      "canonical": "Afghanistan"
+    },
+    "Angola": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "AO",
+      "canonical": "Angola"
+    },
+    "Anguilla": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "AI",
+      "canonical": "Anguilla"
+    },
+    "Åland Islands": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "AX",
+      "canonical": "Åland Islands"
+    },
+    "Albania": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "AL",
+      "canonical": "Albania"
+    },
+    "Andorra": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "AD",
+      "canonical": "Andorra"
+    },
+    "United Arab Emirates": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "AE",
+      "canonical": "United Arab Emirates"
+    },
+    "Argentina": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "AR",
+      "canonical": "Argentina"
+    },
+    "Armenia": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "AM",
+      "canonical": "Armenia"
+    },
+    "American Samoa": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "AS",
+      "canonical": "American Samoa"
+    },
+    "Antarctica": {
+      "region": "Antarctic",
+      "subregion": "",
+      "iso2": "AQ",
+      "canonical": "Antarctica"
+    },
+    "French Southern and Antarctic Lands": {
+      "region": "Antarctic",
+      "subregion": "",
+      "iso2": "TF",
+      "canonical": "French Southern and Antarctic Lands"
+    },
+    "Antigua and Barbuda": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "AG",
+      "canonical": "Antigua and Barbuda"
+    },
+    "Australia": {
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "iso2": "AU",
+      "canonical": "Australia"
+    },
+    "Austria": {
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "iso2": "AT",
+      "canonical": "Austria"
+    },
+    "Azerbaijan": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "AZ",
+      "canonical": "Azerbaijan"
+    },
+    "Burundi": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "BI",
+      "canonical": "Burundi"
+    },
+    "Belgium": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "BE",
+      "canonical": "Belgium"
+    },
+    "Benin": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "BJ",
+      "canonical": "Benin"
+    },
+    "Burkina Faso": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "BF",
+      "canonical": "Burkina Faso"
+    },
+    "Bangladesh": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "BD",
+      "canonical": "Bangladesh"
+    },
+    "Bulgaria": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "BG",
+      "canonical": "Bulgaria"
+    },
+    "Bahrain": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "BH",
+      "canonical": "Bahrain"
+    },
+    "Bahamas": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "BS",
+      "canonical": "Bahamas"
+    },
+    "Bosnia and Herzegovina": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "BA",
+      "canonical": "Bosnia and Herzegovina"
+    },
+    "Saint Barthélemy": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "BL",
+      "canonical": "Saint Barthélemy"
+    },
+    "Saint Helena, Ascension and Tristan da Cunha": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "SH",
+      "canonical": "Saint Helena, Ascension and Tristan da Cunha"
+    },
+    "Belarus": {
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "iso2": "BY",
+      "canonical": "Belarus"
+    },
+    "Belize": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "BZ",
+      "canonical": "Belize"
+    },
+    "Bermuda": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "BM",
+      "canonical": "Bermuda"
+    },
+    "Bolivia": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "BO",
+      "canonical": "Bolivia"
+    },
+    "Caribbean Netherlands": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "BQ",
+      "canonical": "Caribbean Netherlands"
+    },
+    "Brazil": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "BR",
+      "canonical": "Brazil"
+    },
+    "Barbados": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "BB",
+      "canonical": "Barbados"
+    },
+    "Brunei": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "BN",
+      "canonical": "Brunei"
+    },
+    "Bhutan": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "BT",
+      "canonical": "Bhutan"
+    },
+    "Bouvet Island": {
+      "region": "Antarctic",
+      "subregion": "",
+      "iso2": "BV",
+      "canonical": "Bouvet Island"
+    },
+    "Botswana": {
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "iso2": "BW",
+      "canonical": "Botswana"
+    },
+    "Central African Republic": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "CF",
+      "canonical": "Central African Republic"
+    },
+    "Canada": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "CA",
+      "canonical": "Canada"
+    },
+    "Cocos (Keeling) Islands": {
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "iso2": "CC",
+      "canonical": "Cocos (Keeling) Islands"
+    },
+    "Switzerland": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "CH",
+      "canonical": "Switzerland"
+    },
+    "Chile": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "CL",
+      "canonical": "Chile"
+    },
+    "China": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "CN",
+      "canonical": "China"
+    },
+    "Ivory Coast": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "CI",
+      "canonical": "Ivory Coast"
+    },
+    "Cameroon": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "CM",
+      "canonical": "Cameroon"
+    },
+    "DR Congo": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "CD",
+      "canonical": "DR Congo"
+    },
+    "Cook Islands": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "CK",
+      "canonical": "Cook Islands"
+    },
+    "Colombia": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "CO",
+      "canonical": "Colombia"
+    },
+    "Comoros": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "KM",
+      "canonical": "Comoros"
+    },
+    "Cape Verde": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "CV",
+      "canonical": "Cape Verde"
+    },
+    "Costa Rica": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "CR",
+      "canonical": "Costa Rica"
+    },
+    "Cuba": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "CU",
+      "canonical": "Cuba"
+    },
+    "Curaçao": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "CW",
+      "canonical": "Curaçao"
+    },
+    "Christmas Island": {
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "iso2": "CX",
+      "canonical": "Christmas Island"
+    },
+    "Cayman Islands": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "KY",
+      "canonical": "Cayman Islands"
+    },
+    "Cyprus": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "CY",
+      "canonical": "Cyprus"
+    },
+    "Czechia": {
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "iso2": "CZ",
+      "canonical": "Czechia"
+    },
+    "Germany": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "DE",
+      "canonical": "Germany"
+    },
+    "Djibouti": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "DJ",
+      "canonical": "Djibouti"
+    },
+    "Dominica": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "DM",
+      "canonical": "Dominica"
+    },
+    "Denmark": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "DK",
+      "canonical": "Denmark"
+    },
+    "Dominican Republic": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "DO",
+      "canonical": "Dominican Republic"
+    },
+    "Algeria": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "DZ",
+      "canonical": "Algeria"
+    },
+    "Ecuador": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "EC",
+      "canonical": "Ecuador"
+    },
+    "Egypt": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "EG",
+      "canonical": "Egypt"
+    },
+    "Eritrea": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "ER",
+      "canonical": "Eritrea"
+    },
+    "Western Sahara": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "EH",
+      "canonical": "Western Sahara"
+    },
+    "Spain": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "ES",
+      "canonical": "Spain"
+    },
+    "Estonia": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "EE",
+      "canonical": "Estonia"
+    },
+    "Ethiopia": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "ET",
+      "canonical": "Ethiopia"
+    },
+    "Finland": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "FI",
+      "canonical": "Finland"
+    },
+    "Fiji": {
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "iso2": "FJ",
+      "canonical": "Fiji"
+    },
+    "Falkland Islands": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "FK",
+      "canonical": "Falkland Islands"
+    },
+    "France": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "FR",
+      "canonical": "France"
+    },
+    "Faroe Islands": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "FO",
+      "canonical": "Faroe Islands"
+    },
+    "Micronesia": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "FM",
+      "canonical": "Micronesia"
+    },
+    "Gabon": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "GA",
+      "canonical": "Gabon"
+    },
+    "United Kingdom": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "GB",
+      "canonical": "United Kingdom"
+    },
+    "Georgia": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "GE",
+      "canonical": "Georgia"
+    },
+    "Guernsey": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "GG",
+      "canonical": "Guernsey"
+    },
+    "Ghana": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "GH",
+      "canonical": "Ghana"
+    },
+    "Gibraltar": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "GI",
+      "canonical": "Gibraltar"
+    },
+    "Guinea": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "GN",
+      "canonical": "Guinea"
+    },
+    "Guadeloupe": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "GP",
+      "canonical": "Guadeloupe"
+    },
+    "Gambia": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "GM",
+      "canonical": "Gambia"
+    },
+    "Guinea-Bissau": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "GW",
+      "canonical": "Guinea-Bissau"
+    },
+    "Equatorial Guinea": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "GQ",
+      "canonical": "Equatorial Guinea"
+    },
+    "Greece": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "GR",
+      "canonical": "Greece"
+    },
+    "Grenada": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "GD",
+      "canonical": "Grenada"
+    },
+    "Greenland": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "GL",
+      "canonical": "Greenland"
+    },
+    "Guatemala": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "GT",
+      "canonical": "Guatemala"
+    },
+    "French Guiana": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "GF",
+      "canonical": "French Guiana"
+    },
+    "Guam": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "GU",
+      "canonical": "Guam"
+    },
+    "Guyana": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "GY",
+      "canonical": "Guyana"
+    },
+    "Hong Kong": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "HK",
+      "canonical": "Hong Kong"
+    },
+    "Heard Island and McDonald Islands": {
+      "region": "Antarctic",
+      "subregion": "",
+      "iso2": "HM",
+      "canonical": "Heard Island and McDonald Islands"
+    },
+    "Honduras": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "HN",
+      "canonical": "Honduras"
+    },
+    "Croatia": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "HR",
+      "canonical": "Croatia"
+    },
+    "Haiti": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "HT",
+      "canonical": "Haiti"
+    },
+    "Hungary": {
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "iso2": "HU",
+      "canonical": "Hungary"
+    },
+    "Indonesia": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "ID",
+      "canonical": "Indonesia"
+    },
+    "Isle of Man": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "IM",
+      "canonical": "Isle of Man"
+    },
+    "India": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "IN",
+      "canonical": "India"
+    },
+    "British Indian Ocean Territory": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "IO",
+      "canonical": "British Indian Ocean Territory"
+    },
+    "Ireland": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "IE",
+      "canonical": "Ireland"
+    },
+    "Iran": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "IR",
+      "canonical": "Iran"
+    },
+    "Iraq": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "IQ",
+      "canonical": "Iraq"
+    },
+    "Iceland": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "IS",
+      "canonical": "Iceland"
+    },
+    "Israel": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "IL",
+      "canonical": "Israel"
+    },
+    "Italy": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "IT",
+      "canonical": "Italy"
+    },
+    "Jamaica": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "JM",
+      "canonical": "Jamaica"
+    },
+    "Jersey": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "JE",
+      "canonical": "Jersey"
+    },
+    "Jordan": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "JO",
+      "canonical": "Jordan"
+    },
+    "Japan": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "JP",
+      "canonical": "Japan"
+    },
+    "Kazakhstan": {
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "iso2": "KZ",
+      "canonical": "Kazakhstan"
+    },
+    "Kenya": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "KE",
+      "canonical": "Kenya"
+    },
+    "Kyrgyzstan": {
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "iso2": "KG",
+      "canonical": "Kyrgyzstan"
+    },
+    "Cambodia": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "KH",
+      "canonical": "Cambodia"
+    },
+    "Kiribati": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "KI",
+      "canonical": "Kiribati"
+    },
+    "Saint Kitts and Nevis": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "KN",
+      "canonical": "Saint Kitts and Nevis"
+    },
+    "South Korea": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "KR",
+      "canonical": "South Korea"
+    },
+    "Kosovo": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "XK",
+      "canonical": "Kosovo"
+    },
+    "Kuwait": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "KW",
+      "canonical": "Kuwait"
+    },
+    "Laos": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "LA",
+      "canonical": "Laos"
+    },
+    "Lebanon": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "LB",
+      "canonical": "Lebanon"
+    },
+    "Liberia": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "LR",
+      "canonical": "Liberia"
+    },
+    "Libya": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "LY",
+      "canonical": "Libya"
+    },
+    "Saint Lucia": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "LC",
+      "canonical": "Saint Lucia"
+    },
+    "Liechtenstein": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "LI",
+      "canonical": "Liechtenstein"
+    },
+    "Sri Lanka": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "LK",
+      "canonical": "Sri Lanka"
+    },
+    "Lesotho": {
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "iso2": "LS",
+      "canonical": "Lesotho"
+    },
+    "Lithuania": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "LT",
+      "canonical": "Lithuania"
+    },
+    "Luxembourg": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "LU",
+      "canonical": "Luxembourg"
+    },
+    "Latvia": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "LV",
+      "canonical": "Latvia"
+    },
+    "Macau": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "MO",
+      "canonical": "Macau"
+    },
+    "Saint Martin": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "MF",
+      "canonical": "Saint Martin"
+    },
+    "Morocco": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "MA",
+      "canonical": "Morocco"
+    },
+    "Monaco": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "MC",
+      "canonical": "Monaco"
+    },
+    "Moldova": {
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "iso2": "MD",
+      "canonical": "Moldova"
+    },
+    "Madagascar": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "MG",
+      "canonical": "Madagascar"
+    },
+    "Maldives": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "MV",
+      "canonical": "Maldives"
+    },
+    "Mexico": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "MX",
+      "canonical": "Mexico"
+    },
+    "Marshall Islands": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "MH",
+      "canonical": "Marshall Islands"
+    },
+    "North Macedonia": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "MK",
+      "canonical": "North Macedonia"
+    },
+    "Mali": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "ML",
+      "canonical": "Mali"
+    },
+    "Malta": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "MT",
+      "canonical": "Malta"
+    },
+    "Myanmar": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "MM",
+      "canonical": "Myanmar"
+    },
+    "Montenegro": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "ME",
+      "canonical": "Montenegro"
+    },
+    "Mongolia": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "MN",
+      "canonical": "Mongolia"
+    },
+    "Northern Mariana Islands": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "MP",
+      "canonical": "Northern Mariana Islands"
+    },
+    "Mozambique": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "MZ",
+      "canonical": "Mozambique"
+    },
+    "Mauritania": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "MR",
+      "canonical": "Mauritania"
+    },
+    "Montserrat": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "MS",
+      "canonical": "Montserrat"
+    },
+    "Martinique": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "MQ",
+      "canonical": "Martinique"
+    },
+    "Mauritius": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "MU",
+      "canonical": "Mauritius"
+    },
+    "Malawi": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "MW",
+      "canonical": "Malawi"
+    },
+    "Malaysia": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "MY",
+      "canonical": "Malaysia"
+    },
+    "Mayotte": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "YT",
+      "canonical": "Mayotte"
+    },
+    "Namibia": {
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "iso2": "NA",
+      "canonical": "Namibia"
+    },
+    "New Caledonia": {
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "iso2": "NC",
+      "canonical": "New Caledonia"
+    },
+    "Niger": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "NE",
+      "canonical": "Niger"
+    },
+    "Norfolk Island": {
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "iso2": "NF",
+      "canonical": "Norfolk Island"
+    },
+    "Nigeria": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "NG",
+      "canonical": "Nigeria"
+    },
+    "Nicaragua": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "NI",
+      "canonical": "Nicaragua"
+    },
+    "Niue": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "NU",
+      "canonical": "Niue"
+    },
+    "Netherlands": {
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "iso2": "NL",
+      "canonical": "Netherlands"
+    },
+    "Norway": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "NO",
+      "canonical": "Norway"
+    },
+    "Nepal": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "NP",
+      "canonical": "Nepal"
+    },
+    "Nauru": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "NR",
+      "canonical": "Nauru"
+    },
+    "New Zealand": {
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "iso2": "NZ",
+      "canonical": "New Zealand"
+    },
+    "Oman": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "OM",
+      "canonical": "Oman"
+    },
+    "Pakistan": {
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "iso2": "PK",
+      "canonical": "Pakistan"
+    },
+    "Panama": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "PA",
+      "canonical": "Panama"
+    },
+    "Pitcairn Islands": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "PN",
+      "canonical": "Pitcairn Islands"
+    },
+    "Peru": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "PE",
+      "canonical": "Peru"
+    },
+    "Philippines": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "PH",
+      "canonical": "Philippines"
+    },
+    "Palau": {
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "iso2": "PW",
+      "canonical": "Palau"
+    },
+    "Papua New Guinea": {
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "iso2": "PG",
+      "canonical": "Papua New Guinea"
+    },
+    "Poland": {
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "iso2": "PL",
+      "canonical": "Poland"
+    },
+    "Puerto Rico": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "PR",
+      "canonical": "Puerto Rico"
+    },
+    "North Korea": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "KP",
+      "canonical": "North Korea"
+    },
+    "Portugal": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "PT",
+      "canonical": "Portugal"
+    },
+    "Paraguay": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "PY",
+      "canonical": "Paraguay"
+    },
+    "Palestine": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "PS",
+      "canonical": "Palestine"
+    },
+    "French Polynesia": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "PF",
+      "canonical": "French Polynesia"
+    },
+    "Qatar": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "QA",
+      "canonical": "Qatar"
+    },
+    "Réunion": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "RE",
+      "canonical": "Réunion"
+    },
+    "Romania": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "RO",
+      "canonical": "Romania"
+    },
+    "Russia": {
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "iso2": "RU",
+      "canonical": "Russia"
+    },
+    "Rwanda": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "RW",
+      "canonical": "Rwanda"
+    },
+    "Saudi Arabia": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "SA",
+      "canonical": "Saudi Arabia"
+    },
+    "Sudan": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "SD",
+      "canonical": "Sudan"
+    },
+    "Senegal": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "SN",
+      "canonical": "Senegal"
+    },
+    "Singapore": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "SG",
+      "canonical": "Singapore"
+    },
+    "South Georgia": {
+      "region": "Antarctic",
+      "subregion": "",
+      "iso2": "GS",
+      "canonical": "South Georgia"
+    },
+    "Svalbard and Jan Mayen": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "SJ",
+      "canonical": "Svalbard and Jan Mayen"
+    },
+    "Solomon Islands": {
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "iso2": "SB",
+      "canonical": "Solomon Islands"
+    },
+    "Sierra Leone": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "SL",
+      "canonical": "Sierra Leone"
+    },
+    "El Salvador": {
+      "region": "Americas",
+      "subregion": "Central America",
+      "iso2": "SV",
+      "canonical": "El Salvador"
+    },
+    "San Marino": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "SM",
+      "canonical": "San Marino"
+    },
+    "Somalia": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "SO",
+      "canonical": "Somalia"
+    },
+    "Saint Pierre and Miquelon": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "PM",
+      "canonical": "Saint Pierre and Miquelon"
+    },
+    "Serbia": {
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "iso2": "RS",
+      "canonical": "Serbia"
+    },
+    "South Sudan": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "SS",
+      "canonical": "South Sudan"
+    },
+    "São Tomé and Príncipe": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "ST",
+      "canonical": "São Tomé and Príncipe"
+    },
+    "Suriname": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "SR",
+      "canonical": "Suriname"
+    },
+    "Slovakia": {
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "iso2": "SK",
+      "canonical": "Slovakia"
+    },
+    "Slovenia": {
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "iso2": "SI",
+      "canonical": "Slovenia"
+    },
+    "Sweden": {
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "iso2": "SE",
+      "canonical": "Sweden"
+    },
+    "Eswatini": {
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "iso2": "SZ",
+      "canonical": "Eswatini"
+    },
+    "Sint Maarten": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "SX",
+      "canonical": "Sint Maarten"
+    },
+    "Seychelles": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "SC",
+      "canonical": "Seychelles"
+    },
+    "Syria": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "SY",
+      "canonical": "Syria"
+    },
+    "Turks and Caicos Islands": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "TC",
+      "canonical": "Turks and Caicos Islands"
+    },
+    "Chad": {
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "iso2": "TD",
+      "canonical": "Chad"
+    },
+    "Togo": {
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "iso2": "TG",
+      "canonical": "Togo"
+    },
+    "Thailand": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "TH",
+      "canonical": "Thailand"
+    },
+    "Tajikistan": {
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "iso2": "TJ",
+      "canonical": "Tajikistan"
+    },
+    "Tokelau": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "TK",
+      "canonical": "Tokelau"
+    },
+    "Turkmenistan": {
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "iso2": "TM",
+      "canonical": "Turkmenistan"
+    },
+    "Timor-Leste": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "TL",
+      "canonical": "Timor-Leste"
+    },
+    "Tonga": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "TO",
+      "canonical": "Tonga"
+    },
+    "Trinidad and Tobago": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "TT",
+      "canonical": "Trinidad and Tobago"
+    },
+    "Tunisia": {
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "iso2": "TN",
+      "canonical": "Tunisia"
+    },
+    "Türkiye": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "TR",
+      "canonical": "Türkiye"
+    },
+    "Tuvalu": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "TV",
+      "canonical": "Tuvalu"
+    },
+    "Taiwan": {
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "iso2": "TW",
+      "canonical": "Taiwan"
+    },
+    "Tanzania": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "TZ",
+      "canonical": "Tanzania"
+    },
+    "Uganda": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "UG",
+      "canonical": "Uganda"
+    },
+    "Ukraine": {
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "iso2": "UA",
+      "canonical": "Ukraine"
+    },
+    "United States Minor Outlying Islands": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "UM",
+      "canonical": "United States Minor Outlying Islands"
+    },
+    "Uruguay": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "UY",
+      "canonical": "Uruguay"
+    },
+    "United States": {
+      "region": "Americas",
+      "subregion": "North America",
+      "iso2": "US",
+      "canonical": "United States"
+    },
+    "Uzbekistan": {
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "iso2": "UZ",
+      "canonical": "Uzbekistan"
+    },
+    "Vatican City": {
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "iso2": "VA",
+      "canonical": "Vatican City"
+    },
+    "Saint Vincent and the Grenadines": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "VC",
+      "canonical": "Saint Vincent and the Grenadines"
+    },
+    "Venezuela": {
+      "region": "Americas",
+      "subregion": "South America",
+      "iso2": "VE",
+      "canonical": "Venezuela"
+    },
+    "British Virgin Islands": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "VG",
+      "canonical": "British Virgin Islands"
+    },
+    "United States Virgin Islands": {
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "iso2": "VI",
+      "canonical": "United States Virgin Islands"
+    },
+    "Vietnam": {
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "iso2": "VN",
+      "canonical": "Vietnam"
+    },
+    "Vanuatu": {
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "iso2": "VU",
+      "canonical": "Vanuatu"
+    },
+    "Wallis and Futuna": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "WF",
+      "canonical": "Wallis and Futuna"
+    },
+    "Samoa": {
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "iso2": "WS",
+      "canonical": "Samoa"
+    },
+    "Yemen": {
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "iso2": "YE",
+      "canonical": "Yemen"
+    },
+    "South Africa": {
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "iso2": "ZA",
+      "canonical": "South Africa"
+    },
+    "Zambia": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "ZM",
+      "canonical": "Zambia"
+    },
+    "Zimbabwe": {
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "iso2": "ZW",
+      "canonical": "Zimbabwe"
+    }
+  },
+  "regions": {
+    "N Australia": [
+      -15.5,
+      133
+    ],
+    "S Australia": [
+      -35,
+      138.5
+    ],
+    "E Australia": [
+      -30,
+      150
+    ],
+    "W Australia": [
+      -25,
+      120
+    ],
+    "SW Australia": [
+      -33.5,
+      117
+    ],
+    "NW Australia": [
+      -20,
+      122
+    ],
+    "NE Australia": [
+      -20,
+      146
+    ],
+    "SE Australia": [
+      -36,
+      147
+    ],
+    "N & E Australia": [
+      -18,
+      140
+    ],
+    "N United States of America": [
+      45,
+      -100
+    ],
+    "S United States of America": [
+      32,
+      -90
+    ],
+    "E United States of America": [
+      38,
+      -78
+    ],
+    "W United States of America": [
+      40,
+      -120
+    ],
+    "NE United States of America": [
+      43,
+      -73
+    ],
+    "NW United States of America": [
+      45,
+      -120
+    ],
+    "SE United States of America": [
+      33,
+      -84
+    ],
+    "W & N United States of America": [
+      44,
+      -113
+    ],
+    "N & E United States of America": [
+      43,
+      -75
+    ],
+    "W & C United States of America": [
+      39,
+      -100
+    ],
+    "W Russian Federation": [
+      58,
+      40
+    ],
+    "W & C Russian Federation": [
+      60,
+      80
+    ],
+    "N China": [
+      40,
+      110
+    ],
+    "S China": [
+      23,
+      110
+    ],
+    "N India": [
+      28,
+      78
+    ],
+    "S India": [
+      12,
+      78
+    ],
+    "NE India": [
+      26,
+      94
+    ],
+    "N Brazil": [
+      -3,
+      -60
+    ],
+    "S Canada": [
+      45,
+      -75
+    ],
+    "SE Canada": [
+      45,
+      -65
+    ],
+    "S Chile": [
+      -45,
+      -72
+    ],
+    "S Argentina": [
+      -45,
+      -68
+    ],
+    "N Philippines": [
+      18,
+      121
+    ],
+    "C Philippines": [
+      12,
+      123
+    ],
+    "S Philippines": [
+      7,
+      124
+    ],
+    "N Spain": [
+      43,
+      -4
+    ],
+    "S Poland": [
+      50,
+      20
+    ],
+    "N Croatia": [
+      46,
+      16
+    ],
+    "N Myanmar": [
+      25,
+      97
+    ],
+    "NW Thailand": [
+      18,
+      98
+    ],
+    "E Kazakhstan": [
+      49,
+      80
+    ],
+    "N Zambia": [
+      -10,
+      30
+    ],
+    "NW Mozambique": [
+      -12,
+      35
+    ]
+  },
+  "provinces": {
+    "Southwest Australia": [
+      -33,
+      117
+    ],
+    "North Australia": [
+      -15,
+      134
+    ],
+    "Guayana Highlands": [
+      5.5,
+      -61
+    ],
+    "Central Brazilian Uplands": [
+      -15,
+      -48
+    ],
+    "Mexican Highlands": [
+      22,
+      -102
+    ],
+    "Amazonia": [
+      -5,
+      -63
+    ],
+    "Borneo": [
+      1,
+      114
+    ],
+    "Zambezi": [
+      -15,
+      27
+    ],
+    "Sumatra": [
+      0,
+      102
+    ],
+    "Central America": [
+      14,
+      -86
+    ],
+    "Philippines": [
+      12,
+      122
+    ],
+    "West Indies": [
+      18,
+      -74
+    ],
+    "Queensland": [
+      -22,
+      145
+    ],
+    "Parana": [
+      -25,
+      -51
+    ],
+    "Atlantic and Gulf Coastal Plain": [
+      32,
+      -85
+    ],
+    "Upper Guinea": [
+      10,
+      -5
+    ],
+    "Congo": [
+      -2,
+      23
+    ],
+    "Moluccas": [
+      -3,
+      128
+    ],
+    "Southeast Australia": [
+      -35,
+      148
+    ],
+    "Nigeria-Cameroon": [
+      7,
+      11
+    ],
+    "Atlantic Brazil": [
+      -15,
+      -39
+    ],
+    "Malabar": [
+      13,
+      75
+    ],
+    "Eastern Madagascar": [
+      -19,
+      49
+    ],
+    "Andamanes": [
+      10,
+      94
+    ],
+    "South Indochina": [
+      10,
+      105
+    ],
+    "Malaya": [
+      4,
+      102
+    ],
+    "Papua": [
+      -6,
+      143
+    ],
+    "Japan-Korea": [
+      36,
+      138
+    ],
+    "South Africa Cape": [
+      -33,
+      20
+    ],
+    "Thailand": [
+      15,
+      101
+    ],
+    "Deccan": [
+      18,
+      77
+    ],
+    "Annam": [
+      16,
+      107
+    ],
+    "Pampas": [
+      -35,
+      -62
+    ],
+    "Appalachians": [
+      37,
+      -82
+    ],
+    "Celebes": [
+      -2,
+      121
+    ],
+    "Northern Andes": [
+      2,
+      -76
+    ],
+    "Central Andes": [
+      -15,
+      -70
+    ],
+    "Canada incl. Great Lakes": [
+      47,
+      -84
+    ],
+    "Central Europe": [
+      49,
+      12
+    ],
+    "Sudan": [
+      15,
+      30
+    ],
+    "Ceylon/Sri Lanka": [
+      7,
+      81
+    ],
+    "Tibet": [
+      32,
+      88
+    ],
+    "South China": [
+      23,
+      112
+    ],
+    "Atlantic Europe": [
+      48,
+      -3
+    ],
+    "Tasmania": [
+      -42,
+      147
+    ],
+    "Taiwan": [
+      23.7,
+      121
+    ],
+    "Southeastern China": [
+      26,
+      117
+    ],
+    "Khasi-Manipur": [
+      25,
+      93
+    ],
+    "Tongoland-Pondoland": [
+      -28,
+      31
+    ],
+    "Bengal": [
+      23,
+      89
+    ],
+    "South Malesia": [
+      0,
+      115
+    ],
+    "South Burma": [
+      16,
+      96
+    ],
+    "Eastern Himalaya": [
+      27,
+      89
+    ],
+    "North Indochina": [
+      20,
+      102
+    ],
+    "Central China": [
+      30,
+      111
+    ],
+    "Somalia-Ethiopia": [
+      8,
+      42
+    ],
+    "Llanos": [
+      7,
+      -68
+    ],
+    "Northern Europe": [
+      58,
+      15
+    ],
+    "Upper Gangetic Plain": [
+      27,
+      80
+    ],
+    "Arctic": [
+      70,
+      0
+    ],
+    "Sakhalin-Hokkaido": [
+      47,
+      143
+    ],
+    "Sikang-Yunnan": [
+      27,
+      100
+    ],
+    "Vancouver": [
+      49.5,
+      -123
+    ],
+    "North American Prairies": [
+      42,
+      -100
+    ],
+    "Caatingas": [
+      -8,
+      -40
+    ],
+    "Northern Burma": [
+      24,
+      96
+    ],
+    "Eastern Europe": [
+      50,
+      30
+    ],
+    "Altai-Sayan": [
+      50,
+      90
+    ],
+    "Central Siberia": [
+      62,
+      100
+    ],
+    "Namaland": [
+      -27,
+      18
+    ],
+    "Manchuria": [
+      45,
+      128
+    ],
+    "New Zealand North Is.": [
+      -38,
+      175
+    ],
+    "Micronesia": [
+      7,
+      150
+    ],
+    "Illyria or Balkan": [
+      44,
+      18
+    ],
+    "Western Siberia": [
+      58,
+      70
+    ],
+    "Transbaikalia": [
+      52,
+      110
+    ],
+    "Northeastern Siberia": [
+      66,
+      150
+    ],
+    "Okhotsk-Kamchatka": [
+      58,
+      160
+    ],
+    "Southwestern Mediterranean": [
+      35,
+      0
+    ],
+    "Chaco": [
+      -25,
+      -60
+    ],
+    "Pontus Euxinus": [
+      43,
+      34
+    ],
+    "New Zealand N South Is.": [
+      -41,
+      173
+    ],
+    "New Zealand S South Is.": [
+      -45,
+      169
+    ],
+    "Iberia": [
+      40,
+      -4
+    ],
+    "Liguria-Tyrrhenia": [
+      43,
+      10
+    ],
+    "East Mediterranean": [
+      35,
+      30
+    ],
+    "New Caledonia": [
+      -21,
+      165
+    ],
+    "Sahel": [
+      15,
+      0
+    ],
+    "Northern China": [
+      38,
+      110
+    ],
+    "Rocky Mountains": [
+      40,
+      -108
+    ],
+    "Caucasus": [
+      42,
+      44
+    ],
+    "Adriatic": [
+      43,
+      16
+    ],
+    "Zanzibar-Inhambane": [
+      -8,
+      39
+    ],
+    "Great Basin": [
+      40,
+      -117
+    ],
+    "Sindia": [
+      26,
+      69
+    ],
+    "South Mediterranean": [
+      33,
+      10
+    ],
+    "California": [
+      37,
+      -120
+    ],
+    "Turkestan": [
+      42,
+      68
+    ],
+    "South Africa Cape (Cape)": [
+      -33,
+      20
+    ],
+    "Tongoland-Pondoland (Maputaland)": [
+      -28,
+      31
+    ],
+    "Amazônia": [
+      -5,
+      -63
+    ]
+  }
+}

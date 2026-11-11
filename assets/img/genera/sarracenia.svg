@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="North American pitcher plant (Sarracenia) illustration">
+<circle cx="200" cy="148" r="124" fill="#7A3E52" opacity=".065"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="198" cy="258" rx="104" ry="9" fill="#2f4a35" opacity=".08"/>
+     <g>
+      <path d="M150 250 C142.2 210 133.6 152 118 110 L128.4 92 C154.4 80 167.4 112 170 106 C160.4 152 155.2 210 150 250Z" fill="#d8c7a4" stroke="#2f4a35" stroke-width="1.7"/>
+      <ellipse cx="144" cy="100" rx="21.32" ry="9" fill="#7d3d44" stroke="#2f4a35" stroke-width="1.4" transform="rotate(-4 144 100)"/>
+      <path d="M118.6 112 C84.9 90 102 70 159.12 98 C154.4 104 131 106 118.6 112Z" fill="#b8cf8b" stroke="#2f4a35" stroke-width="1.5"/>
+      <path d="M138.3 220 C144.8 172 133.6 126 131 100" fill="none" stroke="#8a6a4f" stroke-width="1.1" opacity=".6"/>
+    </g>
+     <g>
+      <path d="M194 250 C185 210 186 128 168 86 L180 68 C210 56 225 88 228 82 C206 128 200 210 194 250Z" fill="#d8c7a4" stroke="#2f4a35" stroke-width="1.7"/>
+      <ellipse cx="198" cy="76" rx="24.599999999999998" ry="9" fill="#7d3d44" stroke="#2f4a35" stroke-width="1.4" transform="rotate(4 198 76)"/>
+      <path d="M167.6 88 C181.5 66 240 46 245.6 74 C210 80 183 82 167.6 88Z" fill="#b8cf8b" stroke="#2f4a35" stroke-width="1.5"/>
+      <path d="M180.5 220 C188 148 186 102 183 76" fill="none" stroke="#8a6a4f" stroke-width="1.1" opacity=".6"/>
+    </g>
+     <g>
+      <path d="M242 250 C234.5 210 240 156 225 114 L235 96 C260 84 272.5 116 275 110 C252 156 247 210 242 250Z" fill="#d8c7a4" stroke="#2f4a35" stroke-width="1.7"/>
+      <ellipse cx="250" cy="104" rx="20.5" ry="9" fill="#7d3d44" stroke="#2f4a35" stroke-width="1.4" transform="rotate(4 250 104)"/>
+      <path d="M224.2 116 C240.25 94 292 74 292 102 C260 108 237.5 110 224.2 116Z" fill="#b8cf8b" stroke="#2f4a35" stroke-width="1.5"/>
+      <path d="M230.75 220 C237 176 240 130 237.5 104" fill="none" stroke="#8a6a4f" stroke-width="1.1" opacity=".6"/>
+    </g>
+     <g>
+      <path d="M276 250 C270 210 264 190 252 148 L260 130 C280 118 290 150 292 144 C284 190 280 210 276 250Z" fill="#d8c7a4" stroke="#2f4a35" stroke-width="1.7"/>
+      <ellipse cx="272" cy="138" rx="16.4" ry="9" fill="#7d3d44" stroke="#2f4a35" stroke-width="1.4" transform="rotate(-4 272 138)"/>
+      <path d="M252.4 150 C221 128 230 108 280.4 136 C280 142 262 144 252.4 150Z" fill="#b8cf8b" stroke="#2f4a35" stroke-width="1.5"/>
+      <path d="M267 220 C272 210 264 164 262 138" fill="none" stroke="#8a6a4f" stroke-width="1.1" opacity=".6"/>
+    </g>
+     <path d="M212 250 C226 204 244 168 258 132" fill="none" stroke="#2f4a35" stroke-width="2.2" stroke-linecap="round"/>
+     <path d="M258 132 C256 116 252 106 250 96" fill="none" stroke="#2f4a35" stroke-width="1.6" stroke-linecap="round"/>
+     <g transform="translate(250 82) rotate(-12)"><ellipse cx="0" cy="-9.9" rx="5.4" ry="10.2" fill="#a34d5c" stroke="#2f4a35" stroke-width="1.15" transform="rotate(0.0)"/><ellipse cx="0" cy="-9.9" rx="5.4" ry="10.2" fill="#a34d5c" stroke="#2f4a35" stroke-width="1.15" transform="rotate(72.0)"/><ellipse cx="0" cy="-9.9" rx="5.4" ry="10.2" fill="#a34d5c" stroke="#2f4a35" stroke-width="1.15" transform="rotate(144.0)"/><ellipse cx="0" cy="-9.9" rx="5.4" ry="10.2" fill="#a34d5c" stroke="#2f4a35" stroke-width="1.15" transform="rotate(216.0)"/><ellipse cx="0" cy="-9.9" rx="5.4" ry="10.2" fill="#a34d5c" stroke="#2f4a35" stroke-width="1.15" transform="rotate(288.0)"/><circle r="3.8" fill="#e0c063" stroke="#2f4a35" stroke-width="1"/></g>
+     <path d="M242 92 C230 104 228 116 232 126" fill="none" stroke="#2f4a35" stroke-width="1.4"/>
+</g>
+</svg>

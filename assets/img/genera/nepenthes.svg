@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Tropical pitcher plant (Nepenthes) illustration">
+<circle cx="200" cy="148" r="124" fill="#A64B2A" opacity=".065"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M96 26 C150 62 168 104 202 148 C236 192 276 192 306 150" fill="none" stroke="#6d5237" stroke-width="2.6" stroke-linecap="round"/>
+     <path d="M118 40 C146 36 166 48 176 64 C154 74 132 68 118 40Z" fill="#9fbf7a" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+     <path d="M206 154 C232 148 250 158 258 176 C238 184 216 176 206 154Z" fill="#9fbf7a" stroke="#2f4a35" stroke-width="1.6" stroke-linejoin="round" opacity="1"/>
+     <path d="M176 64 C190 88 186 118 164 142" fill="none" stroke="#6b8570" stroke-width="1.2" stroke-linecap="round"/>
+     <path d="M306 150 C300 156 296 166 300 176" fill="none" stroke="#6b8570" stroke-width="1.2" stroke-linecap="round"/>
+     <path d="M202 148 C214 166 222 184 228 214" fill="none" stroke="#6b8570" stroke-width="1.2" stroke-linecap="round"/>
+     <path d="M258 176 C246 190 238 204 238 216" fill="none" stroke="#6b8570" stroke-width="1.2" stroke-linecap="round"/>
+     <g transform="translate(138 196) rotate(-8) scale(0.9)">
+      <path d="M0 -54 C-26 -44 -36 -8 -30 34 C-26 68 26 68 30 34 C36 -8 26 -44 0 -54Z" fill="#e3c9ac" stroke="#2f4a35" stroke-width="1.7"/>
+      <path d="M-30 20 C-16 14 16 14 30 20" fill="none" stroke="#2f4a35" stroke-width="1.2" opacity=".65"/>
+      <path d="M-26 -30 C-10 -36 10 -36 26 -30" fill="none" stroke="#9b5a3c" stroke-width="4.2" opacity=".65"/>
+      <ellipse cx="0" cy="-48" rx="27" ry="8" fill="#8f4a33" stroke="#2f4a35" stroke-width="1.4"/>
+      <g transform="rotate(-22 0 -48)">
+        <path d="M-24 -48 C-28 -66 -10 -77 4 -72 C20 -67 26 -54 22 -46 Z" fill="#c8875f" stroke="#2f4a35" stroke-width="1.5"/>
+      </g>
+      <path d="M-30 16 l-7 8" stroke="#9b5a3c" stroke-width="1.1"/><path d="M30 16 l7 8" stroke="#9b5a3c" stroke-width="1.1"/>
+      <g fill="#a65b3e" opacity=".65"><circle cx="-12" cy="-4" r="2"/><circle cx="8" cy="8" r="1.7"/><circle cx="16" cy="-16" r="1.5"/><circle cx="-19" cy="24" r="1.6"/><circle cx="4" cy="38" r="1.8"/></g>
+    </g><g transform="translate(228 214) rotate(7) scale(1.05)">
+      <path d="M0 -54 C-26 -44 -36 -8 -30 34 C-26 68 26 68 30 34 C36 -8 26 -44 0 -54Z" fill="#e3c9ac" stroke="#2f4a35" stroke-width="1.7"/>
+      <path d="M-30 20 C-16 14 16 14 30 20" fill="none" stroke="#2f4a35" stroke-width="1.2" opacity=".65"/>
+      <path d="M-26 -30 C-10 -36 10 -36 26 -30" fill="none" stroke="#9b5a3c" stroke-width="4.2" opacity=".65"/>
+      <ellipse cx="0" cy="-48" rx="27" ry="8" fill="#8f4a33" stroke="#2f4a35" stroke-width="1.4"/>
+      <g transform="rotate(20 0 -48)">
+        <path d="M-24 -48 C-28 -66 -10 -77 4 -72 C20 -67 26 -54 22 -46 Z" fill="#c8875f" stroke="#2f4a35" stroke-width="1.5"/>
+      </g>
+      <path d="M-30 16 l-7 8" stroke="#9b5a3c" stroke-width="1.1"/><path d="M30 16 l7 8" stroke="#9b5a3c" stroke-width="1.1"/>
+      <g fill="#a65b3e" opacity=".65"><circle cx="-12" cy="-4" r="2"/><circle cx="8" cy="8" r="1.7"/><circle cx="16" cy="-16" r="1.5"/><circle cx="-19" cy="24" r="1.6"/><circle cx="4" cy="38" r="1.8"/></g>
+    </g><g transform="translate(300 176) rotate(-12) scale(0.62)">
+      <path d="M0 -54 C-26 -44 -36 -8 -30 34 C-26 68 26 68 30 34 C36 -8 26 -44 0 -54Z" fill="#e3c9ac" stroke="#2f4a35" stroke-width="1.7"/>
+      <path d="M-30 20 C-16 14 16 14 30 20" fill="none" stroke="#2f4a35" stroke-width="1.2" opacity=".65"/>
+      <path d="M-26 -30 C-10 -36 10 -36 26 -30" fill="none" stroke="#9b5a3c" stroke-width="4.2" opacity=".65"/>
+      <ellipse cx="0" cy="-48" rx="27" ry="8" fill="#8f4a33" stroke="#2f4a35" stroke-width="1.4"/>
+      <g transform="rotate(-26 0 -48)">
+        <path d="M-24 -48 C-28 -66 -10 -77 4 -72 C20 -67 26 -54 22 -46 Z" fill="#c8875f" stroke="#2f4a35" stroke-width="1.5"/>
+      </g>
+      <path d="M-30 16 l-7 8" stroke="#9b5a3c" stroke-width="1.1"/><path d="M30 16 l7 8" stroke="#9b5a3c" stroke-width="1.1"/>
+      <g fill="#a65b3e" opacity=".65"><circle cx="-12" cy="-4" r="2"/><circle cx="8" cy="8" r="1.7"/><circle cx="16" cy="-16" r="1.5"/><circle cx="-19" cy="24" r="1.6"/><circle cx="4" cy="38" r="1.8"/></g>
+    </g><ellipse cx="215" cy="268" rx="118" ry="9" fill="#2f4a35" opacity=".08"/>
+</g>
+</svg>

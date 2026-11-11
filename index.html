@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plantivorous · Carnivorous Plant Database</title>
+  <meta name="description" content="An interactive field guide to 760 carnivorous plant taxa across 21 genera and 10 families, with native-range maps, discovery history, photographs, botanical illustrations and species-specific care.">
+  <meta name="theme-color" content="#2BA84A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plantivorous · Carnivorous Plant Database">
+  <meta property="og:description" content="760 carnivorous plant taxa, 21 genera, native-range maps, discovery stories and species-specific care.">
+  <meta property="og:image" content="assets/img/plantivorous-hero.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/noto-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/more.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/" aria-label="Plantivorous database home">
+        <img src="assets/img/plantivorous-logo.jpg" alt="Plantivorous" width="266" height="165">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-label">Plant Database</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#/database" data-nav="database">Database</a>
+        <a href="#/genera" data-nav="genera">Genera</a>
+        <a href="#/map" data-nav="map">Range map</a>
+        <a href="#/care" data-nav="care">Care guides</a>
+        <a href="#/new" data-nav="new">What's new</a>
+        <a href="#/about" data-nav="about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn search-open" type="button" data-search-open aria-label="Search the database" title="Search (press /)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        </button>
+        <a class="icon-btn fav-header" href="#/favourites" aria-label="Your favourites">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3 4.6 13a4.8 4.8 0 0 1 6.8-6.8l.6.6.6-.6A4.8 4.8 0 0 1 19.4 13Z"/></svg>
+          <span class="fav-count" id="fav-count" hidden>0</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <nav aria-label="Mobile navigation">
+        <a href="#/database" data-nav="database">Database <span>760 taxa</span></a>
+        <a href="#/genera" data-nav="genera">Genera <span>21 groups</span></a>
+        <a href="#/map" data-nav="map">Range map <span>2,743 markers</span></a>
+        <a href="#/care" data-nav="care">Care guides <span>17 profiles</span></a>
+        <a href="#/new" data-nav="new">What's new <span>9 watchlist</span></a>
+        <a href="#/favourites" data-nav="favourites">Favourites <span id="mobile-fav-count">0</span></a>
+        <a href="#/about" data-nav="about">About the database</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/plantivorous-logo.jpg" alt="Plantivorous" width="266" height="165" loading="lazy">
+        <p>A living field guide to the world's carnivorous plants — built for growers, students and the simply curious.</p>
+        <a class="footer-cta" href="#/database">Explore the database
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <a href="#/database">All species</a>
+        <a href="#/genera">Genera</a>
+        <a href="#/map">Native ranges</a>
+        <a href="#/care">Care guides</a>
+        <a href="#/favourites">Your favourites</a>
+      </div>
+      <div class="footer-col">
+        <h2>Reference</h2>
+        <a href="#/new">What's new</a>
+        <a href="#/about">About &amp; sources</a>
+        <a href="https://cpnames.carnivorousplants.org/" target="_blank" rel="noopener">ICPS names resource <span aria-hidden="true">↗</span></a>
+        <a href="https://www.carnivorousplants.org/" target="_blank" rel="noopener">International Carnivorous Plant Society <span aria-hidden="true">↗</span></a>
+        <a href="https://powo.science.kew.org/" target="_blank" rel="noopener">Plants of the World Online <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-col">
+        <h2>Monitoring</h2>
+        <p class="footer-note">Snapshot <strong id="footer-snapshot">9 Nov 2026</strong>. The catalogue is diffed against the ICPS names resource so new species and hybrids can be reviewed and added.</p>
+        <a class="footer-badge" href="#/new">
+          <span class="pulse" aria-hidden="true"></span>
+          <span id="footer-watch">9 taxa on watch</span>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Plantivorous. Database compiled from the ICPS Carnivorous Plant Names Resource and primary literature.</p>
+      <p class="footer-legal">Photographs remain © their photographers and are used under the licences shown. Maps are approximate range guides, not survey data.</p>
+      <a class="to-top" href="#/" data-to-top>Back to top <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="search-modal" id="search-modal" hidden>
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
+      <h2 class="visually-hidden" id="search-title">Search the database</h2>
+      <div class="search-input-row">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="global-search" type="search" placeholder="Search species, genera, countries or traits…" autocomplete="off" spellcheck="false" aria-label="Search species, genera, countries or traits">
+        <kbd>Esc</kbd>
+        <button class="icon-btn" type="button" data-search-close aria-label="Close search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="global-search-results">
+        <div class="search-empty">
+          <p>Try a name, a country or a trap type.</p>
+          <div class="search-suggestions">
+            <button type="button" data-search-term="Nepenthes rajah">Nepenthes rajah</button>
+            <button type="button" data-search-term="sundew">sundew</button>
+            <button type="button" data-search-term="Madagascar">Madagascar</button>
+            <button type="button" data-search-term="bladder">bladder</button>
+            <button type="button" data-search-term="beginner">beginner</button>
+          </div>
+        </div>
+      </div>
+      <div class="search-footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> to move</span>
+        <span><kbd>Enter</kbd> to open</span>
+        <a href="#/database" data-search-all>Browse all 760 taxa</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <noscript>
+    <div class="noscript">This database needs JavaScript to search and display the catalogue. Please enable JavaScript.</div>
+  </noscript>
+
+  <script src="assets/js/world-map.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

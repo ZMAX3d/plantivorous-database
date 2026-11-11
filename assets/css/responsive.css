@@ -1,0 +1,876 @@
+/* ==========================================================================
+   Plantivorous database — responsive rules and print
+   ========================================================================== */
+
+@media (max-width: 1180px) {
+  .main-nav a {
+    padding-inline: 9px;
+    font-size: 12.5px;
+  }
+  .brand-label {
+    display: none;
+  }
+  .brand-divider {
+    display: none;
+  }
+  .genus-grid,
+  .species-grid--four {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-inner {
+    padding-top: 72px;
+  }
+  .map-teaser {
+    padding: 42px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .main-nav {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-col:last-child {
+    grid-column: 1 / -1;
+    max-width: 620px;
+  }
+  .database-layout {
+    grid-template-columns: 238px minmax(0, 1fr);
+    gap: 26px;
+  }
+  .map-layout {
+    grid-template-columns: minmax(0, 1fr) 310px;
+  }
+  .species-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+  .species-layout {
+    grid-template-columns: minmax(0, 1fr) 292px;
+    gap: 26px;
+  }
+  .genus-hero__inner {
+    grid-template-columns: minmax(0, 1fr) 310px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 58px 0;
+  }
+  .section--tight {
+    padding: 40px 0;
+  }
+  .hero {
+    min-height: 540px;
+  }
+  .hero-inner {
+    padding: 66px 0 110px;
+  }
+  .hero-lede {
+    font-size: 15.5px;
+  }
+  .stats-band {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 18px;
+    padding: 24px 8px;
+  }
+  .stat {
+    padding: 2px 20px;
+  }
+  .stat:nth-child(3) {
+    border-right: 0;
+  }
+  .stat:nth-child(4),
+  .stat:nth-child(5) {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+  }
+  .stat:nth-child(4) {
+    grid-column: span 1;
+  }
+  .trap-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .genus-grid,
+  .species-grid--four {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .care-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recent-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .map-teaser {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .map-teaser-map {
+    max-width: 640px;
+  }
+  .monitor-panel {
+    grid-template-columns: 1fr;
+  }
+  .about-strip {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .about-strip__art {
+    max-width: 580px;
+  }
+  .cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 36px;
+  }
+  .cta-band .btn {
+    margin-top: 4px;
+  }
+
+  /* database filters become a slide-over */
+  .database-layout {
+    grid-template-columns: 1fr;
+    padding-top: 26px;
+  }
+  .filters-panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 160;
+    width: min(360px, 88vw);
+    max-height: 100vh;
+    padding: 22px;
+    overflow-y: auto;
+    border-radius: 0 20px 20px 0;
+    transform: translateX(-105%);
+    transition: transform 0.28s cubic-bezier(0.2, 0.75, 0.25, 1);
+    box-shadow: var(--shadow-lg);
+  }
+  body.filters-open .filters-panel {
+    transform: translateX(0);
+  }
+  .filters-close {
+    display: grid;
+    place-items: center;
+  }
+  .filters-done {
+    display: inline-flex;
+  }
+  .filters-toggle {
+    display: inline-flex;
+  }
+  .filters-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 150;
+    display: block;
+    background: rgba(10, 20, 13, 0.46);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    backdrop-filter: blur(3px);
+  }
+  body.filters-open .filters-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sort-select {
+    max-width: 160px;
+  }
+  .database-layout .species-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  /* species */
+  .species-hero {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding-top: 8px;
+  }
+  .species-media__frame {
+    aspect-ratio: 16 / 10;
+  }
+  .species-media.is-illustration .species-media__frame {
+    max-height: 430px;
+  }
+  .species-intro h1 {
+    font-size: clamp(36px, 6vw, 50px);
+  }
+  .species-layout {
+    grid-template-columns: 1fr;
+  }
+  .species-side {
+    position: static;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .species-side .side-card:first-child {
+    grid-column: 1 / -1;
+  }
+  .content-card {
+    padding: 26px;
+  }
+
+  /* genus */
+  .genus-hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .genus-hero__art {
+    max-width: 440px;
+    order: -1;
+  }
+  .genus-hero__lede {
+    font-size: 13.5px;
+  }
+  .genus-facts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .genus-fact:nth-child(3) {
+    border-right: 0;
+  }
+  .genus-fact:nth-child(4),
+  .genus-fact:nth-child(5) {
+    border-top: 1px solid var(--line);
+  }
+  .genus-body {
+    grid-template-columns: 1fr;
+  }
+  .genus-body__side {
+    position: static;
+    grid-template-columns: 1fr 1fr;
+  }
+  .genus-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* map */
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
+  .map-canvas {
+    height: 56vh;
+    min-height: 380px;
+  }
+  .map-panel {
+    position: static;
+    max-height: none;
+  }
+  .map-panel__body {
+    max-height: 360px;
+  }
+  .map-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* care */
+  .care-index-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .care-index-art {
+    max-width: 520px;
+  }
+  .care-detail-layout {
+    grid-template-columns: 1fr;
+  }
+  .care-side {
+    position: static;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* monitoring */
+  .status-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .watch-grid {
+    grid-template-columns: 1fr;
+  }
+  .monitor-steps {
+    grid-template-columns: 1fr;
+  }
+  .recent-row {
+    grid-template-columns: 48px minmax(0, 1.2fr) minmax(0, 1fr) 80px;
+  }
+  .recent-row__genus {
+    display: none;
+  }
+
+  /* about */
+  .about-intro,
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+  .about-intro {
+    padding-top: 34px;
+  }
+  .about-side {
+    position: static;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-side .side-card:first-child {
+    grid-column: 1 / -1;
+  }
+
+  /* footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  .footer-col:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+  .footer-legal {
+    order: 3;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: calc(100% - 34px);
+  }
+  .header-inner {
+    min-height: 66px;
+  }
+  .brand img {
+    height: 35px;
+  }
+  .header-actions {
+    gap: 5px;
+  }
+  .icon-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .hero {
+    min-height: 510px;
+  }
+  .hero-inner {
+    padding: 54px 0 100px;
+  }
+  .hero h1 {
+    font-size: clamp(38px, 10.5vw, 56px);
+  }
+  .hero-lede {
+    margin-top: 16px;
+    font-size: 14.5px;
+  }
+  .hero-search {
+    margin-top: 22px;
+    padding-left: 14px;
+  }
+  .hero-search button {
+    padding: 0 16px;
+  }
+  .hero-credit {
+    display: none;
+  }
+  .stats-band {
+    grid-template-columns: 1fr 1fr;
+    margin-top: -46px;
+    padding: 20px 4px;
+  }
+  .stat {
+    padding: 2px 18px;
+  }
+  .stat:nth-child(2n) {
+    border-right: 0;
+  }
+  .stat:nth-child(3) {
+    border-right: 1px solid var(--line);
+  }
+  .stat:nth-child(3),
+  .stat:nth-child(4),
+  .stat:nth-child(5) {
+    border-top: 1px solid var(--line);
+    padding-top: 15px;
+  }
+  .stat:nth-child(4) {
+    border-right: 0;
+  }
+  .stat:nth-child(5) {
+    grid-column: 1 / -1;
+    border-right: 0;
+  }
+  .stat strong {
+    font-size: 26px;
+  }
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .section-head h2 {
+    font-size: 29px;
+  }
+  .section-link {
+    font-size: 12.5px;
+  }
+  .trap-grid,
+  .genus-grid,
+  .species-grid--four,
+  .care-grid,
+  .recent-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .trap-card {
+    min-height: 190px;
+    padding: 18px;
+  }
+  .genus-card__body {
+    padding: 14px 15px;
+  }
+  .genus-card h3 {
+    font-size: 18px;
+  }
+  .care-card {
+    padding: 19px;
+  }
+  .map-teaser {
+    padding: 30px 24px;
+  }
+  .monitor-panel {
+    padding: 26px 22px;
+  }
+  .cta-band {
+    padding: 30px 24px;
+  }
+  .about-strip__art img {
+    height: 120px;
+  }
+
+  .page-head {
+    padding: 26px 0 30px;
+  }
+  .page-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .page-head-stat {
+    padding: 0;
+    border-left: 0;
+  }
+  .page-head-stat strong {
+    font-size: 32px;
+  }
+  .breadcrumb {
+    margin-bottom: 18px;
+  }
+
+  .results-toolbar {
+    flex-wrap: wrap;
+  }
+  .search-field {
+    flex: 1 1 100%;
+    order: -1;
+  }
+  .sort-select {
+    flex: 1;
+    max-width: none;
+  }
+  .view-toggle {
+    margin-left: 0;
+  }
+  .database-layout .species-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+  }
+  .database-layout .species-card h3 {
+    font-size: 16.5px;
+  }
+  .database-layout .species-card__body {
+    padding: 13px 13px 12px;
+  }
+  .database-layout .species-card__summary,
+  .database-layout .species-card__kicker span + span {
+    display: none;
+  }
+  .database-layout .species-card__foot {
+    padding-top: 9px;
+  }
+  .species-grid.is-list .species-card {
+    grid-template-columns: 120px minmax(0, 1fr);
+  }
+  .species-grid.is-list .species-card__body {
+    padding: 14px 46px 14px 15px;
+  }
+  .species-grid.is-list .species-card h3 {
+    font-size: 17px;
+  }
+  .species-grid.is-list .species-card__summary {
+    display: none;
+  }
+
+  .species-media__frame {
+    aspect-ratio: 4 / 3;
+  }
+  .species-intro h1 {
+    font-size: clamp(32px, 8.5vw, 44px);
+  }
+  .species-lede {
+    font-size: 14px;
+  }
+  .key-fact:nth-child(odd) {
+    padding-right: 14px;
+  }
+  .key-fact:nth-child(even) {
+    padding-left: 14px;
+  }
+  .key-facts {
+    margin-top: 22px;
+  }
+  .content-card {
+    padding: 22px 20px;
+  }
+  .content-card h2 {
+    font-size: 20px;
+  }
+  .care-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .care-detail-item {
+    padding: 10px 0;
+  }
+  .species-side {
+    grid-template-columns: 1fr;
+  }
+  .species-side .side-card:first-child {
+    grid-column: auto;
+  }
+  .prev-next {
+    grid-template-columns: 1fr;
+  }
+  .prev-next a:last-child {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .genus-hero {
+    padding: 26px 0 30px;
+  }
+  .genus-hero__art {
+    max-width: 340px;
+  }
+  .genus-hero h1 {
+    font-size: clamp(36px, 10vw, 50px);
+  }
+  .genus-facts {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0 0 14px 14px;
+  }
+  .genus-fact {
+    padding: 13px 16px;
+  }
+  .genus-fact:nth-child(2n) {
+    border-right: 0;
+  }
+  .genus-fact:nth-child(3) {
+    border-right: 1px solid var(--line);
+  }
+  .genus-fact:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+  .genus-fact:last-child {
+    grid-column: 1 / -1;
+    border-right: 0;
+  }
+  .genus-body {
+    padding: 28px 0 60px;
+  }
+  .genus-body__side {
+    grid-template-columns: 1fr;
+  }
+  .genus-species-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .genus-species-controls {
+    flex-wrap: wrap;
+  }
+  .genus-species-controls .search-field {
+    max-width: none;
+    flex: 1 1 100%;
+  }
+  .genus-photo-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .genus-photo-strip a:last-child {
+    display: none;
+  }
+
+  .map-controls-bar {
+    padding: 15px;
+  }
+  .map-control {
+    flex: 1 1 140px;
+    min-width: 0;
+  }
+  .map-controls-actions {
+    margin-left: 0;
+    width: 100%;
+  }
+  .map-controls-actions .btn {
+    flex: 1;
+  }
+  .map-canvas {
+    height: 46vh;
+    min-height: 330px;
+  }
+  .map-hint {
+    display: none;
+  }
+  .map-legend {
+    max-width: calc(100% - 70px);
+    gap: 6px 10px;
+    padding: 8px 10px;
+    font-size: 8.5px;
+  }
+  .map-panel__body {
+    max-height: 330px;
+  }
+
+  .care-detail-hero {
+    padding: 26px 0 28px;
+  }
+  .care-detail-layout {
+    padding-top: 26px;
+  }
+  .care-factor-grid {
+    grid-template-columns: 1fr;
+  }
+  .care-factor:nth-child(odd) {
+    padding-right: 0;
+  }
+  .care-factor:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .care-side {
+    grid-template-columns: 1fr;
+  }
+
+  .status-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+  .status-card {
+    padding: 15px;
+  }
+  .status-card strong {
+    font-size: 21px;
+  }
+  .recent-row {
+    grid-template-columns: 42px minmax(0, 1fr) 74px;
+    gap: 10px;
+    padding: 11px 13px;
+  }
+  .recent-row__family {
+    display: none;
+  }
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .source-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-side {
+    grid-template-columns: 1fr;
+  }
+  .about-side .side-card:first-child {
+    grid-column: auto;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  .footer-bottom {
+    margin-top: 36px;
+  }
+  .footer-legal {
+    order: 3;
+  }
+  .search-modal {
+    padding-top: 5vh;
+  }
+  .search-dialog {
+    max-height: 88vh;
+  }
+  .search-input-row input {
+    font-size: 15px;
+  }
+  .search-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .trap-grid,
+  .genus-grid,
+  .species-grid--four,
+  .care-grid,
+  .recent-strip {
+    grid-template-columns: 1fr;
+  }
+  .trap-card {
+    min-height: auto;
+  }
+  .genus-card__art {
+    aspect-ratio: 16 / 9;
+  }
+  .genus-card__art img {
+    padding: 4%;
+  }
+  .database-layout .species-grid {
+    grid-template-columns: 1fr;
+  }
+  .database-layout .species-card__summary {
+    display: -webkit-box;
+  }
+  .database-layout .species-card__kicker span + span {
+    display: inline;
+  }
+  .hero-search {
+    flex-wrap: wrap;
+    border-radius: 18px;
+    padding: 8px;
+  }
+  .hero-search > svg {
+    margin-left: 5px;
+  }
+  .hero-search input {
+    flex: 1 1 60%;
+    height: 40px;
+  }
+  .hero-search button {
+    flex: 1 1 100%;
+    margin-top: 4px;
+    height: 42px;
+  }
+  .hero-quicklinks {
+    display: none;
+  }
+  .key-facts {
+    grid-template-columns: 1fr;
+  }
+  .key-fact:nth-child(odd) {
+    padding-right: 0;
+  }
+  .key-fact:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .genus-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+  .status-strip {
+    grid-template-columns: 1fr;
+  }
+  .recent-row {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+  .recent-row__badge {
+    display: none;
+  }
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-brand,
+  .footer-col:last-child {
+    grid-column: auto;
+  }
+  .map-panel__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cta-band .btn {
+    width: 100%;
+  }
+  .watch-card {
+    padding: 18px;
+  }
+  .care-index-art img {
+    height: 100px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .species-actions,
+  .species-side,
+  .prev-next,
+  .breadcrumb,
+  .search-modal,
+  .toast,
+  .fav-btn {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    font-size: 11pt;
+  }
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+  .species-hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .species-layout {
+    grid-template-columns: 1fr;
+  }
+  .content-card {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+  .species-media__frame {
+    aspect-ratio: auto;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #555;
+    word-break: break-all;
+  }
+}

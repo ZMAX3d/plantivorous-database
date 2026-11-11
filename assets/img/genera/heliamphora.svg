@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Sun pitcher (Heliamphora) illustration">
+<circle cx="200" cy="148" r="124" fill="#B44A5A" opacity=".065"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="200" cy="257" rx="90" ry="9" fill="#2f4a35" opacity=".08"/>
+     <g>
+    <path d="M148 250 C134 220 120 190 128.4 142 L139.04 124 C148 114 158.08 118 166.48 144 C176 190 162 220 148 250Z" fill="#e6d6c6" stroke="#2f4a35" stroke-width="1.6"/>
+    <ellipse cx="148" cy="132" rx="13.44" ry="7" fill="#9a4d48" stroke="#2f4a35" stroke-width="1.2"/>
+    <path d="M138.48 126 C128.4 102 150.8 92 162.56 110 C153.6 118 145.2 124 138.48 126Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.3"/>
+    <path d="M139.6 246 L132.6 152" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+    <path d="M153.04 246 L159.76 158" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+  </g>
+     <g>
+    <path d="M202 250 C186 220 170 190 179.6 110 L191.76 92 C202 82 213.52 86 223.12 112 C234 190 218 220 202 250Z" fill="#e6d6c6" stroke="#2f4a35" stroke-width="1.6"/>
+    <ellipse cx="202" cy="100" rx="15.36" ry="7" fill="#9a4d48" stroke="#2f4a35" stroke-width="1.2"/>
+    <path d="M191.12 94 C179.6 70 205.2 60 218.64 78 C208.4 86 198.8 92 191.12 94Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.3"/>
+    <path d="M192.4 246 L184.4 120" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+    <path d="M207.76 246 L215.44 126" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+  </g>
+     <g>
+    <path d="M254 250 C241.5 220 229 190 236.5 150 L246 132 C254 122 263 126 270.5 152 C279 190 266.5 220 254 250Z" fill="#e6d6c6" stroke="#2f4a35" stroke-width="1.6"/>
+    <ellipse cx="254" cy="140" rx="12" ry="7" fill="#9a4d48" stroke="#2f4a35" stroke-width="1.2"/>
+    <path d="M245.5 134 C236.5 110 256.5 100 267 118 C259 126 251.5 132 245.5 134Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.3"/>
+    <path d="M246.5 246 L240.25 160" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+    <path d="M258.5 246 L264.5 166" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+  </g>
+     <g>
+    <path d="M292 250 C282 220 272 190 278 176 L285.6 158 C292 148 299.2 152 305.2 178 C312 190 302 220 292 250Z" fill="#e6d6c6" stroke="#2f4a35" stroke-width="1.6"/>
+    <ellipse cx="292" cy="166" rx="9.6" ry="7" fill="#9a4d48" stroke="#2f4a35" stroke-width="1.2"/>
+    <path d="M285.2 160 C278 136 294 126 302.4 144 C296 152 290 158 285.2 160Z" fill="#b9cf94" stroke="#2f4a35" stroke-width="1.3"/>
+    <path d="M286 246 L281 186" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+    <path d="M295.6 246 L300.4 192" stroke="#a9605a" stroke-width="1" opacity=".7"/>
+  </g>
+</g>
+</svg>

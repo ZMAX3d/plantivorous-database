@@ -8,10 +8,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Oversized image files (exceed GitHub limits)
-assets/img/species/chimaera.jpg
-assets/img/species/colombiana.jpg
-assets/img/species/fragrans.jpg
-assets/img/species/makinoi.jpg
-assets/img/species/oblanceolata.jpg
-assets/img/species/ramentacea.jpg
+# Temporary photo-queue and sandbox files
+.photo-queue*.txt
+.photo-test/

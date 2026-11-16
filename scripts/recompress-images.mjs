@@ -3,6 +3,8 @@ import { readdir, stat, unlink, writeFile, readFile } from "node:fs/promises";
 
 const IMG_DIR = "assets/img/species";
 const QUALITY = 88;
+const MAX_DIMENSION = 1200;
+const MAX_BYTES = 400 * 1024;
 
 const files = (await readdir(IMG_DIR)).filter((f) => f.toLowerCase().endsWith(".jpg"));
 
@@ -43,8 +45,17 @@ for (const fname of files) {
       continue;
     }
 
-    // Recompress at same dimensions, quality 88
+    // Leave already-small, normal-sized files untouched to avoid needless
+    // generational recompression.
+    if (s.size <= MAX_BYTES && meta.width <= MAX_DIMENSION && meta.height <= MAX_DIMENSION) {
+      totalNew += s.size;
+      skipped++;
+      continue;
+    }
+
+    // Recompress at quality 88, capping the long edge for web delivery.
     const compressed = await sharp(buf)
+      .resize({ width: MAX_DIMENSION, height: MAX_DIMENSION, fit: "inside", withoutEnlargement: true })
       .jpeg({ quality: QUALITY, mozjpeg: true })
       .toBuffer();
 

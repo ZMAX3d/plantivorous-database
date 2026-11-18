@@ -17,7 +17,7 @@ A portable, static, hash-routed single-page catalogue of the world's carnivorous
 | Families | 10 |
 | Countries / territories mapped | 172 |
 | Origin map points (approx. centroids) | 2,743 |
-| Species with Wikimedia Commons photos | 456 |
+| Species with open-licensed photos | 457 (Commons + verified iNaturalist fallback) |
 | Editorial species notes | ~39 |
 | Cross-genus care groups | 17 |
 | Infraspecific taxa | 86 |
@@ -51,7 +51,7 @@ plantivorous-database/
 │   ├── genera.json               # Editorial genus profiles
 │   ├── species-notes.json        # Flagship species notes
 │   ├── locations.json            # Country / region / province centroids
-│   ├── photo-credits.json        # Wikimedia Commons photo credits & licences
+│   ├── photo-credits.json        # Open-licensed photo credits & licences
 │   ├── care-groups.json          # 17 cross-genus care guides
 │   ├── watchlist.json            # 9 provisional taxa
 │   └── changelog.json            # Monitoring timeline
@@ -63,6 +63,7 @@ plantivorous-database/
     ├── build-locations.mjs       # Origin centroids
     ├── build-map.mjs             # SVG world map geometry
     ├── add-photos.mjs            # Fetch Commons photos (bitmap-only, binomial-verified, q88)
+    ├── add-inat-photos.mjs       # Strict iNaturalist fallback (research-grade, CC0/BY/SA only, q88)
     ├── recompress-images.mjs     # Re-encode JPEGs at q88, cap long edge at 1200px
     ├── validate-photos.mjs       # Verify every credit/file pair, optionally --fix
     ├── audit-photos.mjs          # Full report: duplicates, orphans, invalid/oversized files
@@ -120,7 +121,8 @@ Keyboard: `/` opens global search, `Esc` closes modals/panels, `Enter` activates
 | International Carnivorous Plant Society (`carnivorousplants.org`) | Society reference | — |
 | Plants of the World Online (`powo.science.kew.org`) | Cross-reference | Kew / POWO terms |
 | Wikipedia | Background reading & flagship context | CC BY-SA |
-| Wikimedia Commons (`commons.wikimedia.org`) | Species photos (bitmap-only, 900px thumbnails) | CC BY-SA / CC BY / public domain (per-photo; attribution retained in-app) |
+| Wikimedia Commons (`commons.wikimedia.org`) | Primary species-photo source (bitmap-only, 900px thumbnails) | CC BY-SA / CC BY / public domain (per-photo; attribution retained in-app) |
+| iNaturalist (`inaturalist.org`) | Fallback species photos only where no suitable Commons image exists | CC0 / CC BY / CC BY-SA only (research-grade observations; attribution retained in-app) |
 | Natural Earth | Country boundaries for the SVG map | Public domain |
 
 Photos carry visible attribution (artist, licence, source link) on each species detail page and in search results. Original editorial descriptions and care profiles are Plantivorous content.
@@ -129,11 +131,14 @@ Photos carry visible attribution (artist, licence, source link) on each species 
 
 Only real bitmap images are accepted. `scripts/add-photos.mjs` queries Commons with `filetype:bitmap`, rejects PDFs/SVGs/TIFFs and obvious non-photos (distribution maps, envelopes, diagrams), downloads the 900px rendered thumbnail rather than the original file, validates the bytes with sharp, and re-encodes to JPEG quality 88. A candidate is accepted only when its filename contains the epithet or its Commons description/categories name the full binomial, and no Commons file is reused for a second species. Every download is persisted immediately, so an interrupted batch can resume from the same queue.
 
+`scripts/add-inat-photos.mjs` is a deliberately stricter fallback for species with no usable Commons image. It requires an exact iNaturalist taxon match, research-grade observations, and a commercial-friendly photo licence (CC0, CC BY or CC BY-SA). Non-commercial and no-derivatives images are rejected, the 1024px rendition is re-encoded to the same q88 standard, and the credit links back to the observation. It is never used to replace an existing credit.
+
 `scripts/recompress-images.mjs` re-encodes legacy or oversized images to the same quality 88 and caps the long edge at 1200px, keeping every published photo under 400KB.
 
 ```bash
 node scripts/build-photo-queue.mjs          # .photo-queue-all.txt of species without photos
 node scripts/add-photos.mjs --queue=.photo-queue-all.txt
+node scripts/add-inat-photos.mjs --queue=.photo-queue-all.txt  # fallback only
 node scripts/recompress-images.mjs          # re-encode existing JPEGs at q88
 node scripts/review-photo-credits.mjs       # flag maps, shared images, unverified credits
 node scripts/validate-photos.mjs --fix      # drop broken credits + orphan files
@@ -211,6 +216,6 @@ The site is browser-verified across all routes (home, database, species detail, 
 
 - Code (HTML/CSS/JS): MIT
 - Data (taxonomy from ICPS): factual nomenclature; redistributed per ICPS terms
-- Photos: per-photo licence shown in-app (CC BY-SA / CC BY / public domain); attribution must be retained
+- Photos: per-photo licence shown in-app (CC0 / CC BY / CC BY-SA / public domain); attribution must be retained
 - Map geometry: Natural Earth (public domain)
 - Fonts: IBM Plex Sans (SIL Open Font License), Noto Sans (SIL Open Font License)

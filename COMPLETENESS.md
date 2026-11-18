@@ -11,6 +11,8 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - **In progress** — the genus has been started but still has photo or profile gaps.
 - **Pending** — not yet audited in this pass.
 
+`*` — no cross-genus care group fits this genus. Its species pages now fall back to the genus care sheet instead of linking to an empty care group.
+
 ## Per-genus status
 
 | Genus | ICPS accepted (hybrids) | Infraspecific | Records | Photos | Missing photos | No species care group | Status | Last checked |
@@ -18,7 +20,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Aldrovanda | 1 (0) | 1 | 1 | 1 | 0 | 0 | Pending | — |
 | Byblis | 8 (0) | 0 | 8 | 7 | 1 | 0 | Pending | — |
 | Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
-| Craniolaria | 2 (0) | 0 | 2 | 1 | 1 | 2 | Pending | — |
+| Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
 | Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
 | **Dionaea** | **1 (0)** | **0** | **1** | **1** | **0** | **0** | **Complete** | **2026-11-17** |
 | Dioncophyllum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
@@ -37,7 +39,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 records, 456 photos, 297 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total.
+**Totals:** 751 records, 457 photos, 296 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total.
 
 ## Completed genus notes
 
@@ -48,3 +50,11 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Photo audit: `assets/img/species/dionaea-muscipula.jpg` is a valid 201 KB JPEG by Noah Elhardt, CC BY-SA 2.5, sourced from Wikimedia Commons. Attribution is present in `data/photo-credits.json` and rendered on the species page.
 - Genus plate: `assets/img/genera/dionaea.svg` present.
 - **Result: complete. No data changes were required.**
+
+### Craniolaria — checked 2026-11-17
+
+- ICPS lists two accepted species, *Craniolaria annua* L. and *Craniolaria integrifolia* Cham., with no hybrids or infraspecific taxa. Both records are present.
+- Record audit: authority, publication, type locality, native range, origin points, description and IUCN status are present for both.
+- Photo audit: *C. annua* already had a CC BY 4.0 Commons photo. *C. integrifolia* had no usable Commons image, so a research-grade CC BY 4.0 observation by Nolan Exe was imported from iNaturalist through the new strict fallback pipeline and visually verified.
+- **Care fix:** neither species belongs to a suitable cross-genus care group. The species page now falls back to the genus care sheet for light, water, substrate, temperature, dormancy and feeding, instead of rendering `#/care/undefined`. The credit panel now names iNaturalist correctly for non-Commons photos.
+- **Result: complete, 2/2 photos.**

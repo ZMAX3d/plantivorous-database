@@ -5438,6 +5438,19 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "description": "Small Sundew, Drosera parvula. Wandoo National Park, Western Australia, May 2012. Thanks to Jean for the ID.",
       "alt": "Photograph of Drosera parvula"
+    },
+    {
+      "species": "Craniolaria integrifolia",
+      "file": "assets/img/species/craniolaria-integrifolia.jpg",
+      "source": "https://www.inaturalist.org/observations/37543993",
+      "original": "iNaturalist photo 59537756",
+      "artist": "Nolan Exe",
+      "credit": "(c) Nolan Exe, some rights reserved (CC BY)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "iNaturalist research-grade observation 37543993 · Valle Grande Department, Jujuy, Argentina · 2019-11-28",
+      "alt": "Photograph of Craniolaria integrifolia",
+      "sourceType": "iNaturalist"
     }
   ]
 }

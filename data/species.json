@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated": "2026-11-16T07:26:54.163Z",
-    "icpsSnapshot": "2026-11-09T10:28:14.573Z",
+    "generated": "2026-11-17T05:59:16.580Z",
+    "icpsSnapshot": "2026-11-17T05:52:44.414Z",
     "icpsSource": "https://cpnames.carnivorousplants.org/",
     "icpsCount": 751,
     "provisionalCount": 9,
     "totalSpecies": 760,
     "genusCount": 21,
     "familyCount": 10,
-    "photoCount": 456,
+    "photoCount": 457,
     "featuredCount": 20,
     "editorialNoteCount": 39,
     "hybridCount": 9,
@@ -1707,12 +1707,23 @@
       "trapGroup": "devils-claw",
       "carnivory": "Borderline / proto-carnivorous",
       "featured": false,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "hasEditorialNote": false,
-      "photo": null,
+      "photo": {
+        "path": "assets/img/species/craniolaria-integrifolia.jpg",
+        "artist": "Nolan Exe",
+        "credit": "(c) Nolan Exe, some rights reserved (CC BY)",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.inaturalist.org/observations/37543993",
+        "original": "iNaturalist photo 59537756",
+        "description": "iNaturalist research-grade observation 37543993 · Valle Grande Department, Jujuy, Argentina · 2019-11-28",
+        "sourceType": "iNaturalist",
+        "alt": "Photograph of Craniolaria integrifolia"
+      },
       "illustration": "assets/img/genera/devils-claw.svg",
-      "image": "assets/img/genera/devils-claw.svg",
-      "imageType": "illustration",
+      "image": "assets/img/species/craniolaria-integrifolia.jpg",
+      "imageType": "photo",
       "iucn": {
         "code": "NE",
         "label": "Not assessed",
@@ -97546,7 +97557,7 @@
       "acceptedCount": 2,
       "hybridCount": 0,
       "featuredCount": 0,
-      "photoCount": 1,
+      "photoCount": 2,
       "watchlistCount": 0,
       "infraspecificCount": 0,
       "continents": [
@@ -104773,6 +104784,19 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "description": "Small Sundew, Drosera parvula. Wandoo National Park, Western Australia, May 2012. Thanks to Jean for the ID.",
       "alt": "Photograph of Drosera parvula"
+    },
+    {
+      "species": "Craniolaria integrifolia",
+      "file": "assets/img/species/craniolaria-integrifolia.jpg",
+      "source": "https://www.inaturalist.org/observations/37543993",
+      "original": "iNaturalist photo 59537756",
+      "artist": "Nolan Exe",
+      "credit": "(c) Nolan Exe, some rights reserved (CC BY)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "iNaturalist research-grade observation 37543993 · Valle Grande Department, Jujuy, Argentina · 2019-11-28",
+      "alt": "Photograph of Craniolaria integrifolia",
+      "sourceType": "iNaturalist"
     }
   ],
   "changelog": {
@@ -105233,6 +105257,7 @@
     "powo": "https://powo.science.kew.org/",
     "wikipedia": "https://www.wikipedia.org/",
     "wikimedia": "https://commons.wikimedia.org/",
+    "inaturalist": "https://www.inaturalist.org/",
     "naturalEarth": "https://www.naturalearthdata.com/"
   }
 }

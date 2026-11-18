@@ -7,7 +7,7 @@
  *   data/genera.json           editorial genus profiles + genus care
  *   data/species-notes.json    flagship species notes
  *   data/locations.json        country / region / province centroids
- *   data/photo-credits.json    Wikimedia Commons photo credits
+ *   data/photo-credits.json    Open-licensed photo credits
  *   data/care-groups.json      cross-genus care group reference
  *   data/watchlist.json        recent taxa not yet in the ICPS snapshot
  *   data/changelog.json        monitoring timeline
@@ -1548,7 +1548,11 @@ for (const record of allRecords) {
         source: credit.source,
         original: credit.original,
         description: credit.description,
-        alt: credit.description || `Photograph of ${record.name}`,
+        sourceType: credit.sourceType,
+        alt:
+          credit.sourceType === "iNaturalist" && credit.alt
+            ? credit.alt
+            : credit.description || `Photograph of ${record.name}`,
       }
     : null;
 
@@ -1793,6 +1797,7 @@ const bundle = {
     powo: "https://powo.science.kew.org/",
     wikipedia: "https://www.wikipedia.org/",
     wikimedia: "https://commons.wikimedia.org/",
+    inaturalist: "https://www.inaturalist.org/",
     naturalEarth: "https://www.naturalearthdata.com/",
   },
 };

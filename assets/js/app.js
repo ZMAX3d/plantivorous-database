@@ -152,9 +152,17 @@
   function photoCredit(species) {
     const photo = species.photo;
     if (!photo) return "";
-    const artist = photo.artist || "Wikimedia Commons";
+    const artist = photo.artist || "Open-licensed contributor";
     const license = photo.license || "See source";
     return `${esc(artist)} · ${esc(license)}`;
+  }
+
+  function photoSourceName(photo) {
+    if (!photo) return "";
+    if (photo.sourceType === "iNaturalist" || /inaturalist\.org/i.test(photo.source || "")) {
+      return "iNaturalist";
+    }
+    return "Wikimedia Commons";
   }
 
   function speciesImage(species) {
@@ -1104,6 +1112,8 @@
 
     const genus = genusOf(species);
     const care = CARE_BY_KEY.get(species.careGroup) || {};
+    const genusCare = genus?.care || {};
+    const careValue = (key) => care[key] || genusCare[key];
     const image = speciesImage(species);
     const photo = species.photo;
     const siblings = SPECIES.filter((item) => item.genus === species.genus).sort((a, b) => a.name.localeCompare(b.name));
@@ -1116,12 +1126,12 @@
       .slice(0, 4);
     const common = species.commonName && !species.commonNameIsGenus ? species.commonName : "";
     const careFields = [
-      ["Light", care.light],
-      ["Water", care.water],
-      ["Substrate", care.soil],
-      ["Temperature", care.temperature],
-      ["Dormancy", care.dormancy],
-      ["Feeding", care.feeding],
+      ["Light", careValue("light")],
+      ["Water", careValue("water")],
+      ["Substrate", careValue("soil")],
+      ["Temperature", careValue("temperature")],
+      ["Dormancy", careValue("dormancy")],
+      ["Feeding", careValue("feeding")],
     ].filter(([, value]) => value);
 
     const mediaFrame = photo
@@ -1173,7 +1183,7 @@
               </div>
               <div class="species-media__credit">
                 <span>${photo ? `Photo: ${photoCredit(species)}` : "Original botanical plate · Plantivorous database"}</span>
-                ${photo?.source ? `<a href="${esc(photo.source)}" target="_blank" rel="noopener">Wikimedia Commons ↗</a>` : `<span>${esc(species.family)}</span>`}
+                ${photo?.source ? `<a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photoSourceName(photo))} ↗</a>` : `<span>${esc(species.family)}</span>`}
               </div>
             </div>
           </div>
@@ -1199,7 +1209,7 @@
               <div class="key-fact"><dt>Genus</dt><dd>${linkedGenusName(species.genus)}</dd></div>
               <div class="key-fact"><dt>Trap type</dt><dd>${esc(species.trapType || trapLabelOf(species))}</dd></div>
               <div class="key-fact"><dt>Native range</dt><dd>${esc(species.nativeShort || species.nativeRange || "Not recorded")}</dd></div>
-              <div class="key-fact"><dt>Care group</dt><dd><a href="#/care/${esc(species.careGroup)}">${esc(species.careGroupLabel || care.label || "—")}</a></dd></div>
+              <div class="key-fact"><dt>Care group</dt><dd>${species.careGroup ? `<a href="#/care/${esc(species.careGroup)}">${esc(species.careGroupLabel || care.label || "—")}</a>` : `<a href="#/genus/${encodeURIComponent(species.genus)}">Genus-specific care</a>`}</dd></div>
               <div class="key-fact"><dt>Described</dt><dd>${species.year ? esc(species.year) : "Not recorded"}</dd></div>
             </dl>
           </div>
@@ -1254,8 +1264,8 @@
               ${careFields.length ? `<div class="care-detail-grid">${careFields.map(([label, value]) => `<div class="care-detail-item"><h3>${esc(label)}</h3><p>${esc(value)}</p></div>`).join("")}</div>` : ""}
               ${care.tips?.length ? `<h3>Practical tips</h3><ul class="care-tips">${care.tips.map((tip) => `<li>${esc(tip)}</li>`).join("")}</ul>` : ""}
               <div class="care-link-row">
-                <a class="btn btn--primary btn--small" href="#/care/${esc(species.careGroup)}">Full ${esc(species.careGroupLabel || care.label || "care")} guide ${icon("arrow")}</a>
-                <a class="btn btn--secondary btn--small" href="#/genus/${encodeURIComponent(species.genus)}">${esc(species.genus)} genus care</a>
+                ${species.careGroup ? `<a class="btn btn--primary btn--small" href="#/care/${esc(species.careGroup)}">Full ${esc(species.careGroupLabel || care.label || "care")} guide ${icon("arrow")}</a>` : ""}
+                <a class="btn ${species.careGroup ? "btn--secondary" : "btn--primary"} btn--small" href="#/genus/${encodeURIComponent(species.genus)}">${esc(species.genus)} genus care ${icon("arrow")}</a>
               </div>
             </section>
 
@@ -1304,8 +1314,8 @@
               <h2>Image credit</h2>
               <div class="credit-block">
                 ${photo.description ? `<p>${esc(photo.description)}</p>` : ""}
-                <p><strong>${esc(photo.artist || "Wikimedia Commons")}</strong><br>${esc(photo.license || "See source")}</p>
-                ${photo.source ? `<p><a href="${esc(photo.source)}" target="_blank" rel="noopener">View the original file on Wikimedia Commons ↗</a></p>` : ""}
+                <p><strong>${esc(photo.artist || "Open-licensed contributor")}</strong><br>${esc(photo.license || "See source")}</p>
+                ${photo.source ? `<p><a href="${esc(photo.source)}" target="_blank" rel="noopener">View the original ${photoSourceName(photo) === "iNaturalist" ? "observation" : "file"} on ${esc(photoSourceName(photo))} ↗</a></p>` : ""}
                 ${photo.licenseUrl ? `<p><a href="${esc(photo.licenseUrl)}" target="_blank" rel="noopener">Read the licence ↗</a></p>` : ""}
               </div>
             </section>` : `<section class="side-card">
@@ -2291,6 +2301,7 @@
       ["Plants of the World Online", sourceLinks.powo, "Royal Botanic Gardens, Kew's global checklist, used as a cross-check for accepted names and distributions."],
       ["Wikipedia", sourceLinks.wikipedia, "Background reading and species-level summaries used to orient editorial research."],
       ["Wikimedia Commons", sourceLinks.wikimedia, "Openly licensed photographs, with attribution and licence links preserved on every species page."],
+      ["iNaturalist", sourceLinks.inaturalist, "Research-grade, openly licensed observation photographs used only where no suitable Commons image exists; each one links back to its observation and licence."],
       ["Natural Earth", sourceLinks.naturalEarth, "Public-domain country boundaries used to draw the world map without external tiles or tracking."],
     ];
     return `${pageHead({
@@ -2330,7 +2341,7 @@
               <li><strong>Infraspecific taxa are nested.</strong> Varieties, subspecies and forms are listed on their parent species page rather than inflated into separate records.</li>
               <li><strong>Provisional means provisional.</strong> A watchlist entry is not an ICPS endorsement. It is a documented recent description, with a source, waiting for the names resource to catch up.</li>
               <li><strong>Distribution is indicative.</strong> Country, region and province names come from the ICPS record. Map markers use centroids, never precise localities, and introduced records are flagged.</li>
-              <li><strong>Care is grouped, not guessed.</strong> Each species inherits one of 17 cross-genus care profiles, then carries a species note where its needs differ.</li>
+              <li><strong>Care is grouped, not guessed.</strong> Most species inherit one of 17 cross-genus care profiles, then carry a species note where its needs differ. Genera without a suitable cross-genus group use their own genus care sheet.</li>
             </ol>
           </section>
 
@@ -2353,9 +2364,9 @@
 
           <section class="content-card">
             <h2>Photographs &amp; illustrations</h2>
-            <p class="prose">Photographs are sourced from Wikimedia Commons under the licences shown on each species page. Attribution, the licence name and a link to the original file are kept visible; any reuse must preserve them. The 16 genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
+            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations used where no suitable Commons image exists. Attribution, the licence name and a link to the original file or observation are kept visible; any reuse must preserve them. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
             <ul class="license-list">
-              <li><strong>Photos</strong> CC BY, CC BY-SA or public domain; see the credit panel on each species page for the exact licence and photographer.</li>
+              <li><strong>Photos</strong> CC0, CC BY, CC BY-SA or public domain; see the credit panel on each species page for the exact licence and photographer. Non-commercial and no-derivatives images are not used.</li>
               <li><strong>Plates</strong> Original SVGs generated for the Plantivorous database. Free to reuse with the project.</li>
               <li><strong>Map geometry</strong> Natural Earth 110m Admin 0 Countries, public domain.</li>
               <li><strong>Nomenclature</strong> ICPS Carnivorous Plant Names Resource; cited with a link on every species page.</li>

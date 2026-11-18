@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-11-17T05:59:16.580Z",
+    "generated": "2026-11-18T05:49:59.879Z",
     "icpsSnapshot": "2026-11-17T05:52:44.414Z",
     "icpsSource": "https://cpnames.carnivorousplants.org/",
     "icpsCount": 751,
@@ -8,7 +8,7 @@
     "totalSpecies": 760,
     "genusCount": 21,
     "familyCount": 10,
-    "photoCount": 457,
+    "photoCount": 458,
     "featuredCount": 20,
     "editorialNoteCount": 39,
     "hybridCount": 9,
@@ -80,6 +80,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:AldrovandaVesiculosaHabit.jpg",
         "original": "AldrovandaVesiculosaHabit.jpg",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Aldrovanda vesiculosa"
       },
       "illustration": "assets/img/genera/aldrovanda.svg",
@@ -563,6 +564,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:ByblisAquaticaHabitus.jpg",
         "original": "ByblisAquaticaHabitus.jpg",
         "description": "Byblis aquatica habitus",
+        "specimen": false,
         "alt": "Byblis aquatica habitus"
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -670,6 +672,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Byblis_filifolia_flora.jpg",
         "original": "Byblis filifolia flora.jpg",
         "description": "Byblis filifolia flora Author: Denis Barthel",
+        "specimen": false,
         "alt": "Byblis filifolia flora Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -777,6 +780,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:ByblisGiganteaFlora.jpg",
         "original": "ByblisGiganteaFlora.jpg",
         "description": "Flora of Byblis gigantea",
+        "specimen": false,
         "alt": "Flora of Byblis gigantea"
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -995,6 +999,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Byblis_lamellata_seedling.JPG",
         "original": "Byblis lamellata seedling.JPG",
         "description": "Byblis lamellata seedling Author: Denis Barthel",
+        "specimen": false,
         "alt": "Byblis lamellata seedling Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -1102,6 +1107,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:ByblisLinifloraFlora.JPG",
         "original": "ByblisLinifloraFlora.JPG",
         "description": "Byblis liniflora Author: Denis Barthel",
+        "specimen": false,
         "alt": "Byblis liniflora Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -1232,6 +1238,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Byblis_pilbarana.jpg",
         "original": "Byblis pilbarana.jpg",
         "description": "Byblis pilbarana",
+        "specimen": false,
         "alt": "Byblis pilbarana"
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -1339,6 +1346,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Byblis_rorida_imported_from_iNaturalist_photo_179480570_on_14_February_2024.jpg",
         "original": "Byblis rorida imported from iNaturalist photo 179480570 on 14 February 2024.jpg",
         "description": "Photo of Byblis rorida uploaded from iNaturalist.",
+        "specimen": false,
         "alt": "Photo of Byblis rorida uploaded from iNaturalist."
       },
       "illustration": "assets/img/genera/byblis.svg",
@@ -1446,6 +1454,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Cephalotus_follicularis_0001.JPG",
         "original": "Cephalotus_follicularis_0001.JPG",
         "description": "Cephalotus follicularis Labill. , Australian pitcher plant, Insectivorous leaves; Stutensee , Germany .",
+        "specimen": false,
         "alt": "Cephalotus follicularis Labill. , Australian pitcher plant, Insectivorous leaves; Stutensee , Germany ."
       },
       "illustration": "assets/img/genera/cephalotus.svg",
@@ -1566,6 +1575,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Craniolaria_annua_66380009.jpg",
         "original": "Craniolaria annua 66380009.jpg",
         "description": "Craniolaria annua",
+        "specimen": false,
         "alt": "Craniolaria annua"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -1719,6 +1729,7 @@
         "original": "iNaturalist photo 59537756",
         "description": "iNaturalist research-grade observation 37543993 · Valle Grande Department, Jujuy, Argentina · 2019-11-28",
         "sourceType": "iNaturalist",
+        "specimen": false,
         "alt": "Photograph of Craniolaria integrifolia"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -1852,6 +1863,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Darlingtonia_californica_ne1.JPG",
         "original": "Darlingtonia_californica_ne1.JPG",
         "description": "California pitcher plant ( Darlingtonia californica ), Botanical Trail, Butterfly Valley Botanical Area , Sierra Nevada , Plumas County, California",
+        "specimen": false,
         "alt": "California pitcher plant ( Darlingtonia californica ), Botanical Trail, Butterfly Valley Botanical Area , Sierra Nevada , Plumas County, California"
       },
       "illustration": "assets/img/genera/darlingtonia.svg",
@@ -1979,6 +1991,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Venus_Flytrap_showing_trigger_hairs.jpg",
         "original": "Venus_Flytrap_showing_trigger_hairs.jpg",
         "description": "The trap of a Venus fly trap, showing trigger hairs.",
+        "specimen": false,
         "alt": "The trap of a Venus fly trap, showing trigger hairs."
       },
       "illustration": "assets/img/genera/dionaea.svg",
@@ -2096,12 +2109,24 @@
       "trapGroup": "liana",
       "carnivory": "Borderline / proto-carnivorous",
       "featured": false,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "hasEditorialNote": false,
-      "photo": null,
+      "photo": {
+        "path": "assets/img/species/dioncophyllum-thollonii.jpg",
+        "artist": "Royal Botanic Gardens, Kew collected by Kami, T.",
+        "credit": "Herbarium specimen collected by Kami, T. · Royal Botanic Gardens, Kew · CC BY 4.0",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://www.gbif.org/occurrence/6477144302",
+        "original": "K001971367 (Royal Botanic Gardens, Kew)",
+        "description": "Herbarium specimen K001971367 · Congo · 2011-06-30T00:00 · Royal Botanic Gardens, Kew",
+        "sourceType": "GBIF",
+        "specimen": true,
+        "alt": "Herbarium specimen K001971367 · Congo · 2011-06-30T00:00 · Royal Botanic Gardens, Kew"
+      },
       "illustration": "assets/img/genera/liana.svg",
-      "image": "assets/img/genera/liana.svg",
-      "imageType": "illustration",
+      "image": "assets/img/species/dioncophyllum-thollonii.jpg",
+      "imageType": "photo",
       "iucn": {
         "code": "NE",
         "label": "Not assessed",
@@ -2212,6 +2237,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_growing_in_Cedarberg,_South_Africa.jpg",
         "original": "Drosera_growing_in_Cedarberg,_South_Africa.jpg",
         "description": "Drosera acaulis growing in Cedarberg, South Africa",
+        "specimen": false,
         "alt": "Drosera acaulis growing in Cedarberg, South Africa"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -2318,6 +2344,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_adelae,_lance-leaved_sundew_with_red_blossoms.jpg",
         "original": "Drosera_adelae,_lance-leaved_sundew_with_red_blossoms.jpg",
         "description": "Drosera adelae - lance-leaved sundew with red blossoms",
+        "specimen": false,
         "alt": "Drosera adelae - lance-leaved sundew with red blossoms"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -2425,6 +2452,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_affinis_-_Copenhagen_Botanical_Garden_-_DSC07979.JPG",
         "original": "Drosera_affinis_-_Copenhagen_Botanical_Garden_-_DSC07979.JPG",
         "description": "Drosera affinis - Copenhagen Botanical Garden specimen",
+        "specimen": false,
         "alt": "Drosera affinis - Copenhagen Botanical Garden specimen"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -2594,6 +2622,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_trinervia.jpg",
         "original": "Drosera trinervia.jpg",
         "description": "afra photograph",
+        "specimen": false,
         "alt": "afra photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -2700,6 +2729,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_alba_Gifberg.jpg",
         "original": "Drosera_alba_Gifberg.jpg",
         "description": "Drosera alba photographed on the Gifberg",
+        "specimen": false,
         "alt": "Drosera alba photographed on the Gifberg"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -2806,6 +2836,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_albonotata.jpg",
         "original": "Drosera_albonotata.jpg",
         "description": "Drosera albonotata",
+        "specimen": false,
         "alt": "Drosera albonotata"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -2913,6 +2944,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_aliciae_2.jpg",
         "original": "Drosera_aliciae_2.jpg",
         "description": "Drosera aliciae , the Alice sundew, taken by myself from my own collection.",
+        "specimen": false,
         "alt": "Drosera aliciae , the Alice sundew, taken by myself from my own collection."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -3128,6 +3160,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_andersoniana_156045436.jpg",
         "original": "Drosera_andersoniana_156045436.jpg",
         "description": "Drosera andersoniana - sturdy sundew",
+        "specimen": false,
         "alt": "Drosera andersoniana - sturdy sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -3429,6 +3462,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraArcturi2.jpg",
         "original": "DroseraArcturi2.jpg",
         "description": "Drosera arcturi - alpine sundew habitus",
+        "specimen": false,
         "alt": "Drosera arcturi - alpine sundew habitus"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -3654,6 +3688,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_aurantiaca_flowers.jpg",
         "original": "Drosera_aurantiaca_flowers.jpg",
         "description": "Flowers of Drosera aurantiaca",
+        "specimen": false,
         "alt": "Flowers of Drosera aurantiaca"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -3761,6 +3796,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraBanksii.jpg",
         "original": "DroseraBanksii.jpg",
         "description": "Drosera banksii",
+        "specimen": false,
         "alt": "Drosera banksii"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -3887,6 +3923,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_barbigera_(25161255857).jpg",
         "original": "Drosera_barbigera_(25161255857).jpg",
         "description": "Drosera barbigera",
+        "specimen": false,
         "alt": "Drosera barbigera"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -4105,6 +4142,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COI00083509_-_Drosera_compacta_-_Exell,_Arthur_Wallis_Mendona,_Francisco_de_Ascenso_-_1030.jpg",
         "original": "COI00083509_-_Drosera_compacta_-_Exell,_Arthur_Wallis_Mendona,_Francisco_de_Ascenso_-_1030.jpg",
         "description": "Drosera bequaertii - isotype at Herbarium of the University of Coimbra",
+        "specimen": false,
         "alt": "Drosera bequaertii - isotype at Herbarium of the University of Coimbra"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -4220,6 +4258,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraBicolorFlora2.jpg",
         "original": "DroseraBicolorFlora2.jpg",
         "description": "Drosera bicolor",
+        "specimen": false,
         "alt": "Drosera bicolor"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -4423,6 +4462,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_binata.jpg",
         "original": "Drosera_binata.jpg",
         "description": "Description: Drosera binata Photo taken by: Noah Elhardt",
+        "specimen": false,
         "alt": "Description: Drosera binata Photo taken by: Noah Elhardt"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -4649,6 +4689,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_brevicornis,_Holmes_NT_0812,_Australia_imported_from_iNaturalist_photo_607024146.jpg",
         "original": "Drosera_brevicornis,_Holmes_NT_0812,_Australia_imported_from_iNaturalist_photo_607024146.jpg",
         "description": "Drosera brevicornis, Holmes NT, Australia",
+        "specimen": false,
         "alt": "Drosera brevicornis, Holmes NT, Australia"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -4756,6 +4797,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_brevifolia.jpg",
         "original": "Drosera_brevifolia.jpg",
         "description": "Drosera brevifolia - short-leaved sundew",
+        "specimen": false,
         "alt": "Drosera brevifolia - short-leaved sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -5044,6 +5086,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraBroomensisHabitus.jpg",
         "original": "DroseraBroomensisHabitus.jpg",
         "description": "Drosera broomensis habitus",
+        "specimen": false,
         "alt": "Drosera broomensis habitus"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -5345,6 +5388,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraBulbosa.jpg",
         "original": "DroseraBulbosa.jpg",
         "description": "Drosera bulbosa habitus",
+        "specimen": false,
         "alt": "Drosera bulbosa habitus"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -5655,6 +5699,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:P9270030_Drosera_burmanni_01.jpg",
         "original": "P9270030_Drosera_burmanni_01.jpg",
         "description": "Drosera burmanni habit in Ledknapper Nature Reserve",
+        "specimen": false,
         "alt": "Drosera burmanni habit in Ledknapper Nature Reserve"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -5909,6 +5954,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_caduca_%E2%80%9Cwide_grass-like_leaves_%27Bachsten_Creek%2C_Kimberley%27.jpg",
         "original": "Drosera_caduca_%E2%80%9Cwide_grass-like_leaves_%27Bachsten_Creek%2C_Kimberley%27.jpg",
         "description": "Drosera caduca wide grass-like leaves Bachsten Creek Kimberley",
+        "specimen": false,
         "alt": "Drosera caduca wide grass-like leaves Bachsten Creek Kimberley"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -6016,6 +6062,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Dr-callistos-gr.jpg",
         "original": "Dr-callistos-gr.jpg",
         "description": "Drosera callistos from above",
+        "specimen": false,
         "alt": "Drosera callistos from above"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -6219,6 +6266,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_capensis_bend.JPG",
         "original": "Drosera_capensis_bend.JPG",
         "description": "Leaf of Drosera capensis bending around a captured insect",
+        "specimen": false,
         "alt": "Leaf of Drosera capensis bending around a captured insect"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -6349,6 +6397,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_capillaris.jpg",
         "original": "Drosera_capillaris.jpg",
         "description": "Drosera capillaris - pink sundew growing in garden moorland",
+        "specimen": false,
         "alt": "Drosera capillaris - pink sundew growing in garden moorland"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -7035,6 +7084,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_chrysolepis_flower_Darwiniana.jpg",
         "original": "Drosera chrysolepis flower Darwiniana.jpg",
         "description": "chrysolepis photograph",
+        "specimen": false,
         "alt": "chrysolepis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -7150,6 +7200,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_cistiflora_Hangklip_07.jpg",
         "original": "Drosera_cistiflora_Hangklip_07.jpg",
         "description": "rose-flowered sundew Drosera cistiflora , Hangklip, near Pringle Bay, Western Cape, South Africa",
+        "specimen": false,
         "alt": "rose-flowered sundew Drosera cistiflora , Hangklip, near Pringle Bay, Western Cape, South Africa"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -7270,6 +7321,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_citrina_(entire_plant).jpg",
         "original": "Drosera_citrina_(entire_plant).jpg",
         "description": "Drosera citrina - entire plant",
+        "specimen": false,
         "alt": "Drosera citrina - entire plant"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -7391,6 +7443,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraClosterostigma.JPG",
         "original": "DroseraClosterostigma.JPG",
         "description": "Drosera closterostigma",
+        "specimen": false,
         "alt": "Drosera closterostigma"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -7498,6 +7551,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_collinsiae_inflorescence_Darwiniana.jpg",
         "original": "Drosera_collinsiae_inflorescence_Darwiniana.jpg",
         "description": "Drosera collinsiae - Collins sundew inflorescence",
+        "specimen": false,
         "alt": "Drosera collinsiae - Collins sundew inflorescence"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -7720,6 +7774,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_communis.jpg",
         "original": "Drosera_communis.jpg",
         "description": "Drosera communis - Chapada Imperial, Brasília, Brazil",
+        "specimen": false,
         "alt": "Drosera communis - Chapada Imperial, Brasília, Brazil"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8152,6 +8207,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_cuneifolia.jpg",
         "original": "Drosera_cuneifolia.jpg",
         "description": "Drosera cuneifolia",
+        "specimen": false,
         "alt": "Drosera cuneifolia"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8258,6 +8314,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraLongiscapaHabitus1.jpg",
         "original": "DroseraLongiscapaHabitus1.jpg",
         "description": "curvipes photograph",
+        "specimen": false,
         "alt": "curvipes photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8373,6 +8430,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_darwinensis.jpg",
         "original": "Drosera darwinensis.jpg",
         "description": "darwinensis photograph",
+        "specimen": false,
         "alt": "darwinensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8577,6 +8635,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_derbyensis_ne1.JPG",
         "original": "Drosera derbyensis ne1.JPG",
         "description": "derbyensis photograph",
+        "specimen": false,
         "alt": "derbyensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8684,6 +8743,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_dichrosepala_ssp._enodes.jpg",
         "original": "Drosera dichrosepala ssp. enodes.jpg",
         "description": "dichrosepala photograph",
+        "specimen": false,
         "alt": "dichrosepala photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8805,6 +8865,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_dielsiana_1.jpg",
         "original": "Drosera_dielsiana_1.jpg",
         "description": "Drosera dielsiana",
+        "specimen": false,
         "alt": "Drosera dielsiana"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -8938,6 +8999,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_dilatatio-petiolaris_Flora.jpg",
         "original": "Drosera_dilatatio-petiolaris_Flora.jpg",
         "description": "Drosera dilatato-petiolaris",
+        "specimen": false,
         "alt": "Drosera dilatato-petiolaris"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9045,6 +9107,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_echinoblastus.jpg",
         "original": "Drosera echinoblastus.jpg",
         "description": "echinoblastus photograph",
+        "specimen": false,
         "alt": "echinoblastus photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9152,6 +9215,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COI00083511_-_Drosera_elongata_-_Exell,_Arthur_Wallis_Mendona,_Francisco_de_Ascenso_-_1268.jpg",
         "original": "COI00083511 - Drosera elongata - Exell, Arthur Wallis Mendona, Francisco de Ascenso - 1268.jpg",
         "description": "Photograph of Isotype of Drosera elongata at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083511. http://coicatalogue.uc.pt/specimen/COI00083511",
+        "specimen": false,
         "alt": "Photograph of Isotype of Drosera elongata at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083511. http://coicatalogue.uc.pt/specimen/COI00083511"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9276,6 +9340,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraEnneabaFlora.jpg",
         "original": "DroseraEnneabaFlora.jpg",
         "description": "eneabba photograph",
+        "specimen": false,
         "alt": "eneabba photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9479,6 +9544,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_erythrogyne_99440991.jpg",
         "original": "Drosera erythrogyne 99440991.jpg",
         "description": "erythrogyne photograph",
+        "specimen": false,
         "alt": "erythrogyne photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9586,6 +9652,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraErythrorhiza.jpg",
         "original": "DroseraErythrorhiza.jpg",
         "description": "Drosera erythrorhiza - red ink sundew",
+        "specimen": false,
         "alt": "Drosera erythrorhiza - red ink sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9838,6 +9905,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_esperensis.jpg",
         "original": "Drosera esperensis.jpg",
         "description": "esperensis photograph",
+        "specimen": false,
         "alt": "esperensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -9945,6 +10013,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_falconeri_Darwiniana.jpg",
         "original": "Drosera_falconeri_Darwiniana.jpg",
         "description": "Drosera falconeri - falconer sundew",
+        "specimen": false,
         "alt": "Drosera falconeri - falconer sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -10052,6 +10121,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraFelix.jpg",
         "original": "DroseraFelix.jpg",
         "description": "felix photograph",
+        "specimen": false,
         "alt": "felix photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -10158,6 +10228,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_filiformis_ne1.jpg",
         "original": "Drosera_filiformis_ne1.jpg",
         "description": "Drosera filiformis - thread-leaved sundew",
+        "specimen": false,
         "alt": "Drosera filiformis - thread-leaved sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -10436,6 +10507,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_finlaysoniana.jpg",
         "original": "Drosera_finlaysoniana.jpg",
         "description": "Drosera finlaysoniana",
+        "specimen": false,
         "alt": "Drosera finlaysoniana"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -10702,6 +10774,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:D._Fulva_Closeup.jpg",
         "original": "D. Fulva Closeup.jpg",
         "description": "The ends of leaves in the Drosera Petiolaris species complex are tipped with sticky traps from which bugs are trapped and digested for nutrients. This photo is a closeup of those traps in Drosera Fulva.",
+        "specimen": false,
         "alt": "The ends of leaves in the Drosera Petiolaris species complex are tipped with sticky traps from which bugs are trapped and digested for nutrients. This photo is a closeup of those traps in Drosera Fulva."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -10809,6 +10882,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_gibsonii.jpg",
         "original": "Drosera gibsonii.jpg",
         "description": "Drosera gibsonii. Species of plant.",
+        "specimen": false,
         "alt": "Drosera gibsonii. Species of plant."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -10916,6 +10990,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_gigantea.jpg",
         "original": "Drosera_gigantea.jpg",
         "description": "Drosera gigantea - giant sundew with brilliant buds and calyx",
+        "specimen": false,
         "alt": "Drosera gigantea - giant sundew with brilliant buds and calyx"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11037,6 +11112,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_glabripes.jpg",
         "original": "Drosera glabripes.jpg",
         "description": "glabripes photograph",
+        "specimen": false,
         "alt": "glabripes photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11240,6 +11316,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_glanduligera_flower.jpg",
         "original": "Drosera_glanduligera_flower.jpg",
         "description": "Drosera glanduligera - glandular sundew flower",
+        "specimen": false,
         "alt": "Drosera glanduligera - glandular sundew flower"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11347,6 +11424,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_graminifolia.jpg",
         "original": "Drosera graminifolia.jpg",
         "description": "graminifolia photograph",
+        "specimen": false,
         "alt": "graminifolia photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11453,6 +11531,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_graniticola.jpg",
         "original": "Drosera graniticola.jpg",
         "description": "Drosera graniticola. Species of plant.",
+        "specimen": false,
         "alt": "Drosera graniticola. Species of plant."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11560,6 +11639,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_grantsaui.jpg",
         "original": "Drosera grantsaui.jpg",
         "description": "grantsaui photograph",
+        "specimen": false,
         "alt": "grantsaui photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11763,6 +11843,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_hamiltonii_fg01.JPG",
         "original": "Drosera hamiltonii fg01.JPG",
         "description": "hamiltonii photograph",
+        "specimen": false,
         "alt": "hamiltonii photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11870,6 +11951,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraHartmeyerorumSpecialGlands.jpg",
         "original": "DroseraHartmeyerorumSpecialGlands.jpg",
         "description": "hartmeyerorum photograph",
+        "specimen": false,
         "alt": "hartmeyerorum photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -11976,6 +12058,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraHelodesFlora.jpg",
         "original": "DroseraHelodesFlora.jpg",
         "description": "helodes photograph",
+        "specimen": false,
         "alt": "helodes photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -12083,6 +12166,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_heterophylla_Swamp_rainbow.jpg",
         "original": "Drosera heterophylla Swamp rainbow.jpg",
         "description": "heterophylla photograph",
+        "specimen": false,
         "alt": "heterophylla photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -12190,6 +12274,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_hilaris.jpg",
         "original": "Drosera_hilaris.jpg",
         "description": "Drosera hilaris - spreading sundew",
+        "specimen": false,
         "alt": "Drosera hilaris - spreading sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -12585,6 +12670,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_huegelii_imported_from_iNaturalist_19_May_2019.jpg",
         "original": "Drosera huegelii imported from iNaturalist 19 May 2019.jpg",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Drosera huegelii"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -12802,6 +12888,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraHyperostigmaHabitus.jpg",
         "original": "DroseraHyperostigmaHabitus.jpg",
         "description": "hyperostigma photograph",
+        "specimen": false,
         "alt": "hyperostigma photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -12909,6 +12996,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_indica_(Gawati_Davbindu)_in_Narsghapur,_AP_W_IMG_0951.jpg",
         "original": "Drosera_indica_(Gawati_Davbindu)_in_Narsghapur,_AP_W_IMG_0951.jpg",
         "description": "Drosera indica - Indian sundew",
+        "specimen": false,
         "alt": "Drosera indica - Indian sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -13487,6 +13575,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_intermedia_ne1.jpg",
         "original": "Drosera_intermedia_ne1.jpg",
         "description": "Drosera intermedia - oblong-leaved sundew",
+        "specimen": false,
         "alt": "Drosera intermedia - oblong-leaved sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14018,6 +14107,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_kaieteurensis_(1).jpg",
         "original": "Drosera kaieteurensis (1).jpg",
         "description": "kaieteurensis photograph",
+        "specimen": false,
         "alt": "kaieteurensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14239,6 +14329,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraKenneallyiFlora.jpg",
         "original": "DroseraKenneallyiFlora.jpg",
         "description": "kenneallyi photograph",
+        "specimen": false,
         "alt": "kenneallyi photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14346,6 +14437,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraLanata.jpg",
         "original": "DroseraLanata.jpg",
         "description": "lanata photograph",
+        "specimen": false,
         "alt": "lanata photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14453,6 +14545,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_lasiantha_habitus.jpg",
         "original": "Drosera lasiantha habitus.jpg",
         "description": "lasiantha photograph",
+        "specimen": false,
         "alt": "lasiantha photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14560,6 +14653,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_leucoblasta_Brookton.jpg",
         "original": "Drosera leucoblasta Brookton.jpg",
         "description": "leucoblasta photograph",
+        "specimen": false,
         "alt": "leucoblasta photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14667,6 +14761,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_linearis_by_reuvenm_cropped_CC-BY.jpg",
         "original": "Drosera_linearis_by_reuvenm_cropped_CC-BY.jpg",
         "description": "Drosera linearis - linear-leaved sundew in Canada",
+        "specimen": false,
         "alt": "Drosera linearis - linear-leaved sundew in Canada"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -14927,6 +15022,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraMacranthaInflorescence.jpg",
         "original": "DroseraMacranthaInflorescence.jpg",
         "description": "macrantha photograph",
+        "specimen": false,
         "alt": "macrantha photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -15034,6 +15130,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Droseramacrophylla.jpg",
         "original": "Droseramacrophylla.jpg",
         "description": "macrophylla photograph",
+        "specimen": false,
         "alt": "macrophylla photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -15141,6 +15238,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_madagascariensis_-_Orto_botanico_-_Rome,_Italy_-_DSC09954.jpg",
         "original": "Drosera_madagascariensis_-_Orto_botanico_-_Rome,_Italy_-_DSC09954.jpg",
         "description": "Drosera madagascariensis - Madagascar sundew botanical specimen",
+        "specimen": false,
         "alt": "Drosera madagascariensis - Madagascar sundew botanical specimen"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -15393,6 +15491,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_magnifica03.jpg",
         "original": "Drosera magnifica03.jpg",
         "description": "magnifica photograph",
+        "specimen": false,
         "alt": "magnifica photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -15636,6 +15735,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraManniiFlora1.jpg",
         "original": "DroseraManniiFlora1.jpg",
         "description": "mannii photograph",
+        "specimen": false,
         "alt": "mannii photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -15854,6 +15954,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_menziesiiSinglePlantHabit.jpg",
         "original": "Drosera_menziesiiSinglePlantHabit.jpg",
         "description": "Drosera menziesii - pink rainbow sundew habitus",
+        "specimen": false,
         "alt": "Drosera menziesii - pink rainbow sundew habitus"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -16001,6 +16102,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraMeristocaulis.jpg",
         "original": "DroseraMeristocaulis.jpg",
         "description": "meristocaulis photograph",
+        "specimen": false,
         "alt": "meristocaulis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -16214,6 +16316,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_microphylla_-_Flickr_-_Kevin_Thiele.jpg",
         "original": "Drosera_microphylla_-_Flickr_-_Kevin_Thiele.jpg",
         "description": "Drosera microphylla - tiny-leaved sundew",
+        "specimen": false,
         "alt": "Drosera microphylla - tiny-leaved sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -16335,6 +16438,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_miniata_-_Flickr_-_Kevin_Thiele_(1).jpg",
         "original": "Drosera miniata - Flickr - Kevin Thiele (1).jpg",
         "description": "KRT3867",
+        "specimen": false,
         "alt": "KRT3867"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -16539,6 +16643,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_montana.jpg",
         "original": "Drosera_montana.jpg",
         "description": "Drosera montana - mountain sundew",
+        "specimen": false,
         "alt": "Drosera montana - mountain sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -16803,6 +16908,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_murfetii_Lake_Pedder_Tasmania.jpg",
         "original": "Drosera murfetii Lake Pedder Tasmania.jpg",
         "description": "murfetii photograph",
+        "specimen": false,
         "alt": "murfetii photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -16909,6 +17015,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_myriantha_imported_from_iNaturalist_photo_168775673_on_17_April_2022.jpg",
         "original": "Drosera myriantha imported from iNaturalist photo 168775673 on 17 April 2022.jpg",
         "description": "myriantha photograph",
+        "specimen": false,
         "alt": "myriantha photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -17113,6 +17220,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_natalensis_flower_Darwiniana.jpg",
         "original": "Drosera natalensis flower Darwiniana.jpg",
         "description": "natalensis photograph",
+        "specimen": false,
         "alt": "natalensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -17348,6 +17456,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_neocaledonica_(scott.zona).jpg",
         "original": "Drosera neocaledonica (scott.zona).jpg",
         "description": "neocaledonica photograph",
+        "specimen": false,
         "alt": "neocaledonica photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -17454,6 +17563,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_nidiformis_habit.jpg",
         "original": "Drosera nidiformis habit.jpg",
         "description": "nidiformis photograph",
+        "specimen": false,
         "alt": "nidiformis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -17560,6 +17670,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_nitidula_gemmae.jpg",
         "original": "Drosera nitidula gemmae.jpg",
         "description": "nitidula photograph",
+        "specimen": false,
         "alt": "nitidula photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -17826,6 +17937,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_australis_(flower).jpg",
         "original": "Drosera australis (flower).jpg",
         "description": "occidentalis photograph",
+        "specimen": false,
         "alt": "occidentalis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -17960,6 +18072,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_orbiculata.jpg",
         "original": "Drosera orbiculata.jpg",
         "description": "Drosera orbiculata. Species of plant.",
+        "specimen": false,
         "alt": "Drosera orbiculata. Species of plant."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18067,6 +18180,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_ordensis.jpg",
         "original": "Drosera ordensis.jpg",
         "description": "ordensis photograph",
+        "specimen": false,
         "alt": "ordensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18174,6 +18288,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraOrepodionFlora.JPG",
         "original": "DroseraOrepodionFlora.JPG",
         "description": "oreopodion photograph",
+        "specimen": false,
         "alt": "oreopodion photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18281,6 +18396,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_paleacea_habitus.jpg",
         "original": "Drosera paleacea habitus.jpg",
         "description": "paleacea photograph",
+        "specimen": false,
         "alt": "paleacea photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18441,6 +18557,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_pallida.JPG",
         "original": "Drosera pallida.JPG",
         "description": "pallida photograph",
+        "specimen": false,
         "alt": "pallida photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18644,6 +18761,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_paradoxa_Darwiniana.jpg",
         "original": "Drosera_paradoxa_Darwiniana.jpg",
         "description": "tentacles of Drosera paradoxa",
+        "specimen": false,
         "alt": "tentacles of Drosera paradoxa"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18765,6 +18883,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_parvula_(7159630721).jpg",
         "original": "Drosera parvula (7159630721).jpg",
         "description": "Small Sundew, Drosera parvula. Wandoo National Park, Western Australia, May 2012. Thanks to Jean for the ID.",
+        "specimen": false,
         "alt": "Small Sundew, Drosera parvula. Wandoo National Park, Western Australia, May 2012. Thanks to Jean for the ID."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18886,6 +19005,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_pauciflora_leaf_Darwiniana.jpg",
         "original": "Drosera_pauciflora_leaf_Darwiniana.jpg",
         "description": "Drosera pauciflora - few-flowered sundew leaf tentacles",
+        "specimen": false,
         "alt": "Drosera pauciflora - few-flowered sundew leaf tentacles"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -18992,6 +19112,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:D_pedicellaris1.JPG",
         "original": "D pedicellaris1.JPG",
         "description": "pedicellaris photograph",
+        "specimen": false,
         "alt": "pedicellaris photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -19099,6 +19220,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraPeltataLamina.jpg",
         "original": "DroseraPeltataLamina.jpg",
         "description": "Drosera peltata - shield-leaved sundew lamina",
+        "specimen": false,
         "alt": "Drosera peltata - shield-leaved sundew lamina"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -19424,6 +19546,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_petiolaris_flower_2_Darwiniana.jpg",
         "original": "Drosera petiolaris flower 2 Darwiniana.jpg",
         "description": "flower of Drosera petiolaris",
+        "specimen": false,
         "alt": "flower of Drosera petiolaris"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -19673,6 +19796,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_platypodaDetailHabit.jpg",
         "original": "Drosera platypodaDetailHabit.jpg",
         "description": "platypoda photograph",
+        "specimen": false,
         "alt": "platypoda photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -19780,6 +19904,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_platystigma.jpg",
         "original": "Drosera platystigma.jpg",
         "description": "platystigma photograph",
+        "specimen": false,
         "alt": "platystigma photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -19887,6 +20012,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_prolifera.jpg",
         "original": "Drosera prolifera.jpg",
         "description": "Drosera prolifera growing in culture",
+        "specimen": false,
         "alt": "Drosera prolifera growing in culture"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -19994,6 +20120,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_prostratoscaposa.png",
         "original": "Drosera prostratoscaposa.png",
         "description": "Drosera prostratoscaposa (specimen K000659176)",
+        "specimen": false,
         "alt": "Drosera prostratoscaposa (specimen K000659176)"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -20101,6 +20228,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_pulchella_Darwiniana.jpg",
         "original": "Drosera pulchella Darwiniana.jpg",
         "description": "pulchella photograph",
+        "specimen": false,
         "alt": "pulchella photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -20208,6 +20336,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_pycnoblasta_(2),_exhibition_in_Botanical_garden_Brno.JPG",
         "original": "Drosera pycnoblasta (2), exhibition in Botanical garden Brno.JPG",
         "description": "pycnoblasta photograph",
+        "specimen": false,
         "alt": "pycnoblasta photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -20315,6 +20444,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_pygmaea_2.jpg",
         "original": "Drosera_pygmaea_2.jpg",
         "description": "Drosera pygmaea - pygmy sundew",
+        "specimen": false,
         "alt": "Drosera pygmaea - pygmy sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -20527,6 +20657,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_radicans_imported_from_iNaturalist_photo_225695767_on_30_January_2023.jpg",
         "original": "Drosera radicans imported from iNaturalist photo 225695767 on 30 January 2023.jpg",
         "description": "Photo of Drosera radicans uploaded from iNaturalist.",
+        "specimen": false,
         "alt": "Photo of Drosera radicans uploaded from iNaturalist."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -20634,6 +20765,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_ramellosa_Darwiniana.jpg",
         "original": "Drosera ramellosa Darwiniana.jpg",
         "description": "ramellosa photograph",
+        "specimen": false,
         "alt": "ramellosa photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -20934,6 +21066,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraRegia.jpg",
         "original": "DroseraRegia.jpg",
         "description": "Drosera regia",
+        "specimen": false,
         "alt": "Drosera regia"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -21150,6 +21283,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraRoraimae.jpg",
         "original": "DroseraRoraimae.jpg",
         "description": "roraimae photograph",
+        "specimen": false,
         "alt": "roraimae photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -21371,6 +21505,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_rotundifolia_Ohio.jpg",
         "original": "Drosera_rotundifolia_Ohio.jpg",
         "description": "Drosera rotundifolia photographed in Garrettsville, Ohio https://www.inaturalist.org/observations/184808631",
+        "specimen": false,
         "alt": "Drosera rotundifolia photographed in Garrettsville, Ohio https://www.inaturalist.org/observations/184808631"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -21887,6 +22022,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_salina.jpg",
         "original": "Drosera salina.jpg",
         "description": "Drosera salina. Species of plant.",
+        "specimen": false,
         "alt": "Drosera salina. Species of plant."
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -21994,6 +22130,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_schizandra_1.jpg",
         "original": "Drosera schizandra 1.jpg",
         "description": "schizandra photograph",
+        "specimen": false,
         "alt": "schizandra photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -22101,6 +22238,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_schmutzii.jpg",
         "original": "Drosera schmutzii.jpg",
         "description": "schmutzii photograph",
+        "specimen": false,
         "alt": "schmutzii photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -22304,6 +22442,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_scorpioides_Giant.jpg",
         "original": "Drosera scorpioides Giant.jpg",
         "description": "scorpioides photograph",
+        "specimen": false,
         "alt": "scorpioides photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -22411,6 +22550,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_circumvoluta_curls_itself_around_Drosera_serpens,_Davies_Creek,_Dinden_National_Park.jpg",
         "original": "Utricularia circumvoluta curls itself around Drosera serpens, Davies Creek, Dinden National Park.jpg",
         "description": "2 Co-occuring carnivorous plants, Utricularia foveolata is a small unusual bladderwort, rarely observed in Australia. Found on granite seepages in Davies Creek, Dinden National Park (Queensland, Australia)",
+        "specimen": false,
         "alt": "2 Co-occuring carnivorous plants, Utricularia foveolata is a small unusual bladderwort, rarely observed in Australia. Found on granite seepages in Davies Creek, Dinden National Park (Queensland, Australia)"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -22606,6 +22746,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sessilifolia.JPG",
         "original": "Sessilifolia.JPG",
         "description": "sessilifolia photograph",
+        "specimen": false,
         "alt": "sessilifolia photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -22730,6 +22871,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_sewelliae_318694120.jpg",
         "original": "Drosera sewelliae 318694120.jpg",
         "description": "Drosera sewelliae",
+        "specimen": false,
         "alt": "Drosera sewelliae"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -22936,6 +23078,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_slackii_leaf_Darwiniana.jpg",
         "original": "Drosera slackii leaf Darwiniana.jpg",
         "description": "slackii photograph",
+        "specimen": false,
         "alt": "slackii photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -23138,6 +23281,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_spatulata.jpg",
         "original": "Drosera_spatulata.jpg",
         "description": "Drosera spatulata - spoon-leaved sundew",
+        "specimen": false,
         "alt": "Drosera spatulata - spoon-leaved sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -23345,6 +23489,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_spilos_(full_plant).jpg",
         "original": "Drosera spilos (full plant).jpg",
         "description": "Drosera spilos",
+        "specimen": false,
         "alt": "Drosera spilos"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -23548,6 +23693,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_stenopetala.jpg",
         "original": "Drosera stenopetala.jpg",
         "description": "stenopetala photograph",
+        "specimen": false,
         "alt": "stenopetala photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -23654,6 +23800,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_stolonifera_Darwiniana.jpg",
         "original": "Drosera stolonifera Darwiniana.jpg",
         "description": "stolonifera photograph",
+        "specimen": false,
         "alt": "stolonifera photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -23840,6 +23987,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_stricticaulis_flower_Darwiniana.jpg",
         "original": "Drosera stricticaulis flower Darwiniana.jpg",
         "description": "stricticaulis photograph",
+        "specimen": false,
         "alt": "stricticaulis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -23961,6 +24109,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:(Drosera_subhirtella_close-up_in_Western_Australia,_Australia)_-_DPLA_-_bd122100d90f73b4e506b4378e28d872.jpg",
         "original": "(Drosera subhirtella close-up in Western Australia, Australia) - DPLA - bd122100d90f73b4e506b4378e28d872.jpg",
         "description": "subhirtella photograph",
+        "specimen": false,
         "alt": "subhirtella photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -24165,6 +24314,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:A_planta_carnivora_Drosera_tentaculata_exibe_um_vistoso_vermelho_vinho.JPG",
         "original": "A planta carnivora Drosera tentaculata exibe um vistoso vermelho vinho.JPG",
         "description": "tentaculata photograph",
+        "specimen": false,
         "alt": "tentaculata photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -24271,6 +24421,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_trinervia_Darwiniana.jpg",
         "original": "Drosera_trinervia_Darwiniana.jpg",
         "description": "Drosera trinervia - three-nerved sundew",
+        "specimen": false,
         "alt": "Drosera trinervia - three-nerved sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -24377,6 +24528,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraTubaestylus.jpg",
         "original": "DroseraTubaestylus.jpg",
         "description": "tubaestylis photograph",
+        "specimen": false,
         "alt": "tubaestylis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -24484,6 +24636,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_ultramafica_robinson_fleischmann_mcpherson.jpg",
         "original": "Drosera ultramafica robinson fleischmann mcpherson.jpg",
         "description": "ultramafica photograph",
+        "specimen": false,
         "alt": "ultramafica photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -24616,6 +24769,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_Uniflora.JPG",
         "original": "Drosera Uniflora.JPG",
         "description": "uniflora photograph",
+        "specimen": false,
         "alt": "uniflora photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -24838,6 +24992,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_ascendens_Darwiniana.jpg",
         "original": "Drosera ascendens Darwiniana.jpg",
         "description": "villosa photograph",
+        "specimen": false,
         "alt": "villosa photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -25054,6 +25209,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_walyunga_453452150.jpg",
         "original": "Drosera walyunga 453452150.jpg",
         "description": "Drosera walyunga in Australia",
+        "specimen": false,
         "alt": "Drosera walyunga in Australia"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -25161,6 +25317,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_whittakeri_149598898.jpg",
         "original": "Drosera_whittakeri_149598898.jpg",
         "description": "Drosera whittakeri - Whittaker sundew",
+        "specimen": false,
         "alt": "Drosera whittakeri - Whittaker sundew"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -25268,6 +25425,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_yilgarnensis.jpg",
         "original": "Drosera yilgarnensis.jpg",
         "description": "yilgarnensis photograph",
+        "specimen": false,
         "alt": "yilgarnensis photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -25471,6 +25629,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosera_zigzagia.jpg",
         "original": "Drosera zigzagia.jpg",
         "description": "zigzagia photograph",
+        "specimen": false,
         "alt": "zigzagia photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -25578,6 +25737,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:DroseraZonariaTuber1.JPG",
         "original": "DroseraZonariaTuber1.JPG",
         "description": "zonaria photograph",
+        "specimen": false,
         "alt": "zonaria photograph"
       },
       "illustration": "assets/img/genera/drosera.svg",
@@ -25685,6 +25845,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Drosophyllum_lusitanicum_a.JPG",
         "original": "Drosophyllum lusitanicum a.JPG",
         "description": "Name Drosophyllum lusitanicum Familiy Drosophyllaceae",
+        "specimen": false,
         "alt": "Name Drosophyllum lusitanicum Familiy Drosophyllaceae"
       },
       "illustration": "assets/img/genera/drosophyllum.svg",
@@ -25946,6 +26107,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COI00095123_-_Genlisea_angolensis_-_Gossweiler,_John_-_2841.jpg",
         "original": "COI00095123 - Genlisea angolensis - Gossweiler, John - 2841.jpg",
         "description": "Photograph of Isotype of Genlisea angolensis at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00095123. http://coicatalogue.uc.pt/specimen/COI00095123",
+        "specimen": false,
         "alt": "Photograph of Isotype of Genlisea angolensis at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00095123. http://coicatalogue.uc.pt/specimen/COI00095123"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -26061,6 +26223,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_aurea.JPG",
         "original": "Genlisea aurea.JPG",
         "description": "Genlisea aurea Author: Denis Barthel",
+        "specimen": false,
         "alt": "Genlisea aurea Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -26359,6 +26522,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_filiformis_flower_Darwiniana.jpg",
         "original": "Genlisea filiformis flower Darwiniana.jpg",
         "description": "Genlisea filiformis",
+        "specimen": false,
         "alt": "Genlisea filiformis"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -26949,6 +27113,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_hispidula.jpg",
         "original": "Genlisea hispidula.jpg",
         "description": "Vegetative above-ground portion of Genlisea hispidula in situ. Foto by Thomas Lendl 2005",
+        "specimen": false,
         "alt": "Vegetative above-ground portion of Genlisea hispidula in situ. Foto by Thomas Lendl 2005"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -27154,6 +27319,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:GenliseaLobata.jpg",
         "original": "GenliseaLobata.jpg",
         "description": "Genlisea lobata, a South American species",
+        "specimen": false,
         "alt": "Genlisea lobata, a South American species"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -27871,6 +28037,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_pygmaea.JPG",
         "original": "Genlisea pygmaea.JPG",
         "description": "Genlisea pygmaea Author: Denis Barthel",
+        "specimen": false,
         "alt": "Genlisea pygmaea Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -28014,6 +28181,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_repens.JPG",
         "original": "Genlisea repens.JPG",
         "description": "Genlisea repens Author: Denis Barthel",
+        "specimen": false,
         "alt": "Genlisea repens Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -28366,6 +28534,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_stapfii-NMNH-14730439.jpg",
         "original": "Genlisea stapfii-NMNH-14730439.jpg",
         "description": "Genlisea stapfii A. Chev. Object Details Biogeographical Region 22 - West Tropical Africa Collector John T. Baldwin Max. Elevation 762 Min. Elevation 610 Record Last Modified 18 May 2019 Specimen Count 1 Collection Da…",
+        "specimen": false,
         "alt": "Genlisea stapfii A. Chev. Object Details Biogeographical Region 22 - West Tropical Africa Collector John T. Baldwin Max. Elevation 762 Min. Elevation 610 Record Last Modified 18 May 2019 Specimen Count 1 Collection Da…"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -28580,6 +28749,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_subglabra_flora.jpg",
         "original": "Genlisea subglabra flora.jpg",
         "description": "Genlisea subglabra flora",
+        "specimen": false,
         "alt": "Genlisea subglabra flora"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -29010,6 +29180,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Genlisea_violacea.JPG",
         "original": "Genlisea_violacea.JPG",
         "description": "Genlisea violacea Author: Denis Barthel",
+        "specimen": false,
         "alt": "Genlisea violacea Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/genlisea.svg",
@@ -29329,6 +29500,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_ceracea.jpg",
         "original": "Heliamphora ceracea.jpg",
         "description": "heliamphora ceracea in cultivation.",
+        "specimen": false,
         "alt": "heliamphora ceracea in cultivation."
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -29435,6 +29607,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:H_chimantensis2.jpg",
         "original": "H_chimantensis2.jpg",
         "description": "Heliamphora chimantensis",
+        "specimen": false,
         "alt": "Heliamphora chimantensis"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -29938,6 +30111,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:H_folliculata_2.jpg",
         "original": "H folliculata 2.jpg",
         "description": "Heliamphora folliculata, a species of Marsh Pitcher Plant endemic to the Aparaman group of tepuis in Venezuela.",
+        "specimen": false,
         "alt": "Heliamphora folliculata, a species of Marsh Pitcher Plant endemic to the Aparaman group of tepuis in Venezuela."
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30140,6 +30314,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_heterodoxa_-_UB.jpg",
         "original": "Heliamphora heterodoxa - UB.jpg",
         "description": "Heliamphora Heterodoxa in the Botanical Garden of the University of Basel, Switzerland",
+        "specimen": false,
         "alt": "Heliamphora Heterodoxa in the Botanical Garden of the University of Basel, Switzerland"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30246,6 +30421,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_hispida.jpg",
         "original": "Heliamphora hispida.jpg",
         "description": "heliamphora hispida in cultivate Private collection Laval, Canada",
+        "specimen": false,
         "alt": "heliamphora hispida in cultivate Private collection Laval, Canada"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30457,6 +30633,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:H_ionasii.jpg",
         "original": "H ionasii.jpg",
         "description": "The pitchers of a Heliamphora ionasi, a species of Marsh Pitcher Plant.",
+        "specimen": false,
         "alt": "The pitchers of a Heliamphora ionasi, a species of Marsh Pitcher Plant."
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30564,6 +30741,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_minor_Auyan-tepui.jpg",
         "original": "Heliamphora minor Auyan-tepui.jpg",
         "description": "Fleischfressende Heliamphoren (Heliamphora minor), Auyan-Tepui, Venezuela",
+        "specimen": false,
         "alt": "Fleischfressende Heliamphoren (Heliamphora minor), Auyan-Tepui, Venezuela"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30697,6 +30875,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Roraima_Heliamphora_nutans1.JPG",
         "original": "Roraima_Heliamphora_nutans1.JPG",
         "description": "Heliamphora nutans of mount Roraima, Venezuela",
+        "specimen": false,
         "alt": "Heliamphora nutans of mount Roraima, Venezuela"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30834,6 +31013,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_pulchella_akopan.jpg",
         "original": "Heliamphora pulchella akopan.jpg",
         "description": "Carnivorous plant heliamphora pulchella.akopan",
+        "specimen": false,
         "alt": "Carnivorous plant heliamphora pulchella.akopan"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -30940,6 +31120,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heterodoxa_pt12.JPG",
         "original": "Heterodoxa pt12.JPG",
         "description": "Heliamphora heterodoxa 'Ptari Tepui' (now known as Heliamphora purpurascens)",
+        "specimen": false,
         "alt": "Heliamphora heterodoxa 'Ptari Tepui' (now known as Heliamphora purpurascens)"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -31142,6 +31323,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_tatei.JPG",
         "original": "Heliamphora tatei.JPG",
         "description": "Heliamphora tatei",
+        "specimen": false,
         "alt": "Heliamphora tatei"
       },
       "illustration": "assets/img/genera/heliamphora.svg",
@@ -31386,6 +31568,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:IbicellaLutea1.jpg",
         "original": "IbicellaLutea1.jpg",
         "description": "Flowers of Ibicella lutea in the Botanical Gardens in Marburg, Germany.",
+        "specimen": false,
         "alt": "Flowers of Ibicella lutea in the Botanical Gardens in Marburg, Germany."
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -31524,6 +31707,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Ibicella_parodii_MERL_11816.jpg",
         "original": "Ibicella parodii MERL 11816.jpg",
         "description": "Ibicella parodii Abbiatti (Martyniaceae). Ejemplar herborizado (MERL 11816). Colectado por Adrián Ruiz Leal (1949-02-06) en el Parque Aborigen, Parque General San Martín, Capital, Mendoza, Argentina. Herbario Mendoza …",
+        "specimen": false,
         "alt": "Ibicella parodii Abbiatti (Martyniaceae). Ejemplar herborizado (MERL 11816). Colectado por Adrián Ruiz Leal (1949-02-06) en el Parque Aborigen, Parque General San Martín, Capital, Mendoza, Argentina. Herbario Mendoza …"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -31630,6 +31814,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Martynia_annua_MHNT.BOT.2016.12.41.jpg",
         "original": "Martynia annua MHNT.BOT.2016.12.41.jpg",
         "description": "Martynia annua, cat's claw, fruits",
+        "specimen": false,
         "alt": "Martynia annua, cat's claw, fruits"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -31875,6 +32060,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_abgracilis_botanical_illustration.jpg",
         "original": "Nepenthes abgracilis botanical illustration.jpg",
         "description": "Original caption: \"Nepenthes abgracilis A habit, stem with upper pitcher; B upper pitcher (from McPherson 2009); C tendril apex (pitcher not developed), indumentum; D outer surface of pitcher, with sessile glands; E n…",
+        "specimen": false,
         "alt": "Original caption: \"Nepenthes abgracilis A habit, stem with upper pitcher; B upper pitcher (from McPherson 2009); C tendril apex (pitcher not developed), indumentum; D outer surface of pitcher, with sessile glands; E n…"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -31981,6 +32167,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_adnata1.jpg",
         "original": "Nepenthes_adnata1.jpg",
         "description": "Nepenthes adnata",
+        "specimen": false,
         "alt": "Nepenthes adnata"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32087,6 +32274,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_adrianii.jpg",
         "original": "Nepenthes adrianii.jpg",
         "description": "Nepenthes adrianii. Source: [1] Credit: Ma_Suska Used with permission.",
+        "specimen": false,
         "alt": "Nepenthes adrianii. Source: [1] Credit: Ma_Suska Used with permission."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32193,6 +32381,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_alata_ASR_062007_mt_ambucao_luzon.jpg",
         "original": "Nepenthes alata ASR 062007 mt ambucao luzon.jpg",
         "description": "Nepenthes alata photographed on Mt Ambucao, near Sagada and Banaue, Luzon (Alastair Robinson, June 2007) - upper pitcher. In this locality, hundreds of plants grow in a grassy upland meadow genuinely reminiscent of th…",
+        "specimen": false,
         "alt": "Nepenthes alata photographed on Mt Ambucao, near Sagada and Banaue, Luzon (Alastair Robinson, June 2007) - upper pitcher. In this locality, hundreds of plants grow in a grassy upland meadow genuinely reminiscent of th…"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32299,6 +32488,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_albomarginata.jpg",
         "original": "Nepenthes albomarginata.jpg",
         "description": "Photo taken in natural habitat.",
+        "specimen": false,
         "alt": "Photo taken in natural habitat."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32431,6 +32621,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_alzapan_botanical_illustration.jpg",
         "original": "Nepenthes alzapan botanical illustration.jpg",
         "description": "Original caption: \"Nepenthes alzapan A habit, with upper pitcher and male inflorescence; B transverse section of stem at base of leaf insertion; C hairs on outer pitcher wall; D lid of upper pitcher, lower surface; E …",
+        "specimen": false,
         "alt": "Original caption: \"Nepenthes alzapan A habit, with upper pitcher and male inflorescence; B transverse section of stem at base of leaf insertion; C hairs on outer pitcher wall; D lid of upper pitcher, lower surface; E …"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32537,6 +32728,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nep_amp_295.jpg",
         "original": "Nep_amp_295.jpg",
         "description": "Nepenthes ampullaria",
+        "specimen": false,
         "alt": "Nepenthes ampullaria"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32709,6 +32901,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_andamana_type_specimen.jpg",
         "original": "Nepenthes andamana type specimen.jpg",
         "description": "Nepenthes andamana type specimen, deposited at Chulalongkorn University Herbarium, Thailand",
+        "specimen": false,
         "alt": "Nepenthes andamana type specimen, deposited at Chulalongkorn University Herbarium, Thailand"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32815,6 +33008,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_argentii_ASR_062007_mt_guitingguiting_sibuyan.jpg",
         "original": "Nepenthes argentii ASR 062007 mt guitingguiting sibuyan.jpg",
         "description": "Nepenthes argentii photographed on Mount Guiting-Guiting, Sibuyan Island, Romblon Province (Alastair Robinson, June 2007) - pitcher and tendril.",
+        "specimen": false,
         "alt": "Nepenthes argentii photographed on Mount Guiting-Guiting, Sibuyan Island, Romblon Province (Alastair Robinson, June 2007) - pitcher and tendril."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -32922,6 +33116,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_aristolochioides_upper_pitcher.jpg",
         "original": "Nepenthes aristolochioides upper pitcher.jpg",
         "description": "Nepenthes aristolochioides",
+        "specimen": false,
         "alt": "Nepenthes aristolochioides"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33028,6 +33223,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Attlwr.jpg",
         "original": "Attlwr.jpg",
         "description": "A lower pitcher of Nepenthes attenboroughii demonstrating the characteristic campanulate shape and upright lid of this species (Alastair Robinson, June 2007)",
+        "specimen": false,
         "alt": "A lower pitcher of Nepenthes attenboroughii demonstrating the characteristic campanulate shape and upright lid of this species (Alastair Robinson, June 2007)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33244,6 +33440,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_bellii_upper_pitcher.jpg",
         "original": "Nepenthes bellii upper pitcher.jpg",
         "description": "Nepenthes bellii upper pitcher, Dinagat Island, Mindanao, Philippines",
+        "specimen": false,
         "alt": "Nepenthes bellii upper pitcher, Dinagat Island, Mindanao, Philippines"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33351,6 +33548,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_benstonei2.jpg",
         "original": "Nepenthes benstonei2.jpg",
         "description": "Nepenthes benstonei, Kelantan, Peninsular Malaysia",
+        "specimen": false,
         "alt": "Nepenthes benstonei, Kelantan, Peninsular Malaysia"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33553,6 +33751,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_bicalcarata_(cultivated1).jpg",
         "original": "Nepenthes bicalcarata (cultivated1).jpg",
         "description": "Nepenthes bicalcarata (cultivated)",
+        "specimen": false,
         "alt": "Nepenthes bicalcarata (cultivated)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33677,6 +33876,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_bokorensis_upper.jpg",
         "original": "Nepenthes bokorensis upper.jpg",
         "description": "Upper pitcher of Nepenthes bokorensis",
+        "specimen": false,
         "alt": "Upper pitcher of Nepenthes bokorensis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33783,6 +33983,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_bongso_1.JPG",
         "original": "Nepenthes bongso 1.JPG",
         "description": "Nepenthes bongso",
+        "specimen": false,
         "alt": "Nepenthes bongso"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33889,6 +34090,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_boschiana1.jpg",
         "original": "Nepenthes boschiana1.jpg",
         "description": "Nepenthes boschiana upper pitcher, Mount Sakumbang, Borneo",
+        "specimen": false,
         "alt": "Nepenthes boschiana upper pitcher, Mount Sakumbang, Borneo"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -33995,6 +34197,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_burbidgeae_066.jpg",
         "original": "Nepenthes burbidgeae 066.jpg",
         "description": "Nepenthes burbidgeae",
+        "specimen": false,
         "alt": "Nepenthes burbidgeae"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34101,6 +34304,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_burkei_ASR_062007_mt_halcon_mindoro.jpg",
         "original": "Nepenthes burkei ASR 062007 mt halcon mindoro.jpg",
         "description": "Nepenthes burkei photographed on Mount Halcon, Mindoro (Alastair Robinson, June 2007) - lower pitcher.",
+        "specimen": false,
         "alt": "Nepenthes burkei photographed on Mount Halcon, Mindoro (Alastair Robinson, June 2007) - lower pitcher."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34208,6 +34412,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_campanulata.jpg",
         "original": "Nepenthes campanulata.jpg",
         "description": "Cultivated N. campanulata. -Jeremiah-",
+        "specimen": false,
         "alt": "Cultivated N. campanulata. -Jeremiah-"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34418,6 +34623,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_chang_rosette.jpg",
         "original": "Nepenthes chang rosette.jpg",
         "description": "Nepenthes chang rosette plant, Thailand",
+        "specimen": false,
         "alt": "Nepenthes chang rosette plant, Thailand"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34524,6 +34730,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_chaniana_1.jpg",
         "original": "Nepenthes chaniana 1.jpg",
         "description": "Nepenthes chaniana",
+        "specimen": false,
         "alt": "Nepenthes chaniana"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34630,6 +34837,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_clipeata_22758.jpg",
         "original": "Nepenthes clipeata 22758.jpg",
         "description": "Nepenthes clipeata, Kulturpflanze",
+        "specimen": false,
         "alt": "Nepenthes clipeata, Kulturpflanze"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34736,6 +34944,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_copelandii1.jpg",
         "original": "Nepenthes copelandii1.jpg",
         "description": "Nepenthes copelandii, lower pitcher. On Mount Apo, Davao Region, Mindanao, the southern Philippines.",
+        "specimen": false,
         "alt": "Nepenthes copelandii, lower pitcher. On Mount Apo, Davao Region, Mindanao, the southern Philippines."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34842,6 +35051,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_danseri_(Bogor_botanical_park).jpg",
         "original": "Nepenthes danseri (Bogor botanical park).jpg",
         "description": "Photographed in Bogor Botanical Park",
+        "specimen": false,
         "alt": "Photographed in Bogor Botanical Park"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -34948,6 +35158,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_deaniana_ASR_062007_pulgar_palawan.jpg",
         "original": "Nepenthes deaniana ASR 062007 pulgar palawan.jpg",
         "description": "Nepenthes deaniana at its type locality on Thumb Peak (formerly Mount Pulgar), Palawan (Alastair Robinson, July 2007) - lower pitcher",
+        "specimen": false,
         "alt": "Nepenthes deaniana at its type locality on Thumb Peak (formerly Mount Pulgar), Palawan (Alastair Robinson, July 2007) - lower pitcher"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35055,6 +35266,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_densiflora_Mount_Kemiri_cropped.jpg",
         "original": "Nepenthes densiflora Mount Kemiri cropped.jpg",
         "description": "Pitcher of Nepenthes densiflora on Mount Kemiri in Leuser National Park, northern Sumatra.",
+        "specimen": false,
         "alt": "Pitcher of Nepenthes densiflora on Mount Kemiri in Leuser National Park, northern Sumatra."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35161,6 +35373,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_diatas.jpg",
         "original": "Nepenthes diatas.jpg",
         "description": "Cultivated N. diatas.-Jeremiah-",
+        "specimen": false,
         "alt": "Cultivated N. diatas.-Jeremiah-"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35267,6 +35480,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_distillatoria_2.jpg",
         "original": "Nepenthes distillatoria 2.jpg",
         "description": "Nepenthes distillatoria, Sinharaja Forest Reserve, Sri Lanka",
+        "specimen": false,
         "alt": "Nepenthes distillatoria, Sinharaja Forest Reserve, Sri Lanka"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35373,6 +35587,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthesdubia1.jpg",
         "original": "Nepenthesdubia1.jpg",
         "description": "Nepenthes dubia growing at ~1,600 m asl",
+        "specimen": false,
         "alt": "Nepenthes dubia growing at ~1,600 m asl"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35481,6 +35696,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_edwardsiana_entire_ASR_052007_tambu.jpg",
         "original": "Nepenthes edwardsiana entire ASR 052007 tambu.jpg",
         "description": "Nepenthes edwardsiana photographed on Mount Tambuyukon, Borneo (Alastair Robinson, May 2007) - upper pitcher.",
+        "specimen": false,
         "alt": "Nepenthes edwardsiana photographed on Mount Tambuyukon, Borneo (Alastair Robinson, May 2007) - upper pitcher."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35587,6 +35803,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_ephippiata.jpg",
         "original": "Nepenthes ephippiata.jpg",
         "description": "Cultivated N. ephippiata.",
+        "specimen": false,
         "alt": "Cultivated N. ephippiata."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35693,6 +35910,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_eustachya.JPG",
         "original": "Nepenthes eustachya.JPG",
         "description": "Nepenthes eustachya",
+        "specimen": false,
         "alt": "Nepenthes eustachya"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35799,6 +36017,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_eymae_upper_pitcher.jpg",
         "original": "Nepenthes eymae upper pitcher.jpg",
         "description": "Nepenthes eymae upper pitcher, Sulawesi",
+        "specimen": false,
         "alt": "Nepenthes eymae upper pitcher, Sulawesi"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -35913,6 +36132,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_faizaliana.JPG",
         "original": "Nepenthes faizaliana.JPG",
         "description": "A pitcher plant (Nepenthes faizaliana) in Mulu, Sarawak, Borneo.",
+        "specimen": false,
         "alt": "A pitcher plant (Nepenthes faizaliana) in Mulu, Sarawak, Borneo."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36019,6 +36239,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Gunung_Murud_logging_road_N._stenophylla_15.jpg",
         "original": "Gunung Murud logging road N. stenophylla 15.jpg",
         "description": "Nepenthes stenophylla on a logging road going to Gunung Murud by Jeremiah Harris",
+        "specimen": false,
         "alt": "Nepenthes stenophylla on a logging road going to Gunung Murud by Jeremiah Harris"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36134,6 +36355,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_flava11_cropped.jpg",
         "original": "Nepenthes flava11 cropped.jpg",
         "description": "Nepenthes flava growing in Sumatran mossy forest under a ~10 m high canopy (1850-2000 m asl)",
+        "specimen": false,
         "alt": "Nepenthes flava growing in Sumatran mossy forest under a ~10 m high canopy (1850-2000 m asl)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36240,6 +36462,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_fusca.PNG",
         "original": "Nepenthes fusca.PNG",
         "description": "Young Nepenthes fusca plant. Mount Kinabalu, Sabah, Borneo.",
+        "specimen": false,
         "alt": "Young Nepenthes fusca plant. Mount Kinabalu, Sabah, Borneo."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36346,6 +36569,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_glabrata.jpg",
         "original": "Nepenthes glabrata.jpg",
         "description": "Cultivated N. glabrata. -Jeremiah-",
+        "specimen": false,
         "alt": "Cultivated N. glabrata. -Jeremiah-"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36452,6 +36676,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_glandulifera.jpg",
         "original": "Nepenthes glandulifera.jpg",
         "description": "My cultivated N. glandulifera.",
+        "specimen": false,
         "alt": "My cultivated N. glandulifera."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36558,6 +36783,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_gracilis_-_4_-_par_Mickael_Schauli.jpg",
         "original": "Nepenthes gracilis - 4 - par Mickael Schauli.jpg",
         "description": "Nepenthes gracilis au jardin botanique Jean-Marie Pelt de Villers-lès-Nancy.",
+        "specimen": false,
         "alt": "Nepenthes gracilis au jardin botanique Jean-Marie Pelt de Villers-lès-Nancy."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36716,6 +36942,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_gracillima1.jpg",
         "original": "Nepenthes gracillima1.jpg",
         "description": "Nepenthes gracillima upper pitcher, Mount Tahan, Peninsular Malaysia",
+        "specimen": false,
         "alt": "Nepenthes gracillima upper pitcher, Mount Tahan, Peninsular Malaysia"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36822,6 +37049,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_gymnamphora_(Bogor_botanical_park).jpg",
         "original": "Nepenthes gymnamphora (Bogor botanical park).jpg",
         "description": "Photographed in Bogor Botanical Park",
+        "specimen": false,
         "alt": "Photographed in Bogor Botanical Park"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -36944,6 +37172,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_hamata10.jpg",
         "original": "Nepenthes hamata10.jpg",
         "description": "Nepenthes hamata, Sulawesi",
+        "specimen": false,
         "alt": "Nepenthes hamata, Sulawesi"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37043,6 +37272,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_higaonon_full.jpg",
         "original": "Nepenthes higaonon full.jpg",
         "description": "A new species of leaf insect from Mindanao",
+        "specimen": false,
         "alt": "A new species of leaf insect from Mindanao"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37155,6 +37385,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_hirsuta.jpg",
         "original": "Nepenthes hirsuta.jpg",
         "description": "Photo taken in natural habitat.",
+        "specimen": false,
         "alt": "Photo taken in natural habitat."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37279,6 +37510,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_holdenii_lower_pitcher.jpg",
         "original": "Nepenthes holdenii lower pitcher.jpg",
         "description": "Nepenthes holdenii",
+        "specimen": false,
         "alt": "Nepenthes holdenii"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37385,6 +37617,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Murud_N._hurreliana.jpg",
         "original": "Murud N. hurreliana.jpg",
         "description": "Nepenthes hurreliana Gunung Murud by Jeremiah Harris",
+        "specimen": false,
         "alt": "Nepenthes hurreliana Gunung Murud by Jeremiah Harris"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37502,6 +37735,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_inermis4.jpg",
         "original": "Nepenthes inermis4.jpg",
         "description": "Nepenthes inermis",
+        "specimen": false,
         "alt": "Nepenthes inermis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37608,6 +37842,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N._insignis7.jpg",
         "original": "N. insignis7.jpg",
         "description": "Nepenthes insignis from New Guinea (mainland form)",
+        "specimen": false,
         "alt": "Nepenthes insignis from New Guinea (mainland form)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37714,6 +37949,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_izumiae_3.JPG",
         "original": "Nepenthes izumiae 3.JPG",
         "description": "Nepenthes izumiae",
+        "specimen": false,
         "alt": "Nepenthes izumiae"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37820,6 +38056,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_jacquelineae_1.JPG",
         "original": "Nepenthes jacquelineae 1.JPG",
         "description": "Nepenthes jacquelineae",
+        "specimen": false,
         "alt": "Nepenthes jacquelineae"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -37926,6 +38163,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N._jamban_and_N._lingulata2.jpg",
         "original": "N. jamban and N. lingulata2.jpg",
         "description": "Nepenthes jamban and Nepenthes lingulata",
+        "specimen": false,
         "alt": "Nepenthes jamban and Nepenthes lingulata"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38127,6 +38365,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_kerrii.jpg",
         "original": "Nepenthes kerrii.jpg",
         "description": "Nepenthes kerrii pitchers, Thailand",
+        "specimen": false,
         "alt": "Nepenthes kerrii pitchers, Thailand"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38233,6 +38472,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_khasiana.jpg",
         "original": "Nepenthes khasiana.jpg",
         "description": "Here is a photo of my cultivated N. khasiana. -Jeremiah-",
+        "specimen": false,
         "alt": "Here is a photo of my cultivated N. khasiana. -Jeremiah-"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38339,6 +38579,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_klossii_upper_pitcher.jpg",
         "original": "Nepenthes klossii upper pitcher.jpg",
         "description": "Nepenthes klossii from New Guinea",
+        "specimen": false,
         "alt": "Nepenthes klossii from New Guinea"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38445,6 +38686,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_krabiensis.jpg",
         "original": "Nepenthes krabiensis.jpg",
         "description": "An upper pitcher of Nepenthes krabiensis",
+        "specimen": false,
         "alt": "An upper pitcher of Nepenthes krabiensis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38551,6 +38793,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepentheslamiilowerpitcher2800.jpg",
         "original": "Nepentheslamiilowerpitcher2800.jpg",
         "description": "Nepenthes lamii from Western New Guinea (~2800 m asl)",
+        "specimen": false,
         "alt": "Nepenthes lamii from Western New Guinea (~2800 m asl)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38753,6 +38996,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N._jamban_and_N._lingulata.jpg",
         "original": "N. jamban and N. lingulata.jpg",
         "description": "Nepenthes jamban and Nepenthes lingulata",
+        "specimen": false,
         "alt": "Nepenthes jamban and Nepenthes lingulata"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38859,6 +39103,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_longifolia_(1).jpg",
         "original": "Nepenthes longifolia (1).jpg",
         "description": "Cultivated N. longifolia. -Jeremiah-",
+        "specimen": false,
         "alt": "Cultivated N. longifolia. -Jeremiah-"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -38965,6 +39210,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Murud_N._lowii_30.jpg",
         "original": "Murud_N._lowii_30.jpg",
         "description": "Nepenthes lowii Gunung Murud by Jeremiah Harris",
+        "specimen": false,
         "alt": "Nepenthes lowii Gunung Murud by Jeremiah Harris"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -39180,6 +39426,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_macfarlanei_upper_pitcher.jpg",
         "original": "Nepenthes macfarlanei upper pitcher.jpg",
         "description": "An upper pitcher of Nepenthes macfarlanei. Peninsular Malaysia, Cameron Highlands mossy forest",
+        "specimen": false,
         "alt": "An upper pitcher of Nepenthes macfarlanei. Peninsular Malaysia, Cameron Highlands mossy forest"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -39286,6 +39533,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N.macrophylla.jpg",
         "original": "N.macrophylla.jpg",
         "description": "N.macrophylla",
+        "specimen": false,
         "alt": "N.macrophylla"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -39392,6 +39640,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_macrovulgaris_upper.jpg",
         "original": "Nepenthes macrovulgaris upper.jpg",
         "description": "N.macrovulgaris red lip",
+        "specimen": false,
         "alt": "N.macrovulgaris red lip"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -39498,6 +39747,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_madagascariensis_Ankanin'ny_Nofy_-_45.jpg",
         "original": "Nepenthes madagascariensis Ankanin'ny Nofy - 45.jpg",
         "description": "Nepenthes madagascariensis, a carnivorous plant.",
+        "specimen": false,
         "alt": "Nepenthes madagascariensis, a carnivorous plant."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -39604,6 +39854,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_mapuluensis_lower_pitcher.jpg",
         "original": "Nepenthes mapuluensis lower pitcher.jpg",
         "description": "Nepenthes mapuluensis, lower pitcher, East Kalimantan, c. 650 m a.s.l.",
+        "specimen": false,
         "alt": "Nepenthes mapuluensis, lower pitcher, East Kalimantan, c. 650 m a.s.l."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -39902,6 +40153,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_maxima_Sulawesi1.jpg",
         "original": "Nepenthes maxima Sulawesi1.jpg",
         "description": "Nepenthes maxima from Sulawesi (400 m altitude)",
+        "specimen": false,
         "alt": "Nepenthes maxima from Sulawesi (400 m altitude)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40220,6 +40472,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_merrilliana_lower_pitcher.jpg",
         "original": "Nepenthes merrilliana lower pitcher.jpg",
         "description": "Nepenthes merrilliana lower pitcher from Dinagat Island, Philippines",
+        "specimen": false,
         "alt": "Nepenthes merrilliana lower pitcher from Dinagat Island, Philippines"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40335,6 +40588,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_micramphora.jpg",
         "original": "Nepenthes micramphora.jpg",
         "description": "Nepenthes micramphora (endemic Pitcher plant). Found in Mount Hamiguitan Range, San Isidro, Davao Oriental Province, Mindanao islands region in the southern Philippines. Taken from Nov 29-Dec 1, 2009.",
+        "specimen": false,
         "alt": "Nepenthes micramphora (endemic Pitcher plant). Found in Mount Hamiguitan Range, San Isidro, Davao Oriental Province, Mindanao islands region in the southern Philippines. Taken from Nov 29-Dec 1, 2009."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40441,6 +40695,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_mikei_1.jpg",
         "original": "Nepenthes mikei 1.jpg",
         "description": "Plant Nepenthes mikei in Fata Morgana Greenhouse, Prague, Troja",
+        "specimen": false,
         "alt": "Plant Nepenthes mikei in Fata Morgana Greenhouse, Prague, Troja"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40547,6 +40802,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_mindanaoensis_ASR_072007_legaspi_mindanao.jpg",
         "original": "Nepenthes mindanaoensis ASR 072007 legaspi mindanao.jpg",
         "description": "Nepenthes mindanaoensis — an upper pitcher. On Mount Legaspi, near Surigao, Mindanao region in the southern Philippines. (Alastair Robinson, July 2007).",
+        "specimen": false,
         "alt": "Nepenthes mindanaoensis — an upper pitcher. On Mount Legaspi, near Surigao, Mindanao region in the southern Philippines. (Alastair Robinson, July 2007)."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40654,6 +40910,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Common_swamp_pitcher_plant.jpg",
         "original": "Common_swamp_pitcher_plant.jpg",
         "description": "Nepenthes mirabilis - common swamp pitcher plant",
+        "specimen": false,
         "alt": "Nepenthes mirabilis - common swamp pitcher plant"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40879,6 +41136,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_mollis_on_the_upper_slopes_of_Mt_Kemul,_Indonesia_—_AlastairRobinson.jpg",
         "original": "Nepenthes mollis on the upper slopes of Mt Kemul, Indonesia — AlastairRobinson.jpg",
         "description": "Nepenthes mollis on the upper slopes of Mt Kemul, Indonesia",
+        "specimen": false,
         "alt": "Nepenthes mollis on the upper slopes of Mt Kemul, Indonesia"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -40985,6 +41243,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepentheslamiiupperpitcher2800.jpg",
         "original": "Nepentheslamiiupperpitcher2800.jpg",
         "description": "Nepenthes lamii from Western New Guinea (~2800 m asl)",
+        "specimen": false,
         "alt": "Nepenthes lamii from Western New Guinea (~2800 m asl)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41091,6 +41350,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Murud_N._muluensis_7.jpg",
         "original": "Murud N. muluensis 7.jpg",
         "description": "Nepenthes muluensis Gunung Murud by Jeremiah Harris",
+        "specimen": false,
         "alt": "Nepenthes muluensis Gunung Murud by Jeremiah Harris"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41197,6 +41457,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_naga_new.jpg",
         "original": "Nepenthes naga new.jpg",
         "description": "Nepenthes naga from Sumatra",
+        "specimen": false,
         "alt": "Nepenthes naga from Sumatra"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41402,6 +41663,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_neoguineensis1.jpg",
         "original": "Nepenthes neoguineensis1.jpg",
         "description": "Nepenthes neoguineensis",
+        "specimen": false,
         "alt": "Nepenthes neoguineensis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41518,6 +41780,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Bau_N._northiana_3.jpg",
         "original": "Bau N. northiana 3.jpg",
         "description": "Nepenthes northiana at Bau Sarawak By Jeremiah Harris",
+        "specimen": false,
         "alt": "Nepenthes northiana at Bau Sarawak By Jeremiah Harris"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41624,6 +41887,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_ovata_lower_pitcher.jpeg",
         "original": "Nepenthes ovata lower pitcher.jpeg",
         "description": "Nepenthes ovata, North Sumatra",
+        "specimen": false,
         "alt": "Nepenthes ovata, North Sumatra"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41730,6 +41994,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_paniculata_lower_pitcher.jpg",
         "original": "Nepenthes paniculata lower pitcher.jpg",
         "description": "Nepenthes paniculata lower pitcher from the Doorman Massif, New Guinea",
+        "specimen": false,
         "alt": "Nepenthes paniculata lower pitcher from the Doorman Massif, New Guinea"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41836,6 +42101,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_papuana_lower_pitcher.jpg",
         "original": "Nepenthes papuana lower pitcher.jpg",
         "description": "Nepenthes papuana from Western New Guinea (~1300 m asl)",
+        "specimen": false,
         "alt": "Nepenthes papuana from Western New Guinea (~1300 m asl)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -41942,6 +42208,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_peltata.jpg",
         "original": "Nepenthes peltata.jpg",
         "description": "Pitcher plant (Nepenthes sp.) found in Mount Hamiguitan Range, San Isidro, Davao Oriental. Taken from Nov 29-Dec 1, 2009)",
+        "specimen": false,
         "alt": "Pitcher plant (Nepenthes sp.) found in Mount Hamiguitan Range, San Isidro, Davao Oriental. Taken from Nov 29-Dec 1, 2009)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42048,6 +42315,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_pervillei_pitcher.jpg",
         "original": "Nepenthes pervillei pitcher.jpg",
         "description": "Nepenthes pervillei pitcher, Seychelles",
+        "specimen": false,
         "alt": "Nepenthes pervillei pitcher, Seychelles"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42154,6 +42422,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_petiolata.jpg",
         "original": "Nepenthes petiolata.jpg",
         "description": "Nepenthes petiolata, Mount Masay, Philippines",
+        "specimen": false,
         "alt": "Nepenthes petiolata, Mount Masay, Philippines"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42261,6 +42530,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_philippinensis_ASR_072007_bacungan_palawan.jpg",
         "original": "Nepenthes philippinensis ASR 072007 bacungan palawan.jpg",
         "description": "Nepenthes philippinensis near its type locality, Bacungan, en:Palawan (Alastair Robinson, July 2007) - lower pitcher.",
+        "specimen": false,
         "alt": "Nepenthes philippinensis near its type locality, Bacungan, en:Palawan (Alastair Robinson, July 2007) - lower pitcher."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42370,6 +42640,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_pilosa.jpg",
         "original": "Nepenthes pilosa.jpg",
         "description": "Cultivated Nepenthes chaniana",
+        "specimen": false,
         "alt": "Cultivated Nepenthes chaniana"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42476,6 +42747,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:SulawesiNepenthes7.jpg",
         "original": "SulawesiNepenthes7.jpg",
         "description": "Undescribed Nepenthes species from Sulawesi",
+        "specimen": false,
         "alt": "Undescribed Nepenthes species from Sulawesi"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42582,6 +42854,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_platychila_upper.jpg",
         "original": "Nepenthes platychila upper.jpg",
         "description": "Upper pitcher of Nepenthes platychila at California Carnivores",
+        "specimen": false,
         "alt": "Upper pitcher of Nepenthes platychila at California Carnivores"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42783,6 +43056,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_x_pyriformis.jpg",
         "original": "Nepenthes x pyriformis.jpg",
         "description": "Upper pitcher of Nepenthes × pyriformis",
+        "specimen": false,
         "alt": "Upper pitcher of Nepenthes × pyriformis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -42891,6 +43165,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rafflesiana_ant.jpg",
         "original": "Nepenthes rafflesiana ant.jpg",
         "description": "Ant drinking nectar from the peristome of an upper pitcher of Nepenthes rafflesianaIt is the biggest carnivorous plant (Nepenthaceae). Bako National Park, Sarawak, Borneo.",
+        "specimen": false,
         "alt": "Ant drinking nectar from the peristome of an upper pitcher of Nepenthes rafflesianaIt is the biggest carnivorous plant (Nepenthaceae). Bako National Park, Sarawak, Borneo."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43032,6 +43307,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rajah.png",
         "original": "Nepenthes_rajah.png",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Nepenthes rajah"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43152,6 +43428,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_ramos_plant.jpg",
         "original": "Nepenthes ramos plant.jpg",
         "description": "Nepenthes ramos plant from Mt. Hibok-Hibok, Camiguin Island, Philippines",
+        "specimen": false,
         "alt": "Nepenthes ramos plant from Mt. Hibok-Hibok, Camiguin Island, Philippines"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43258,6 +43535,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_reinwardtiana.JPG",
         "original": "Nepenthes reinwardtiana.JPG",
         "description": "Photo taken in natural habitat.",
+        "specimen": false,
         "alt": "Photo taken in natural habitat."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43390,6 +43668,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rhombicaulis1.jpg",
         "original": "Nepenthes rhombicaulis1.jpg",
         "description": "Nepenthes rhombicaulis from Simanuk-manuk, Sumatra.",
+        "specimen": false,
         "alt": "Nepenthes rhombicaulis from Simanuk-manuk, Sumatra."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43496,6 +43775,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rigidifolia.jpg",
         "original": "Nepenthes rigidifolia.jpg",
         "description": "Nepenthes rigidifolia",
+        "specimen": false,
         "alt": "Nepenthes rigidifolia"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43602,6 +43882,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_rosea_-_lower_pitcher.jpg",
         "original": "Nepenthes rosea - lower pitcher.jpg",
         "description": "Nepenthes rosea lower pitcher, Krabi Province, Peninsular Thailand",
+        "specimen": false,
         "alt": "Nepenthes rosea lower pitcher, Krabi Province, Peninsular Thailand"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43708,6 +43989,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_sanguinea_(6).JPG",
         "original": "Nepenthes sanguinea (6).JPG",
         "description": "Nepenthes sanguinea",
+        "specimen": false,
         "alt": "Nepenthes sanguinea"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -43910,6 +44192,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_sibuyanensis_ASR_062007_guiting2_sibuyan.jpg",
         "original": "Nepenthes sibuyanensis ASR 062007 guiting2 sibuyan.jpg",
         "description": "Nepenthes sibuyanensis photographed on the Knife Edge ridge of en:Mount Guiting-Guiting, Sibuyan (Alastair Robinson, June 2007) - globose lower pitcher.",
+        "specimen": false,
         "alt": "Nepenthes sibuyanensis photographed on the Knife Edge ridge of en:Mount Guiting-Guiting, Sibuyan (Alastair Robinson, June 2007) - globose lower pitcher."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44017,6 +44300,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_singalana_5.JPG",
         "original": "Nepenthes singalana 5.JPG",
         "description": "Nepenthes singalana",
+        "specimen": false,
         "alt": "Nepenthes singalana"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44123,6 +44407,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N._smilesii_pitchers.jpg",
         "original": "N. smilesii pitchers.jpg",
         "description": "Nepenthes smilesii from Kampot, Cambodia (16 m asl)",
+        "specimen": false,
         "alt": "Nepenthes smilesii from Kampot, Cambodia (16 m asl)"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44256,6 +44541,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_spathulata_GotBot_2015_002.JPG",
         "original": "Nepenthes spathulata GotBot 2015 002.JPG",
         "description": "Nepenthes spathulata at Gothenburg Botanical Garden 2015. Plant id: 2008-2006 p G -- Extreme pl",
+        "specimen": false,
         "alt": "Nepenthes spathulata at Gothenburg Botanical Garden 2015. Plant id: 2008-2006 p G -- Extreme pl"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44362,6 +44648,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_spectabilis_2.JPG",
         "original": "Nepenthes spectabilis 2.JPG",
         "description": "Nepenthes spectabilis",
+        "specimen": false,
         "alt": "Nepenthes spectabilis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44468,6 +44755,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_stenophylla.jpg",
         "original": "Nepenthes stenophylla.jpg",
         "description": "Cultivated N. stenophylla. -Jeremiah-",
+        "specimen": false,
         "alt": "Cultivated N. stenophylla. -Jeremiah-"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44574,6 +44862,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_sumatrana_1.JPG",
         "original": "Nepenthes sumatrana 1.JPG",
         "description": "Nepenthes sumatrana",
+        "specimen": false,
         "alt": "Nepenthes sumatrana"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44680,6 +44969,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_suratensis_in_cultivation_(1).jpg",
         "original": "Nepenthes suratensis in cultivation (1).jpg",
         "description": "Kantong Nepenthes suratensis dari kebun saya sendiri - tampak samping",
+        "specimen": false,
         "alt": "Kantong Nepenthes suratensis dari kebun saya sendiri - tampak samping"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44786,6 +45076,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_talangensis1.jpg",
         "original": "Nepenthes talangensis1.jpg",
         "description": "Nepenthes talangensis",
+        "specimen": false,
         "alt": "Nepenthes talangensis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -44892,6 +45183,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_tentaculata.jpg",
         "original": "Nepenthes tentaculata.jpg",
         "description": "Photo taken in natural habitat.",
+        "specimen": false,
         "alt": "Photo taken in natural habitat."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45015,6 +45307,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_tenuis_cultivated.jpg",
         "original": "Nepenthes tenuis cultivated.jpg",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Nepenthes tenuis"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45121,6 +45414,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N._thai.jpeg",
         "original": "N. thai.jpeg",
         "description": "Nepenthes thai with lower pitcher, Thailand",
+        "specimen": false,
         "alt": "Nepenthes thai with lower pitcher, Thailand"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45227,6 +45521,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:N.Thorelii_P6230327.JPG",
         "original": "N.Thorelii P6230327.JPG",
         "description": "N. thorelii from near \"Ta Cui MT\" Binh Thuan province, Vietnam",
+        "specimen": false,
         "alt": "N. thorelii from near \"Ta Cui MT\" Binh Thuan province, Vietnam"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45351,6 +45646,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_tobaica_lower_pitcher.jpg",
         "original": "Nepenthes tobaica lower pitcher.jpg",
         "description": "Nepenthes tobaica",
+        "specimen": false,
         "alt": "Nepenthes tobaica"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45457,6 +45753,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_tomoriana_(Bogor_botanical_park).jpg",
         "original": "Nepenthes tomoriana (Bogor botanical park).jpg",
         "description": "Photographed in Bogor Botanical Park",
+        "specimen": false,
         "alt": "Photographed in Bogor Botanical Park"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45563,6 +45860,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_treubiana1.jpg",
         "original": "Nepenthes treubiana1.jpg",
         "description": "Nepenthes treubiana lower pitcher, McCluer Gulf, New Guinea",
+        "specimen": false,
         "alt": "Nepenthes treubiana lower pitcher, McCluer Gulf, New Guinea"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45669,6 +45967,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_truncata_2.jpg",
         "original": "Nepenthes_truncata_2.jpg",
         "description": "Nepenthes truncata pitcher, northern Mindanao at 230 m",
+        "specimen": false,
         "alt": "Nepenthes truncata pitcher, northern Mindanao at 230 m"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -45885,6 +46184,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nveitchii2.jpg",
         "original": "Nveitchii2.jpg",
         "description": "Nepenthes veitchii",
+        "specimen": false,
         "alt": "Nepenthes veitchii"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -46006,6 +46306,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_ventricosa_ASR_062007_mayon_luzon.jpg",
         "original": "Nepenthes ventricosa ASR 062007 mayon luzon.jpg",
         "description": "Nepenthes ventricosa photographed on the Mayon Volcano, en:Luzon (Alastair Robinson, June 2007) - lower pitcher.",
+        "specimen": false,
         "alt": "Nepenthes ventricosa photographed on the Mayon Volcano, en:Luzon (Alastair Robinson, June 2007) - lower pitcher."
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -46113,6 +46414,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_vieillardii_pitcher_cropped.jpg",
         "original": "Nepenthes vieillardii pitcher cropped.jpg",
         "description": "Nepenthes vieillardii lower pitcher. Original description: \"Cette plante carnivore de la famile des Nepenthes est très présente le long des chemins de la Rivière Bleu. La fleur n'est pas suspendu contrairement à ce qu…",
+        "specimen": false,
         "alt": "Nepenthes vieillardii lower pitcher. Original description: \"Cette plante carnivore de la famile des Nepenthes est très présente le long des chemins de la Rivière Bleu. La fleur n'est pas suspendu contrairement à ce qu…"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -46219,6 +46521,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_villosa_Mt_Kinabalu_Sabah_Borneo.jpg",
         "original": "Nepenthes_villosa_Mt_Kinabalu_Sabah_Borneo.jpg",
         "description": "Upper pitcher of villose pitcher-plant ( Nepenthes villosa ) from Mount Kinabalu",
+        "specimen": false,
         "alt": "Upper pitcher of villose pitcher-plant ( Nepenthes villosa ) from Mount Kinabalu"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -46339,6 +46642,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Nepenthes_viridis_intermediate_pitcher.jpg",
         "original": "Nepenthes viridis intermediate pitcher.jpg",
         "description": "Nepenthes viridis intermediate pitcher, photographed on an islet off Dinagat, Philippines",
+        "specimen": false,
         "alt": "Nepenthes viridis intermediate pitcher, photographed on an islet off Dinagat, Philippines"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -46445,6 +46749,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Kelabit_Highlands_N._vogelii_28.jpg",
         "original": "Kelabit Highlands N. vogelii 28.jpg",
         "description": "Nepenthes vogelii Kelabit Highlands Sarawak by Jeremiah Harris",
+        "specimen": false,
         "alt": "Nepenthes vogelii Kelabit Highlands Sarawak by Jeremiah Harris"
       },
       "illustration": "assets/img/genera/nepenthes.svg",
@@ -46551,6 +46856,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_acuminata_ne1.jpg",
         "original": "Pinguicula acuminata ne1.jpg",
         "description": "Pinguicula acuminata in situ, Hidalgo, Mexico.",
+        "specimen": false,
         "alt": "Pinguicula acuminata in situ, Hidalgo, Mexico."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -46657,6 +46963,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_agnata_kz01.jpg",
         "original": "Pinguicula agnata kz01.jpg",
         "description": "Pinguicula agnata in the Botanischer Garten, Berlin-Dahlem",
+        "specimen": false,
         "alt": "Pinguicula agnata in the Botanischer Garten, Berlin-Dahlem"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -46955,6 +47262,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_alpina_Triftsteig.jpg",
         "original": "Pinguicula alpina Triftsteig.jpg",
         "description": "'Pinguicula alpina , Trifsteig / Reichraminger Hintergebirge, Austria",
+        "specimen": false,
         "alt": "'Pinguicula alpina , Trifsteig / Reichraminger Hintergebirge, Austria"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -47206,6 +47514,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicola_Antarctica.JPG",
         "original": "Pinguicola Antarctica.JPG",
         "description": "Planta Carnívora Chile",
+        "specimen": false,
         "alt": "Planta Carnívora Chile"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -47321,6 +47630,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_australandina_348452591.jpg",
         "original": "Pinguicula australandina 348452591.jpg",
         "description": "Pinguicula australandina in Argentina",
+        "specimen": false,
         "alt": "Pinguicula australandina in Argentina"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -47532,6 +47842,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_balcanica_flower.JPG",
         "original": "Pinguicula balcanica flower.JPG",
         "description": "Flower of pinguicula balcanica",
+        "specimen": false,
         "alt": "Flower of pinguicula balcanica"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -47904,6 +48215,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_caerulea_(5359134739).jpg",
         "original": "Pinguicula caerulea (5359134739).jpg",
         "description": "Blue Butterwort (Pinguicula caerulea) along a trail at Jonathan Dickinson State Park, Martin County, Florida. There were also Yellow Butterwort in the area. No color enhancement, the flower is actually somewhat bluer …",
+        "specimen": false,
         "alt": "Blue Butterwort (Pinguicula caerulea) along a trail at Jonathan Dickinson State Park, Martin County, Florida. There were also Yellow Butterwort in the area. No color enhancement, the flower is actually somewhat bluer …"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -48130,6 +48442,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_calyptrata_(Lentibulariaceae)_(46366029652).jpg",
         "original": "Pinguicula calyptrata (Lentibulariaceae) (46366029652).jpg",
         "description": "Ecuador, Napo Province, Cayambe Coca National Park, near Loreto lake, páramo, 3800 m",
+        "specimen": false,
         "alt": "Ecuador, Napo Province, Cayambe Coca National Park, near Loreto lake, páramo, 3800 m"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -48245,6 +48558,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_casabitoana_152406969_10165495814990131_3389642892318820577_n.jpg",
         "original": "Pinguicula casabitoana 152406969 10165495814990131 3389642892318820577 n.jpg",
         "description": "Pinguicula casabitoana in Loma Casabito, Dominican Republic.",
+        "specimen": false,
         "alt": "Pinguicula casabitoana in Loma Casabito, Dominican Republic."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -48648,6 +48962,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_conzattii_ne2.jpg",
         "original": "Pinguicula conzattii ne2.jpg",
         "description": "Pinguicula conzattii with prey in Oaxaca, Mexico",
+        "specimen": false,
         "alt": "Pinguicula conzattii with prey in Oaxaca, Mexico"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -48754,6 +49069,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_corsica.jpg",
         "original": "Pinguicula corsica.jpg",
         "description": "Pinguicula corsica - Taken at Corsica under Monte Cinto",
+        "specimen": false,
         "alt": "Pinguicula corsica - Taken at Corsica under Monte Cinto"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -49088,6 +49404,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_hirtiflora.jpg",
         "original": "Pinguicula hirtiflora.jpg",
         "description": "Pinguicula hirtiflora or Pinguicula crystallina subsp. hirtiflora",
+        "specimen": false,
         "alt": "Pinguicula hirtiflora or Pinguicula crystallina subsp. hirtiflora"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -49319,6 +49636,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_cyclosecta_summer.jpg",
         "original": "Pinguicula cyclosecta summer.jpg",
         "description": "Pinguicula cyclosecta summer rosette.jpg Author: Denis Barthel",
+        "specimen": false,
         "alt": "Pinguicula cyclosecta summer rosette.jpg Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -49521,6 +49839,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_ehlersiae_01.jpg",
         "original": "Pinguicula ehlersiae 01.jpg",
         "description": "Pinguicula ehlersiae",
+        "specimen": false,
         "alt": "Pinguicula ehlersiae"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -49627,6 +49946,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_elizabethiae.jpg",
         "original": "Pinguicula elizabethiae.jpg",
         "description": "Pinguicula elizabethiae in situ at Toliman Canyon, Hidalgo state, Mexico",
+        "specimen": false,
         "alt": "Pinguicula elizabethiae in situ at Toliman Canyon, Hidalgo state, Mexico"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -49838,6 +50158,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_emarginata_(2679914506).jpg",
         "original": "Pinguicula emarginata (2679914506).jpg",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Pinguicula emarginata"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -49944,6 +50265,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_esseriana_02.jpg",
         "original": "Pinguicula esseriana 02.jpg",
         "description": "Habitus. Botanical Garden KIT, Karlsruhe, Germany.",
+        "specimen": false,
         "alt": "Habitus. Botanical Garden KIT, Karlsruhe, Germany."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -50050,6 +50372,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_filifolia_flower_(side_view).jpg",
         "original": "Pinguicula filifolia flower (side view).jpg",
         "description": "side view of a P. filifolia flower",
+        "specimen": false,
         "alt": "side view of a P. filifolia flower"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -50266,6 +50589,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_ne1.JPG",
         "original": "Pinguicula_ne1.JPG",
         "description": "Description: Pinguicula gigantea with prey Photo by: Noah Elhardt",
+        "specimen": false,
         "alt": "Description: Pinguicula gigantea with prey Photo by: Noah Elhardt"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -50482,6 +50806,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_grandiflora_001.jpg",
         "original": "Pinguicula_grandiflora_001.jpg",
         "description": "Pinguicula grandiflora",
+        "specimen": false,
         "alt": "Pinguicula grandiflora"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -50758,6 +51083,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_gypsicola_ne1.jpg",
         "original": "Pinguicula gypsicola ne1.jpg",
         "description": "Pinguicula gypsicola in situ",
+        "specimen": false,
         "alt": "Pinguicula gypsicola in situ"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -50960,6 +51286,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_heterophylla.jpg",
         "original": "Pinguicula heterophylla.jpg",
         "description": "Pinguicula heterophylla in situ, Oaxaca, Mexico.",
+        "specimen": false,
         "alt": "Pinguicula heterophylla in situ, Oaxaca, Mexico."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -51066,6 +51393,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_ibarrae_-_Orto_botanico_-_Rome,_Italy_-_DSC09943.jpg",
         "original": "Pinguicula ibarrae - Orto botanico - Rome, Italy - DSC09943.jpg",
         "description": "Botanical specimen in the Orto botanico - Rome, Italy.",
+        "specimen": false,
         "alt": "Botanical specimen in the Orto botanico - Rome, Italy."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -51565,6 +51893,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_ionantha.jpg",
         "original": "Pinguicula ionantha.jpg",
         "description": "Pinguicula ionantha in Apalachicola National Forest, Liberty Co., FL, USA. USFWS photo.",
+        "specimen": false,
         "alt": "Pinguicula ionantha in Apalachicola National Forest, Liberty Co., FL, USA. USFWS photo."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -51959,6 +52288,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_jaumavensis_(4).JPG",
         "original": "Pinguicula jaumavensis (4).JPG",
         "description": "Pinguicula jaumavensis",
+        "specimen": false,
         "alt": "Pinguicula jaumavensis"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -52065,6 +52395,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_kondoi.JPG",
         "original": "Pinguicula kondoi.JPG",
         "description": "flower of Pinguicula kondoi",
+        "specimen": false,
         "alt": "flower of Pinguicula kondoi"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -52171,6 +52502,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_laueana,_exhibition_in_Botanical_garden_Brno.JPG",
         "original": "Pinguicula laueana, exhibition in Botanical garden Brno.JPG",
         "description": "Pinguicula laueana. Carnivorous plants exhibition in Botanical garden Brno (2010).",
+        "specimen": false,
         "alt": "Pinguicula laueana. Carnivorous plants exhibition in Botanical garden Brno (2010)."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -52277,6 +52609,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_laxifolia_ne1.jpg",
         "original": "Pinguicula laxifolia ne1.jpg",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Pinguicula laxifolia"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -52383,6 +52716,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_leptoceras_002.jpg",
         "original": "Pinguicula leptoceras 002.jpg",
         "description": "Pinguicula leptoceras",
+        "specimen": false,
         "alt": "Pinguicula leptoceras"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -52918,6 +53252,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_longifolia.JPG",
         "original": "Pinguicula longifolia.JPG",
         "description": "Pinguicula longifolia subsp. longifolia, Cañón de Añisclo, Pirineos, (Huesca), España",
+        "specimen": false,
         "alt": "Pinguicula longifolia subsp. longifolia, Cañón de Añisclo, Pirineos, (Huesca), España"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -53074,6 +53409,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_lusitanica.JPG",
         "original": "Pinguicula lusitanica.JPG",
         "description": "Pinguicula lusitanica",
+        "specimen": false,
         "alt": "Pinguicula lusitanica"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -53226,6 +53562,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_lutea.jpg",
         "original": "Pinguicula lutea.jpg",
         "description": "Description:Pinguicula lutea Photo taken by: Noah Elhardt",
+        "specimen": false,
         "alt": "Description:Pinguicula lutea Photo taken by: Noah Elhardt"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -53380,6 +53717,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_macroceras_-_Flickr_003.jpg",
         "original": "Pinguicula macroceras - Flickr 003.jpg",
         "description": "Pinguicula macroceras. Another \"insect-eating\" plant. By looking closely, one can see a few insects trapped on the sticky leaves. Growing on near-vertical cliff face in dripping water. Jed Smith State Park, Del Norte …",
+        "specimen": false,
         "alt": "Pinguicula macroceras. Another \"insect-eating\" plant. By looking closely, one can see a few insects trapped on the sticky leaves. Growing on near-vertical cliff face in dripping water. Jed Smith State Park, Del Norte …"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -54277,6 +54615,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_moctezumae_1Edit.jpg",
         "original": "Pinguicula moctezumae 1Edit.jpg",
         "description": "Pinguicula moctezumae in the botanical Garden Jena",
+        "specimen": false,
         "alt": "Pinguicula moctezumae in the botanical Garden Jena"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -54383,6 +54722,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_moranensis.jpg",
         "original": "Pinguicula moranensis.jpg",
         "description": "Pinguicula moranensis plant profile. Taken in situ in Oaxaca, Mexico.",
+        "specimen": false,
         "alt": "Pinguicula moranensis plant profile. Taken in situ in Oaxaca, Mexico."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -55074,6 +55414,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_orchidioides_ne1.jpg",
         "original": "Pinguicula orchidioides ne1.jpg",
         "description": "Pinguicula orchidioides in situ, Oaxaca, Mexico.",
+        "specimen": false,
         "alt": "Pinguicula orchidioides in situ, Oaxaca, Mexico."
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -55477,6 +55818,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_planifolia_(Chapman's_butterwort).jpg",
         "original": "Pinguicula planifolia (Chapman's butterwort).jpg",
         "description": "Pinguicula planifolia (Chapman's butterwort) naturally occuring in Escambia County, FL, USA. Located approx. 1 foot from edge of a spring-fed pond, surrounded by Drosera capillaris, sphagnum moss, and miscellaneous gr…",
+        "specimen": false,
         "alt": "Pinguicula planifolia (Chapman's butterwort) naturally occuring in Escambia County, FL, USA. Located approx. 1 foot from edge of a spring-fed pond, surrounded by Drosera capillaris, sphagnum moss, and miscellaneous gr…"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -55687,6 +56029,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_potosiensis_2.JPG",
         "original": "Pinguicula potosiensis 2.JPG",
         "description": "Pinguicula Potosiensis, top-down",
+        "specimen": false,
         "alt": "Pinguicula Potosiensis, top-down"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -55793,6 +56136,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_primuliflora_1zz.jpg",
         "original": "Pinguicula primuliflora 1zz.jpg",
         "description": "Location taken: the New York Botanical Garden. Names: Pinguicula primuliflora C. E. Wood & Godfrey, Furupraktbille, Marienprachtkäfer, Primrose Butterwort, Southern Butterwort, Большая сосновая златк Classification: P…",
+        "specimen": false,
         "alt": "Location taken: the New York Botanical Garden. Names: Pinguicula primuliflora C. E. Wood & Godfrey, Furupraktbille, Marienprachtkäfer, Primrose Butterwort, Southern Butterwort, Большая сосновая златк Classification: P…"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -55923,6 +56267,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_pumila.jpg",
         "original": "Pinguicula pumila.jpg",
         "description": "Small butterwort, Beauregard Parish, Louisiana, April 2006",
+        "specimen": false,
         "alt": "Small butterwort, Beauregard Parish, Louisiana, April 2006"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -56174,6 +56519,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_ramosa.jpg",
         "original": "Pinguicula ramosa.jpg",
         "description": "Pinguicula ramosa in situ at Mt. Koshin, Japan",
+        "specimen": false,
         "alt": "Pinguicula ramosa in situ at Mt. Koshin, Japan"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -56280,6 +56626,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_rectifolia_(Habitus).jpg",
         "original": "Pinguicula rectifolia (Habitus).jpg",
         "description": "Pinguicula rectifolia - Habitus, im Bot. Garten Berlin Dahlem",
+        "specimen": false,
         "alt": "Pinguicula rectifolia - Habitus, im Bot. Garten Berlin Dahlem"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -56962,6 +57309,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_spathulata_115377746.jpg",
         "original": "Pinguicula spathulata 115377746.jpg",
         "description": "Pinguicula spathulata",
+        "specimen": false,
         "alt": "Pinguicula spathulata"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -57260,6 +57608,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_vallis-regiae_3.jpg",
         "original": "Pinguicula vallis-regiae 3.jpg",
         "description": "The rare carnivorous plant Pinguicula vallis-regiae in flower. The species is endemic to the mountains of Abruzzo - Parco Nazionale d'Abruzzo, Lazio e Molise, Italy",
+        "specimen": false,
         "alt": "The rare carnivorous plant Pinguicula vallis-regiae in flower. The species is endemic to the mountains of Abruzzo - Parco Nazionale d'Abruzzo, Lazio e Molise, Italy"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -57366,6 +57715,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_vallisneriifolia_Exhibition_of_Carnivorous_Plants_Prague_2016_1.jpg",
         "original": "Pinguicula vallisneriifolia Exhibition of Carnivorous Plants Prague 2016 1.jpg",
         "description": "Plant Pinguicula vallisneriifolia on Exhibition of Carnivorous plants in the Botanical Gardens of Charles University, 10. - 19.06.2016 Prague, Czech Republic",
+        "specimen": false,
         "alt": "Plant Pinguicula vallisneriifolia on Exhibition of Carnivorous plants in the Botanical Gardens of Charles University, 10. - 19.06.2016 Prague, Czech Republic"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -57472,6 +57822,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_villosa.jpg",
         "original": "Pinguicula villosa.jpg",
         "description": "Pinguicula villosa on a raised bog in Femundsmarka National Park",
+        "specimen": false,
         "alt": "Pinguicula villosa on a raised bog in Femundsmarka National Park"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -57659,6 +58010,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_vulgaris.JPG",
         "original": "Pinguicula_vulgaris.JPG",
         "description": "Pinguicula vulgaris - common butterwort",
+        "specimen": false,
         "alt": "Pinguicula vulgaris - common butterwort"
       },
       "illustration": "assets/img/genera/pinguicula.svg",
@@ -58253,6 +58605,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Proboscidea_althaeifolia_MHNT.jpg",
         "original": "Proboscidea althaeifolia MHNT.jpg",
         "description": "Capsules of Proboscidea althaeifolia. These capsules, 3 spikes, facilitate dispersal by clinging to animal fur. This is what we call the zoochory. Thus, the seeds can travel long distances and ensure the extension of …",
+        "specimen": false,
         "alt": "Capsules of Proboscidea althaeifolia. These capsules, 3 spikes, facilitate dispersal by clinging to animal fur. This is what we call the zoochory. Thus, the seeds can travel long distances and ensure the extension of …"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -58378,6 +58731,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Proboscidea_louisianica_5.jpg",
         "original": "Proboscidea_louisianica_5.jpg",
         "description": "Proboscidea louisianica , USA",
+        "specimen": false,
         "alt": "Proboscidea louisianica , USA"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -58514,6 +58868,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Proboscidea_parviflora_MHNT.BOT.2011.18.23.jpg",
         "original": "Proboscidea parviflora MHNT.BOT.2011.18.23.jpg",
         "description": "Proboscidea parviflora , fruits and seeds",
+        "specimen": false,
         "alt": "Proboscidea parviflora , fruits and seeds"
       },
       "illustration": "assets/img/genera/devils-claw.svg",
@@ -58981,6 +59336,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Roridula_dentata_Helme_2.jpg",
         "original": "Roridula dentata Helme 2.jpg",
         "description": "Northern dewstick, Roridula dentata, photographed by Nick Helme, on 9 December 2007, at the road to the south at Groot Winterhoek, near Dasklip Mountain Pass, Piketberg County, Western Cape province of South Africa",
+        "specimen": false,
         "alt": "Northern dewstick, Roridula dentata, photographed by Nick Helme, on 9 December 2007, at the road to the south at Groot Winterhoek, near Dasklip Mountain Pass, Piketberg County, Western Cape province of South Africa"
       },
       "illustration": "assets/img/genera/roridula.svg",
@@ -59087,6 +59443,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Roridula_gorgonias_Rebelo_2.jpg",
         "original": "Roridula_gorgonias_Rebelo_2.jpg",
         "description": "Fly bush , Roridula gorgonias , photographed by Tony Rebelo, on 22 October 2016, at the upper slopes of the Phillipskop Saddle trail, Phillipskop Mountain Reserve, Hermanus County, Western Cape province of South Africa",
+        "specimen": false,
         "alt": "Fly bush , Roridula gorgonias , photographed by Tony Rebelo, on 22 October 2016, at the upper slopes of the Phillipskop Saddle trail, Phillipskop Mountain Reserve, Hermanus County, Western Cape province of South Africa"
       },
       "illustration": "assets/img/genera/roridula.svg",
@@ -59206,6 +59563,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_alata_flowers.jpg",
         "original": "Sarracenia alata flowers.jpg",
         "description": "Description: Sarracenia alata flowers Photograph by: Noah Elhardt",
+        "specimen": false,
         "alt": "Description: Sarracenia alata flowers Photograph by: Noah Elhardt"
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -59402,6 +59760,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_flava_L._var._atropurpurea_-_2_-_par_Mickael_Schauli.jpg",
         "original": "Sarracenia_flava_L._var._atropurpurea_-_2_-_par_Mickael_Schauli.jpg",
         "description": "Sarracenia flava au jardin botanique Jean-Marie Pelt de Villers-lès-Nancy.",
+        "specimen": false,
         "alt": "Sarracenia flava au jardin botanique Jean-Marie Pelt de Villers-lès-Nancy."
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -59617,6 +59976,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_leucophylla_at_the_Brooklyn_Botanic_Garden_(81396)b.jpg",
         "original": "Sarracenia_leucophylla_at_the_Brooklyn_Botanic_Garden_(81396)b.jpg",
         "description": "Crimson pitcherplant (purple trumpet-leaf, white pitcher plant, Sarracenia leucophylla ) at the Brooklyn Botanic Garden.",
+        "specimen": false,
         "alt": "Crimson pitcherplant (purple trumpet-leaf, white pitcher plant, Sarracenia leucophylla ) at the Brooklyn Botanic Garden."
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -59775,6 +60135,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_minor_at_the_Brooklyn_Botanic_Garden_(81407).jpg",
         "original": "Sarracenia_minor_at_the_Brooklyn_Botanic_Garden_(81407).jpg",
         "description": "Hooded pitcherplant ( Sarracenia minor ) at the Brooklyn Botanic Garden.",
+        "specimen": false,
         "alt": "Hooded pitcherplant ( Sarracenia minor ) at the Brooklyn Botanic Garden."
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -59933,6 +60294,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_oreophila_ne3.jpg",
         "original": "Sarracenia oreophila ne3.jpg",
         "description": "Description:Sarracenia oreophila",
+        "specimen": false,
         "alt": "Description:Sarracenia oreophila"
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -60069,6 +60431,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_psittacina3.jpg",
         "original": "Sarracenia_psittacina3.jpg",
         "description": "Species : Sarracenia psittacina Family : Sarraceniaceae Image No. 4",
+        "specimen": false,
         "alt": "Species : Sarracenia psittacina Family : Sarraceniaceae Image No. 4"
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -60235,6 +60598,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_purpurea_Flowers.JPG",
         "original": "Sarracenia_purpurea_Flowers.JPG",
         "description": "Sarracenia purpurea en Flowers. Identified by tag at the Coastal Maine Botanical Gardens",
+        "specimen": false,
         "alt": "Sarracenia purpurea en Flowers. Identified by tag at the Coastal Maine Botanical Gardens"
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -60419,6 +60783,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Sarracenia_rubra_Walter.JPG",
         "original": "Sarracenia_rubra_Walter.JPG",
         "description": "Sarracenia rubra - sweet pitcher plant",
+        "specimen": false,
         "alt": "Sarracenia rubra - sweet pitcher plant"
       },
       "illustration": "assets/img/genera/sarracenia.svg",
@@ -60607,6 +60972,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Triphyophyllum_peltatum.jpg",
         "original": "Triphyophyllum_peltatum.jpg",
         "description": "Triphyophyllum peltatum - the largest carnivorous plant, at Botanischer Garten Bonn",
+        "specimen": false,
         "alt": "Triphyophyllum peltatum - the largest carnivorous plant, at Botanischer Garten Bonn"
       },
       "illustration": "assets/img/genera/liana.svg",
@@ -60983,6 +61349,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_albocaerulea_imported_from_iNaturalist_photo_175891994_on_21_April_2022.jpg",
         "original": "Utricularia albocaerulea imported from iNaturalist photo 175891994 on 21 April 2022.jpg",
         "description": "Photo of Utricularia albocaerulea uploaded from iNaturalist.",
+        "specimen": false,
         "alt": "Photo of Utricularia albocaerulea uploaded from iNaturalist."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -61089,6 +61456,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Alpina_flower.JPG",
         "original": "Alpina flower.JPG",
         "description": "Utricularia alpina flower.",
+        "specimen": false,
         "alt": "Utricularia alpina flower."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -61332,6 +61700,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_amethystina.jpg",
         "original": "Utricularia amethystina.jpg",
         "description": "Description:Utricularia amethystina in cultivation (grown by Robert Zeimer) Photo taken by: Noah Elhardt",
+        "specimen": false,
         "alt": "Description:Utricularia amethystina in cultivation (grown by Robert Zeimer) Photo taken by: Noah Elhardt"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -62088,6 +62457,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_arcuata_by_Sumit_Magdum_01.jpg",
         "original": "Utricularia arcuata by Sumit Magdum 01.jpg",
         "description": "Utricularia arcuata, at Kaas plateau.",
+        "specimen": false,
         "alt": "Utricularia arcuata, at Kaas plateau."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -62194,6 +62564,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_arenaria.jpg",
         "original": "Utricularia arenaria.jpg",
         "description": "Utricularia arenaria",
+        "specimen": false,
         "alt": "Utricularia arenaria"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -62614,6 +62985,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_asplundii_4.jpg",
         "original": "Utricularia asplundii 4.jpg",
         "description": "Utricularia asplundii",
+        "specimen": false,
         "alt": "Utricularia asplundii"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -62738,6 +63110,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_aurea_Flora.jpg",
         "original": "Utricularia aurea Flora.jpg",
         "description": "Utricularia aurea 's Flower",
+        "specimen": false,
         "alt": "Utricularia aurea 's Flower"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -63154,6 +63527,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_australis_illustration.png",
         "original": "Utricularia australis illustration.png",
         "description": "Utricularia australis",
+        "specimen": false,
         "alt": "Utricularia australis"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -64240,6 +64614,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_benthamii.jpg",
         "original": "Utricularia benthamii.jpg",
         "description": "Utricularia benthamii",
+        "specimen": false,
         "alt": "Utricularia benthamii"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -64540,6 +64915,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_bifida.jpg",
         "original": "Utricularia bifida.jpg",
         "description": "Utricularia bifida",
+        "specimen": false,
         "alt": "Utricularia bifida"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -64851,6 +65227,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_biloba.jpg",
         "original": "Utricularia biloba.jpg",
         "description": "Utricularia biloba, Cooloola, Queensland",
+        "specimen": false,
         "alt": "Utricularia biloba, Cooloola, Queensland"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -65054,6 +65431,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_bisquamata_flora.jpg",
         "original": "Utricularia bisquamata flora.jpg",
         "description": "Utricularia bisquamata flora",
+        "specimen": false,
         "alt": "Utricularia bisquamata flora"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -65284,6 +65662,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_blanchetii_(35086258315).jpg",
         "original": "Utricularia blanchetii (35086258315).jpg",
         "description": "Utricularia blanchetii",
+        "specimen": false,
         "alt": "Utricularia blanchetii"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -65837,6 +66216,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:UtriculariaBremiiHibernacleSprouting.jpg",
         "original": "UtriculariaBremiiHibernacleSprouting.jpg",
         "description": "Utricularia bremii hibernacle sprouting Author: Denis Barthel",
+        "specimen": false,
         "alt": "Utricularia bremii hibernacle sprouting Author: Denis Barthel"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -66088,6 +66468,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_breviscapa_246315452.jpg",
         "original": "Utricularia breviscapa 246315452.jpg",
         "description": "Utricularia breviscapa in Brazil",
+        "specimen": false,
         "alt": "Utricularia breviscapa in Brazil"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -66309,6 +66690,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_byrneana.jpg",
         "original": "Utricularia byrneana.jpg",
         "description": "Utricularia byrneana. Species of plant.",
+        "specimen": false,
         "alt": "Utricularia byrneana. Species of plant."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -66416,6 +66798,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_caerulea.JPG",
         "original": "Utricularia caerulea.JPG",
         "description": "Utricularia caerulea in wetland of Japan",
+        "specimen": false,
         "alt": "Utricularia caerulea in wetland of Japan"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -66730,6 +67113,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_calycifida_-_front.jpg",
         "original": "Utricularia calycifida - front.jpg",
         "description": "Flower of carnivorous Utricularia calycifida (en) from front. Size of the flower is about 0.5cm (macro)",
+        "specimen": false,
         "alt": "Flower of carnivorous Utricularia calycifida (en) from front. Size of the flower is about 0.5cm (macro)"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -66854,6 +67238,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_campbelliana.JPG",
         "original": "Utricularia campbelliana.JPG",
         "description": "Utricularia campbelliana. Roraima, Venezuela",
+        "specimen": false,
         "alt": "Utricularia campbelliana. Roraima, Venezuela"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -67396,6 +67781,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_cecilii_(2).JPG_-_Photo_by_V_C_Balakrishnan.jpg",
         "original": "Utricularia cecilii (2).JPG - Photo by V C Balakrishnan.jpg",
         "description": "Photos of plants taken by V C Balakrishnan",
+        "specimen": false,
         "alt": "Photos of plants taken by V C Balakrishnan"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -67695,6 +68081,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_chiribiquetensis_29949438.jpg",
         "original": "Utricularia chiribiquetensis 29949438.jpg",
         "description": "Utricularia chiribiquetensis",
+        "specimen": false,
         "alt": "Utricularia chiribiquetensis"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -68002,6 +68389,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_chrysantha_1.jpg",
         "original": "Utricularia chrysantha 1.jpg",
         "description": "Utricularia chrysantha",
+        "specimen": false,
         "alt": "Utricularia chrysantha"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -68417,6 +68805,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_cornuta_Orchi_11.jpg",
         "original": "Utricularia cornuta Orchi 11.jpg",
         "description": "Utricularia cornuta",
+        "specimen": false,
         "alt": "Utricularia cornuta"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -69080,6 +69469,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_delicatula_145516382.jpg",
         "original": "Utricularia delicatula 145516382.jpg",
         "description": "Utricularia delicatula in New Zealand",
+        "specimen": false,
         "alt": "Utricularia delicatula in New Zealand"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -69186,6 +69576,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_delphinioides_68771622.jpg",
         "original": "Utricularia delphinioides 68771622.jpg",
         "description": "Utricularia delphinioides",
+        "specimen": false,
         "alt": "Utricularia delphinioides"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -69415,6 +69806,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_dichotoma.jpg",
         "original": "Utricularia dichotoma.jpg",
         "description": "",
+        "specimen": false,
         "alt": "Photograph of Utricularia dichotoma"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -69539,6 +69931,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_dimorphantha.jpg",
         "original": "Utricularia dimorphantha.jpg",
         "description": "Utricularia dimorphantha",
+        "specimen": false,
         "alt": "Utricularia dimorphantha"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -69839,6 +70232,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_endresii.jpg",
         "original": "Utricularia endresii.jpg",
         "description": "Utricularia endresii",
+        "specimen": false,
         "alt": "Utricularia endresii"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -70229,6 +70623,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COI00083568_-_Utricularia_firmula_-_Welwitsch,_Friedrich_-_262.jpg",
         "original": "COI00083568 - Utricularia firmula - Welwitsch, Friedrich - 262.jpg",
         "description": "Photograph of Isotype of Utricularia firmula at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083568. http://coicatalogue.uc.pt/specimen/COI00083568",
+        "specimen": false,
         "alt": "Photograph of Isotype of Utricularia firmula at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083568. http://coicatalogue.uc.pt/specimen/COI00083568"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -70639,6 +71034,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_flaccida.jpg",
         "original": "Utricularia flaccida.jpg",
         "description": "Utricularia flaccida",
+        "specimen": false,
         "alt": "Utricularia flaccida"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -70865,6 +71261,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_foliosa_(18683801058).jpg",
         "original": "Utricularia foliosa (18683801058).jpg",
         "description": "A carnivorous bladderwort floating in the flood waters of the Amazon River in Colombia. It is known as Soldadito (little soldier) for its upright stature. In context at www.dixpix.ca/Amazon/flora/lamiales/index.html",
+        "specimen": false,
         "alt": "A carnivorous bladderwort floating in the flood waters of the Amazon River in Colombia. It is known as Soldadito (little soldier) for its upright stature. In context at www.dixpix.ca/Amazon/flora/lamiales/index.html"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -71737,6 +72134,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_fulva.jpg",
         "original": "Utricularia fulva.jpg",
         "description": "Utricularia fulva 's leaves.",
+        "specimen": false,
         "alt": "Utricularia fulva 's leaves."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -72143,6 +72541,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_geminiscapa_illustration.jpg",
         "original": "Utricularia geminiscapa illustration.jpg",
         "description": "Illustration of Utricularia geminiscapa",
+        "specimen": false,
         "alt": "Illustration of Utricularia geminiscapa"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -72259,6 +72658,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_geoffrayi_191533117.jpg",
         "original": "Utricularia geoffrayi 191533117.jpg",
         "description": "Utricularia geoffrayi in Australia",
+        "specimen": false,
         "alt": "Utricularia geoffrayi in Australia"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -72500,6 +72900,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_gibba_flower_01.jpg",
         "original": "Utricularia gibba flower 01.jpg",
         "description": "Utricularia gibba flower",
+        "specimen": false,
         "alt": "Utricularia gibba flower"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -73177,6 +73578,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_graminifolia.jpg",
         "original": "Utricularia graminifolia.jpg",
         "description": "Utricularia graminifolia",
+        "specimen": false,
         "alt": "Utricularia graminifolia"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -74246,6 +74648,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_hispida_3.jpg",
         "original": "Utricularia hispida 3.jpg",
         "description": "Utricularia hispida",
+        "specimen": false,
         "alt": "Utricularia hispida"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -74452,6 +74855,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:(Utricularia)(holtzei)()(p)(fl)(IDC)(0301)(IDC9052)(HowardR).jpg",
         "original": "(Utricularia)(holtzei)()(p)(fl)(IDC)(0301)(IDC9052)(HowardR).jpg",
         "description": "Utricularia holtzei in the Northern Territory of Australia",
+        "specimen": false,
         "alt": "Utricularia holtzei in the Northern Territory of Australia"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -74559,6 +74963,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Lentibulariaceae_-_Utricularia_Humboldtii.jpg",
         "original": "Lentibulariaceae - Utricularia Humboldtii.jpg",
         "description": "Lentibulariaceae - Utricularia humboldtii. From: Annales de la Société royale d'Agriculture et de Botanique de Gand, Journal d'horticulture by Charles Morren (ed.). Gent, Local de la Société (Casino), etc., 1845, volu…",
+        "specimen": false,
         "alt": "Lentibulariaceae - Utricularia humboldtii. From: Annales de la Société royale d'Agriculture et de Botanique de Gand, Journal d'horticulture by Charles Morren (ed.). Gent, Local de la Société (Casino), etc., 1845, volu…"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -75020,6 +75425,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_inaequalis.jpg",
         "original": "Utricularia inaequalis.jpg",
         "description": "Utricularia inaequalis. Species of plant.",
+        "specimen": false,
         "alt": "Utricularia inaequalis. Species of plant."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -75223,6 +75629,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_inflata_illustration.jpg",
         "original": "Utricularia inflata illustration.jpg",
         "description": "Illustration of Utricularia inflata",
+        "specimen": false,
         "alt": "Illustration of Utricularia inflata"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -75333,6 +75740,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_inflexa_var_stellaris_MS_10518.jpg",
         "original": "Utricularia inflexa var stellaris MS 10518.jpg",
         "description": "Utricularia inflexa var. stellaris, Arly NP, S Burkina Faso",
+        "specimen": false,
         "alt": "Utricularia inflexa var. stellaris, Arly NP, S Burkina Faso"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -75737,6 +76145,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_intermedia_(as_U._media)_Sturm64.png",
         "original": "Utricularia intermedia (as U. media) Sturm64.png",
         "description": "Utricularia intermedia illustration (captionded Utricularia media)",
+        "specimen": false,
         "alt": "Utricularia intermedia illustration (captionded Utricularia media)"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -76220,6 +76629,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_involvens_6.jpg",
         "original": "Utricularia involvens 6.jpg",
         "description": "Utricularia Involvens",
+        "specimen": false,
         "alt": "Utricularia Involvens"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -76451,6 +76861,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_jamesoniana_8.jpg",
         "original": "Utricularia jamesoniana 8.jpg",
         "description": "Utricularia jamesoniana",
+        "specimen": false,
         "alt": "Utricularia jamesoniana"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -76801,6 +77212,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_juncea.jpg",
         "original": "Utricularia juncea.jpg",
         "description": "Utricularia juncea Vahl",
+        "specimen": false,
         "alt": "Utricularia juncea Vahl"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -77354,6 +77766,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_kumaonensis_450767291.jpg",
         "original": "Utricularia kumaonensis 450767291.jpg",
         "description": "Utricularia kumaonensis in China",
+        "specimen": false,
         "alt": "Utricularia kumaonensis in China"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -77690,6 +78103,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_lateriflora.jpg",
         "original": "Utricularia lateriflora.jpg",
         "description": "Utricularia lateriflora flower",
+        "specimen": false,
         "alt": "Utricularia lateriflora flower"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -77797,6 +78211,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_laxa_5.jpg",
         "original": "Utricularia laxa 5.jpg",
         "description": "Utricularia laxa",
+        "specimen": false,
         "alt": "Utricularia laxa"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -78653,6 +79068,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_livida_flower.jpg",
         "original": "Utricularia livida flower.jpg",
         "description": "Utricularia livida - flower of plant living in culture",
+        "specimen": false,
         "alt": "Utricularia livida - flower of plant living in culture"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -79199,6 +79615,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_longifolia_139-8516.jpg",
         "original": "Utricularia longifolia 139-8516.jpg",
         "description": "Utricularia longifolia, Lentibulariaceae",
+        "specimen": false,
         "alt": "Utricularia longifolia, Lentibulariaceae"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -79507,6 +79924,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_macrorhiza_flower.jpg",
         "original": "Utricularia macrorhiza flower.jpg",
         "description": "Utricularia macrorhiza flowering in situ near Wright's Lake, California.",
+        "specimen": false,
         "alt": "Utricularia macrorhiza flowering in situ near Wright's Lake, California."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -80073,6 +80491,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_menziesii_2.jpg",
         "original": "Utricularia menziesii 2.jpg",
         "description": "Utricularia menziesii",
+        "specimen": false,
         "alt": "Utricularia menziesii"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -80276,6 +80695,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_microcalyx_kz01.jpg",
         "original": "Utricularia microcalyx kz01.jpg",
         "description": "Utricularia microcalyx in botanical garden in Kraków",
+        "specimen": false,
         "alt": "Utricularia microcalyx in botanical garden in Kraków"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -80515,6 +80935,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Uricularia_minor.jpeg",
         "original": "Uricularia minor.jpeg",
         "description": "Kleiner Wasserschlauch Utricularia minor",
+        "specimen": false,
         "alt": "Kleiner Wasserschlauch Utricularia minor"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -81001,6 +81422,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_minutissima_5.jpg",
         "original": "Utricularia minutissima 5.jpg",
         "description": "Utricularia minutissima's flower.",
+        "specimen": false,
         "alt": "Utricularia minutissima's flower."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -81717,6 +82139,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_multifida_in_Alison_Baird_Reserve.jpg",
         "original": "Utricularia multifida in Alison Baird Reserve.jpg",
         "description": "Utricularia multifida Bladderworts like this are carnivorous, with suction operated traps on their roots, like little bubbles that vacuum up nearby critters and trap them inside where they are digested. Photographed i…",
+        "specimen": false,
         "alt": "Utricularia multifida Bladderworts like this are carnivorous, with suction operated traps on their roots, like little bubbles that vacuum up nearby critters and trap them inside where they are digested. Photographed i…"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -81824,6 +82247,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Despite_previous_and_Field_surveys_-_Guerra_et_al_-_Sociedade_Botânica_do_Brasil_-_001.jpg",
         "original": "Despite previous and Field surveys - Guerra et al - Sociedade Botânica do Brasil - 001.jpg",
         "description": "Original Article • Acta Bot. Bras. 39 • 2025 • https://doi.org/10.1590/1677-941X-ABB-2025-0074 link copy Diversity and floristic uniqueness of non-arboreal restingas of the Northern Coast of Bahia, Brazil Authorship S…",
+        "specimen": false,
         "alt": "Original Article • Acta Bot. Bras. 39 • 2025 • https://doi.org/10.1590/1677-941X-ABB-2025-0074 link copy Diversity and floristic uniqueness of non-arboreal restingas of the Northern Coast of Bahia, Brazil Authorship S…"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -82003,6 +82427,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_nana.jpg",
         "original": "Utricularia nana.jpg",
         "description": "Utricularia nana",
+        "specimen": false,
         "alt": "Utricularia nana"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -82277,6 +82702,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_nelumbifolia.jpg",
         "original": "Utricularia nelumbifolia.jpg",
         "description": "Utricularia nelumbifolia flower. Plant grown by Forbes Conrad.",
+        "specimen": false,
         "alt": "Utricularia nelumbifolia flower. Plant grown by Forbes Conrad."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -82830,6 +83256,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_ochroleuca_inflorescence_(01).jpeg",
         "original": "Utricularia ochroleuca inflorescence (01).jpeg",
         "description": "Utricularia ochroleuca",
+        "specimen": false,
         "alt": "Utricularia ochroleuca"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -83299,6 +83726,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Bladderwort_Utricularia_odorata_(6181043003).jpg",
         "original": "Bladderwort Utricularia odorata (6181043003).jpg",
         "description": "Semi-dry stream bed. Pa Hin Ngam N.P. August 2011",
+        "specimen": false,
         "alt": "Semi-dry stream bed. Pa Hin Ngam N.P. August 2011"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -83443,6 +83871,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:U.olivacea4.jpg",
         "original": "U.olivacea4.jpg",
         "description": "Utricularia olivacea in Central Florida",
+        "specimen": false,
         "alt": "Utricularia olivacea in Central Florida"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -83922,6 +84351,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_parthenopipes.jpg",
         "original": "Utricularia parthenopipes.jpg",
         "description": "Utricularia parthenopipes",
+        "specimen": false,
         "alt": "Utricularia parthenopipes"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -84028,6 +84458,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_paulineae_flowering_near_Walpole,_WA_(Keystone_State_Forest).jpg",
         "original": "Utricularia paulineae flowering near Walpole, WA (Keystone State Forest).jpg",
         "description": "Utricularia paulineae, a rarely observed carnivorous bladderwort plant flowering en masse in a muddy clearing near Walpole, WA (Keystone State Forest) during the height of summer.",
+        "specimen": false,
         "alt": "Utricularia paulineae, a rarely observed carnivorous bladderwort plant flowering en masse in a muddy clearing near Walpole, WA (Keystone State Forest) during the height of summer."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -84609,6 +85040,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_petertaylorii_-_Flickr_-_Kevin_Thiele.jpg",
         "original": "Utricularia petertaylorii - Flickr - Kevin Thiele.jpg",
         "description": "KRT3881",
+        "specimen": false,
         "alt": "KRT3881"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -84716,6 +85148,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COD_0981.jpg",
         "original": "COD 0981.jpg",
         "description": "Utricularia phusoidaoensis are endemic plants on Phu Soi Dao.",
+        "specimen": false,
         "alt": "Utricularia phusoidaoensis are endemic plants on Phu Soi Dao."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -85034,6 +85467,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Flor_utricularia_platensis.jpg",
         "original": "Flor utricularia platensis.jpg",
         "description": "Flor de u. platensis en la provincia de Buenos Aires, Argentina",
+        "specimen": false,
         "alt": "Flor de u. platensis en la provincia de Buenos Aires, Argentina"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -85579,6 +86013,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_praelonga.jpg",
         "original": "Utricularia praelonga.jpg",
         "description": "Utricularia praelonga 's leaves.",
+        "specimen": false,
         "alt": "Utricularia praelonga 's leaves."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -85703,6 +86138,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_praeterita_41933583.jpg",
         "original": "Utricularia praeterita 41933583.jpg",
         "description": "Utricularia praeterita in India",
+        "specimen": false,
         "alt": "Utricularia praeterita in India"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -86132,6 +86568,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_pubescens_flower.JPG",
         "original": "Utricularia pubescens flower.JPG",
         "description": "en:Utricularia pubescens flower from side",
+        "specimen": false,
         "alt": "en:Utricularia pubescens flower from side"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -86666,6 +87103,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_purpurea_iNat-133023600.jpg",
         "original": "Utricularia purpurea iNat-133023600.jpg",
         "description": "Utricularia purpurea (purple bladderwort) - Jackson County, MS, USA",
+        "specimen": false,
         "alt": "Utricularia purpurea (purple bladderwort) - Jackson County, MS, USA"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -86965,6 +87403,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_pusilla_Vahl_-_Flickr_-_Alex_Popovkin,_Bahia,_Brazil_(8).jpg",
         "original": "Utricularia pusilla Vahl - Flickr - Alex Popovkin, Bahia, Brazil (8).jpg",
         "description": "Utricularia pusilla Vahl",
+        "specimen": false,
         "alt": "Utricularia pusilla Vahl"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -87279,6 +87718,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_Quelchii_Mount_Roraima.jpg",
         "original": "Utricularia Quelchii Mount Roraima.jpg",
         "description": "Utricularia Quelchii found in summit of Mount Roraima",
+        "specimen": false,
         "alt": "Utricularia Quelchii found in summit of Mount Roraima"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -87500,6 +87940,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_radiata_BB-1913.png",
         "original": "Utricularia radiata BB-1913.png",
         "description": "Utricularia radiata Small - little floating bladderwort",
+        "specimen": false,
         "alt": "Utricularia radiata Small - little floating bladderwort"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -87890,6 +88331,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COI00083579_-_Utricularia_reflexa_-_Welwitsch,_Friedrich_-_269.jpg",
         "original": "COI00083579 - Utricularia reflexa - Welwitsch, Friedrich - 269.jpg",
         "description": "Photograph of Isotype of Utricularia reflexa at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083579. http://coicatalogue.uc.pt/specimen/COI00083579",
+        "specimen": false,
         "alt": "Photograph of Isotype of Utricularia reflexa at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083579. http://coicatalogue.uc.pt/specimen/COI00083579"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -88328,6 +88770,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Lentibulariaceae_Utricularia_reniformis_1.2.jpg",
         "original": "Lentibulariaceae Utricularia reniformis 1.2.jpg",
         "description": "Utricularia reniformis. Royal Botanic Gardens, Kew.",
+        "specimen": false,
         "alt": "Utricularia reniformis. Royal Botanic Gardens, Kew."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -88434,6 +88877,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_resupinata_BB-1913.png",
         "original": "Utricularia resupinata BB-1913.png",
         "description": "Utricularia resupinata B.D. Greene ex Bigelow - lavender bladderwort",
+        "specimen": false,
         "alt": "Utricularia resupinata B.D. Greene ex Bigelow - lavender bladderwort"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -88720,6 +89164,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_reticulata_1945.jpg",
         "original": "Utricularia reticulata 1945.jpg",
         "description": "Utricularia reticulata is a annual carnivorous subaquatic plant belongs to the genus Utricularia. Taken at Madayipara, Kerala.",
+        "specimen": false,
         "alt": "Utricularia reticulata is a annual carnivorous subaquatic plant belongs to the genus Utricularia. Taken at Madayipara, Kerala."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -89092,6 +89537,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_rostrata_15_fischermans.jpg",
         "original": "Utricularia rostrata 15 fischermans.jpg",
         "description": "Utricularia rostrata white flower and pink flower.",
+        "specimen": false,
         "alt": "Utricularia rostrata white flower and pink flower."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -89302,6 +89748,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_sandersonii_flower.jpg",
         "original": "Utricularia_sandersonii_flower.jpg",
         "description": "Utricularia sandersonii \"narrow\" - flower of plant living in culture",
+        "specimen": false,
         "alt": "Utricularia sandersonii \"narrow\" - flower of plant living in culture"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -89749,6 +90196,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_simplex_3.jpg",
         "original": "Utricularia simplex 3.jpg",
         "description": "Utricularia simplex's leaves.",
+        "specimen": false,
         "alt": "Utricularia simplex's leaves."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -89856,6 +90304,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_simulans.jpg",
         "original": "Utricularia simulans.jpg",
         "description": "Fringed Bladderwort (Utricularia simulans). Species of plant.",
+        "specimen": false,
         "alt": "Fringed Bladderwort (Utricularia simulans). Species of plant."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -90241,6 +90690,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_smithiana.jpg",
         "original": "Utricularia smithiana.jpg",
         "description": "Utricularia smithiana. Species of plant.",
+        "specimen": false,
         "alt": "Utricularia smithiana. Species of plant."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -90454,6 +90904,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:COI00083574_-_Utricularia_paradoxa_-_Young,_Ralph_George_Norwood_-_1421.jpg",
         "original": "COI00083574 - Utricularia paradoxa - Young, Ralph George Norwood - 1421.jpg",
         "description": "Photograph of Isotype of Utricularia spiralis at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083574. http://coicatalogue.uc.pt/specimen/COI00083574",
+        "specimen": false,
         "alt": "Photograph of Isotype of Utricularia spiralis at Herbarium of the University of Coimbra, Portugal (COI). Specimen COI00083574. http://coicatalogue.uc.pt/specimen/COI00083574"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -90992,6 +91443,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_inflexa_var_stellaris_MS_0987.jpg",
         "original": "Utricularia inflexa var stellaris MS 0987.jpg",
         "description": "Utricularia stellaris around a leaf of Nymphaea lotus, Burkina Faso",
+        "specimen": false,
         "alt": "Utricularia stellaris around a leaf of Nymphaea lotus, Burkina Faso"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -91566,6 +92018,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_striata_iNat-21242568_(3x4).jpg",
         "original": "Utricularia striata iNat-21242568 (3x4).jpg",
         "description": "Utricularia striata (striped bladderwort) - Lacey Township, NJ, USA",
+        "specimen": false,
         "alt": "Utricularia striata (striped bladderwort) - Lacey Township, NJ, USA"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -91776,6 +92229,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_striatula_leaves.jpg",
         "original": "Utricularia striatula leaves.jpg",
         "description": "Utricularia striatula 's leaves",
+        "specimen": false,
         "alt": "Utricularia striatula 's leaves"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -92210,6 +92664,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_stygia,_Hartland_Moor_(52356895216).jpg",
         "original": "Utricularia stygia, Hartland Moor (52356895216).jpg",
         "description": "Utricularia stygia, Hartland Moor",
+        "specimen": false,
         "alt": "Utricularia stygia, Hartland Moor"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -92565,6 +93020,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_subulata.jpg",
         "original": "Utricularia subulata.jpg",
         "description": "Utricularia subulata, naturalized population in Mendocino county, California.",
+        "specimen": false,
         "alt": "Utricularia subulata, naturalized population in Mendocino county, California."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -93296,6 +93752,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_tenuicaulis_flower.JPG",
         "original": "Utricularia tenuicaulis flower.JPG",
         "description": "Utricularia australis (InuTanukimo)",
+        "specimen": false,
         "alt": "Utricularia australis (InuTanukimo)"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -93564,6 +94021,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_terrae-reginae.jpg",
         "original": "Utricularia terrae-reginae.jpg",
         "description": "Utricularia terrae-reginae. Species of plant.",
+        "specimen": false,
         "alt": "Utricularia terrae-reginae. Species of plant."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -94203,6 +94661,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_tricolor.jpg",
         "original": "Utricularia tricolor.jpg",
         "description": "en:Utricularia tricolor (leaves)",
+        "specimen": false,
         "alt": "en:Utricularia tricolor (leaves)"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -94453,6 +94912,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_tridentata_1.jpg",
         "original": "Utricularia tridentata 1.jpg",
         "description": "Utricularia tridentata",
+        "specimen": false,
         "alt": "Utricularia tridentata"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -94613,6 +95073,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:(Utricularia)(triflora)()(p)(fl)(DLiddle)()()(D.T._Liddle_4015)(x).jpg",
         "original": "(Utricularia)(triflora)()(p)(fl)(DLiddle)()()(D.T. Liddle 4015)(x).jpg",
         "description": "Utricularia triflora in the Northern Territory of Australia",
+        "specimen": false,
         "alt": "Utricularia triflora in the Northern Territory of Australia"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -94720,6 +95181,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_triloba_1.jpg",
         "original": "Utricularia triloba 1.jpg",
         "description": "Utricularia triloba",
+        "specimen": false,
         "alt": "Utricularia triloba"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -95128,6 +95590,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_uliginosa_flower.jpg",
         "original": "Utricularia uliginosa flower.jpg",
         "description": "Utricularia uliginosa 's flower.",
+        "specimen": false,
         "alt": "Utricularia uliginosa 's flower."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -95395,6 +95858,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_uniflora_Teds_Beach_Tasmania_single.jpg",
         "original": "Utricularia uniflora Teds Beach Tasmania single.jpg",
         "description": "Flower of Utricularia uniflora, growing by the roadside at Teds Beach, near Lake Pedder, Tasmania.",
+        "specimen": false,
         "alt": "Flower of Utricularia uniflora, growing by the roadside at Teds Beach, near Lake Pedder, Tasmania."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -95502,6 +95966,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_unifolia.jpg",
         "original": "Utricularia unifolia.jpg",
         "description": "Utricularia unifolia. Species of plant.",
+        "specimen": false,
         "alt": "Utricularia unifolia. Species of plant."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -95768,6 +96233,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_violacea_1.jpg",
         "original": "Utricularia violacea 1.jpg",
         "description": "Utricularia violacea 'weirdo'",
+        "specimen": false,
         "alt": "Utricularia violacea 'weirdo'"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -96104,6 +96570,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_volubilis_1.jpg",
         "original": "Utricularia volubilis 1.jpg",
         "description": "Utricularia volubilis",
+        "specimen": false,
         "alt": "Utricularia volubilis"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -96211,6 +96678,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Uk_pond_bladderwort.jpg",
         "original": "Uk_pond_bladderwort.jpg",
         "description": "A typical clump of aquatic bladderwort from the UK, ( Utricularia vulgaris ). Stolons, transparent bladder traps and branching shoots are visible.",
+        "specimen": false,
         "alt": "A typical clump of aquatic bladderwort from the UK, ( Utricularia vulgaris ). Stolons, transparent bladder traps and branching shoots are visible."
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -96774,6 +97242,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Utricularia_warburgii.jpg",
         "original": "Utricularia warburgii.jpg",
         "description": "Description:Utricularia warburgii flower in cultivation Photo taken by: Noah Elhardt",
+        "specimen": false,
         "alt": "Description:Utricularia warburgii flower in cultivation Photo taken by: Noah Elhardt"
       },
       "illustration": "assets/img/genera/utricularia.svg",
@@ -97696,7 +98165,7 @@
       "acceptedCount": 1,
       "hybridCount": 0,
       "featuredCount": 0,
-      "photoCount": 0,
+      "photoCount": 1,
       "watchlistCount": 0,
       "infraspecificCount": 0,
       "continents": [
@@ -104797,6 +105266,20 @@
       "description": "iNaturalist research-grade observation 37543993 · Valle Grande Department, Jujuy, Argentina · 2019-11-28",
       "alt": "Photograph of Craniolaria integrifolia",
       "sourceType": "iNaturalist"
+    },
+    {
+      "species": "Dioncophyllum thollonii",
+      "file": "assets/img/species/dioncophyllum-thollonii.jpg",
+      "source": "https://www.gbif.org/occurrence/6477144302",
+      "original": "K001971367 (Royal Botanic Gardens, Kew)",
+      "artist": "Royal Botanic Gardens, Kew collected by Kami, T.",
+      "credit": "Herbarium specimen collected by Kami, T. · Royal Botanic Gardens, Kew · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Herbarium specimen K001971367 · Congo · 2011-06-30T00:00 · Royal Botanic Gardens, Kew",
+      "alt": "Herbarium specimen of Dioncophyllum thollonii",
+      "sourceType": "GBIF",
+      "specimen": true
     }
   ],
   "changelog": {
@@ -105258,6 +105741,7 @@
     "wikipedia": "https://www.wikipedia.org/",
     "wikimedia": "https://commons.wikimedia.org/",
     "inaturalist": "https://www.inaturalist.org/",
+    "gbif": "https://www.gbif.org/",
     "naturalEarth": "https://www.naturalearthdata.com/"
   }
 }

@@ -1549,6 +1549,7 @@ for (const record of allRecords) {
         original: credit.original,
         description: credit.description,
         sourceType: credit.sourceType,
+        specimen: Boolean(credit.specimen),
         alt:
           credit.sourceType === "iNaturalist" && credit.alt
             ? credit.alt
@@ -1798,6 +1799,7 @@ const bundle = {
     wikipedia: "https://www.wikipedia.org/",
     wikimedia: "https://commons.wikimedia.org/",
     inaturalist: "https://www.inaturalist.org/",
+    gbif: "https://www.gbif.org/",
     naturalEarth: "https://www.naturalearthdata.com/",
   },
 };

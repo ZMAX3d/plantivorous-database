@@ -162,7 +162,19 @@
     if (photo.sourceType === "iNaturalist" || /inaturalist\.org/i.test(photo.source || "")) {
       return "iNaturalist";
     }
+    if (photo.sourceType === "GBIF" || /gbif\.org/i.test(photo.source || "")) {
+      return "GBIF";
+    }
     return "Wikimedia Commons";
+  }
+
+  function photoSourceLinkLabel(photo) {
+    const source = photoSourceName(photo);
+    if (source === "iNaturalist") return "View the original observation on iNaturalist ↗";
+    if (source === "GBIF") {
+      return `View the original ${photo.specimen ? "specimen record" : "occurrence"} on GBIF ↗`;
+    }
+    return "View the original file on Wikimedia Commons ↗";
   }
 
   function speciesImage(species) {
@@ -1179,6 +1191,7 @@
               <div class="species-media__badges">
                 ${species.provisional ? '<span class="pill pill--lime">Provisional · watchlist</span>' : '<span class="pill pill--green">ICPS accepted</span>'}
                 ${species.hybrid ? '<span class="pill pill--violet">Natural hybrid</span>' : ""}
+                ${photo?.specimen ? '<span class="pill">Herbarium specimen</span>' : ""}
                 ${iucnPill(species)}
               </div>
               <div class="species-media__credit">
@@ -1315,7 +1328,7 @@
               <div class="credit-block">
                 ${photo.description ? `<p>${esc(photo.description)}</p>` : ""}
                 <p><strong>${esc(photo.artist || "Open-licensed contributor")}</strong><br>${esc(photo.license || "See source")}</p>
-                ${photo.source ? `<p><a href="${esc(photo.source)}" target="_blank" rel="noopener">View the original ${photoSourceName(photo) === "iNaturalist" ? "observation" : "file"} on ${esc(photoSourceName(photo))} ↗</a></p>` : ""}
+                ${photo.source ? `<p><a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photoSourceLinkLabel(photo))}</a></p>` : ""}
                 ${photo.licenseUrl ? `<p><a href="${esc(photo.licenseUrl)}" target="_blank" rel="noopener">Read the licence ↗</a></p>` : ""}
               </div>
             </section>` : `<section class="side-card">
@@ -2302,6 +2315,7 @@
       ["Wikipedia", sourceLinks.wikipedia, "Background reading and species-level summaries used to orient editorial research."],
       ["Wikimedia Commons", sourceLinks.wikimedia, "Openly licensed photographs, with attribution and licence links preserved on every species page."],
       ["iNaturalist", sourceLinks.inaturalist, "Research-grade, openly licensed observation photographs used only where no suitable Commons image exists; each one links back to its observation and licence."],
+      ["GBIF", sourceLinks.gbif, "Last-resort occurrence media, usually a pressed herbarium specimen, used only for rare taxa with no suitable living-plant photograph under an open licence."],
       ["Natural Earth", sourceLinks.naturalEarth, "Public-domain country boundaries used to draw the world map without external tiles or tracking."],
     ];
     return `${pageHead({
@@ -2364,7 +2378,7 @@
 
           <section class="content-card">
             <h2>Photographs &amp; illustrations</h2>
-            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations used where no suitable Commons image exists. Attribution, the licence name and a link to the original file or observation are kept visible; any reuse must preserve them. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
+            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations and, for rare taxa with no living-plant photo, GBIF herbarium specimens used as last resorts. Attribution, the licence name and a link to the original file, observation or specimen record are kept visible; any reuse must preserve them. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
             <ul class="license-list">
               <li><strong>Photos</strong> CC0, CC BY, CC BY-SA or public domain; see the credit panel on each species page for the exact licence and photographer. Non-commercial and no-derivatives images are not used.</li>
               <li><strong>Plates</strong> Original SVGs generated for the Plantivorous database. Free to reuse with the project.</li>

@@ -5451,6 +5451,20 @@
       "description": "iNaturalist research-grade observation 37543993 · Valle Grande Department, Jujuy, Argentina · 2019-11-28",
       "alt": "Photograph of Craniolaria integrifolia",
       "sourceType": "iNaturalist"
+    },
+    {
+      "species": "Dioncophyllum thollonii",
+      "file": "assets/img/species/dioncophyllum-thollonii.jpg",
+      "source": "https://www.gbif.org/occurrence/6477144302",
+      "original": "K001971367 (Royal Botanic Gardens, Kew)",
+      "artist": "Royal Botanic Gardens, Kew collected by Kami, T.",
+      "credit": "Herbarium specimen collected by Kami, T. · Royal Botanic Gardens, Kew · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Herbarium specimen K001971367 · Congo · 2011-06-30T00:00 · Royal Botanic Gardens, Kew",
+      "alt": "Herbarium specimen of Dioncophyllum thollonii",
+      "sourceType": "GBIF",
+      "specimen": true
     }
   ]
 }

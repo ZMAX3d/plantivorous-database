@@ -17,7 +17,7 @@ A portable, static, hash-routed single-page catalogue of the world's carnivorous
 | Families | 10 |
 | Countries / territories mapped | 172 |
 | Origin map points (approx. centroids) | 2,743 |
-| Species with open-licensed photos | 457 (Commons + verified iNaturalist fallback) |
+| Species with open-licensed photos or specimen images | 458 (Commons, verified iNaturalist, GBIF last resort) |
 | Editorial species notes | ~39 |
 | Cross-genus care groups | 17 |
 | Infraspecific taxa | 86 |
@@ -64,6 +64,7 @@ plantivorous-database/
     ├── build-map.mjs             # SVG world map geometry
     ├── add-photos.mjs            # Fetch Commons photos (bitmap-only, binomial-verified, q88)
     ├── add-inat-photos.mjs       # Strict iNaturalist fallback (research-grade, CC0/BY/SA only, q88)
+    ├── add-gbif-photos.mjs       # Last-resort GBIF specimen media (CC0/BY/SA only, q88)
     ├── recompress-images.mjs     # Re-encode JPEGs at q88, cap long edge at 1200px
     ├── validate-photos.mjs       # Verify every credit/file pair, optionally --fix
     ├── audit-photos.mjs          # Full report: duplicates, orphans, invalid/oversized files
@@ -123,6 +124,7 @@ Keyboard: `/` opens global search, `Esc` closes modals/panels, `Enter` activates
 | Wikipedia | Background reading & flagship context | CC BY-SA |
 | Wikimedia Commons (`commons.wikimedia.org`) | Primary species-photo source (bitmap-only, 900px thumbnails) | CC BY-SA / CC BY / public domain (per-photo; attribution retained in-app) |
 | iNaturalist (`inaturalist.org`) | Fallback species photos only where no suitable Commons image exists | CC0 / CC BY / CC BY-SA only (research-grade observations; attribution retained in-app) |
+| GBIF (`gbif.org`) | Last-resort occurrence media, usually herbarium specimens | CC0 / CC BY / CC BY-SA only (per-media; attribution retained in-app) |
 | Natural Earth | Country boundaries for the SVG map | Public domain |
 
 Photos carry visible attribution (artist, licence, source link) on each species detail page and in search results. Original editorial descriptions and care profiles are Plantivorous content.
@@ -133,12 +135,15 @@ Only real bitmap images are accepted. `scripts/add-photos.mjs` queries Commons w
 
 `scripts/add-inat-photos.mjs` is a deliberately stricter fallback for species with no usable Commons image. It requires an exact iNaturalist taxon match, research-grade observations, and a commercial-friendly photo licence (CC0, CC BY or CC BY-SA). Non-commercial and no-derivatives images are rejected, the 1024px rendition is re-encoded to the same q88 standard, and the credit links back to the observation. It is never used to replace an existing credit.
 
+`scripts/add-gbif-photos.mjs` is the final fallback. It uses GBIF occurrence media only when no living-plant photo is available, which usually means a pressed herbarium specimen. It requires an exact GBIF match and a CC0/CC BY/CC BY-SA media licence, rejects NC/ND media, caps the long edge at 1200px, and links the credit to the specimen record. Specimen images are visibly labelled as such on the species page.
+
 `scripts/recompress-images.mjs` re-encodes legacy or oversized images to the same quality 88 and caps the long edge at 1200px, keeping every published photo under 400KB.
 
 ```bash
 node scripts/build-photo-queue.mjs          # .photo-queue-all.txt of species without photos
 node scripts/add-photos.mjs --queue=.photo-queue-all.txt
 node scripts/add-inat-photos.mjs --queue=.photo-queue-all.txt  # fallback only
+node scripts/add-gbif-photos.mjs --queue=.photo-queue-all.txt  # last resort
 node scripts/recompress-images.mjs          # re-encode existing JPEGs at q88
 node scripts/review-photo-credits.mjs       # flag maps, shared images, unverified credits
 node scripts/validate-photos.mjs --fix      # drop broken credits + orphan files
@@ -216,6 +221,6 @@ The site is browser-verified across all routes (home, database, species detail, 
 
 - Code (HTML/CSS/JS): MIT
 - Data (taxonomy from ICPS): factual nomenclature; redistributed per ICPS terms
-- Photos: per-photo licence shown in-app (CC0 / CC BY / CC BY-SA / public domain); attribution must be retained
+- Photos and specimen images: per-item licence shown in-app (CC0 / CC BY / CC BY-SA / public domain); attribution must be retained
 - Map geometry: Natural Earth (public domain)
 - Fonts: IBM Plex Sans (SIL Open Font License), Noto Sans (SIL Open Font License)

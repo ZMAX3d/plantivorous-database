@@ -23,7 +23,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
 | Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | **Dionaea** | **1 (0)** | **0** | **1** | **1** | **0** | **0** | **Complete** | **2026-11-17** |
-| Dioncophyllum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
+| Dioncophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1* | Complete | 2026-11-18 |
 | Drosera | 191 (4) | 42 | 191 | 134 | 57 | 0 | Pending | — |
 | Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
 | Genlisea | 28 (0) | 0 | 28 | 10 | 18 | 28 | Pending | — |
@@ -39,7 +39,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 records, 457 photos, 296 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total.
+**Totals:** 751 records, 458 photos, 295 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total.
 
 ## Completed genus notes
 
@@ -71,6 +71,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, two origin points (California and Oregon), temperate care group, care notes and conservation note are present.
 - Photo audit: `assets/img/species/darlingtonia-californica.jpg` is a valid CC BY 2.5 Commons photograph by Noah Elhardt with a visible credit.
 - **Result: complete, 1/1 photo.**
+
+### Dioncophyllum — checked 2026-11-18
+
+- ICPS lists one accepted species, *Dioncophyllum thollonii* Baill., with no hybrids or infraspecific taxa. The database contains that record.
+- Record audit: description, authority, publication, type locality, native range, two origin points, care notes and genus care guide are present. No cross-genus care group fits, so the species page uses the genus care sheet.
+- Photo audit: no living-plant photo exists on Commons or iNaturalist. A CC BY 4.0 Kew herbarium specimen (K0001971387, collected by Kami, M'Boungou & Koumbi, 2011) was imported from GBIF through the new strict last-resort pipeline and visually verified. The page now labels it as a herbarium specimen.
+- **Result: complete, 1/1 image (herbarium specimen), with the limitation documented.**
 
 ### Craniolaria — checked 2026-11-17
 

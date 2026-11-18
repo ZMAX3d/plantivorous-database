@@ -17,7 +17,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 
 | Genus | ICPS accepted (hybrids) | Infraspecific | Records | Photos | Missing photos | No species care group | Status | Last checked |
 |---|---:|---:|---:|---:|---:|---:|---|---|
-| Aldrovanda | 1 (0) | 1 | 1 | 1 | 0 | 0 | Pending | — |
+| Aldrovanda | 1 (0) | 1 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | Byblis | 8 (0) | 0 | 8 | 7 | 1 | 0 | Pending | — |
 | Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
 | Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
@@ -50,6 +50,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Photo audit: `assets/img/species/dionaea-muscipula.jpg` is a valid 201 KB JPEG by Noah Elhardt, CC BY-SA 2.5, sourced from Wikimedia Commons. Attribution is present in `data/photo-credits.json` and rendered on the species page.
 - Genus plate: `assets/img/genera/dionaea.svg` present.
 - **Result: complete. No data changes were required.**
+
+### Aldrovanda — checked 2026-11-18
+
+- ICPS lists one accepted species, *Aldrovanda vesiculosa* L., plus the nested variety *A. vesiculosa* var. *rubescens* A.T.Cross & Adamec. Both are present and the variety is shown on the species page.
+- Record audit: description, authority, publication, type locality, native range, 39 origin points, aquatic care group, care notes and conservation note are present.
+- Photo audit: `assets/img/species/aldrovanda-vesiculosa.jpg` is a valid CC BY-SA 3.0 Commons image with a visible credit.
+- **Result: complete, 1/1 photo plus the nested variety.**
 
 ### Craniolaria — checked 2026-11-17
 

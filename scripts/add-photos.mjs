@@ -48,7 +48,7 @@ const ALLOWED_MIME = new Set(["image/jpeg", "image/png", "image/webp"]);
 // Titles that are clearly not photographs of the living plant.
 // "map" is matched anywhere because Commons maps are often named
 // things like "Arzinomap.png" or "Drosera androsaceaDistMap6.png".
-const REJECT_TITLE = /(distmap|distribution|locator|envelope|herbarium|diagram|\bchart\b|\bgraph\b|\bmap\b|map(?=\.|$|\d)|(^|[^a-z])cf(?![a-z]))/i;
+const REJECT_TITLE = /(distmap|distribution|locator|envelope|herbarium|diagram|\bchart\b|\bgraph\b|\bmap\b|map(?=\.|$|\d)|(^|[^a-z])range([^a-z]|$)|areal|occurrence|(^|[^a-z])cf(?![a-z]))/i;
 
 const normalizeWords = (value) =>
   String(value || "")

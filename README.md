@@ -17,7 +17,7 @@ A portable, static, hash-routed single-page catalogue of the world's carnivorous
 | Families | 10 |
 | Countries / territories mapped | 172 |
 | Origin map points (approx. centroids) | 2,743 |
-| Species with open-licensed photos or specimen images | 470 accepted + 2 provisional (472 images; Commons, verified iNaturalist, GBIF last resort) |
+| Species with open-licensed photos or specimen images | 476 accepted + 2 provisional (478 images; Commons, verified iNaturalist, GBIF last resort) |
 | Editorial species notes | ~39 |
 | Cross-genus care groups | 17 |
 | Infraspecific taxa | 86 |

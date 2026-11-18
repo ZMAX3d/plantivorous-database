@@ -28,7 +28,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
 | Genlisea | 28 (0) | 0 | 28 | 24 | 4 | 28* | Complete | 2026-11-18 |
 | Habropetalum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
-| Heliamphora | 20 (0) | 5 | 20 | 11 | 9 | 0 | Pending | — |
+| Heliamphora | 20 (0) | 5 | 20 | 17 | 3 | 0 | Complete | 2026-11-18 |
 | Ibicella | 2 (0) | 0 | 2 | 2 | 0 | 2 | Pending | — |
 | Martynia | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Nepenthes | 127 (4) | 0 | 127 | 119 | 8 | 0 | Pending | — |
@@ -39,7 +39,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 records, 470 photos, 281 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the app-wide image total is 472.
+**Totals:** 751 records, 476 photos, 275 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the app-wide image total is 478.
 
 ## Completed genus notes
 
@@ -86,6 +86,14 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Photo audit: 24/28 have a verified open-licensed image — 10 existing Commons photos, 6 research-grade CC BY 4.0 iNaturalist observations and 8 CC0/CC BY/CC BY-SA GBIF herbarium specimens, all visually checked. Specimen pages are labelled as herbarium specimens.
 - Documented exceptions: *G. exhibitionista*, *G. multiflora*, *G. nebulicola* and *G. taylorii* have no commercial-friendly image on Commons, iNaturalist or GBIF. Their pages use the genus plate rather than an unlicensed photo.
 - **Result: complete, 24/28 photos, with four documented exceptions.**
+
+### Heliamphora — checked 2026-11-18
+
+- ICPS lists 20 accepted species plus five nested infraspecific taxa. All 20 records are present and every record already had description, authority, native range, origin points and a care path.
+- Photo audit: 17/20 now have a verified image. Six were added in this pass: one CC BY 4.0 Texas specimen for *H. exappendiculata* (original label *H. heterodoxa* var. *exappendiculata*), and five CC BY 4.0 NYBG sheets for *H. ciliata*, *H. collina*, *H. elongata*, *H. glabra* and *H. huberi*. Each NYBG sheet carries a clear Andreas Fleischmann determination, including isotypes/holotype, and was visually checked.
+- Rejected during audit: a Commons "range of *H. elongata*" distribution map was caught as non-photographic and removed; the Commons fetcher now rejects range/distribution files. Three US sheets labelled *H. nutans* were also rejected as misidentified.
+- Documented exceptions: *H. arenicola*, *H. sarracenioides* and *H. uncinata* have no commercial-friendly image on Commons, iNaturalist or GBIF. Their pages use the genus plate.
+- **Result: complete, 17/20 photos, with three documented exceptions.**
 
 ### Craniolaria — checked 2026-11-17
 

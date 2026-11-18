@@ -26,7 +26,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Dioncophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1* | Complete | 2026-11-18 |
 | Drosera | 191 (4) | 42 | 191 | 134 | 57 | 0 | Pending | — |
 | Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
-| Genlisea | 28 (0) | 0 | 28 | 10 | 18 | 28 | Pending | — |
+| Genlisea | 28 (0) | 0 | 28 | 24 | 4 | 28* | Complete | 2026-11-18 |
 | Habropetalum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
 | Heliamphora | 20 (0) | 5 | 20 | 11 | 9 | 0 | Pending | — |
 | Ibicella | 2 (0) | 0 | 2 | 2 | 0 | 2 | Pending | — |
@@ -39,7 +39,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 records, 458 photos, 295 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total.
+**Totals:** 751 records, 470 photos, 281 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the app-wide image total is 472.
 
 ## Completed genus notes
 
@@ -78,6 +78,14 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Record audit: description, authority, publication, type locality, native range, two origin points, care notes and genus care guide are present. No cross-genus care group fits, so the species page uses the genus care sheet.
 - Photo audit: no living-plant photo exists on Commons or iNaturalist. A CC BY 4.0 Kew herbarium specimen (K0001971387, collected by Kami, M'Boungou & Koumbi, 2011) was imported from GBIF through the new strict last-resort pipeline and visually verified. The page now labels it as a herbarium specimen.
 - **Result: complete, 1/1 image (herbarium specimen), with the limitation documented.**
+
+### Genlisea — checked 2026-11-18
+
+- ICPS lists 28 accepted species with no hybrids or infraspecific taxa. All 28 records are present.
+- Record audit: every record has a description, authority, publication, type locality, native range and origin points. No cross-genus care group fits, so all species pages use the genus care sheet.
+- Photo audit: 24/28 have a verified open-licensed image — 10 existing Commons photos, 6 research-grade CC BY 4.0 iNaturalist observations and 8 CC0/CC BY/CC BY-SA GBIF herbarium specimens, all visually checked. Specimen pages are labelled as herbarium specimens.
+- Documented exceptions: *G. exhibitionista*, *G. multiflora*, *G. nebulicola* and *G. taylorii* have no commercial-friendly image on Commons, iNaturalist or GBIF. Their pages use the genus plate rather than an unlicensed photo.
+- **Result: complete, 24/28 photos, with four documented exceptions.**
 
 ### Craniolaria — checked 2026-11-17
 

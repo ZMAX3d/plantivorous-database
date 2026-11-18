@@ -19,7 +19,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 |---|---:|---:|---:|---:|---:|---:|---|---|
 | Aldrovanda | 1 (0) | 1 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | Byblis | 8 (0) | 0 | 8 | 7 | 1 | 0 | Pending | — |
-| Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
+| Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
 | Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
 | **Dionaea** | **1 (0)** | **0** | **1** | **1** | **0** | **0** | **Complete** | **2026-11-17** |
@@ -57,6 +57,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Record audit: description, authority, publication, type locality, native range, 39 origin points, aquatic care group, care notes and conservation note are present.
 - Photo audit: `assets/img/species/aldrovanda-vesiculosa.jpg` is a valid CC BY-SA 3.0 Commons image with a visible credit.
 - **Result: complete, 1/1 photo plus the nested variety.**
+
+### Cephalotus — checked 2026-11-18
+
+- ICPS lists one accepted species, *Cephalotus follicularis* Labill., with no hybrids or infraspecific taxa. The database contains that record.
+- Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, origin point, Mediterranean care group, care notes and conservation note are present.
+- Photo audit: `assets/img/species/cephalotus-follicularis.jpg` is a valid CC BY-SA 3.0 Commons photograph by H. Zell with a visible credit.
+- **Result: complete, 1/1 photo.**
 
 ### Craniolaria — checked 2026-11-17
 

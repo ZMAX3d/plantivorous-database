@@ -21,7 +21,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Byblis | 8 (0) | 0 | 8 | 7 | 1 | 0 | Pending | — |
 | Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
-| Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
+| Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | **Dionaea** | **1 (0)** | **0** | **1** | **1** | **0** | **0** | **Complete** | **2026-11-17** |
 | Dioncophyllum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
 | Drosera | 191 (4) | 42 | 191 | 134 | 57 | 0 | Pending | — |
@@ -63,6 +63,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - ICPS lists one accepted species, *Cephalotus follicularis* Labill., with no hybrids or infraspecific taxa. The database contains that record.
 - Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, origin point, Mediterranean care group, care notes and conservation note are present.
 - Photo audit: `assets/img/species/cephalotus-follicularis.jpg` is a valid CC BY-SA 3.0 Commons photograph by H. Zell with a visible credit.
+- **Result: complete, 1/1 photo.**
+
+### Darlingtonia — checked 2026-11-18
+
+- ICPS lists one accepted species, *Darlingtonia californica* Torr., with no hybrids or infraspecific taxa. The database contains that record.
+- Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, two origin points (California and Oregon), temperate care group, care notes and conservation note are present.
+- Photo audit: `assets/img/species/darlingtonia-californica.jpg` is a valid CC BY 2.5 Commons photograph by Noah Elhardt with a visible credit.
 - **Result: complete, 1/1 photo.**
 
 ### Craniolaria — checked 2026-11-17

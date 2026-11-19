@@ -5799,6 +5799,61 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "A mature trap of Dionaea 'Sonic'.",
       "cultivarSpecific": true
+    },
+    {
+      "species": "Nepenthes abalata",
+      "file": "assets/img/species/nepenthes-abalata.jpg",
+      "source": "https://www.inaturalist.org/observations/201659408",
+      "original": "iNaturalist photo 356014721",
+      "artist": "iNaturalist contributor",
+      "credit": "no rights reserved",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "iNaturalist research-grade observation 201659408 · San Jose, Coron, Palawan, Fülöp-szigetek · 2024-03-08",
+      "alt": "Photograph of Nepenthes abalata",
+      "sourceType": "iNaturalist"
+    },
+    {
+      "species": "Nepenthes biak",
+      "file": "assets/img/species/nepenthes-biak.jpg",
+      "source": "https://www.gbif.org/occurrence/2514098843",
+      "original": "L.1852584 (Naturalis Biodiversity Center)",
+      "artist": "Naturalis Biodiversity Center · collected by A.J.G.H. Kostermans & W. Soegeng Reksodihardjo",
+      "credit": "Naturalis Biodiversity Center · CC0",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "Herbarium specimen L.1852584 · Indonesia, Biak Island, near Parieri · 1966-09-12 · Naturalis Biodiversity Center",
+      "alt": "Herbarium specimen of Nepenthes biak",
+      "sourceType": "GBIF",
+      "specimen": true
+    },
+    {
+      "species": "Nepenthes mariae",
+      "file": "assets/img/species/nepenthes-mariae.jpg",
+      "source": "https://www.gbif.org/occurrence/3312545795",
+      "original": "E00979206 (Royal Botanic Garden Edinburgh)",
+      "artist": "Royal Botanic Garden Edinburgh · collected by G. Argent, M. Mendum & Hendrian",
+      "credit": "Royal Botanic Garden Edinburgh · CC0",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "Herbarium isotype E00979206 · Indonesia, Central Sulawesi, Mt. Sojol · 2000-02-27 · Royal Botanic Garden Edinburgh",
+      "alt": "Herbarium isotype of Nepenthes mariae",
+      "sourceType": "GBIF",
+      "specimen": true
+    },
+    {
+      "species": "Nepenthes masoalensis",
+      "file": "assets/img/species/nepenthes-masoalensis.jpg",
+      "source": "https://www.gbif.org/occurrence/912533338",
+      "original": "K000683717 (Royal Botanic Gardens, Kew)",
+      "artist": "Royal Botanic Gardens, Kew · collected by J. Aridy",
+      "credit": "Royal Botanic Gardens, Kew · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Herbarium specimen K000683717 · Madagascar, Antalaha, Ambohitralanana · 2005-05-28 · Royal Botanic Gardens, Kew",
+      "alt": "Herbarium specimen of Nepenthes masoalensis",
+      "sourceType": "GBIF",
+      "specimen": true
     }
   ]
 }

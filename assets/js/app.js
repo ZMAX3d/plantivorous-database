@@ -95,6 +95,8 @@
   /* ---------------------------------------------------------------- data indexes */
 
   const SPECIES = DB.species;
+  const SPECIES_ONLY = SPECIES.filter((species) => !species.cultivar);
+  const CULTIVARS = SPECIES.filter((species) => species.cultivar);
   const GENERA = DB.genera;
   const CARE_GROUPS = DB.careGroups;
   const SPECIES_BY_ID = new Map(SPECIES.map((species) => [species.id, species]));
@@ -191,7 +193,13 @@
   }
 
   const linkedSpeciesName = (species) =>
-    `<a href="#/species/${esc(species.id)}"><em>${esc(species.name)}</em></a>`;
+    `<a href="#/species/${esc(species.id)}">${speciesDisplayName(species)}</a>`;
+
+  const speciesDisplayName = (species) => {
+    if (!species.cultivar) return `<em>${esc(species.name)}</em>`;
+    const epithet = species.name.slice(species.genus.length).trim();
+    return `<em>${esc(species.genus)}</em> ${esc(epithet)}`;
+  };
 
   const linkedGenusName = (genus) =>
     `<a href="#/genus/${encodeURIComponent(genus)}"><em>${esc(genus)}</em></a>`;
@@ -308,6 +316,7 @@
     const image = speciesImage(species);
     const common = species.commonName && !species.commonNameIsGenus ? species.commonName : "";
     const badges = [
+      species.cultivar ? '<span class="pill pill--amber">Cultivar</span>' : "",
       species.provisional ? '<span class="pill pill--lime">Provisional</span>' : "",
       species.hybrid ? '<span class="pill pill--violet">Natural hybrid</span>' : "",
     ].filter(Boolean).join("");
@@ -321,16 +330,16 @@
           ${icon("heart")}
         </button>
         <div class="species-card__body">
-          <p class="species-card__kicker"><span>${esc(species.genus)}</span><span>${esc(species.family)}</span></p>
-          <h3><a href="#/species/${esc(species.id)}"><em>${esc(species.name)}</em></a></h3>
+          <p class="species-card__kicker"><span>${esc(species.genus)}</span><span>${species.cultivar ? "Cultivar" : esc(species.family)}</span></p>
+          <h3><a href="#/species/${esc(species.id)}">${speciesDisplayName(species)}</a></h3>
           ${common ? `<p class="species-card__common">${esc(common)}</p>` : ""}
           <p class="species-card__summary">${esc(species.summary || species.description)}</p>
           <div class="species-card__meta">
-            <span class="pill">${esc(trapLabelOf(species))}</span>
+            <span class="pill">${species.cultivar ? "Parent: D. muscipula" : esc(trapLabelOf(species))}</span>
             <span class="${difficultyClass(species.difficulty)}">${esc(species.difficulty || "Varies")}</span>
           </div>
           <div class="species-card__foot">
-            <span>${esc(species.nativeShort || species.nativeRange || "Range unknown")}</span>
+            <span>${species.cultivar ? "No wild origin" : esc(species.nativeShort || species.nativeRange || "Range unknown")}</span>
             <span>${species.year ? esc(species.year) : "—"}</span>
           </div>
         </div>
@@ -344,8 +353,8 @@
         <img src="${esc(image.src)}" alt="" loading="lazy" decoding="async" data-fallback="${esc(species.illustration)}">
       </span>
       <span class="species-mini__body">
-        <strong><em>${esc(species.name)}</em></strong>
-        <span>${esc(species.genus)} · ${esc(species.family)}</span>
+        <strong>${speciesDisplayName(species)}</strong>
+        <span>${esc(species.genus)} · ${species.cultivar ? "Cultivar" : esc(species.family)}</span>
       </span>
     </a>`;
   }
@@ -486,7 +495,7 @@
       });
 
     const trapCards = TRAP_FAMILIES.map((trap) => {
-      const count = SPECIES.filter((species) => trapFamilyOf(species) === trap.key).length;
+      const count = SPECIES_ONLY.filter((species) => trapFamilyOf(species) === trap.key).length;
       return `<a class="trap-card" href="#/database?trap=${encodeURIComponent(trap.key)}" style="--trap:${trap.color};--trap-soft:${trap.soft}">
         <span class="trap-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true">${TRAP_ICONS[trap.key] || ""}</svg></span>
         <h3>${esc(trap.label)}</h3>
@@ -509,7 +518,7 @@
           <div class="hero-copy">
             <p class="eyebrow light">The Plantivorous field guide</p>
             <h1>Carnivorous plants,<br><em>catalogued.</em></h1>
-            <p class="hero-lede">Every accepted species and natural hybrid in the ICPS names resource — with native-range maps, discovery stories, photographs, botanical plates and care that actually works.</p>
+            <p class="hero-lede">Every accepted species and natural hybrid in the ICPS names resource — with native-range maps, discovery stories, photographs, botanical plates and care that actually works. Dionaea cultivars are catalogued as a separate, fully registered layer.</p>
             <form class="hero-search" data-hero-search role="search">
               <label class="visually-hidden" for="hero-search">Search species, genera or countries</label>
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
@@ -531,9 +540,9 @@
 
       <div class="container">
         <div class="stats-band">
-          <div class="stat"><a href="#/database"><strong>${fmt(DB.meta.totalSpecies)}</strong><span>Taxa catalogued<br>${fmt(DB.meta.icpsCount)} ICPS + ${fmt(DB.meta.provisionalCount)} provisional</span></a></div>
+          <div class="stat"><a href="#/database"><strong>${fmt(DB.meta.totalSpecies)}</strong><span>Wild taxa<br>${fmt(DB.meta.icpsCount)} ICPS + ${fmt(DB.meta.provisionalCount)} provisional</span></a></div>
+          <div class="stat"><a href="#/genus/Dionaea?view=cultivars"><strong>${fmt(DB.meta.cultivarCount)}</strong><span>Registered cultivars<br>Dionaea muscipula</span></a></div>
           <div class="stat"><a href="#/genera"><strong>${fmt(DB.meta.genusCount)}</strong><span>Genera</span></a></div>
-          <div class="stat"><a href="#/database"><strong>${fmt(DB.meta.familyCount)}</strong><span>Plant families</span></a></div>
           <div class="stat"><a href="#/map"><strong>${fmt(DB.meta.countryCount)}</strong><span>Countries &amp; territories</span></a></div>
           <div class="stat"><a href="#/database?photo=1"><strong>${fmt(DB.meta.photoCount)}</strong><span>Licensed photographs</span></a></div>
         </div>
@@ -675,7 +684,7 @@
           <div class="cta-band">
             <div>
               <h2>Find the plant you have been looking for.</h2>
-              <p>Search 760 taxa by name, family, trap type, difficulty, care group or native continent.</p>
+              <p>Search ${fmt(DB.meta.totalSpecies)} wild taxa and ${fmt(DB.meta.cultivarCount)} Dionaea cultivars by name, family, trap type, difficulty, care group or native continent.</p>
             </div>
             <a class="btn btn--lime" href="#/database">Open the database ${icon("arrow")}</a>
           </div>
@@ -711,7 +720,7 @@
 
   function filterCounts(key) {
     const counts = new Map();
-    for (const species of SPECIES) {
+    for (const species of SPECIES_ONLY) {
       const value = key === "trap" ? trapFamilyOf(species) : species[key];
       if (value == null || value === "") continue;
       counts.set(value, (counts.get(value) || 0) + 1);
@@ -731,6 +740,7 @@
       care: params.get("care") || "",
       photo: params.get("photo") === "1",
       provisional: params.get("provisional") !== "0",
+      cultivars: params.get("cultivars") === "1",
       sort: params.get("sort") || "name",
       view: params.get("view") === "list" ? "list" : "grid",
     };
@@ -741,10 +751,10 @@
 
     const genusCounts = filterCounts("genus");
     const familyCounts = filterCounts("family");
-    const trapCounts = new Map(TRAP_FAMILIES.map((trap) => [trap.key, SPECIES.filter((species) => trapFamilyOf(species) === trap.key).length]));
+    const trapCounts = new Map(TRAP_FAMILIES.map((trap) => [trap.key, SPECIES_ONLY.filter((species) => trapFamilyOf(species) === trap.key).length]));
     const difficultyCounts = filterCounts("difficulty");
     const continentCounts = new Map();
-    for (const species of SPECIES) {
+    for (const species of SPECIES_ONLY) {
       for (const continent of species.continents || []) {
         continentCounts.set(continent, (continentCounts.get(continent) || 0) + 1);
       }
@@ -755,7 +765,7 @@
       crumbs: breadcrumb([{ label: "Home", href: "#/" }, { label: "Database" }]),
       eyebrow: "The catalogue",
       title: "Species database",
-      lede: `Search and filter ${fmt(DB.meta.totalSpecies)} carnivorous plant taxa — ${fmt(DB.meta.icpsCount)} accepted by the ICPS plus ${fmt(DB.meta.provisionalCount)} provisional entries held on the watchlist.`,
+      lede: `Search and filter ${fmt(DB.meta.totalSpecies)} carnivorous plant taxa — ${fmt(DB.meta.icpsCount)} accepted by the ICPS plus ${fmt(DB.meta.provisionalCount)} provisional entries held on the watchlist. A separate layer holds ${fmt(DB.meta.cultivarCount)} ICPS-registered Dionaea cultivars.`,
       stat: fmt(DB.meta.totalSpecies),
       statLabel: "Taxa catalogued",
     })}
@@ -772,7 +782,7 @@
             <label for="f-genus">Genus</label>
             <select id="f-genus" name="genus">
               ${option("", "All 21 genera", !current.genus)}
-              ${[...genusCounts.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([value, count]) => option(value, value, current.genus === value, count)).join("")}
+              ${[...genusCounts.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([value, count]) => option(value, value, current.genus === value, count + (current.cultivars ? CULTIVARS.filter((cultivar) => cultivar.genus === value).length : 0))).join("")}
             </select>
           </div>
           <div class="filter-group">
@@ -813,11 +823,15 @@
           <div class="filter-checks">
             <label class="check">
               <input type="checkbox" name="photo"${current.photo ? " checked" : ""}>
-              <span>Photographed only <small>${fmt(DB.meta.photoCount)} species with a licensed photo</small></span>
+              <span>Photographed only <small>${fmt(DB.meta.photoCount)} species and ${fmt(DB.meta.cultivarCount)} cultivars with a licensed image</small></span>
             </label>
             <label class="check">
               <input type="checkbox" name="provisional"${current.provisional ? " checked" : ""}>
               <span>Include provisional taxa <small>The watchlist sits outside the 751 ICPS count</small></span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="cultivars"${current.cultivars ? " checked" : ""}>
+              <span>Include Dionaea cultivars <small>${fmt(DB.meta.cultivarCount)} registered cultivars, separate from wild taxa</small></span>
             </label>
           </div>
           <button class="btn btn--primary btn--wide filters-done" type="button" data-filters-close>Show ${fmt(dbState.filtered.length)} results</button>
@@ -864,6 +878,7 @@
   function filterSpecies(filters) {
     const tokens = normalizeText(filters.q).split(/\s+/).filter(Boolean);
     const filtered = SPECIES.filter((species) => {
+      if (!filters.cultivars && species.cultivar) return false;
       if (!filters.provisional && species.provisional) return false;
       if (filters.genus && species.genus !== filters.genus) return false;
       if (filters.family && species.family !== filters.family) return false;
@@ -919,6 +934,7 @@
       care: form.elements.care?.value || "",
       photo: Boolean(form.elements.photo?.checked),
       provisional: Boolean(form.elements.provisional?.checked),
+      cultivars: Boolean(form.elements.cultivars?.checked),
       sort: $("#db-sort")?.value || "name",
       view: dbState.view,
     };
@@ -935,6 +951,7 @@
     if (filters.care) params.set("care", filters.care);
     if (filters.photo) params.set("photo", "1");
     if (!filters.provisional) params.set("provisional", "0");
+    if (filters.cultivars) params.set("cultivars", "1");
     if (filters.sort !== "name") params.set("sort", filters.sort);
     if (filters.view === "list") params.set("view", "list");
     const query = params.toString();
@@ -960,6 +977,7 @@
     if (filters.care) chips.push({ key: "care", label: CARE_BY_KEY.get(filters.care)?.label || filters.care });
     if (filters.photo) chips.push({ key: "photo", label: "Photographed" });
     if (!filters.provisional) chips.push({ key: "provisional", label: "ICPS accepted only" });
+    if (filters.cultivars) chips.push({ key: "cultivars", label: "Dionaea cultivars" });
     if (!chips.length) return "";
     return `${chips.map((chip) => `<span class="filter-chip">${esc(chip.label)}<button type="button" data-remove-filter="${esc(chip.key)}" aria-label="Remove ${esc(chip.label)} filter">×</button></span>`).join("")}
       <button class="filter-chip filter-chip--clear" type="button" data-clear-filters>Clear all</button>`;
@@ -1058,6 +1076,9 @@
     } else if (key === "provisional") {
       const input = $('#db-filters [name="provisional"]');
       if (input) input.checked = true;
+    } else if (key === "cultivars") {
+      const input = $('#db-filters [name="cultivars"]');
+      if (input) input.checked = false;
     } else {
       const input = $(`#db-filters [name="${key}"]`);
       if (input) input.value = "";
@@ -1123,17 +1144,23 @@
     if (!species) return notFoundView(`No species record matches “${id}”.`);
 
     const genus = genusOf(species);
+    const isCultivar = Boolean(species.cultivar);
     const care = CARE_BY_KEY.get(species.careGroup) || {};
     const genusCare = genus?.care || {};
     const careValue = (key) => care[key] || genusCare[key];
     const image = speciesImage(species);
     const photo = species.photo;
-    const siblings = SPECIES.filter((item) => item.genus === species.genus).sort((a, b) => a.name.localeCompare(b.name));
+    const siblingPool = SPECIES.filter(
+      (item) =>
+        item.genus === species.genus &&
+        Boolean(item.cultivar) === isCultivar
+    ).sort((a, b) => a.name.localeCompare(b.name));
+    const siblings = siblingPool;
     const siblingIndex = siblings.findIndex((item) => item.id === species.id);
     const previous = siblings[siblingIndex - 1];
     const next = siblings[siblingIndex + 1];
-    const related = SPECIES
-      .filter((item) => item.genus === species.genus && item.id !== species.id)
+    const related = siblingPool
+      .filter((item) => item.id !== species.id)
       .sort((a, b) => Number(b.featured) - Number(a.featured) || Number(b.hasPhoto) - Number(a.hasPhoto) || a.name.localeCompare(b.name))
       .slice(0, 4);
     const common = species.commonName && !species.commonNameIsGenus ? species.commonName : "";
@@ -1176,6 +1203,51 @@
       ? `<div class="taxon-tags">${species.taxonomy.map((item, index) => `${index ? '<span class="sep" aria-hidden="true">›</span>' : ""}<span>${esc(item)}</span>`).join("")}</div>`
       : "";
 
+    const parent = species.parentId ? SPECIES_BY_ID.get(species.parentId) : null;
+    const registrationRows = isCultivar
+      ? [
+          ["Cultivar authority", species.authors],
+          ["Originator", species.originator],
+          ["Nominant", species.nominant],
+          ["Registrant", species.registrant],
+          ["Registered", formatDate(species.registrationDate)],
+          ["Publication", species.publication],
+          ["Registration standard", species.standard],
+          ["Etymology", species.etymology],
+          ["Propagation", species.propagation],
+          ["Synonym", species.synonym],
+          ["Awards / patents", species.awards],
+        ].filter(([, value]) => value)
+      : [];
+
+    const registrationCard = isCultivar
+      ? `<section class="content-card" id="registration">
+          <h2>Registration &amp; naming</h2>
+          <div class="prose">
+            <p>The cultivar is defined by its ICPS registration. The fields below reproduce the register's factual record; consult the register entry for the full descriptive text.</p>
+            ${species.webPublication ? `<p><a href="${esc(species.webPublication)}" target="_blank" rel="noopener">Read the original registration notice ↗</a></p>` : ""}
+          </div>
+          <div class="care-detail-grid">
+            ${registrationRows.map(([label, value]) => `<div class="care-detail-item"><h3>${esc(label)}</h3><p>${esc(value)}</p></div>`).join("")}
+          </div>
+          ${species.cultivarComment ? `<div class="callout"><strong>Registrar's comment</strong>${esc(species.cultivarComment)}</div>` : ""}
+          ${species.horticulturalComment ? `<div class="callout callout--amber"><strong>Horticultural note</strong>${esc(species.horticulturalComment)}</div>` : ""}
+        </section>`
+      : "";
+
+    const parentRangeCard = isCultivar
+      ? `<section class="content-card" id="range">
+          <h2>Parent species range</h2>
+          <div class="callout callout--amber"><strong>No wild origin</strong>Cultivars are cultivated selections. They have no native range, country or map marker of their own; the distribution below belongs to the parent species.</div>
+          <div class="prose" style="margin-top:14px">
+            <p>${esc(parent?.name || species.parentSpecies || "Dionaea muscipula")} is native to ${esc(species.parentNativeRange || parent?.nativeRange || "the south-eastern United States")}.</p>
+          </div>
+          ${parent ? `<div class="care-link-row"><a class="btn btn--secondary btn--small" href="#/species/${esc(parent.id)}">Open the parent species ${icon("arrow")}</a><a class="btn btn--secondary btn--small" href="#/map?species=${encodeURIComponent(parent.id)}">${icon("globe")} Parent range map</a></div>` : ""}
+          ${species.parentCountries?.length ? `<h3>Parent native countries &amp; territories</h3><div class="country-chips">${species.parentCountries.map((country) => `<span class="country-chip">${esc(country)}</span>`).join("")}</div>` : ""}
+          ${species.parentRegions?.length ? `<h3>Parent regions</h3><div class="country-chips">${species.parentRegions.map((region) => `<span class="country-chip">${esc(region)}</span>`).join("")}</div>` : ""}
+        </section>`
+      : "";
+
     return `<div class="species-page">
       <div class="container">
         ${breadcrumb([
@@ -1189,41 +1261,44 @@
             <div class="species-media${image.isPhoto ? "" : " is-illustration"}">
               ${mediaFrame}
               <div class="species-media__badges">
-                ${species.provisional ? '<span class="pill pill--lime">Provisional · watchlist</span>' : '<span class="pill pill--green">ICPS accepted</span>'}
+                ${isCultivar ? '<span class="pill pill--amber">ICPS-registered cultivar</span>' : species.provisional ? '<span class="pill pill--lime">Provisional · watchlist</span>' : '<span class="pill pill--green">ICPS accepted</span>'}
                 ${species.hybrid ? '<span class="pill pill--violet">Natural hybrid</span>' : ""}
+                ${photo?.representative ? '<span class="pill">Representative species photo</span>' : ""}
                 ${photo?.specimen ? '<span class="pill">Herbarium specimen</span>' : ""}
-                ${iucnPill(species)}
+                ${isCultivar ? "" : iucnPill(species)}
               </div>
               <div class="species-media__credit">
-                <span>${photo ? `Photo: ${photoCredit(species)}` : "Original botanical plate · Plantivorous database"}</span>
+                <span>${photo ? `${photo.representative ? "Representative photo" : "Photo"}: ${photoCredit(species)}` : "Original botanical plate · Plantivorous database"}</span>
                 ${photo?.source ? `<a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photoSourceName(photo))} ↗</a>` : `<span>${esc(species.family)}</span>`}
               </div>
             </div>
           </div>
           <div class="species-intro">
-            <p class="eyebrow">${esc(species.family)} · ${esc(species.genus)}</p>
-            <h1><em>${esc(species.name)}</em><span class="species-authority">${esc(species.authors || "")}${species.year ? `, ${esc(species.year)}` : ""}</span></h1>
+            <p class="eyebrow">${esc(species.family)} · ${esc(species.genus)}${isCultivar ? " · cultivar" : ""}</p>
+            <h1>${speciesDisplayName(species)}<span class="species-authority">${esc(species.authors || "")}${species.year ? `, ${esc(species.year)}` : ""}</span></h1>
             ${common ? `<p class="species-common">${esc(common)}</p>` : ""}
             <p class="species-lede">${esc(species.description || species.summary)}</p>
             <div class="species-badge-row">
-              <span class="pill">${esc(trapLabelOf(species))}</span>
-              <span class="pill${species.provisional ? " pill--amber" : " pill--green"}">${species.provisional ? "Awaiting ICPS inclusion" : "Accepted name"}</span>
+              <span class="pill">${species.cultivar ? "Cultivar of Dionaea muscipula" : esc(trapLabelOf(species))}</span>
+              <span class="pill${isCultivar ? " pill--amber" : species.provisional ? " pill--amber" : " pill--green"}">${isCultivar ? "ICPS-registered cultivar" : species.provisional ? "Awaiting ICPS inclusion" : "Accepted name"}</span>
               <span class="${difficultyClass(species.careDifficulty || species.difficulty)}">${esc(species.careDifficulty || species.difficulty || "Varies")} care</span>
             </div>
             <div class="species-actions">
               <button class="btn btn--primary" type="button" data-fav="${esc(species.id)}">
                 ${icon("heart")} <span>${favourites.has(species.id) ? "Saved to favourites" : "Save to favourites"}</span>
               </button>
-              <a class="btn btn--secondary" href="#/map?species=${encodeURIComponent(species.id)}">${icon("pin")} Range map</a>
+              ${isCultivar && parent
+                ? `<a class="btn btn--secondary" href="#/map?species=${encodeURIComponent(parent.id)}">${icon("pin")} Parent range map</a>`
+                : `<a class="btn btn--secondary" href="#/map?species=${encodeURIComponent(species.id)}">${icon("pin")} Range map</a>`}
               <button class="btn btn--ghost" type="button" data-copy-link>${icon("share")} Copy link</button>
             </div>
             <dl class="key-facts">
               <div class="key-fact"><dt>Family</dt><dd>${esc(species.family)}</dd></div>
               <div class="key-fact"><dt>Genus</dt><dd>${linkedGenusName(species.genus)}</dd></div>
-              <div class="key-fact"><dt>Trap type</dt><dd>${esc(species.trapType || trapLabelOf(species))}</dd></div>
-              <div class="key-fact"><dt>Native range</dt><dd>${esc(species.nativeShort || species.nativeRange || "Not recorded")}</dd></div>
+              <div class="key-fact"><dt>${isCultivar ? "Parent species" : "Trap type"}</dt><dd>${isCultivar ? (parent ? linkedSpeciesName(parent) : esc(species.parentSpecies || "Dionaea muscipula")) : esc(species.trapType || trapLabelOf(species))}</dd></div>
+              <div class="key-fact"><dt>${isCultivar ? "Registered" : "Native range"}</dt><dd>${isCultivar ? (species.year ? esc(species.year) : "Not recorded") : esc(species.nativeShort || species.nativeRange || "Not recorded")}</dd></div>
               <div class="key-fact"><dt>Care group</dt><dd>${species.careGroup ? `<a href="#/care/${esc(species.careGroup)}">${esc(species.careGroupLabel || care.label || "—")}</a>` : `<a href="#/genus/${encodeURIComponent(species.genus)}">Genus-specific care</a>`}</dd></div>
-              <div class="key-fact"><dt>Described</dt><dd>${species.year ? esc(species.year) : "Not recorded"}</dd></div>
+              <div class="key-fact"><dt>${isCultivar ? "Status" : "Described"}</dt><dd>${isCultivar ? "Cultivated selection" : species.year ? esc(species.year) : "Not recorded"}</dd></div>
             </dl>
           </div>
         </article>
@@ -1231,16 +1306,17 @@
         <div class="species-layout">
           <div class="species-main">
             <section class="content-card">
-              <h2>About this species</h2>
+              <h2>${isCultivar ? "About this cultivar" : "About this species"}</h2>
               <div class="prose">
                 <p>${esc(species.description || species.summary)}</p>
-                ${species.etymology ? `<h3>Etymology</h3><p>${esc(species.etymology)}</p>` : ""}
+                ${species.etymology && !isCultivar ? `<h3>Etymology</h3><p>${esc(species.etymology)}</p>` : ""}
                 ${species.conservationNote ? `<div class="callout"><strong>Conservation</strong>${esc(species.conservationNote)}</div>` : ""}
+                ${isCultivar ? `<div class="callout callout--amber"><strong>Cultivated selection</strong>This is an ICPS-registered cultivar, not a wild species. It is excluded from species counts, native-country totals and range maps.</div>` : ""}
                 ${species.provisional ? `<div class="callout callout--amber"><strong>Provisional entry</strong>This name is accepted in the primary literature but was not present in the ${esc(new Date(DB.meta.icpsSnapshot).toLocaleDateString("en-ZA", { day: "numeric", month: "long", year: "numeric" }))} ICPS snapshot. It is shown for completeness and excluded from the 751 ICPS-accepted count. Status: ${esc(species.status || "Published, pending ICPS inclusion")}.</div>` : ""}
               </div>
             </section>
 
-            <section class="content-card">
+            ${isCultivar ? registrationCard : `<section class="content-card">
               <h2>Discovery &amp; naming</h2>
               <div class="prose">
                 <p>${esc(species.discoveredBy || `The species was described by ${species.authors || "its naming authority"}${species.year ? ` in ${species.year}` : ""}.`)}</p>
@@ -1252,9 +1328,9 @@
                 <div class="care-detail-item"><h3>Rank</h3><p>${esc(species.rankLabel || species.rank || "Species")}${species.hybrid ? " · natural hybrid" : ""}</p></div>
               </div>
               ${taxonomy}
-            </section>
+            </section>`}
 
-            <section class="content-card" id="range">
+            ${isCultivar ? parentRangeCard : `<section class="content-card" id="range">
               <h2>Native range</h2>
               <div class="prose"><p>${esc(species.nativeRange || "Distribution not recorded in the ICPS snapshot.")}</p></div>
               ${miniMap(species)}
@@ -1268,11 +1344,12 @@
               ${species.nativeRegions?.length ? `<h3>Regions</h3><div class="country-chips">${species.nativeRegions.map((region) => `<span class="country-chip">${esc(region)}</span>`).join("")}</div>` : ""}
               ${species.introducedCountries?.length ? `<h3>Introduced records</h3><div class="country-chips">${species.introducedCountries.map((country) => `<span class="country-chip country-chip--introduced">+ ${esc(country)}</span>`).join("")}</div>` : ""}
               <div class="care-link-row"><a class="btn btn--secondary btn--small" href="#/map?species=${encodeURIComponent(species.id)}">${icon("globe")} Open interactive map</a></div>
-            </section>
+            </section>`}
 
             <section class="content-card" id="care">
               <h2>Care &amp; cultivation</h2>
-              ${species.careNotes ? `<div class="callout care-note"><strong>Species note</strong>${esc(species.careNotes)}</div>` : ""}
+              ${isCultivar ? `<div class="callout care-note"><strong>Cultivar care</strong>Grow this selection exactly as the parent species, ${esc(species.parentSpecies || "Dionaea muscipula")}. Colour, trap size and tooth form can vary with light, season and clone; registered characteristics are defined by the ICPS standard, not guaranteed by every division.</div>` : ""}
+              ${species.careNotes ? `<div class="callout care-note"><strong>${isCultivar ? "Parent species note" : "Species note"}</strong>${esc(species.careNotes)}</div>` : ""}
               <div class="prose" style="margin-top:14px"><p>${esc(care.description || genus?.care?.overview || "Care guidance is grouped by the climate and water regime this plant expects.")}</p></div>
               ${careFields.length ? `<div class="care-detail-grid">${careFields.map(([label, value]) => `<div class="care-detail-item"><h3>${esc(label)}</h3><p>${esc(value)}</p></div>`).join("")}</div>` : ""}
               ${care.tips?.length ? `<h3>Practical tips</h3><ul class="care-tips">${care.tips.map((tip) => `<li>${esc(tip)}</li>`).join("")}</ul>` : ""}
@@ -1284,7 +1361,7 @@
 
             ${infra}
 
-            <section class="content-card">
+            ${isCultivar ? "" : `<section class="content-card">
               <h2>Taxonomy &amp; publication</h2>
               ${taxonomy || '<p class="prose">No higher classification was included in this record.</p>'}
               <div class="care-detail-grid">
@@ -1293,17 +1370,17 @@
                 <div class="care-detail-item"><h3>Publication</h3><p>${esc(species.publication || "Not recorded")}</p></div>
                 <div class="care-detail-item"><h3>Type locality</h3><p>${esc(species.typeLocality || "Not recorded")}</p></div>
               </div>
-            </section>
+            </section>`}
 
             <section class="content-card">
               <h2>Sources &amp; further reading</h2>
-              <p class="prose">Nomenclature follows the ICPS Carnivorous Plant Names Resource. Descriptions, care notes and the botanical plates are original editorial work; photographs retain the licences shown.</p>
+              <p class="prose">Nomenclature follows the ICPS Carnivorous Plant Names Resource. ${isCultivar ? "Cultivar names and registration facts come from the ICPS registered-cultivar list; the register remains the authority for the full description. " : ""}Descriptions, care notes and the botanical plates are original editorial work; photographs retain the licences shown.</p>
               <div class="source-list">${sourceLinks}</div>
             </section>
 
-            <nav class="prev-next" aria-label="Species navigation">
-              ${previous ? `<a href="#/species/${esc(previous.id)}"><span>Previous in ${esc(species.genus)}</span><strong><em>${esc(previous.name)}</em></strong></a>` : `<span></span>`}
-              ${next ? `<a href="#/species/${esc(next.id)}"><span>Next in ${esc(species.genus)}</span><strong><em>${esc(next.name)}</em></strong></a>` : `<span></span>`}
+            <nav class="prev-next" aria-label="${isCultivar ? "Cultivar" : "Species"} navigation">
+              ${previous ? `<a href="#/species/${esc(previous.id)}"><span>Previous ${isCultivar ? "cultivar" : `in ${esc(species.genus)}`}</span><strong>${speciesDisplayName(previous)}</strong></a>` : `<span></span>`}
+              ${next ? `<a href="#/species/${esc(next.id)}"><span>Next ${isCultivar ? "cultivar" : `in ${esc(species.genus)}`}</span><strong>${speciesDisplayName(next)}</strong></a>` : `<span></span>`}
             </nav>
           </div>
 
@@ -1313,19 +1390,20 @@
               <div class="side-card__rows">
                 <div class="side-card__row"><span>Family</span><span>${esc(species.family)}</span></div>
                 <div class="side-card__row"><span>Genus</span><span>${linkedGenusName(species.genus)}</span></div>
-                <div class="side-card__row"><span>Trap</span><span>${esc(trapLabelOf(species))}</span></div>
+                ${isCultivar ? `<div class="side-card__row"><span>Parent</span><span>${parent ? linkedSpeciesName(parent) : esc(species.parentSpecies || "—")}</span></div>` : `<div class="side-card__row"><span>Trap</span><span>${esc(trapLabelOf(species))}</span></div>`}
                 <div class="side-card__row"><span>Carnivory</span><span>${esc(species.carnivory || "True carnivore")}</span></div>
                 <div class="side-card__row"><span>Care</span><span>${esc(species.careDifficulty || "Varies")}</span></div>
-                <div class="side-card__row"><span>IUCN</span><span>${esc(species.iucn?.code || "NE")}</span></div>
-                <div class="side-card__row"><span>Range</span><span>${esc(species.nativeShort || "—")}</span></div>
-                <div class="side-card__row"><span>Described</span><span>${species.year ? esc(species.year) : "—"}</span></div>
+                <div class="side-card__row"><span>${isCultivar ? "Status" : "IUCN"}</span><span>${isCultivar ? "Cultivar" : esc(species.iucn?.code || "NE")}</span></div>
+                <div class="side-card__row"><span>${isCultivar ? "Wild origin" : "Range"}</span><span>${isCultivar ? "None" : esc(species.nativeShort || "—")}</span></div>
+                <div class="side-card__row"><span>${isCultivar ? "Registered" : "Described"}</span><span>${species.year ? esc(species.year) : "—"}</span></div>
               </div>
-              <a class="side-link" href="#/genus/${encodeURIComponent(species.genus)}">More ${esc(species.genus)} species ${icon("arrow")}</a>
+              <a class="side-link" href="#/genus/${encodeURIComponent(species.genus)}${isCultivar ? "?view=cultivars" : ""}">More ${esc(species.genus)} ${isCultivar ? "cultivars" : "species"} ${icon("arrow")}</a>
             </section>
 
             ${photo ? `<section class="side-card">
               <h2>Image credit</h2>
               <div class="credit-block">
+                ${photo.representative ? `<p><strong>Representative image.</strong> This is a photograph of ${esc(photo.representativeOf || "the parent species")}, not of ${esc(species.name)}. It is used as a clearly labelled stand-in because no cultivar-specific image is available under a commercial-friendly licence.</p>` : ""}
                 ${photo.description ? `<p>${esc(photo.description)}</p>` : ""}
                 <p><strong>${esc(photo.artist || "Open-licensed contributor")}</strong><br>${esc(photo.license || "See source")}</p>
                 ${photo.source ? `<p><a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photoSourceLinkLabel(photo))}</a></p>` : ""}
@@ -1333,19 +1411,27 @@
               </div>
             </section>` : `<section class="side-card">
               <h2>Illustration</h2>
-              <div class="credit-block"><p>This species uses the original <em>${esc(species.genus)}</em> botanical plate created for the Plantivorous database. Photographs are added as they become available under an open licence.</p></div>
+              <div class="credit-block"><p>This ${isCultivar ? "cultivar" : "species"} uses the original <em>${esc(species.genus)}</em> botanical plate created for the Plantivorous database. Photographs are added as they become available under an open licence.</p></div>
             </section>`}
 
-            <section class="side-card">
+            ${isCultivar ? `<section class="side-card">
+              <h2>Registration</h2>
+              <div class="side-card__rows">
+                <div class="side-card__row"><span>Status</span><span>ICPS registered</span></div>
+                <div class="side-card__row"><span>Registered</span><span>${esc(species.registrationDate ? formatDate(species.registrationDate) : species.year || "—")}</span></div>
+                <div class="side-card__row"><span>Registrant</span><span>${esc(species.registrant || "—")}</span></div>
+                <div class="side-card__row"><span>Standard</span><span>${esc(species.publication || "—")}</span></div>
+              </div>
+            </section>` : `<section class="side-card">
               <h2>Conservation</h2>
               <div class="side-card__rows">
                 <div class="side-card__row"><span>IUCN status</span><span>${iucnPill(species)}</span></div>
               </div>
               ${species.conservationNote ? `<p style="margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.6">${esc(species.conservationNote)}</p>` : ""}
-            </section>
+            </section>`}
 
             ${related.length ? `<section class="side-card">
-              <h2>Related species</h2>
+              <h2>Related ${isCultivar ? "cultivars" : "species"}</h2>
               ${related.map((item) => speciesMini(item)).join("")}
             </section>` : ""}
           </aside>
@@ -1367,7 +1453,7 @@
 
   function filterGenusSpecies(genusName, query, sort) {
     const tokens = normalizeText(query).split(/\s+/).filter(Boolean);
-    const list = SPECIES.filter((species) => {
+    const list = SPECIES_ONLY.filter((species) => {
       if (species.genus !== genusName) return false;
       if (!tokens.length) return true;
       const haystack = normalizeText(`${species.name} ${species.commonName || ""} ${species.searchText || ""} ${species.careGroupLabel || ""}`);
@@ -1395,12 +1481,13 @@
 
     const familyGenera = GENERA.filter((item) => item.family === genus.family && item.genus !== genus.genus);
     const careGroups = (genus.careGroupKeys || []).map((key) => CARE_BY_KEY.get(key)).filter(Boolean);
-    const photos = SPECIES
+    const photos = SPECIES_ONLY
       .filter((species) => species.genus === genus.genus && species.hasPhoto)
       .sort((a, b) => Number(b.featured) - Number(a.featured) || a.name.localeCompare(b.name))
       .slice(0, 4);
 
-    const allSpecies = SPECIES.filter((species) => species.genus === genus.genus).sort((a, b) => a.name.localeCompare(b.name));
+    const allSpecies = SPECIES_ONLY.filter((species) => species.genus === genus.genus).sort((a, b) => a.name.localeCompare(b.name));
+    const allCultivars = CULTIVARS.filter((species) => species.genus === genus.genus).sort((a, b) => a.name.localeCompare(b.name));
     genusState.name = genus.genus;
     genusState.filtered = allSpecies;
     genusState.limit = 48;
@@ -1435,6 +1522,7 @@
             <p class="genus-hero__lede">${esc(genus.description)}</p>
             <div class="genus-hero__badges">
               <span class="pill pill--green">${fmt(genus.speciesCount)} accepted taxa</span>
+              ${genus.cultivarCount ? `<span class="pill pill--amber">${fmt(genus.cultivarCount)} registered cultivars</span>` : ""}
               <span class="pill">${esc(genus.trapType)}</span>
               <span class="${difficultyClass(genus.difficulty)}">${esc(genus.difficulty)}</span>
               <span class="pill">${fmt(genus.photoCount || 0)} photographed</span>
@@ -1455,6 +1543,7 @@
       <div class="genus-facts">
         <div class="genus-fact"><strong>${fmt(genus.speciesCount)}</strong><span>Accepted taxa</span></div>
         <div class="genus-fact"><strong>${fmt(genus.acceptedCount || genus.speciesCount)}</strong><span>ICPS accepted</span></div>
+        ${genus.cultivarCount ? `<div class="genus-fact"><strong>${fmt(genus.cultivarCount)}</strong><span>Registered cultivars</span></div>` : ""}
         <div class="genus-fact"><strong>${fmt(genus.hybridCount || 0)}</strong><span>Natural hybrids</span></div>
         <div class="genus-fact"><strong>${fmt(genus.infraspecificCount || 0)}</strong><span>Infraspecific taxa</span></div>
         <div class="genus-fact"><strong>${fmt(careGroups.length)}</strong><span>Care groups</span></div>
@@ -1559,7 +1648,21 @@
         <div class="species-grid species-grid--three" id="genus-results">${initial.map((species) => speciesCard(species)).join("")}</div>
         <div class="load-more-wrap" id="genus-load-more">${allSpecies.length > initial.length ? `<button class="btn btn--secondary" type="button" data-genus-more>Load ${fmt(Math.min(48, allSpecies.length - initial.length))} more</button>` : ""}</div>
       </div>
-    </section>`;
+    </section>
+
+    ${allCultivars.length ? `<section class="genus-species-section" id="cultivars">
+      <div class="container">
+        <div class="genus-species-head">
+          <div>
+            <p class="eyebrow">Registered cultivars</p>
+            <h2>${esc(genus.genus)} cultivars in the catalogue</h2>
+            <p>All ${fmt(allCultivars.length)} ICPS-registered <em>${esc(genus.genus)} muscipula</em> cultivars, kept separate from the wild taxa above. Each record carries its registration facts and parent care. ${fmt(genus.cultivarSpecificPhotoCount || 0)} have a cultivar-specific open-licensed photo; the rest use a clearly labelled representative species image.</p>
+          </div>
+          <a class="section-link" href="#/database?genus=${encodeURIComponent(genus.genus)}&cultivars=1">Open in database ${icon("arrow")}</a>
+        </div>
+        <div class="species-grid species-grid--three">${allCultivars.map((species) => speciesCard(species)).join("")}</div>
+      </div>
+    </section>` : ""}`;
   }
 
   function renderGenusResults({ append = false } = {}) {
@@ -1687,7 +1790,10 @@
   function mapView(route) {
     const params = route.params;
     const focusId = params.get("species") || "";
-    const focusSpecies = focusId ? SPECIES_BY_ID.get(focusId) : null;
+    const requestedFocus = focusId ? SPECIES_BY_ID.get(focusId) : null;
+    const focusSpecies = requestedFocus?.cultivar
+      ? SPECIES_BY_ID.get(requestedFocus.parentId) || null
+      : requestedFocus;
     const genus = params.get("genus") || "";
     const trap = params.get("trap") || "";
     const continent = params.get("continent") || "";
@@ -1697,7 +1803,7 @@
     if (focusSpecies) {
       visible = [focusSpecies];
     } else {
-      visible = SPECIES.filter((species) => {
+      visible = SPECIES_ONLY.filter((species) => {
         if (genus && species.genus !== genus) return false;
         if (trap && trapFamilyOf(species) !== trap) return false;
         if (continent && !(species.continents || []).includes(continent)) return false;
@@ -2332,10 +2438,10 @@
           <p>Carnivorous plant information is scattered across forum posts, nursery catalogues, scientific papers and a handful of excellent specialist societies. Names change, care advice conflicts, and photographs are often unattributed. This database pulls the accepted nomenclature into one place, then layers original descriptions, care profiles, range maps and openly licensed images on top.</p>
           <p>It is designed to be attached to plantivorous.co.za as a static site: no server, no database, no tracking, no reliance on external map tiles. It works from a folder, a USB stick, GitHub Pages, Netlify or any ordinary web host.</p>
           <div class="about-stats">
-            <div class="about-stat"><strong>${fmt(DB.meta.totalSpecies)}</strong><span>Taxa</span></div>
+            <div class="about-stat"><strong>${fmt(DB.meta.totalSpecies)}</strong><span>Wild taxa</span></div>
+            <div class="about-stat"><strong>${fmt(DB.meta.cultivarCount)}</strong><span>Cultivars</span></div>
             <div class="about-stat"><strong>${fmt(DB.meta.genusCount)}</strong><span>Genera</span></div>
-            <div class="about-stat"><strong>${fmt(DB.meta.photoCount)}</strong><span>Photos</span></div>
-            <div class="about-stat"><strong>16</strong><span>Botanical plates</span></div>
+            <div class="about-stat"><strong>${fmt(DB.meta.photoCount)}</strong><span>Species photos</span></div>
           </div>
         </div>
         <aside class="about-quote">
@@ -2364,6 +2470,7 @@
             <div class="prose">
               <ul>
                 <li>Accepted species, natural hybrids and nested infraspecific taxa.</li>
+                <li>All ${fmt(DB.meta.cultivarCount)} ICPS-registered <em>Dionaea muscipula</em> cultivars, with registration facts, parent care and a separate count.</li>
                 <li>Naming authority, publication, year, type locality and classification where the ICPS record provides them.</li>
                 <li>Discovery notes and etymology for flagship species; generated factual summaries for the rest.</li>
                 <li>Approximate native range, country lists, introduced records and an interactive world map.</li>
@@ -2378,7 +2485,7 @@
 
           <section class="content-card">
             <h2>Photographs &amp; illustrations</h2>
-            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations and, for rare taxa with no living-plant photo, GBIF herbarium specimens used as last resorts. Attribution, the licence name and a link to the original file, observation or specimen record are kept visible; any reuse must preserve them. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
+            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations and, for rare taxa with no living-plant photo, GBIF herbarium specimens used as last resorts. Attribution, the licence name and a link to the original file, observation or specimen record are kept visible; any reuse must preserve them. Cultivar records use a cultivar-specific photo only where the file explicitly identifies that cultivar; otherwise a labelled representative <em>Dionaea muscipula</em> image is used. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
             <ul class="license-list">
               <li><strong>Photos</strong> CC0, CC BY, CC BY-SA or public domain; see the credit panel on each species page for the exact licence and photographer. Non-commercial and no-derivatives images are not used.</li>
               <li><strong>Plates</strong> Original SVGs generated for the Plantivorous database. Free to reuse with the project.</li>
@@ -2609,8 +2716,14 @@
     resetTransientOverlays();
 
     if (key === "database") renderDbResults();
-    else if (key === "genus") renderGenusResults();
-    else if (key === "map") initMapPage();
+    else if (key === "genus") {
+      renderGenusResults();
+      if (route.params.get("view") === "cultivars") {
+        requestAnimationFrame(() => {
+          document.getElementById("cultivars")?.scrollIntoView({ behavior: "auto", block: "start" });
+        });
+      }
+    } else if (key === "map") initMapPage();
 
     updateFavouriteButtons();
 
@@ -2697,10 +2810,10 @@
         <img src="${esc(image.src)}" alt="" loading="lazy" decoding="async" data-fallback="${esc(species.illustration)}">
       </span>
       <span class="search-result__body">
-        <strong><em>${esc(species.name)}</em></strong>
-        <span>${esc(species.family)} · ${esc(species.nativeShort || species.genus)}</span>
+        <strong>${speciesDisplayName(species)}</strong>
+        <span>${esc(species.cultivar ? "Cultivar of Dionaea muscipula · no wild origin" : `${species.family} · ${species.nativeShort || species.genus}`)}</span>
       </span>
-      <span class="search-result__tag">${species.provisional ? "Provisional" : "Species"}</span>
+      <span class="search-result__tag">${species.cultivar ? "Cultivar" : species.provisional ? "Provisional" : "Species"}</span>
     </a>`;
   }
 

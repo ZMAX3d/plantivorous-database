@@ -1,7 +1,7 @@
 # Genus completeness tracker
 
 Authoritative taxonomy: [ICPS Carnivorous Plant Names Resource](https://cpnames.carnivorousplants.org/).
-Snapshot refreshed and diffed on **17 November 2026**: **751 accepted species/hybrids**, **86 nested infraspecific taxa**, **21 genera**, **0 nomenclature changes** against the published baseline.
+Snapshot refreshed and diffed on **17 November 2026**: **751 accepted species/hybrids**, **86 nested infraspecific taxa**, **21 genera**, **0 nomenclature changes** against the published baseline. Separately, the **164 ICPS-registered *Dionaea* cultivars** are now catalogued with registration facts and parent care.
 
 Photo coverage counts real species-level photographs in `assets/img/species/`. Genus illustration plates are tracked separately and are not counted as species photos.
 
@@ -22,7 +22,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
 | Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
-| **Dionaea** | **1 (0)** | **0** | **1** | **1** | **0** | **0** | **Complete** | **2026-11-17** |
+| **Dionaea** | **1 (0)** | **0** | **1 + 164 cultivars** | **1 + 164 cultivar images** | **0** | **0** | **Complete** | **2026-11-19** |
 | Dioncophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1* | Complete | 2026-11-18 |
 | Drosera | 191 (4) | 42 | 191 | 134 | 57 | 0 | Pending | — |
 | Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
@@ -31,7 +31,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Heliamphora | 20 (0) | 5 | 20 | 17 | 3 | 0 | Complete | 2026-11-18 |
 | Ibicella | 2 (0) | 0 | 2 | 2 | 0 | 2 | Pending | — |
 | Martynia | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
-| Nepenthes | 127 (4) | 0 | 127 | 119 | 8 | 0 | Pending | — |
+| Nepenthes | 127 (4) | 0 | 127 | 121 | 6 | 0 | Pending | 2026-11-19 |
 | Pinguicula | 104 (1) | 9 | 104 | 47 | 57 | 0 | Pending | — |
 | Proboscidea | 6 (0) | 5 | 6 | 3 | 3 | 6 | Pending | — |
 | Roridula | 2 (0) | 0 | 2 | 2 | 0 | 0 | Pending | — |
@@ -39,17 +39,18 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 records, 476 photos, 275 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the app-wide image total is 478.
+**Totals:** 751 accepted records, 478 photos, 273 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **480 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **485 image files on disk** (480 wild-taxon images + 5 cultivar-specific images).
 
 ## Completed genus notes
 
-### Dionaea — checked 2026-11-17
+### Dionaea — checked 2026-11-19
 
-- ICPS lists exactly one accepted species, *Dionaea muscipula* Soland. ex Ellis (1768), with no hybrids and no infraspecific taxa. The database contains exactly that one record.
-- Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, two origin points (North Carolina and South Carolina), conservation status, care group, care notes, genus profile and genus care guide all present.
-- Photo audit: `assets/img/species/dionaea-muscipula.jpg` is a valid 201 KB JPEG by Noah Elhardt, CC BY-SA 2.5, sourced from Wikimedia Commons. Attribution is present in `data/photo-credits.json` and rendered on the species page.
+- ICPS lists exactly one accepted species, *Dionaea muscipula* Soland. ex Ellis (1768), with no hybrids and no infraspecific taxa. The database contains that species record plus all **164 registered cultivars** from the ICPS cultivar register.
+- Record audit: the species has description, etymology, discoverer narrative, authority, publication, type locality, native range, two origin points (North Carolina and South Carolina), conservation status, care group, care notes, genus profile and genus care guide. Each cultivar has its registration date, authority, originator, nominant, registrant, publication, standard, etymology/propagation where recorded, an original factual summary, parent care/range and source links.
+- Aggregate rule: cultivar records are flagged `rank: "cultivar"` and excluded from species counts, country totals, map markers, family/trap aggregates and the species-photo total. The bundle reports 760 wild taxa + 164 cultivars = 924 records.
+- Photo audit: `assets/img/species/dionaea-muscipula.jpg` is a valid 201 KB JPEG by Noah Elhardt, CC BY-SA 2.5. Five cultivars have verified cultivar-specific Commons photos: 'Akai Ryu' (CC BY-SA 3.0, Matthias Jauernig), 'Alien' (CC BY-SA 4.0, Gabriele Zoppoli), 'B52' (CC BY-SA 4.0, Maronesty), 'Bristle Tooth' (CC BY-SA 3.0, Mucrow) and 'Sonic' (CC BY-SA 4.0, Nano31). The remaining 159 records use the parent-species photo with a visible "representative image" badge and credit note.
 - Genus plate: `assets/img/genera/dionaea.svg` present.
-- **Result: complete. No data changes were required.**
+- **Result: complete — 1 species + 164/164 registered cultivars, 5 cultivar-specific photos and 159 documented representative images.**
 
 ### Aldrovanda — checked 2026-11-18
 

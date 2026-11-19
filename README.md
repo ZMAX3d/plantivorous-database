@@ -12,18 +12,21 @@ A portable, static, hash-routed single-page catalogue of the world's carnivorous
 |------|-------|
 | Accepted ICPS species & natural hybrids | 751 |
 | Provisional watchlist taxa (primary literature, not yet in ICPS) | 9 |
-| **Total catalogue records** | **760** |
+| **Wild taxa (accepted + provisional)** | **760** |
+| ICPS-registered *Dionaea muscipula* cultivars | 164 |
+| **Total catalogue records** | **924** |
 | Genera | 21 |
 | Families | 10 |
 | Countries / territories mapped | 172 |
 | Origin map points (approx. centroids) | 2,743 |
-| Species with open-licensed photos or specimen images | 476 accepted + 2 provisional (478 images; Commons, verified iNaturalist, GBIF last resort) |
+| Species with open-licensed photos or specimen images | 478 accepted + 2 provisional (480 images; Commons, verified iNaturalist, GBIF last resort) |
+| Cultivar images | 5 cultivar-specific photos + 159 labelled representative *D. muscipula* images |
 | Editorial species notes | ~39 |
 | Cross-genus care groups | 17 |
 | Infraspecific taxa | 86 |
 | Natural hybrids | 9 |
 
-Every record shows: discovery location, approximate native-range map, naming authority & year, description, photos / botanical plate, ICPS source link, and planting/care details (difficulty, light, water, soil, temperature, dormancy, feeding, propagation, problems, tips).
+Every species record shows: discovery location, approximate native-range map, naming authority & year, description, photos / botanical plate, ICPS source link, and planting/care details (difficulty, light, water, soil, temperature, dormancy, feeding, propagation, problems, tips). Cultivar records carry their ICPS registration facts, parent species range/care and a cultivar-specific or clearly labelled representative image; they are excluded from wild-country, map and species-photo totals.
 
 ---
 
@@ -41,12 +44,13 @@ plantivorous-database/
 │   │   └── responsive.css        # Breakpoints, mobile filters, print
 │   ├── js/
 │   │   ├── app.js                # SPA: router, views, search, lightbox, map, events
-│   │   ├── data.js               # Browser-global bundle: 760 taxa, genera, care, map meta
+│   │   ├── data.js               # Browser-global bundle: 760 wild taxa + 164 cultivars
 │   │   └── world-map.js          # Custom SVG world map (Natural Earth 110m, 177 paths)
 │   ├── fonts/                    # IBM Plex Sans & Noto Sans (variable, self-hosted)
 │   └── img/                      # Species photos, genus plates, hero
 ├── data/
 │   ├── species.json              # Merged dataset (build output)
+│   ├── dionaea-cultivars.json    # 164 ICPS-registered Dionaea cultivar records
 │   ├── icps-species.json         # ICPS accepted snapshot (scrape-icps.mjs output)
 │   ├── genera.json               # Editorial genus profiles
 │   ├── species-notes.json        # Flagship species notes
@@ -60,6 +64,7 @@ plantivorous-database/
     ├── build-data.mjs            # Merges all data into species.json + data.js
     ├── update-database.mjs       # Diffs ICPS snapshots, updates changelog, rebuilds
     ├── scrape-icps.mjs           # Captures the ICPS accepted-names snapshot
+    ├── import-dionaea-cultivars.mjs # Regenerates the 164-cultivar dataset from the ICPS register
     ├── build-locations.mjs       # Origin centroids
     ├── build-map.mjs             # SVG world map geometry
     ├── add-photos.mjs            # Fetch Commons photos (bitmap-only, binomial-verified, q88)
@@ -99,8 +104,9 @@ The app is fully static, so you can also open `index.html` directly in a browser
 | Route | What it shows |
 |-------|---------------|
 | `#/` | Home hero + featured genera |
-| `#/database` | Searchable, filterable species browser (760 taxa) |
-| `#/species/<id>` | Species detail: photo, map, authority, care, sources |
+| `#/database` | Searchable, filterable browser for 760 wild taxa, with an optional 164-cultivar layer |
+| `#/database?genus=Dionaea&cultivars=1` | All *Dionaea* species and registered cultivars |
+| `#/species/<id>` | Species or cultivar detail: photo, map/registration, authority, care, sources |
 | `#/genera` | All 21 genus profiles |
 | `#/genus/<name>` | Genus detail: member taxa, care, illustration plate |
 | `#/map?genus=X&trap=Y&continent=Z&introduced=1` | Interactive SVG range map |
@@ -136,6 +142,8 @@ Only real bitmap images are accepted. `scripts/add-photos.mjs` queries Commons w
 `scripts/add-inat-photos.mjs` is a deliberately stricter fallback for species with no usable Commons image. It requires an exact iNaturalist taxon match, research-grade observations, and a commercial-friendly photo licence (CC0, CC BY or CC BY-SA). Non-commercial and no-derivatives images are rejected, the 1024px rendition is re-encoded to the same q88 standard, and the credit links back to the observation. It is never used to replace an existing credit.
 
 `scripts/add-gbif-photos.mjs` is the final fallback. It uses GBIF occurrence media only when no living-plant photo is available, which usually means a pressed herbarium specimen. It requires an exact GBIF match and a CC0/CC BY/CC BY-SA media licence, rejects NC/ND media, caps the long edge at 1200px, and links the credit to the specimen record. Specimen images are visibly labelled as such on the species page.
+
+Cultivar photography is stricter: a photo is attached to a cultivar only when the Commons file title, description or category explicitly identifies that cultivar. The five currently verified cultivar photos are 'Akai Ryu', 'Alien', 'B52', 'Bristle Tooth' and 'Sonic'. The remaining 159 cultivars display a labelled representative *Dionaea muscipula* photo rather than an unidentified plant; this is shown on the card/page and explained in the credit panel.
 
 `scripts/recompress-images.mjs` re-encodes legacy or oversized images to the same quality 88 and caps the long edge at 1200px, keeping every published photo under 400KB.
 

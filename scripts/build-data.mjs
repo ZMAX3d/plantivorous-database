@@ -38,6 +38,7 @@ const locations = await readJson("locations.json");
 const photoDoc = await readJson("photo-credits.json");
 const careDoc = await readJson("care-groups.json");
 const watchDoc = await readJson("watchlist.json");
+const cultivarDoc = await readJson("dionaea-cultivars.json");
 const changelog = await readJson("changelog.json");
 
 const GENERA = new Map(generaDoc.genera.map((g) => [g.genus, g]));
@@ -1659,28 +1660,194 @@ species.sort((a, b) =>
 );
 
 /* ------------------------------------------------------------------ */
+/* Registered cultivars                                                */
+/* ------------------------------------------------------------------ */
+
+const parentDionaea = species.find((s) => s.name === "Dionaea muscipula");
+const dionaeaGenus = GENERA.get("Dionaea");
+
+if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
+  for (const cultivar of cultivarDoc.cultivars) {
+    const credit = CREDITS.get(cultivar.name) || null;
+    const cultivarPhoto = credit
+      ? {
+          path: credit.file,
+          artist: credit.artist,
+          credit: credit.credit,
+          license: credit.license,
+          licenseUrl: credit.licenseUrl,
+          source: credit.source,
+          original: credit.original,
+          description: credit.description,
+          sourceType: credit.sourceType,
+          specimen: Boolean(credit.specimen),
+          cultivarSpecific: true,
+          alt: credit.description || `Photograph of ${cultivar.name}`,
+        }
+      : parentDionaea.photo
+        ? {
+            ...parentDionaea.photo,
+            representative: true,
+            representativeOf: parentDionaea.name,
+            cultivarSpecific: false,
+            alt: `Representative ${parentDionaea.name} photograph; ${cultivar.name} itself is not shown`,
+          }
+        : null;
+
+    const idBase = cultivar.slug || slugify(cultivar.name);
+    const idCount = idCounts.get(idBase) || 0;
+    idCounts.set(idBase, idCount + 1);
+    const id = idCount ? `${idBase}-${idCount + 1}` : idBase;
+
+    const summary = `ICPS-registered Dionaea muscipula cultivar${
+      cultivar.year ? ` (${cultivar.year})` : ""
+    }.`;
+    const searchText = [
+      cultivar.name,
+      "cultivar",
+      "Venus flytrap",
+      "Dionaea muscipula",
+      cultivar.authority,
+      cultivar.originator,
+      cultivar.registrant,
+      cultivar.publication,
+      cultivar.etymology,
+      cultivar.registrationDate,
+      parentDionaea.nativeRange,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    species.push({
+      id,
+      genus: "Dionaea",
+      name: cultivar.name,
+      epithet: cultivar.name.replace(/^Dionaea\s+/, ""),
+      authors: cultivar.authority || "",
+      year: cultivar.year || null,
+      fullName: `${cultivar.name}${cultivar.authority ? ` ${cultivar.authority}` : ""}`,
+      rank: "cultivar",
+      rankLabel: "ICPS-registered cultivar",
+      cultivar: true,
+      parentSpecies: parentDionaea.name,
+      parentId: parentDionaea.id,
+      registrationDate: cultivar.registrationDate || "",
+      originator: cultivar.originator || "",
+      nominant: cultivar.nominant || "",
+      registrant: cultivar.registrant || "",
+      horticulturalComment: cultivar.horticulturalComment || "",
+      standard: cultivar.standard || "",
+      propagation: cultivar.propagation || "",
+      synonym: cultivar.synonym || "",
+      webPublication: cultivar.webPublication || "",
+      cultivarComment: cultivar.comment || "",
+      awards: cultivar.awards || "",
+      hybrid: false,
+      status: "ICPS-registered cultivar",
+      provisional: false,
+      watchlist: false,
+      family: parentDionaea.family,
+      classification: `${parentDionaea.name} cultivar`,
+      taxonomy: ["Dionaea", parentDionaea.name, "Cultivar"],
+      subgenus: "",
+      section: "",
+      publication: cultivar.publication || "",
+      typeLocality: "",
+      commonName: null,
+      commonNameIsGenus: true,
+      genusCommonName: parentDionaea.genusCommonName,
+      summary,
+      description: cultivar.description,
+      etymology: cultivar.etymology || "",
+      discoveredBy: "",
+      careGroup: parentDionaea.careGroup,
+      careGroupLabel: parentDionaea.careGroupLabel,
+      careGroupTagline: parentDionaea.careGroupTagline,
+      careNotes: `Cultivar care follows its parent species, ${parentDionaea.name}. ${parentDionaea.careNotes}`,
+      careDifficulty: parentDionaea.careDifficulty,
+      careDifficultyLevel: parentDionaea.careDifficultyLevel,
+      difficulty: parentDionaea.difficulty,
+      difficultyLevel: parentDionaea.difficultyLevel,
+      trapType: parentDionaea.trapType,
+      trapGroup: parentDionaea.trapGroup,
+      carnivory: parentDionaea.carnivory,
+      featured: false,
+      hasPhoto: Boolean(cultivarPhoto),
+      hasEditorialNote: false,
+      photo: cultivarPhoto,
+      illustration: dionaeaGenus.illustration,
+      image: cultivarPhoto?.path || dionaeaGenus.illustration,
+      imageType: cultivarPhoto ? "photo" : "illustration",
+      iucn: { code: "NE", label: "Not assessed", tone: "ne" },
+      conservationNote: "",
+      nativeCountries: [],
+      nativeRegions: [],
+      primaryCountry: "",
+      introducedCountries: [],
+      nativeRange: `Cultivars have no wild origin. Its parent species, ${parentDionaea.name}, is native to ${parentDionaea.nativeRange.replace(/\.$/, "")}.`,
+      nativeShort: `Cultivar of ${parentDionaea.name}`,
+      parentNativeRange: parentDionaea.nativeRange,
+      parentNativeShort: parentDionaea.nativeShort,
+      parentCountries: parentDionaea.nativeCountries,
+      parentRegions: parentDionaea.nativeRegions,
+      parentContinents: parentDionaea.continents,
+      continents: [],
+      originPoints: [],
+      tags: ["cultivar", "Venus flytrap", "registered"],
+      infraspecificTaxa: [],
+      infraspecificCount: 0,
+      sourceLinks: [
+        { label: "ICPS cultivar register", url: cultivar.source },
+        { label: "Carnivorous Plant Photo Finder", url: cultivar.photoFinder },
+      ],
+      icpsUrl: cultivar.source,
+      searchText,
+      accent: dionaeaGenus.accent,
+      added: "2026-11-19",
+      sortYear: cultivar.year || 0,
+    });
+  }
+
+  species.sort((a, b) =>
+    a.name.localeCompare(b.name, "en", { sensitivity: "base" })
+  );
+}
+
+const cultivars = species.filter((s) => s.cultivar);
+const speciesOnly = species.filter((s) => !s.cultivar);
+
+/* ------------------------------------------------------------------ */
 /* Genus and global aggregates                                         */
 /* ------------------------------------------------------------------ */
 
 const genera = generaDoc.genera.map((genus) => {
   const members = species.filter((s) => s.genus === genus.genus);
-  const accepted = members.filter((s) => !s.provisional);
-  const featured = members.filter((s) => s.featured);
-  const photos = members.filter((s) => s.hasPhoto);
-  const watch = members.filter((s) => s.provisional);
-  const continents = unique(members.flatMap((s) => s.continents));
+  const speciesMembers = members.filter((s) => !s.cultivar);
+  const cultivarMembers = members.filter((s) => s.cultivar);
+  const accepted = speciesMembers.filter((s) => !s.provisional);
+  const featured = speciesMembers.filter((s) => s.featured);
+  const photos = speciesMembers.filter((s) => s.hasPhoto);
+  const watch = speciesMembers.filter((s) => s.provisional);
+  const continents = unique(speciesMembers.flatMap((s) => s.continents));
   const careGroups = unique(
     members.map((s) => s.careGroup).filter(Boolean)
   );
   return {
     ...genus,
-    speciesCount: members.length,
+    speciesCount: speciesMembers.length,
     acceptedCount: accepted.length,
-    hybridCount: members.filter((s) => s.hybrid).length,
+    cultivarCount: cultivarMembers.length,
+    recordCount: members.length,
+    hybridCount: speciesMembers.filter((s) => s.hybrid).length,
     featuredCount: featured.length,
     photoCount: photos.length,
+    cultivarPhotoCount: cultivarMembers.filter((s) => s.hasPhoto).length,
+    cultivarSpecificPhotoCount: cultivarMembers.filter(
+      (s) => s.photo && !s.photo.representative
+    ).length,
     watchlistCount: watch.length,
-    infraspecificCount: members.reduce(
+    infraspecificCount: speciesMembers.reduce(
       (total, s) => total + s.infraspecificCount,
       0
     ),
@@ -1693,7 +1860,7 @@ const genera = generaDoc.genera.map((genus) => {
 const generaByName = new Map(genera.map((g) => [g.genus, g]));
 
 const careGroups = Object.entries(CARE_GROUPS).map(([key, group]) => {
-  const members = species.filter((s) => s.careGroup === key);
+  const members = species.filter((s) => s.careGroup === key && !s.cultivar);
   return {
     key,
     ...group,
@@ -1708,7 +1875,7 @@ const careGroups = Object.entries(CARE_GROUPS).map(([key, group]) => {
 const careGroupsByKey = new Map(careGroups.map((g) => [g.key, g]));
 
 const familyCounts = Object.entries(
-  species.reduce((acc, s) => {
+  speciesOnly.reduce((acc, s) => {
     acc[s.family] = (acc[s.family] || 0) + 1;
     return acc;
   }, {})
@@ -1717,7 +1884,7 @@ const familyCounts = Object.entries(
   .sort((a, b) => b.count - a.count);
 
 const continentCounts = Object.entries(
-  species.reduce((acc, s) => {
+  speciesOnly.reduce((acc, s) => {
     for (const continent of s.continents) {
       acc[continent] = (acc[continent] || 0) + 1;
     }
@@ -1728,7 +1895,7 @@ const continentCounts = Object.entries(
   .sort((a, b) => b.count - a.count);
 
 const trapCounts = Object.entries(
-  species.reduce((acc, s) => {
+  speciesOnly.reduce((acc, s) => {
     const key = s.trapGroup || "other";
     acc[key] = (acc[key] || 0) + 1;
     return acc;
@@ -1738,7 +1905,7 @@ const trapCounts = Object.entries(
   .sort((a, b) => b.count - a.count);
 
 const difficultyCounts = Object.entries(
-  species.reduce((acc, s) => {
+  speciesOnly.reduce((acc, s) => {
     acc[s.careDifficulty] = (acc[s.careDifficulty] || 0) + 1;
     return acc;
   }, {})
@@ -1746,13 +1913,13 @@ const difficultyCounts = Object.entries(
   .map(([difficulty, count]) => ({ difficulty, count }))
   .sort((a, b) => b.count - a.count);
 
-const recentSpecies = species
+const recentSpecies = speciesOnly
   .filter((s) => s.year && s.year >= 2015)
   .sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
 
-const featuredSpecies = species.filter((s) => s.featured);
-const photoSpecies = species.filter((s) => s.hasPhoto && s.photo);
-const watchlistSpecies = species.filter((s) => s.provisional);
+const featuredSpecies = speciesOnly.filter((s) => s.featured);
+const photoSpecies = speciesOnly.filter((s) => s.hasPhoto && s.photo);
+const watchlistSpecies = speciesOnly.filter((s) => s.provisional);
 
 const meta = {
   generated: new Date().toISOString(),
@@ -1760,17 +1927,25 @@ const meta = {
   icpsSource: icps.source,
   icpsCount: icps.count,
   provisionalCount: watchlistSpecies.length,
-  totalSpecies: species.length,
+  totalSpecies: speciesOnly.length,
+  cultivarCount: cultivars.length,
+  totalRecords: species.length,
+  cultivarPhotoCount: cultivars.filter(
+    (s) => s.photo && !s.photo.representative
+  ).length,
+  cultivarRepresentativeCount: cultivars.filter(
+    (s) => s.photo?.representative
+  ).length,
   genusCount: genera.length,
   familyCount: familyCounts.length,
   photoCount: photoSpecies.length,
   featuredCount: featuredSpecies.length,
-  editorialNoteCount: species.filter((s) => s.hasEditorialNote).length,
-  hybridCount: species.filter((s) => s.hybrid).length,
-  infraspecificCount: species.reduce((total, s) => total + s.infraspecificCount, 0),
-  countryCount: unique(species.flatMap((s) => s.nativeCountries)).length,
+  editorialNoteCount: speciesOnly.filter((s) => s.hasEditorialNote).length,
+  hybridCount: speciesOnly.filter((s) => s.hybrid).length,
+  infraspecificCount: speciesOnly.reduce((total, s) => total + s.infraspecificCount, 0),
+  countryCount: unique(speciesOnly.flatMap((s) => s.nativeCountries)).length,
   recentCount: recentSpecies.length,
-  mapPointCount: species.reduce((total, s) => total + s.originPoints.length, 0),
+  mapPointCount: speciesOnly.reduce((total, s) => total + s.originPoints.length, 0),
   watchlistUpdated: watchDoc.updated,
   changelogDate: changelog.generated,
   version: "1.0.0",
@@ -1780,6 +1955,13 @@ const meta = {
 const bundle = {
   meta,
   species,
+  cultivars: cultivars.map((s) => s.id),
+  cultivarSource: {
+    source: cultivarDoc.source,
+    retrieved: cultivarDoc.retrieved,
+    note: cultivarDoc.note,
+    count: cultivars.length,
+  },
   genera,
   careGroups,
   families: familyCounts,
@@ -1829,7 +2011,8 @@ for (const record of allRecords) {
   }
 }
 
-console.log(`Species: ${species.length} (${icps.count} ICPS + ${watchlistSpecies.length} provisional)`);
+console.log(`Species: ${speciesOnly.length} (${icps.count} ICPS + ${watchlistSpecies.length} provisional)`);
+console.log(`Cultivars: ${cultivars.length} (${meta.cultivarPhotoCount} cultivar-specific photos, ${meta.cultivarRepresentativeCount} representative)`);
 console.log(`Genera: ${genera.length}; families: ${familyCounts.length}; photos: ${photoSpecies.length}`);
 console.log(`Origin points: ${meta.mapPointCount}; countries: ${meta.countryCount}`);
 console.log(`Featured: ${featuredSpecies.length}; editorial notes: ${meta.editorialNoteCount}`);

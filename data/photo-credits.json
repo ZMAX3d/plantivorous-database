@@ -5739,6 +5739,66 @@
       "alt": "Herbarium specimen of Heliamphora huberi",
       "sourceType": "GBIF",
       "specimen": true
+    },
+    {
+      "species": "Dionaea 'Akai Ryu'",
+      "file": "assets/img/species/dionaea-akai-ryu.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dionaea_muscipula_akai_ryu.jpg",
+      "original": "Dionaea_muscipula_akai_ryu.jpg",
+      "artist": "Matthias Jauernig",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Dionaea muscipula 'Akai Ryu' in cultivation, a red cultivar grown under strong light.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Dionaea 'Alien'",
+      "file": "assets/img/species/dionaea-alien.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dionaea_muscipula_Alien_cultivated.jpg",
+      "original": "Dionaea_muscipula_Alien_cultivated.jpg",
+      "artist": "Gabriele Zoppoli",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Dionaea muscipula 'Alien', a cultivar with intense red trap interiors and elongated marginal teeth, grown in Genoa, Italy.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Dionaea 'B52'",
+      "file": "assets/img/species/dionaea-b52.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:B52-venus-flytrap.jpg",
+      "original": "B52-venus-flytrap.jpg",
+      "artist": "Maronesty",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "An adult 'B52' Venus flytrap cultivar growing in a six-inch pot.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Dionaea 'Bristle Tooth'",
+      "file": "assets/img/species/dionaea-bristle-tooth.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bristle_tooth.jpg",
+      "original": "Bristle_tooth.jpg",
+      "artist": "Mucrow",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Dionaea 'Bristle Tooth' in cultivation.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Dionaea 'Sonic'",
+      "file": "assets/img/species/dionaea-sonic.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%27Sonic%27.jpg",
+      "original": "'Sonic'.jpg",
+      "artist": "Nano31",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "A mature trap of Dionaea 'Sonic'.",
+      "cultivarSpecific": true
     }
   ]
 }

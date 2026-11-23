@@ -1,4 +1,4 @@
-# Genus completeness tracker
+| Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Complete | 2026-11-19 |
 
 Authoritative taxonomy: [ICPS Carnivorous Plant Names Resource](https://cpnames.carnivorousplants.org/).
 Snapshot refreshed and diffed on **17 November 2026**: **751 accepted species/hybrids**, **86 nested infraspecific taxa**, **21 genera**, **0 nomenclature changes** against the published baseline. Separately, the **164 ICPS-registered *Dionaea* cultivars** are now catalogued with registration facts and parent care.
@@ -39,7 +39,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 accepted records, 480 photos, 271 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **482 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **487 image files on disk** (482 wild-taxon images + 5 cultivar-specific images).
+**Totals:** 751 accepted records, 484 photos, 267 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **486 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **491 image files on disk** (486 wild-taxon images + 5 cultivar-specific images).
 
 ## Completed genus notes
 
@@ -59,6 +59,30 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - New verified images: *N. abalata* (CC0 iNaturalist field photograph, Palawan), *N. biak* (CC0 Naturalis herbarium specimen L.1852584, Biak Island), *N. mariae* (CC0 RBGE isotype E00979206, Sulawesi) and *N. masoalensis* (CC BY 4.0 Kew specimen K000683717, Madagascar). The last replaces an Indonesian observation that could not be verified as this Madagascar endemic and was removed rather than mislabelled.
 - Watchlist: seven of the eight provisional *Nepenthes* lack an open-licensed image. Their research-grade iNaturalist records are all-rights-reserved or CC BY-NC (for example *N. pongoides*); no unlicensed photograph is used, so these are recorded as documented exceptions.
 - **Result: complete under the stated photo policy, with 4 accepted and 7 provisional taxa documented as photo exceptions.**
+
+### Byblis - checked 2026-11-19
+
+- ICPS lists eight accepted species, no hybrids and no infraspecific taxa; all eight are in the catalogue.
+- Seven have verified photographs. *Byblis guehoi* (Kimberley, Western Australia) is the documented exception: its only research-grade image is CC BY-NC on iNaturalist, and no Commons or GBIF image with a commercial-friendly licence exists. The genus plate is used rather than an unlicensed photograph.
+- **Result: complete, with one documented photo exception.**
+
+### Habropetalum - checked 2026-11-19
+
+- ICPS lists one accepted species, *Habropetalum dawei* (Dioncophyllaceae, Sierra Leone), with no hybrids or infraspecific taxa.
+- Photo: CC BY 4.0 Kew specimen K000923533 (fruiting), collected by A. Lebbie in 2025. It is labelled as a herbarium specimen on the species page. No species-level care group fits this non-carnivorous liana, so the genus care sheet is used.
+- **Result: complete.**
+
+### Proboscidea - checked 2026-11-19
+
+- ICPS lists six accepted species and five infraspecific taxa. All six species now have images: the three existing photos plus *P. sabulosa* (CC BY iNaturalist field photograph, New Mexico), *P. spicata* (CC BY 4.0 holotype sheet LL00256942, Texas) and *P. triloba* (CC BY 4.0 Kew specimen K004868203, Puebla).
+- No species-level care group fits this genus; species pages fall back to the genus care sheet.
+- **Result: complete.**
+
+### Small genera verified 2026-11-19
+
+- *Drosophyllum*, *Ibicella*, *Martynia*, *Roridula*, *Sarracenia* and *Triphyophyllum* were checked against the ICPS snapshot. Every name is present, and each record has an authority, description, native range and care path.
+- All 15 accepted species in these six genera have verified open-licensed photographs; no photo exceptions remain. *Drosophyllum*, *Roridula* and *Sarracenia* use cross-genus care groups; *Ibicella*, *Martynia* and *Triphyophyllum* use the genus care fallback.
+- **Result: all six genera complete.**
 
 ### Aldrovanda - checked 2026-11-18
 

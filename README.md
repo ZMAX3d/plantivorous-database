@@ -19,7 +19,7 @@ A portable, static, hash-routed single-page catalogue of the world's carnivorous
 | Families | 10 |
 | Countries / territories mapped | 172 |
 | Origin map points (approx. centroids) | 2,743 |
-| Species with open-licensed photos or specimen images | 480 accepted + 2 provisional (482 images; Commons, verified iNaturalist, GBIF last resort) |
+| Species with open-licensed photos or specimen images | 484 accepted + 2 provisional (486 images; Commons, verified iNaturalist, GBIF last resort) |
 | Cultivar images | 5 cultivar-specific photos + 159 labelled representative *D. muscipula* images |
 | Editorial species notes | ~39 |
 | Cross-genus care groups | 17 |

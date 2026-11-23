@@ -5854,6 +5854,62 @@
       "alt": "Herbarium specimen of Nepenthes masoalensis",
       "sourceType": "GBIF",
       "specimen": true
+    },
+    {
+      "species": "Habropetalum dawei",
+      "file": "assets/img/species/habropetalum-dawei.jpg",
+      "source": "https://www.gbif.org/occurrence/5159833311",
+      "original": "K000923533 (Royal Botanic Gardens, Kew)",
+      "artist": "Royal Botanic Gardens, Kew · collected by A. Lebbie",
+      "credit": "Royal Botanic Gardens, Kew · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Herbarium specimen K000923533 · Sierra Leone, Pujehun District, Malema · 2025-02-11 · Royal Botanic Gardens, Kew",
+      "alt": "Herbarium specimen of Habropetalum dawei",
+      "sourceType": "GBIF",
+      "specimen": true
+    },
+    {
+      "species": "Proboscidea sabulosa",
+      "file": "assets/img/species/proboscidea-sabulosa.jpg",
+      "source": "https://www.inaturalist.org/observations/100047598",
+      "original": "iNaturalist photo 166923015",
+      "artist": "Jared Shorma",
+      "credit": "(c) Jared Shorma · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "iNaturalist research-grade observation 100047598 · Roswell, New Mexico, USA · 2021-08-12",
+      "alt": "Photograph of Proboscidea sabulosa",
+      "sourceType": "iNaturalist",
+      "specimen": false
+    },
+    {
+      "species": "Proboscidea spicata",
+      "file": "assets/img/species/proboscidea-spicata.jpg",
+      "source": "https://www.gbif.org/occurrence/4110148743",
+      "original": "LL00256942 (Lundell Herbarium, University of Texas at Austin)",
+      "artist": "Lundell Herbarium, University of Texas at Austin · collected by D.S. Correll & H.B. Correll",
+      "credit": "Lundell Herbarium, University of Texas at Austin · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Holotype sheet LL00256942 · Texas, Presidio County, east of Fort Leaton · 1967-06-14 · Lundell Herbarium",
+      "alt": "Holotype herbarium sheet of Proboscidea spicata",
+      "sourceType": "GBIF",
+      "specimen": true
+    },
+    {
+      "species": "Proboscidea triloba",
+      "file": "assets/img/species/proboscidea-triloba.jpg",
+      "source": "https://www.gbif.org/occurrence/4988910306",
+      "original": "K004868203 (Royal Botanic Gardens, Kew)",
+      "artist": "Royal Botanic Gardens, Kew · collected by A.T. Salinas & A.R. García",
+      "credit": "Royal Botanic Gardens, Kew · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Herbarium specimen K004868203 · Mexico, Puebla, Zapotitlán de las Salinas · 1988-08-23 · Royal Botanic Gardens, Kew",
+      "alt": "Herbarium specimen of Proboscidea triloba",
+      "sourceType": "GBIF",
+      "specimen": true
     }
   ]
 }

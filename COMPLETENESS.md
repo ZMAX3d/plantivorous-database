@@ -32,14 +32,14 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Ibicella | 2 (0) | 0 | 2 | 2 | 0 | 2 | Pending | — |
 | Martynia | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Nepenthes | 127 (4) | 0 | 127 | 123 | 4 | 0 | Complete | 2026-11-19 |
-| Pinguicula | 104 (1) | 9 | 104 | 47 | 57 | 0 | Pending | — |
+| Pinguicula | 104 (1) | 9 | 104 | 91 | 13 | 0 | Complete | 2026-11-25 |
 | Proboscidea | 6 (0) | 5 | 6 | 3 | 3 | 6 | Pending | — |
 | Roridula | 2 (0) | 0 | 2 | 2 | 0 | 0 | Pending | — |
 | Sarracenia | 8 (0) | 24 | 8 | 8 | 0 | 0 | Pending | — |
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 accepted records, 535 photos, 216 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **537 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **542 image files on disk** (537 wild-taxon images + 5 cultivar-specific images).
+**Totals:** 751 accepted records, 579 photos, 172 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **581 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **586 image files on disk** (581 wild-taxon images + 5 cultivar-specific images).
 
 ## Completed genus notes
 
@@ -66,6 +66,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Photo coverage rose from 134 to 185 of 191. The 51 new images are 37 research-grade iNaturalist field photographs (CC0, CC BY or CC BY-SA) and 14 herbarium sheets from NY, K, US, Meise, Naturalis and TEX, each shown with a specimen badge and linked to its occurrence record.
 - Six accepted species remain as documented exceptions: *D. browniana*, *D. colombiana*, *D. condor*, *D. depauperata*, *D. glabriscapa* and *D. quartzicola*. Exact-name searches returned no research-grade iNaturalist observations with an open photo licence and no GBIF specimen media under CC0/CC BY/CC BY-SA.
 - **Result: complete under the stated photo policy, with six documented photo exceptions.**
+
+### Pinguicula - checked 2026-11-25
+
+- ICPS lists 104 accepted species, including 1 natural hybrid, with 9 nested infraspecific taxa. All 104 species records are present.
+- Photo coverage rose from 47 to 91 of 104. The 44 new images are 26 research-grade iNaturalist field photographs (CC0, CC BY or CC BY-SA) and 18 herbarium sheets from GBIF partners (NY, K, Meise, Naturalis, TEX, US and others), each specimen sheet labelled with a specimen badge and linked to its occurrence record.
+- Thirteen accepted species remain as documented exceptions: *P. baezensis*, *P. casperi*, *P. greenwoodii*, *P. lithophytica*, *P. michoacana*, *P. mirandae*, *P. mundi*, *P. nivalis*, *P. olmeca*, *P. orthoceras*, *P. reticulata*, *P. rzedowskiana* and *P. utricularioides*. These have no open-licensed image (IIIF/403 blocks, unsupported formats, or no candidates in iNaturalist/GBIF).
+- **Result: complete under the stated photo policy, with thirteen documented photo exceptions.**
 
 ### Byblis - checked 2026-11-19
 

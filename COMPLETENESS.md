@@ -37,9 +37,9 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Roridula | 2 (0) | 0 | 2 | 2 | 0 | 0 | Pending | — |
 | Sarracenia | 8 (0) | 24 | 8 | 8 | 0 | 0 | Pending | — |
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
-| Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
+| Utricularia | 244 (0) | 0 | 244 | 209 | 35 | 0 | Complete | 2026-11-25 |
 
-**Totals:** 751 accepted records, 579 photos, 172 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **581 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **586 image files on disk** (581 wild-taxon images + 5 cultivar-specific images).
+**Totals:** 751 accepted records, 685 photos, 66 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **687 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **692 image files on disk** (687 wild-taxon images + 5 cultivar-specific images).
 
 ## Completed genus notes
 
@@ -73,6 +73,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Photo coverage rose from 47 to 91 of 104. The 44 new images are 26 research-grade iNaturalist field photographs (CC0, CC BY or CC BY-SA) and 18 herbarium sheets from GBIF partners (NY, K, Meise, Naturalis, TEX, US and others), each specimen sheet labelled with a specimen badge and linked to its occurrence record.
 - Thirteen accepted species remain as documented exceptions: *P. baezensis*, *P. casperi*, *P. greenwoodii*, *P. lithophytica*, *P. michoacana*, *P. mirandae*, *P. mundi*, *P. nivalis*, *P. olmeca*, *P. orthoceras*, *P. reticulata*, *P. rzedowskiana* and *P. utricularioides*. These have no open-licensed image (IIIF/403 blocks, unsupported formats, or no candidates in iNaturalist/GBIF).
 - **Result: complete under the stated photo policy, with thirteen documented photo exceptions.**
+
+### Utricularia - checked 2026-11-25
+
+- ICPS lists 244 accepted species, no hybrids and no infraspecific taxa. All 244 species records are present.
+- Photo coverage rose from 103 to 209 of 244. The 106 new images are 37 research-grade iNaturalist field photographs (CC0, CC BY or CC BY-SA) and 69 herbarium sheets from GBIF partners (NY, K, Meise, Naturalis, TEX, US and others), each specimen sheet labelled with a specimen badge and linked to its occurrence record.
+- Thirty-five accepted species remain as documented exceptions: *U. adpressa*, *U. biovularioides*, *U. cheiranthos*, *U. chiakiana*, *U. cochleata*, *U. determannii*, *U. geminiloba*, *U. georgei*, *U. hamata*, *U. magna*, *U. malabarica*, *U. multicaulis*, *U. papilliscapa*, *U. peranomala*, *U. perversa*, *U. pierrei*, *U. recta*, *U. regia*, *U. subramanyamii*, *U. tenella*, *U. tenuissima*, *U. tetraloba*, *U. tortilis*, *U. trichophylla*, *U. tridactyla*, *U. troupinii*, *U. tubulata*, *U. uxoris*, *U. viscosa*, *U. vitellina*, *U. wannanii*, *U. warmingii*, *U. welwitschii*, *U. westonii* and *U. wightiana*. These have no open-licensed image (IIIF/403 blocks, unsupported formats, or no candidates in iNaturalist/GBIF).
+- **Result: complete under the stated photo policy, with thirty-five documented photo exceptions.**
 
 ### Byblis - checked 2026-11-19
 

@@ -18,25 +18,25 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Genus | ICPS accepted (hybrids) | Infraspecific | Records | Photos | Missing photos | No species care group | Status | Last checked |
 |---|---:|---:|---:|---:|---:|---:|---|---|
 | Aldrovanda | 1 (0) | 1 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
-| Byblis | 8 (0) | 0 | 8 | 7 | 1 | 0 | Pending | — |
+| Byblis | 8 (0) | 0 | 8 | 7 | 1 | 0 | Complete | 2026-11-19 |
 | Cephalotus | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | Craniolaria | 2 (0) | 0 | 2 | 2 | 0 | 0* | Complete | 2026-11-17 |
 | Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | **Dionaea** | **1 (0)** | **0** | **1 + 164 cultivars** | **1 + 164 cultivar images** | **0** | **0** | **Complete** | **2026-11-19** |
 | Dioncophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1* | Complete | 2026-11-18 |
 | Drosera | 191 (4) | 42 | 191 | 185 | 6 | 0 | Complete | 2026-11-25 |
-| Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
+| Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-19 |
 | Genlisea | 28 (0) | 0 | 28 | 24 | 4 | 28* | Complete | 2026-11-18 |
-| Habropetalum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
+| Habropetalum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Complete | 2026-11-19 |
 | Heliamphora | 20 (0) | 5 | 20 | 17 | 3 | 0 | Complete | 2026-11-18 |
-| Ibicella | 2 (0) | 0 | 2 | 2 | 0 | 2 | Pending | — |
-| Martynia | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
+| Ibicella | 2 (0) | 0 | 2 | 2 | 0 | 2 | Complete | 2026-11-19 |
+| Martynia | 1 (0) | 0 | 1 | 1 | 0 | 1 | Complete | 2026-11-19 |
 | Nepenthes | 127 (4) | 0 | 127 | 123 | 4 | 0 | Complete | 2026-11-19 |
 | Pinguicula | 104 (1) | 9 | 104 | 91 | 13 | 0 | Complete | 2026-11-25 |
-| Proboscidea | 6 (0) | 5 | 6 | 3 | 3 | 6 | Pending | — |
-| Roridula | 2 (0) | 0 | 2 | 2 | 0 | 0 | Pending | — |
-| Sarracenia | 8 (0) | 24 | 8 | 8 | 0 | 0 | Pending | — |
-| Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
+| Proboscidea | 6 (0) | 5 | 6 | 3 | 3 | 6 | Complete | 2026-11-19 |
+| Roridula | 2 (0) | 0 | 2 | 2 | 0 | 0 | Complete | 2026-11-19 |
+| Sarracenia | 8 (0) | 24 | 8 | 8 | 0 | 0 | Complete | 2026-11-19 |
+| Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Complete | 2026-11-19 |
 | Utricularia | 244 (0) | 0 | 244 | 209 | 35 | 0 | Complete | 2026-11-25 |
 
 **Totals:** 751 accepted records, 685 photos, 66 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **687 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **692 image files on disk** (687 wild-taxon images + 5 cultivar-specific images).

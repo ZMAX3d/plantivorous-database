@@ -24,7 +24,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Darlingtonia | 1 (0) | 0 | 1 | 1 | 0 | 0 | Complete | 2026-11-18 |
 | **Dionaea** | **1 (0)** | **0** | **1 + 164 cultivars** | **1 + 164 cultivar images** | **0** | **0** | **Complete** | **2026-11-19** |
 | Dioncophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1* | Complete | 2026-11-18 |
-| Drosera | 191 (4) | 42 | 191 | 134 | 57 | 0 | Pending | — |
+| Drosera | 191 (4) | 42 | 191 | 185 | 6 | 0 | Complete | 2026-11-25 |
 | Drosophyllum | 1 (0) | 0 | 1 | 1 | 0 | 0 | Pending | — |
 | Genlisea | 28 (0) | 0 | 28 | 24 | 4 | 28* | Complete | 2026-11-18 |
 | Habropetalum | 1 (0) | 0 | 1 | 0 | 1 | 1 | Pending | — |
@@ -39,7 +39,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Pending | — |
 | Utricularia | 244 (0) | 0 | 244 | 103 | 141 | 0 | Pending | — |
 
-**Totals:** 751 accepted records, 484 photos, 267 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **486 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **491 image files on disk** (486 wild-taxon images + 5 cultivar-specific images).
+**Totals:** 751 accepted records, 535 photos, 216 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **537 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **542 image files on disk** (537 wild-taxon images + 5 cultivar-specific images).
 
 ## Completed genus notes
 
@@ -59,6 +59,13 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - New verified images: *N. abalata* (CC0 iNaturalist field photograph, Palawan), *N. biak* (CC0 Naturalis herbarium specimen L.1852584, Biak Island), *N. mariae* (CC0 RBGE isotype E00979206, Sulawesi) and *N. masoalensis* (CC BY 4.0 Kew specimen K000683717, Madagascar). The last replaces an Indonesian observation that could not be verified as this Madagascar endemic and was removed rather than mislabelled.
 - Watchlist: seven of the eight provisional *Nepenthes* lack an open-licensed image. Their research-grade iNaturalist records are all-rights-reserved or CC BY-NC (for example *N. pongoides*); no unlicensed photograph is used, so these are recorded as documented exceptions.
 - **Result: complete under the stated photo policy, with 4 accepted and 7 provisional taxa documented as photo exceptions.**
+
+### Drosera - checked 2026-11-25
+
+- ICPS lists 191 accepted species, including 4 natural hybrids, with 42 nested infraspecific taxa. All 191 species records are present.
+- Photo coverage rose from 134 to 185 of 191. The 51 new images are 37 research-grade iNaturalist field photographs (CC0, CC BY or CC BY-SA) and 14 herbarium sheets from NY, K, US, Meise, Naturalis and TEX, each shown with a specimen badge and linked to its occurrence record.
+- Six accepted species remain as documented exceptions: *D. browniana*, *D. colombiana*, *D. condor*, *D. depauperata*, *D. glabriscapa* and *D. quartzicola*. Exact-name searches returned no research-grade iNaturalist observations with an open photo licence and no GBIF specimen media under CC0/CC BY/CC BY-SA.
+- **Result: complete under the stated photo policy, with six documented photo exceptions.**
 
 ### Byblis - checked 2026-11-19
 

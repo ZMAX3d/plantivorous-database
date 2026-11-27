@@ -8612,6 +8612,66 @@
       "alt": "Herbarium specimen of Utricularia steyermarkii",
       "sourceType": "GBIF",
       "specimen": true
+    },
+    {
+      "species": "Cephalotus 'Eden Black'",
+      "file": "assets/img/species/cephalotus-eden-black.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cephalotus_follicularis_Eden_Black_cultivar.jpg",
+      "original": "Cephalotus follicularis Eden Black cultivar.jpg",
+      "artist": "Gabriele Zoppoli",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Cephalotus follicularis 'Eden Black', a cultivar of the Albany pitcher plant selected for its near-black pitcher colouration. Endemic in its wild form to southwestern Australia. Cultivated specimen in Genoa, Italy.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Heliamphora 'Red Mambo'",
+      "file": "assets/img/species/heliamphora-red-mambo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Heliamphora_%27red_mambo%27_(Plant_0).jpg",
+      "original": "Heliamphora 'red mambo' (Plant 0).jpg",
+      "artist": "Dals093838",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "heliamphora 'red mambo' (Plant 0)",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Pinguicula 'Aphrodite'",
+      "file": "assets/img/species/pinguicula-aphrodite.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_%27Aphrodite%27.jpg",
+      "original": "Pinguicula 'Aphrodite'.jpg",
+      "artist": "fischermans",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Pinguicula 'Aphrodite' (Pinguicula agnata × Pinguicula moctezumae),registered cultivar.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Pinguicula 'Sethos'",
+      "file": "assets/img/species/pinguicula-sethos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_%27Sethos%27.JPG",
+      "original": "Pinguicula 'Sethos'.JPG",
+      "artist": "User:Ch.Andrew",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Pinguicula 'Sethos', cultivar Butterworts.",
+      "cultivarSpecific": true
+    },
+    {
+      "species": "Pinguicula 'Weser'",
+      "file": "assets/img/species/pinguicula-weser.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinguicula_%27Weser%27_-_Hong_Kong_Botanical_Garden_-_IMG_9668.JPG",
+      "original": "Pinguicula 'Weser' - Hong Kong Botanical Garden - IMG 9668.JPG",
+      "artist": "Daderot",
+      "credit": "Wikimedia Commons",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "description": "Pinguicula 'Weser'. Plant specimen in the Hong Kong Zoological and Botanical Gardens, Hong Kong.",
+      "cultivarSpecific": true
     }
   ]
 }

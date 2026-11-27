@@ -1,4 +1,16 @@
 {
+  "name": "plantivorous-database",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-data.mjs",
+    "validate:photos": "node scripts/validate-photos.mjs",
+    "audit:photos": "node scripts/audit-photos.mjs",
+    "check:icps": "node scripts/check-icps.mjs",
+    "scrape:icps": "node scripts/scrape-icps.mjs",
+    "scrape:cultivars": "node scripts/scrape-icps-cultivars.mjs",
+    "import:cultivars": "node scripts/import-icps-cultivars.mjs"
+  },
   "dependencies": {
     "sharp": "^0.35.5"
   }

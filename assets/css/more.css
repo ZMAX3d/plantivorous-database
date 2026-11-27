@@ -1383,6 +1383,114 @@
   margin: 0 auto;
 }
 
+/* ---------------------------------------------------------------- my plants */
+
+.my-plants__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.my-plants__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+.my-plants__tab svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+.my-plants__tab b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--paper-3);
+  font-size: 10px;
+}
+.my-plants__tab:hover {
+  border-color: var(--green);
+  color: var(--green-ink);
+}
+.my-plants__tab.is-active {
+  border-color: var(--green-dark);
+  background: var(--green-dark);
+  color: #fff;
+}
+.my-plants__tab.is-active b {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.my-plants__intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 20px;
+  margin-bottom: 20px;
+}
+.my-plants__intro p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.my-plants__intro strong {
+  color: var(--ink);
+}
+.my-plants__privacy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.my-plants__privacy svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+.species-save-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.species-save-note svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+}
+.btn.is-saved {
+  border-color: var(--green-dark);
+  background: var(--green-dark);
+  color: #fff;
+}
+.btn--secondary.is-saved {
+  border-color: #6b4f8f;
+  background: #6b4f8f;
+  color: #fff;
+}
+
 /* ---------------------------------------------------------------- misc */
 
 .tag-list {

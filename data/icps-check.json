@@ -1,0 +1,20 @@
+{
+  "lastChecked": "2026-11-27T06:20:46.804Z",
+  "snapshotGenerated": "2026-11-27T06:20:30.506Z",
+  "source": "https://cpnames.carnivorousplants.org/",
+  "status": "unchanged",
+  "counts": {
+    "wildAccepted": 751,
+    "wildPrevious": 751,
+    "cultivars": 939,
+    "cultivarsPrevious": 939
+  },
+  "added": {
+    "wild": [],
+    "cultivars": []
+  },
+  "removed": {
+    "wild": [],
+    "cultivars": []
+  }
+}

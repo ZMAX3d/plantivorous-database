@@ -2,7 +2,7 @@
 
 A portable, static, hash-routed single-page catalogue of the world's carnivorous plants, built to attach to the existing [Plantivorous](https://www.plantivorous.co.za) site. The theme matches Plantivorous: white base, IBM Plex Sans / Noto Sans, green accent `#2BA84A`, deep green `#467C45`, lime `#AACC44`, dark footer `#171717`, and a photo hero.
 
-> **Status:** v1.0.0 — complete and browser-verified. No build step is required at runtime; the entire app is static HTML/CSS/JS and works from `file://` or any web host.
+> **Status:** v1.1.0 — complete and browser-verified. No build step is required at runtime; the entire app is static HTML/CSS/JS and works from `file://` or any web host.
 
 ---
 
@@ -13,14 +13,14 @@ A portable, static, hash-routed single-page catalogue of the world's carnivorous
 | Accepted ICPS species & natural hybrids | 751 |
 | Provisional watchlist taxa (primary literature, not yet in ICPS) | 9 |
 | **Wild taxa (accepted + provisional)** | **760** |
-| ICPS-registered *Dionaea muscipula* cultivars | 164 |
-| **Total catalogue records** | **924** |
+| ICPS-registered cultivars, all genera | 939 |
+| **Total catalogue records** | **1,699** |
 | Genera | 21 |
 | Families | 10 |
 | Countries / territories mapped | 172 |
 | Origin map points (approx. centroids) | 2,743 |
 | Species with open-licensed photos or specimen images | 685 accepted + 2 provisional (687 images; Commons, verified iNaturalist, GBIF last resort) |
-| Cultivar images | 5 cultivar-specific photos + 159 labelled representative *D. muscipula* images |
+| Cultivar images | 10 cultivar-specific photos + 929 labelled representative parent-species images |
 | Editorial species notes | ~39 |
 | Cross-genus care groups | 17 |
 | Infraspecific taxa | 86 |
@@ -43,15 +43,17 @@ plantivorous-database/
 │   │   ├── more.css              # Genera, what's-new, about, favourites
 │   │   └── responsive.css        # Breakpoints, mobile filters, print
 │   ├── js/
-│   │   ├── app.js                # SPA: router, views, search, lightbox, map, events
-│   │   ├── data.js               # Browser-global bundle: 760 wild taxa + 164 cultivars
+│   │   ├── app.js                # SPA: router, views, search, lightbox, map, saved lists
+│   │   ├── data.js               # Browser-global bundle: 760 wild taxa + 939 cultivars
 │   │   └── world-map.js          # Custom SVG world map (Natural Earth 110m, 177 paths)
 │   ├── fonts/                    # IBM Plex Sans & Noto Sans (variable, self-hosted)
 │   └── img/                      # Species photos, genus plates, hero
 ├── data/
 │   ├── species.json              # Merged dataset (build output)
-│   ├── dionaea-cultivars.json    # 164 ICPS-registered Dionaea cultivar records
+│   ├── icps-cultivars.json       # 939 ICPS-registered cultivars, all genera
+│   ├── dionaea-cultivars.json    # Legacy Dionaea-only dataset (superseded)
 │   ├── icps-species.json         # ICPS accepted snapshot (scrape-icps.mjs output)
+│   ├── icps-check.json           # Last monthly ICPS check result
 │   ├── genera.json               # Editorial genus profiles
 │   ├── species-notes.json        # Flagship species notes
 │   ├── locations.json            # Country / region / province centroids
@@ -64,7 +66,11 @@ plantivorous-database/
     ├── build-data.mjs            # Merges all data into species.json + data.js
     ├── update-database.mjs       # Diffs ICPS snapshots, updates changelog, rebuilds
     ├── scrape-icps.mjs           # Captures the ICPS accepted-names snapshot
-    ├── import-dionaea-cultivars.mjs # Regenerates the 164-cultivar dataset from the ICPS register
+    ├── scrape-icps-cultivars.mjs # Captures every ICPS cultivar-register page
+    ├── import-icps-cultivars.mjs # Builds data/icps-cultivars.json from the register
+    ├── find-cultivar-photos.mjs  # Finds Commons files that name a cultivar
+    ├── check-icps.mjs            # Monthly fetch + diff + changelog + rebuild
+    ├── update-database.mjs       # Diffs ICPS snapshots, updates changelog, rebuilds
     ├── build-locations.mjs       # Origin centroids
     ├── build-map.mjs             # SVG world map geometry
     ├── add-photos.mjs            # Fetch Commons photos (bitmap-only, binomial-verified, q88)
@@ -95,7 +101,7 @@ Then open <http://localhost:8123/>. The server serves the project root with `no-
 
 The app is fully static, so you can also open `index.html` directly in a browser (`file://`). All asset references are relative and there are no `fetch()` or XHR calls; `history.replaceState` failures are silently ignored, which is the normal behaviour on `file://` in some browsers.
 
-> Note: localStorage-based favourites work in normal `file://` browsing but may be cleared in private/incognito modes depending on the browser.
+> Note: the collection and wishlist lists use localStorage. They work in normal `file://` browsing but may be cleared in private/incognito modes depending on the browser.
 
 ---
 
@@ -104,7 +110,7 @@ The app is fully static, so you can also open `index.html` directly in a browser
 | Route | What it shows |
 |-------|---------------|
 | `#/` | Home hero + featured genera |
-| `#/database` | Searchable, filterable browser for 760 wild taxa, with an optional 164-cultivar layer |
+| `#/database` | Searchable, filterable browser for 760 wild taxa, with an optional cultivar layer |
 | `#/database?genus=Dionaea&cultivars=1` | All *Dionaea* species and registered cultivars |
 | `#/species/<id>` | Species or cultivar detail: photo, map/registration, authority, care, sources |
 | `#/genera` | All 21 genus profiles |
@@ -114,9 +120,23 @@ The app is fully static, so you can also open `index.html` directly in a browser
 | `#/care/<key>` | Single care guide (e.g. `#/care/highland`) |
 | `#/new` | What's new: watchlist, recent names, changelog, monitoring |
 | `#/about` | About, sources & licences |
-| `#/favourites` | Your saved taxa (localStorage only) |
+| `#/my-plants?list=collection` | Your collection (localStorage only) |
+| `#/my-plants?list=wishlist` | Your wishlist (localStorage only) |
+
+The old `#/favourites` route is kept as an alias for the collection list.
 
 Keyboard: `/` opens global search, `Esc` closes modals/panels, `Enter` activates map bubbles and search results.
+
+---
+
+## Saved lists (collection & wishlist)
+
+The app keeps two personal lists in the browser's `localStorage`, under the keys `plantivorous.collection.v1` and `plantivorous.wishlist.v1`:
+
+- **Collection** — plants the visitor grows or has grown.
+- **Wishlist** — plants the visitor hopes to find or grow.
+
+Both are written only on the visitor's device. They are never posted to a server, never merged into `data/species.json`, and cannot change the catalogue. The catalogue itself is read-only for visitors: taxonomy, care notes and photographs are only changed by maintainers through the scripts in this repository and a new deployment. The `#/my-plants` view can print or export either list as JSON, and the old single-favourites list is migrated into the collection on first load.
 
 ---
 
@@ -143,7 +163,7 @@ Only real bitmap images are accepted. `scripts/add-photos.mjs` queries Commons w
 
 `scripts/add-gbif-photos.mjs` is the final fallback. It uses GBIF occurrence media only when no living-plant photo is available, which usually means a pressed herbarium specimen. It requires an exact GBIF match and a CC0/CC BY/CC BY-SA media licence, rejects NC/ND media, caps the long edge at 1200px, and links the credit to the specimen record. Specimen images are visibly labelled as such on the species page.
 
-Cultivar photography is stricter: a photo is attached to a cultivar only when the Commons file title, description or category explicitly identifies that cultivar. The five currently verified cultivar photos are 'Akai Ryu', 'Alien', 'B52', 'Bristle Tooth' and 'Sonic'. The remaining 159 cultivars display a labelled representative *Dionaea muscipula* photo rather than an unidentified plant; this is shown on the card/page and explained in the credit panel.
+Cultivar photography is stricter: a photo is attached to a cultivar only when the Commons file title, description or category explicitly identifies that cultivar. Cultivars without a verified specific photo display a labelled representative image of their parent species (or the nearest photographed congener) rather than an unidentified plant; this is shown on the card/page and explained in the credit panel. Cultivar records are excluded from wild-country, map and species-photo totals.
 
 `scripts/recompress-images.mjs` re-encodes legacy or oversized images to the same quality 88 and caps the long edge at 1200px, keeping every published photo under 400KB.
 
@@ -176,34 +196,38 @@ To rebrand the colours or fonts, edit `assets/css/styles.css` (CSS custom proper
 
 ---
 
-## Monitoring workflow (new species & hybrids)
+## Monitoring workflow (new species, hybrids & cultivars)
 
-The catalogue is anchored to an ICPS snapshot. Monitoring is **build-time only**: when a new ICPS snapshot is available, diff it against the current build, record changes in the changelog, and rebuild.
+The catalogue is anchored to ICPS snapshots. Monitoring covers both the accepted-names resource and the registered-cultivar register, and runs automatically at least once a month.
 
-### Step 1 — Refresh the ICPS snapshot
+### Automatic monthly check
+
+`.github/workflows/icps-check.yml` runs on the first day of every month (05:17 UTC) and can also be started manually from the Actions tab. It:
+
+1. Refreshes `data/icps-species.json` from the 21 ICPS genus pages.
+2. Refreshes every ICPS cultivar-register page and rebuilds `data/icps-cultivars.json`.
+3. Diffs both snapshots against the current catalogue.
+4. Adds every new name automatically on the next build, records the result in `data/icps-check.json`, and appends a dated changelog entry when names were added or removed.
+5. Rebuilds `data/species.json` / `assets/js/data.js`, validates the photo credits, and pushes the commit. The push triggers the normal GitHub Pages deployment.
+
+Newly detected taxa enter with their ICPS registration facts, parent care group and native range; photographs and hand-written care notes are added by the next editorial/photo pass.
+
+### Manual run
 
 ```bash
-node scripts/scrape-icps.mjs
+node scripts/check-icps.mjs              # fetch, diff, changelog, rebuild
+node scripts/check-icps.mjs --dry-run    # fetch and report only
+node scripts/check-icps.mjs --skip-fetch # diff the existing snapshots
+node scripts/check-icps.mjs --no-build   # update snapshots and changelog only
 ```
 
-This writes `data/icps-species.json` (accepted species, hybrids & infraspecific taxa from cpnames.carnivorousplants.org).
-
-### Step 2 — Diff, changelog, rebuild
+The underlying steps are also available separately:
 
 ```bash
-node scripts/update-database.mjs
-```
-
-What it does:
-1. Reads the new snapshot and the current `data/species.json` baseline.
-2. Compares accepted (non-provisional) taxon names.
-3. If there are additions or removals, appends a dated entry to `data/changelog.json` (with the added/removed taxon lists).
-4. Re-runs `scripts/build-data.mjs` to regenerate `data/species.json` and `assets/js/data.js`.
-
-Dry-run to preview changes without writing anything:
-
-```bash
-node scripts/update-database.mjs --dry-run
+node scripts/scrape-icps.mjs             # species + hybrids snapshot
+node scripts/scrape-icps-cultivars.mjs   # all cultivar-register pages
+node scripts/import-icps-cultivars.mjs   # data/icps-cultivars.json
+node scripts/update-database.mjs         # legacy species-only diff + rebuild
 ```
 
 The changelog is displayed on the `#/new` ("What's new") page, and the snapshot date / watchlist count appear in the site footer.
@@ -212,7 +236,7 @@ The changelog is displayed on the `#/new` ("What's new") page, and the snapshot 
 
 ## Screenshots & visual QA
 
-The site is browser-verified across all routes (home, database, species detail, genera, map, care, what's-new, about, favourites) including the search modal, lightbox, favourites/localStorage, hash-router URL sync, keyboard navigation, mobile layout (390 px), and horizontal-overflow checks. Some `browser.screenshot` captures were blocked in this environment because the desktop tab wasn't visible; run the preview server and open the routes above for final visual QA.
+The site is browser-verified across all routes (home, database, species detail, genera, map, care, what's-new, about, my-plants) including the search modal, lightbox, collection/wishlist localStorage, hash-router URL sync, keyboard navigation, mobile layout (390 px), and horizontal-overflow checks. Some `browser.screenshot` captures were blocked in this environment because the desktop tab wasn't visible; run the preview server and open the routes above for final visual QA.
 
 ---
 

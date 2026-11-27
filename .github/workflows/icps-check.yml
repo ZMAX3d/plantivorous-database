@@ -1,0 +1,47 @@
+name: Monthly ICPS check
+
+on:
+  schedule:
+    # 05:17 UTC on the first day of every month.
+    - cron: "17 5 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-icps-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --omit=dev
+
+      - name: Refresh ICPS snapshots, diff, and rebuild
+        run: node scripts/check-icps.mjs
+
+      - name: Commit and push any changes
+        run: |
+          git config user.name "plantivorous-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No database changes this month."
+            exit 0
+          fi
+          git commit -m "Monthly ICPS check: refresh taxa ($(date -u +%Y-%m-%d))"
+          git push

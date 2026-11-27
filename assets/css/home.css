@@ -280,13 +280,36 @@
   color: var(--green-ink);
   transform: scale(1.06);
 }
-.fav-btn.is-fav {
+.fav-btn.is-saved {
   background: var(--green-dark);
   color: #fff;
 }
-.fav-btn.is-fav svg {
+.fav-btn.is-saved svg {
   fill: currentColor;
   stroke: currentColor;
+}
+.fav-btn.save-btn--wish.is-saved {
+  background: #6b4f8f;
+}
+.card-save {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card-save .fav-btn {
+  position: static;
+  top: auto;
+  right: auto;
+  width: 34px;
+  height: 34px;
+}
+.card-save .fav-btn svg {
+  width: 16px;
+  height: 16px;
 }
 .species-card__body {
   display: flex;
@@ -395,6 +418,10 @@
   max-width: 680px;
 }
 .species-grid.is-list .fav-btn {
+  top: 14px;
+  right: 14px;
+}
+.species-grid.is-list .card-save {
   top: 14px;
   right: 14px;
 }

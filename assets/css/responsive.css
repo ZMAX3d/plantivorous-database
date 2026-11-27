@@ -842,7 +842,8 @@
   .breadcrumb,
   .search-modal,
   .toast,
-  .fav-btn {
+  .fav-btn,
+  .card-save {
     display: none !important;
   }
   body {

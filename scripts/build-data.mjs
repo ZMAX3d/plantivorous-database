@@ -38,7 +38,7 @@ const locations = await readJson("locations.json");
 const photoDoc = await readJson("photo-credits.json");
 const careDoc = await readJson("care-groups.json");
 const watchDoc = await readJson("watchlist.json");
-const cultivarDoc = await readJson("dionaea-cultivars.json");
+const cultivarDoc = await readJson("icps-cultivars.json");
 const changelog = await readJson("changelog.json");
 
 const GENERA = new Map(generaDoc.genera.map((g) => [g.genus, g]));
@@ -1663,12 +1663,47 @@ species.sort((a, b) =>
 /* Registered cultivars                                                */
 /* ------------------------------------------------------------------ */
 
-const parentDionaea = species.find((s) => s.name === "Dionaea muscipula");
-const dionaeaGenus = GENERA.get("Dionaea");
+/* Registered cultivars (all ICPS genera)                            */
 
-if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
+const speciesByName = new Map(
+  species.filter((s) => !s.cultivar).map((s) => [s.name, s])
+);
+
+function lookupParent(name) {
+  if (speciesByName.has(name)) return speciesByName.get(name);
+  const base = String(name)
+    .replace(
+      /\s+(subsp\.|var\.|f\.|forma|subvar\.|nothosubsp\.|nothovar\.)\s+.*$/i,
+      ""
+    )
+    .trim();
+  return speciesByName.get(base) || null;
+}
+
+function cultivarFallback(genusName) {
+  const members = species.filter(
+    (s) => s.genus === genusName && !s.cultivar
+  );
+  return members.find((s) => s.hasPhoto) || members[0] || null;
+}
+
+if (cultivarDoc?.cultivars?.length) {
   for (const cultivar of cultivarDoc.cultivars) {
+    const genusName = cultivar.genus;
+    const genus = GENERA.get(genusName);
+    if (!genus) continue;
+
+    const parentRecords = (cultivar.parentFormula || [])
+      .map((name) => lookupParent(name))
+      .filter(Boolean);
+    const parent = parentRecords[0] || null;
+    const careSource = parent || cultivarFallback(genusName);
+    if (!careSource) continue;
+
     const credit = CREDITS.get(cultivar.name) || null;
+    const photoSource = careSource.photo
+      ? careSource
+      : cultivarFallback(genusName) || careSource;
     const cultivarPhoto = credit
       ? {
           path: credit.file,
@@ -1684,13 +1719,13 @@ if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
           cultivarSpecific: true,
           alt: credit.description || `Photograph of ${cultivar.name}`,
         }
-      : parentDionaea.photo
+      : photoSource.photo
         ? {
-            ...parentDionaea.photo,
+            ...photoSource.photo,
             representative: true,
-            representativeOf: parentDionaea.name,
+            representativeOf: photoSource.name,
             cultivarSpecific: false,
-            alt: `Representative ${parentDionaea.name} photograph; ${cultivar.name} itself is not shown`,
+            alt: `Representative ${photoSource.name} photograph; ${cultivar.name} itself is not shown`,
           }
         : null;
 
@@ -1699,21 +1734,34 @@ if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
     idCounts.set(idBase, idCount + 1);
     const id = idCount ? `${idBase}-${idCount + 1}` : idBase;
 
-    const summary = `ICPS-registered Dionaea muscipula cultivar${
+    const uniqueParents = [
+      ...new Map(parentRecords.map((r) => [r.name, r])).values(),
+    ];
+    const parentNative = uniqueParents.length
+      ? uniqueParents
+          .map((r) => `${r.name} (${r.nativeShort || "native range recorded"})`)
+          .join("; ")
+      : "";
+    const nativeRange = parent
+      ? `Cultivars have no wild origin. Its registered parentage is ${parentNative}.`
+      : "Cultivars have no wild origin. The ICPS register does not record a parent formula for this cultivar.";
+
+    const summary = `ICPS-registered ${genusName} cultivar${
       cultivar.year ? ` (${cultivar.year})` : ""
     }.`;
     const searchText = [
       cultivar.name,
       "cultivar",
-      "Venus flytrap",
-      "Dionaea muscipula",
+      genus.commonName,
+      genusName,
+      ...parentRecords.map((r) => r.name),
       cultivar.authority,
       cultivar.originator,
       cultivar.registrant,
       cultivar.publication,
       cultivar.etymology,
       cultivar.registrationDate,
-      parentDionaea.nativeRange,
+      nativeRange,
     ]
       .filter(Boolean)
       .join(" ")
@@ -1721,17 +1769,18 @@ if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
 
     species.push({
       id,
-      genus: "Dionaea",
+      genus: genusName,
       name: cultivar.name,
-      epithet: cultivar.name.replace(/^Dionaea\s+/, ""),
+      epithet: cultivar.name.replace(/^[A-Za-z]+\s+/, ""),
       authors: cultivar.authority || "",
       year: cultivar.year || null,
       fullName: `${cultivar.name}${cultivar.authority ? ` ${cultivar.authority}` : ""}`,
       rank: "cultivar",
       rankLabel: "ICPS-registered cultivar",
       cultivar: true,
-      parentSpecies: parentDionaea.name,
-      parentId: parentDionaea.id,
+      parentSpecies: parent?.name || "",
+      parentId: parent?.id || "",
+      parentFormula: uniqueParents.map((r) => r.name),
       registrationDate: cultivar.registrationDate || "",
       originator: cultivar.originator || "",
       nominant: cultivar.nominant || "",
@@ -1747,37 +1796,39 @@ if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
       status: "ICPS-registered cultivar",
       provisional: false,
       watchlist: false,
-      family: parentDionaea.family,
-      classification: `${parentDionaea.name} cultivar`,
-      taxonomy: ["Dionaea", parentDionaea.name, "Cultivar"],
+      family: parent?.family || genus.family,
+      classification: `${genusName} cultivar`,
+      taxonomy: parent ? [genusName, parent.name, "Cultivar"] : [genusName, "Cultivar"],
       subgenus: "",
       section: "",
       publication: cultivar.publication || "",
       typeLocality: "",
       commonName: null,
       commonNameIsGenus: true,
-      genusCommonName: parentDionaea.genusCommonName,
+      genusCommonName: genus.commonName,
       summary,
       description: cultivar.description,
       etymology: cultivar.etymology || "",
       discoveredBy: "",
-      careGroup: parentDionaea.careGroup,
-      careGroupLabel: parentDionaea.careGroupLabel,
-      careGroupTagline: parentDionaea.careGroupTagline,
-      careNotes: `Cultivar care follows its parent species, ${parentDionaea.name}. ${parentDionaea.careNotes}`,
-      careDifficulty: parentDionaea.careDifficulty,
-      careDifficultyLevel: parentDionaea.careDifficultyLevel,
-      difficulty: parentDionaea.difficulty,
-      difficultyLevel: parentDionaea.difficultyLevel,
-      trapType: parentDionaea.trapType,
-      trapGroup: parentDionaea.trapGroup,
-      carnivory: parentDionaea.carnivory,
+      careGroup: careSource.careGroup,
+      careGroupLabel: careSource.careGroupLabel,
+      careGroupTagline: careSource.careGroupTagline,
+      careNotes: parent
+        ? `Cultivar care follows its parent species, ${parent.name}. ${parent.careNotes}`
+        : `Cultivar care follows the ${genusName} genus guidance. ${genus.care?.overview || ""}`,
+      careDifficulty: careSource.careDifficulty,
+      careDifficultyLevel: careSource.careDifficultyLevel,
+      difficulty: careSource.difficulty,
+      difficultyLevel: careSource.difficultyLevel,
+      trapType: careSource.trapType,
+      trapGroup: careSource.trapGroup,
+      carnivory: careSource.carnivory,
       featured: false,
       hasPhoto: Boolean(cultivarPhoto),
       hasEditorialNote: false,
       photo: cultivarPhoto,
-      illustration: dionaeaGenus.illustration,
-      image: cultivarPhoto?.path || dionaeaGenus.illustration,
+      illustration: genus.illustration,
+      image: cultivarPhoto?.path || genus.illustration,
       imageType: cultivarPhoto ? "photo" : "illustration",
       iucn: { code: "NE", label: "Not assessed", tone: "ne" },
       conservationNote: "",
@@ -1785,16 +1836,16 @@ if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
       nativeRegions: [],
       primaryCountry: "",
       introducedCountries: [],
-      nativeRange: `Cultivars have no wild origin. Its parent species, ${parentDionaea.name}, is native to ${parentDionaea.nativeRange.replace(/\.$/, "")}.`,
-      nativeShort: `Cultivar of ${parentDionaea.name}`,
-      parentNativeRange: parentDionaea.nativeRange,
-      parentNativeShort: parentDionaea.nativeShort,
-      parentCountries: parentDionaea.nativeCountries,
-      parentRegions: parentDionaea.nativeRegions,
-      parentContinents: parentDionaea.continents,
+      nativeRange,
+      nativeShort: parent ? `Cultivar of ${parent.name}` : `${genusName} cultivar`,
+      parentNativeRange: parent?.nativeRange || "",
+      parentNativeShort: parent?.nativeShort || "",
+      parentCountries: parent?.nativeCountries || [],
+      parentRegions: parent?.nativeRegions || [],
+      parentContinents: parent?.continents || [],
       continents: [],
       originPoints: [],
-      tags: ["cultivar", "Venus flytrap", "registered"],
+      tags: ["cultivar", genus.commonName || genusName, "registered"],
       infraspecificTaxa: [],
       infraspecificCount: 0,
       sourceLinks: [
@@ -1803,8 +1854,8 @@ if (parentDionaea && dionaeaGenus && cultivarDoc?.cultivars?.length) {
       ],
       icpsUrl: cultivar.source,
       searchText,
-      accent: dionaeaGenus.accent,
-      added: "2026-11-19",
+      accent: genus.accent,
+      added: "2026-11-27",
       sortYear: cultivar.year || 0,
     });
   }
@@ -1948,7 +1999,7 @@ const meta = {
   mapPointCount: speciesOnly.reduce((total, s) => total + s.originPoints.length, 0),
   watchlistUpdated: watchDoc.updated,
   changelogDate: changelog.generated,
-  version: "1.0.0",
+  version: "1.1.0",
   title: "Plantivorous Carnivorous Plant Database",
 };
 

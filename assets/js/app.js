@@ -47,6 +47,7 @@
   const iconPaths = {
     search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
     heart: '<path d="M12 20.3 4.6 13a4.8 4.8 0 0 1 6.8-6.8l.6.6.6-.6A4.8 4.8 0 0 1 19.4 13Z"/>',
+    bookmark: '<path d="M6 4h12v17l-6-4.5L6 21V4Z"/>',
     arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
     arrowUp: '<path d="M12 19V5M6 11l6-6 6 6"/>',
     close: '<path d="M6 6l12 12M18 6 6 18"/>',
@@ -238,41 +239,104 @@
       .join("")}</span>`;
   }
 
-  /* ---------------------------------------------------------------- favourites */
+  /* ---------------------------------------------------------------- saved lists */
 
-  const FAV_KEY = "plantivorous.favourites.v1";
-  let favourites = loadFavourites();
+  /*
+   * Two independent, device-only lists. Nothing here is ever written back to
+   * the database bundle: the catalogue is read-only and these sets live in
+   * this browser's localStorage only.
+   */
 
-  function loadFavourites() {
+  const SAVE_LISTS = {
+    collection: {
+      key: "plantivorous.collection.v1",
+      title: "Collection",
+      noun: "collection",
+      icon: "heart",
+      blurb: "Plants you grow or have grown.",
+    },
+    wishlist: {
+      key: "plantivorous.wishlist.v1",
+      title: "Wishlist",
+      noun: "wishlist",
+      icon: "bookmark",
+      blurb: "Plants you hope to find or grow one day.",
+    },
+  };
+  const LEGACY_FAV_KEY = "plantivorous.favourites.v1";
+
+  const savedLists = {
+    collection: loadSavedList("collection"),
+    wishlist: loadSavedList("wishlist"),
+  };
+
+  function loadSavedList(name) {
     try {
-      const stored = JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
-      return new Set(Array.isArray(stored) ? stored.filter((id) => SPECIES_BY_ID.has(id)) : []);
-    } catch {
-      return new Set();
-    }
-  }
-
-  function saveFavourites() {
-    try {
-      localStorage.setItem(FAV_KEY, JSON.stringify([...favourites]));
+      const raw = localStorage.getItem(SAVE_LISTS[name].key);
+      if (raw !== null) {
+        const stored = JSON.parse(raw);
+        return new Set(
+          Array.isArray(stored) ? stored.filter((id) => SPECIES_BY_ID.has(id)) : []
+        );
+      }
+      if (name === "collection") {
+        // One-time migration of the old single favourites list.
+        const legacy = JSON.parse(localStorage.getItem(LEGACY_FAV_KEY) || "[]");
+        if (Array.isArray(legacy) && legacy.length) {
+          const migrated = new Set(legacy.filter((id) => SPECIES_BY_ID.has(id)));
+          localStorage.setItem(
+            SAVE_LISTS.collection.key,
+            JSON.stringify([...migrated])
+          );
+          return migrated;
+        }
+      }
     } catch {
       /* storage can be unavailable in private or file contexts */
     }
+    return new Set();
   }
 
-  function updateFavouriteButtons() {
-    $$("[data-fav]").forEach((button) => {
-      const id = button.dataset.fav;
-      const active = favourites.has(id);
-      button.classList.toggle("is-fav", active);
+  function saveSavedList(name) {
+    try {
+      localStorage.setItem(SAVE_LISTS[name].key, JSON.stringify([...savedLists[name]]));
+    } catch {
+      showToast("This browser blocked local storage, so the list could not be saved.");
+    }
+  }
+
+  function isSaved(name, id) {
+    return Boolean(savedLists[name]?.has(id));
+  }
+
+  function savedTotal() {
+    return new Set([...savedLists.collection, ...savedLists.wishlist]).size;
+  }
+
+  function updateSavedButtons() {
+    $$("[data-save-list]").forEach((button) => {
+      const name = button.dataset.saveList;
+      const id = button.dataset.saveId;
+      const list = SAVE_LISTS[name];
+      if (!list) return;
+      const active = isSaved(name, id);
+      button.classList.toggle("is-saved", active);
       button.setAttribute("aria-pressed", String(active));
-      const name = SPECIES_BY_ID.get(id)?.name || "species";
-      button.setAttribute("aria-label", active ? `Remove ${name} from favourites` : `Add ${name} to favourites`);
-      button.title = active ? "Remove from favourites" : "Add to favourites";
-      const label = button.querySelector("span");
-      if (label) label.textContent = active ? "Saved to favourites" : "Save to favourites";
+      const species = SPECIES_BY_ID.get(id);
+      const nameLabel = species?.name || "this plant";
+      button.setAttribute(
+        "aria-label",
+        active
+          ? `Remove ${nameLabel} from your ${list.noun}`
+          : `Add ${nameLabel} to your ${list.noun}`
+      );
+      button.title = active ? `Remove from ${list.noun}` : `Add to ${list.noun}`;
+      const label = button.querySelector("[data-save-label]");
+      if (label) {
+        label.textContent = active ? `In your ${list.noun}` : `Add to ${list.noun}`;
+      }
     });
-    const count = favourites.size;
+    const count = savedTotal();
     const headerCount = $("#fav-count");
     if (headerCount) {
       headerCount.textContent = count;
@@ -282,18 +346,20 @@
     if (mobileCount) mobileCount.textContent = count;
   }
 
-  function toggleFavourite(id) {
+  function toggleSaved(name, id) {
     const species = SPECIES_BY_ID.get(id);
-    if (!species) return;
-    if (favourites.has(id)) {
-      favourites.delete(id);
-      showToast(`Removed <em>${esc(species.name)}</em> from favourites.`);
-    } else {
-      favourites.add(id);
-      showToast(`Saved <em>${esc(species.name)}</em>. <a href="#/favourites">View favourites</a>`);
-    }
-    saveFavourites();
-    updateFavouriteButtons();
+    const list = SAVE_LISTS[name];
+    if (!species || !list) return;
+    const added = !savedLists[name].has(id);
+    if (added) savedLists[name].add(id);
+    else savedLists[name].delete(id);
+    saveSavedList(name);
+    updateSavedButtons();
+    showToast(
+      added
+        ? `Added <em>${esc(species.name)}</em> to your ${list.noun}. <a href="#/my-plants?list=${name}">View ${list.noun}</a>`
+        : `Removed <em>${esc(species.name)}</em> from your ${list.noun}.`
+    );
   }
 
   let toastTimer;
@@ -312,6 +378,13 @@
 
   /* ---------------------------------------------------------------- cards */
 
+  function parentShortLabel(species) {
+    const name = species.parentSpecies || species.parentFormula?.[0] || "";
+    const parts = String(name).split(/\s+/).filter(Boolean);
+    if (parts.length >= 2) return `${parts[0][0]}. ${parts.slice(1).join(" ")}`;
+    return name || "parent species";
+  }
+
   function speciesCard(species, { list = false } = {}) {
     const image = speciesImage(species);
     const common = species.commonName && !species.commonNameIsGenus ? species.commonName : "";
@@ -326,16 +399,21 @@
           <img src="${esc(image.src)}" alt="" loading="lazy" decoding="async" data-fallback="${esc(species.illustration)}">
           ${badges ? `<span class="species-card__badges">${badges}</span>` : ""}
         </a>
-        <button class="fav-btn${favourites.has(species.id) ? " is-fav" : ""}" type="button" data-fav="${esc(species.id)}" aria-pressed="${favourites.has(species.id)}" aria-label="${favourites.has(species.id) ? "Remove" : "Add"} ${esc(species.name)} ${favourites.has(species.id) ? "from" : "to"} favourites">
-          ${icon("heart")}
-        </button>
+        <div class="card-save">
+          <button class="fav-btn save-btn${isSaved("collection", species.id) ? " is-saved" : ""}" type="button" data-save-list="collection" data-save-id="${esc(species.id)}" aria-pressed="${isSaved("collection", species.id)}" aria-label="${isSaved("collection", species.id) ? "Remove" : "Add"} ${esc(species.name)} ${isSaved("collection", species.id) ? "from" : "to"} your collection" title="${isSaved("collection", species.id) ? "Remove from collection" : "Add to collection"}">
+            ${icon("heart")}
+          </button>
+          <button class="fav-btn save-btn save-btn--wish${isSaved("wishlist", species.id) ? " is-saved" : ""}" type="button" data-save-list="wishlist" data-save-id="${esc(species.id)}" aria-pressed="${isSaved("wishlist", species.id)}" aria-label="${isSaved("wishlist", species.id) ? "Remove" : "Add"} ${esc(species.name)} ${isSaved("wishlist", species.id) ? "from" : "to"} your wishlist" title="${isSaved("wishlist", species.id) ? "Remove from wishlist" : "Add to wishlist"}">
+            ${icon("bookmark")}
+          </button>
+        </div>
         <div class="species-card__body">
           <p class="species-card__kicker"><span>${esc(species.genus)}</span><span>${species.cultivar ? "Cultivar" : esc(species.family)}</span></p>
           <h3><a href="#/species/${esc(species.id)}">${speciesDisplayName(species)}</a></h3>
           ${common ? `<p class="species-card__common">${esc(common)}</p>` : ""}
           <p class="species-card__summary">${esc(species.summary || species.description)}</p>
           <div class="species-card__meta">
-            <span class="pill">${species.cultivar ? "Parent: D. muscipula" : esc(trapLabelOf(species))}</span>
+            <span class="pill">${species.cultivar ? (species.parentSpecies ? `Parent: ${esc(parentShortLabel(species))}` : "Parent not recorded") : esc(trapLabelOf(species))}</span>
             <span class="${difficultyClass(species.difficulty)}">${esc(species.difficulty || "Varies")}</span>
           </div>
           <div class="species-card__foot">
@@ -518,7 +596,7 @@
           <div class="hero-copy">
             <p class="eyebrow light">The Plantivorous field guide</p>
             <h1>Carnivorous plants,<br><em>catalogued.</em></h1>
-            <p class="hero-lede">Every accepted species and natural hybrid in the ICPS names resource — with native-range maps, discovery stories, photographs, botanical plates and care that actually works. Dionaea cultivars are catalogued as a separate, fully registered layer.</p>
+            <p class="hero-lede">Every accepted species and natural hybrid in the ICPS names resource — with native-range maps, discovery stories, photographs, botanical plates and care that actually works. Registered cultivars from every ICPS genus are catalogued as a separate, fully documented layer.</p>
             <form class="hero-search" data-hero-search role="search">
               <label class="visually-hidden" for="hero-search">Search species, genera or countries</label>
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
@@ -541,7 +619,7 @@
       <div class="container">
         <div class="stats-band">
           <div class="stat"><a href="#/database"><strong>${fmt(DB.meta.totalSpecies)}</strong><span>Wild taxa<br>${fmt(DB.meta.icpsCount)} ICPS + ${fmt(DB.meta.provisionalCount)} provisional</span></a></div>
-          <div class="stat"><a href="#/genus/Dionaea?view=cultivars"><strong>${fmt(DB.meta.cultivarCount)}</strong><span>Registered cultivars<br>Dionaea muscipula</span></a></div>
+          <div class="stat"><a href="#/database?cultivars=1"><strong>${fmt(DB.meta.cultivarCount)}</strong><span>Registered cultivars<br>across 10 genera</span></a></div>
           <div class="stat"><a href="#/genera"><strong>${fmt(DB.meta.genusCount)}</strong><span>Genera</span></a></div>
           <div class="stat"><a href="#/map"><strong>${fmt(DB.meta.countryCount)}</strong><span>Countries &amp; territories</span></a></div>
           <div class="stat"><a href="#/database?photo=1"><strong>${fmt(DB.meta.photoCount)}</strong><span>Licensed photographs</span></a></div>
@@ -666,7 +744,7 @@
               <p>Made to live on plantivorous.co.za as a self-contained, static catalogue — no server, no tracking, no external map tiles.</p>
               <div class="map-teaser-actions">
                 <a class="btn btn--primary" href="#/about">About the database ${icon("arrow")}</a>
-                <a class="btn btn--ghost" href="#/favourites">Your favourites</a>
+                <a class="btn btn--ghost" href="#/my-plants">Your plants</a>
               </div>
             </div>
             <div class="about-strip__art">
@@ -684,7 +762,7 @@
           <div class="cta-band">
             <div>
               <h2>Find the plant you have been looking for.</h2>
-              <p>Search ${fmt(DB.meta.totalSpecies)} wild taxa and ${fmt(DB.meta.cultivarCount)} Dionaea cultivars by name, family, trap type, difficulty, care group or native continent.</p>
+              <p>Search ${fmt(DB.meta.totalSpecies)} wild taxa and ${fmt(DB.meta.cultivarCount)} registered cultivars by name, family, trap type, difficulty, care group or native continent.</p>
             </div>
             <a class="btn btn--lime" href="#/database">Open the database ${icon("arrow")}</a>
           </div>
@@ -765,7 +843,7 @@
       crumbs: breadcrumb([{ label: "Home", href: "#/" }, { label: "Database" }]),
       eyebrow: "The catalogue",
       title: "Species database",
-      lede: `Search and filter ${fmt(DB.meta.totalSpecies)} carnivorous plant taxa — ${fmt(DB.meta.icpsCount)} accepted by the ICPS plus ${fmt(DB.meta.provisionalCount)} provisional entries held on the watchlist. A separate layer holds ${fmt(DB.meta.cultivarCount)} ICPS-registered Dionaea cultivars.`,
+      lede: `Search and filter ${fmt(DB.meta.totalSpecies)} carnivorous plant taxa — ${fmt(DB.meta.icpsCount)} accepted by the ICPS plus ${fmt(DB.meta.provisionalCount)} provisional entries held on the watchlist. A separate layer holds ${fmt(DB.meta.cultivarCount)} ICPS-registered cultivars across ten genera.`,
       stat: fmt(DB.meta.totalSpecies),
       statLabel: "Taxa catalogued",
     })}
@@ -831,7 +909,7 @@
             </label>
             <label class="check">
               <input type="checkbox" name="cultivars"${current.cultivars ? " checked" : ""}>
-              <span>Include Dionaea cultivars <small>${fmt(DB.meta.cultivarCount)} registered cultivars, separate from wild taxa</small></span>
+              <span>Include registered cultivars <small>${fmt(DB.meta.cultivarCount)} registered cultivars, separate from wild taxa</small></span>
             </label>
           </div>
           <button class="btn btn--primary btn--wide filters-done" type="button" data-filters-close>Show ${fmt(dbState.filtered.length)} results</button>
@@ -977,7 +1055,7 @@
     if (filters.care) chips.push({ key: "care", label: CARE_BY_KEY.get(filters.care)?.label || filters.care });
     if (filters.photo) chips.push({ key: "photo", label: "Photographed" });
     if (!filters.provisional) chips.push({ key: "provisional", label: "ICPS accepted only" });
-    if (filters.cultivars) chips.push({ key: "cultivars", label: "Dionaea cultivars" });
+    if (filters.cultivars) chips.push({ key: "cultivars", label: "Registered cultivars" });
     if (!chips.length) return "";
     return `${chips.map((chip) => `<span class="filter-chip">${esc(chip.label)}<button type="button" data-remove-filter="${esc(chip.key)}" aria-label="Remove ${esc(chip.label)} filter">×</button></span>`).join("")}
       <button class="filter-chip filter-chip--clear" type="button" data-clear-filters>Clear all</button>`;
@@ -1031,7 +1109,7 @@
 
     const clear = $("[data-db-clear]");
     if (clear) clear.hidden = !($("#db-search")?.value || "").trim();
-    updateFavouriteButtons();
+    updateSavedButtons();
   }
 
   function emptyResults() {
@@ -1237,10 +1315,12 @@
 
     const parentRangeCard = isCultivar
       ? `<section class="content-card" id="range">
-          <h2>Parent species range</h2>
-          <div class="callout callout--amber"><strong>No wild origin</strong>Cultivars are cultivated selections. They have no native range, country or map marker of their own; the distribution below belongs to the parent species.</div>
+          <h2>${parent ? "Parent species range" : "Parentage & range"}</h2>
+          <div class="callout callout--amber"><strong>No wild origin</strong>Cultivars are cultivated selections. They have no native range, country or map marker of their own${parent ? "; the distribution below belongs to the parent species" : ""}.</div>
           <div class="prose" style="margin-top:14px">
-            <p>${esc(parent?.name || species.parentSpecies || "Dionaea muscipula")} is native to ${esc(species.parentNativeRange || parent?.nativeRange || "the south-eastern United States")}.</p>
+            ${parent
+              ? `<p>${esc(parent.name)} is native to ${esc(species.parentNativeRange || parent.nativeRange || "its recorded native range")}.</p>`
+              : `<p>The ICPS register does not record a parent formula for this cultivar, so its parentage cannot be mapped. Follow the <a href="#/genus/${encodeURIComponent(species.genus)}">${esc(species.genus)} care guidance</a> for cultivation.</p>`}
           </div>
           ${parent ? `<div class="care-link-row"><a class="btn btn--secondary btn--small" href="#/species/${esc(parent.id)}">Open the parent species ${icon("arrow")}</a><a class="btn btn--secondary btn--small" href="#/map?species=${encodeURIComponent(parent.id)}">${icon("globe")} Parent range map</a></div>` : ""}
           ${species.parentCountries?.length ? `<h3>Parent native countries &amp; territories</h3><div class="country-chips">${species.parentCountries.map((country) => `<span class="country-chip">${esc(country)}</span>`).join("")}</div>` : ""}
@@ -1279,23 +1359,27 @@
             ${common ? `<p class="species-common">${esc(common)}</p>` : ""}
             <p class="species-lede">${esc(species.description || species.summary)}</p>
             <div class="species-badge-row">
-              <span class="pill">${species.cultivar ? "Cultivar of Dionaea muscipula" : esc(trapLabelOf(species))}</span>
+              <span class="pill">${species.cultivar ? (species.parentSpecies ? `Cultivar of ${esc(species.parentSpecies)}` : "Registered cultivar") : esc(trapLabelOf(species))}</span>
               <span class="pill${isCultivar ? " pill--amber" : species.provisional ? " pill--amber" : " pill--green"}">${isCultivar ? "ICPS-registered cultivar" : species.provisional ? "Awaiting ICPS inclusion" : "Accepted name"}</span>
               <span class="${difficultyClass(species.careDifficulty || species.difficulty)}">${esc(species.careDifficulty || species.difficulty || "Varies")} care</span>
             </div>
             <div class="species-actions">
-              <button class="btn btn--primary" type="button" data-fav="${esc(species.id)}">
-                ${icon("heart")} <span>${favourites.has(species.id) ? "Saved to favourites" : "Save to favourites"}</span>
+              <button class="btn btn--primary${isSaved("collection", species.id) ? " is-saved" : ""}" type="button" data-save-list="collection" data-save-id="${esc(species.id)}" aria-pressed="${isSaved("collection", species.id)}">
+                ${icon("heart")} <span data-save-label>${isSaved("collection", species.id) ? "In your collection" : "Add to collection"}</span>
+              </button>
+              <button class="btn btn--secondary${isSaved("wishlist", species.id) ? " is-saved" : ""}" type="button" data-save-list="wishlist" data-save-id="${esc(species.id)}" aria-pressed="${isSaved("wishlist", species.id)}">
+                ${icon("bookmark")} <span data-save-label>${isSaved("wishlist", species.id) ? "In your wishlist" : "Add to wishlist"}</span>
               </button>
               ${isCultivar && parent
                 ? `<a class="btn btn--secondary" href="#/map?species=${encodeURIComponent(parent.id)}">${icon("pin")} Parent range map</a>`
                 : `<a class="btn btn--secondary" href="#/map?species=${encodeURIComponent(species.id)}">${icon("pin")} Range map</a>`}
               <button class="btn btn--ghost" type="button" data-copy-link>${icon("share")} Copy link</button>
             </div>
+            <p class="species-save-note">${icon("shield")} Lists are stored only in this browser on this device. They never change the database and are never uploaded.</p>
             <dl class="key-facts">
               <div class="key-fact"><dt>Family</dt><dd>${esc(species.family)}</dd></div>
               <div class="key-fact"><dt>Genus</dt><dd>${linkedGenusName(species.genus)}</dd></div>
-              <div class="key-fact"><dt>${isCultivar ? "Parent species" : "Trap type"}</dt><dd>${isCultivar ? (parent ? linkedSpeciesName(parent) : esc(species.parentSpecies || "Dionaea muscipula")) : esc(species.trapType || trapLabelOf(species))}</dd></div>
+              <div class="key-fact"><dt>${isCultivar ? "Parent species" : "Trap type"}</dt><dd>${isCultivar ? (parent ? linkedSpeciesName(parent) : esc(species.parentSpecies || "Not recorded")) : esc(species.trapType || trapLabelOf(species))}</dd></div>
               <div class="key-fact"><dt>${isCultivar ? "Registered" : "Native range"}</dt><dd>${isCultivar ? (species.year ? esc(species.year) : "Not recorded") : esc(species.nativeShort || species.nativeRange || "Not recorded")}</dd></div>
               <div class="key-fact"><dt>Care group</dt><dd>${species.careGroup ? `<a href="#/care/${esc(species.careGroup)}">${esc(species.careGroupLabel || care.label || "—")}</a>` : `<a href="#/genus/${encodeURIComponent(species.genus)}">Genus-specific care</a>`}</dd></div>
               <div class="key-fact"><dt>${isCultivar ? "Status" : "Described"}</dt><dd>${isCultivar ? "Cultivated selection" : species.year ? esc(species.year) : "Not recorded"}</dd></div>
@@ -1348,7 +1432,7 @@
 
             <section class="content-card" id="care">
               <h2>Care &amp; cultivation</h2>
-              ${isCultivar ? `<div class="callout care-note"><strong>Cultivar care</strong>Grow this selection exactly as the parent species, ${esc(species.parentSpecies || "Dionaea muscipula")}. Colour, trap size and tooth form can vary with light, season and clone; registered characteristics are defined by the ICPS standard, not guaranteed by every division.</div>` : ""}
+              ${isCultivar ? `<div class="callout care-note"><strong>Cultivar care</strong>${species.parentSpecies ? `Grow this selection exactly as the parent species, ${esc(species.parentSpecies)}.` : `The ICPS register does not record a parent formula; follow the ${esc(species.genus)} genus guidance.`} Colour, trap size and tooth form can vary with light, season and clone; registered characteristics are defined by the ICPS standard, not guaranteed by every division.</div>` : ""}
               ${species.careNotes ? `<div class="callout care-note"><strong>${isCultivar ? "Parent species note" : "Species note"}</strong>${esc(species.careNotes)}</div>` : ""}
               <div class="prose" style="margin-top:14px"><p>${esc(care.description || genus?.care?.overview || "Care guidance is grouped by the climate and water regime this plant expects.")}</p></div>
               ${careFields.length ? `<div class="care-detail-grid">${careFields.map(([label, value]) => `<div class="care-detail-item"><h3>${esc(label)}</h3><p>${esc(value)}</p></div>`).join("")}</div>` : ""}
@@ -1656,7 +1740,7 @@
           <div>
             <p class="eyebrow">Registered cultivars</p>
             <h2>${esc(genus.genus)} cultivars in the catalogue</h2>
-            <p>All ${fmt(allCultivars.length)} ICPS-registered <em>${esc(genus.genus)} muscipula</em> cultivars, kept separate from the wild taxa above. Each record carries its registration facts and parent care. ${fmt(genus.cultivarSpecificPhotoCount || 0)} have a cultivar-specific open-licensed photo; the rest use a clearly labelled representative species image.</p>
+            <p>All ${fmt(allCultivars.length)} ICPS-registered <em>${esc(genus.genus)}</em> cultivars, kept separate from the wild taxa above. Each record carries its registration facts and parent care. ${fmt(genus.cultivarSpecificPhotoCount || 0)} have a cultivar-specific open-licensed photo; the rest use a clearly labelled representative species image.</p>
           </div>
           <a class="section-link" href="#/database?genus=${encodeURIComponent(genus.genus)}&cultivars=1">Open in database ${icon("arrow")}</a>
         </div>
@@ -1690,7 +1774,7 @@
     }
     const clear = $("[data-genus-clear]");
     if (clear) clear.hidden = !($("#genus-search")?.value || "").trim();
-    updateFavouriteButtons();
+    updateSavedButtons();
   }
 
   function applyGenusFilters() {
@@ -2470,7 +2554,7 @@
             <div class="prose">
               <ul>
                 <li>Accepted species, natural hybrids and nested infraspecific taxa.</li>
-                <li>All ${fmt(DB.meta.cultivarCount)} ICPS-registered <em>Dionaea muscipula</em> cultivars, with registration facts, parent care and a separate count.</li>
+                <li>All ${fmt(DB.meta.cultivarCount)} ICPS-registered cultivars across ten genera, with registration facts, parent care and a separate count.</li>
                 <li>Naming authority, publication, year, type locality and classification where the ICPS record provides them.</li>
                 <li>Discovery notes and etymology for flagship species; generated factual summaries for the rest.</li>
                 <li>Approximate native range, country lists, introduced records and an interactive world map.</li>
@@ -2485,7 +2569,7 @@
 
           <section class="content-card">
             <h2>Photographs &amp; illustrations</h2>
-            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations and, for rare taxa with no living-plant photo, GBIF herbarium specimens used as last resorts. Attribution, the licence name and a link to the original file, observation or specimen record are kept visible; any reuse must preserve them. Cultivar records use a cultivar-specific photo only where the file explicitly identifies that cultivar; otherwise a labelled representative <em>Dionaea muscipula</em> image is used. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
+            <p class="prose">Photographs are sourced from Wikimedia Commons, with a small number of research-grade iNaturalist observations and, for rare taxa with no living-plant photo, GBIF herbarium specimens used as last resorts. Attribution, the licence name and a link to the original file, observation or specimen record are kept visible; any reuse must preserve them. Cultivar records use a cultivar-specific photo only where the file explicitly identifies that cultivar; otherwise a labelled representative parent-species image is used. The genus plates are original vector illustrations made for this project and are not derived from any copyrighted artwork.</p>
             <ul class="license-list">
               <li><strong>Photos</strong> CC0, CC BY, CC BY-SA or public domain; see the credit panel on each species page for the exact licence and photographer. Non-commercial and no-derivatives images are not used.</li>
               <li><strong>Plates</strong> Original SVGs generated for the Plantivorous database. Free to reuse with the project.</li>
@@ -2497,7 +2581,7 @@
 
           <section class="content-card">
             <h2>Monitoring &amp; updates</h2>
-            <p class="prose">A static page cannot reliably scrape a third-party site from the browser. Instead, <code>scripts/update-database.mjs</code> re-fetches the 21 ICPS genus pages, diffs the accepted names against the stored snapshot, appends a changelog entry and rebuilds the data bundle. Run it on a schedule, review the report, then publish the rebuilt folder.</p>
+            <p class="prose">A static page cannot reliably scrape a third-party site from the browser. Instead, <code>scripts/check-icps.mjs</code> refreshes the 21 ICPS genus pages and every cultivar-register page, diffs the names against the stored snapshots, adds new taxa, appends a changelog entry and rebuilds the data bundle. A scheduled GitHub Actions workflow runs it on the first day of every month; the same command can be run locally and reviewed before publishing.</p>
             <p class="prose">The watchlist is curated by hand from the primary literature and cross-checked against the ICPS snapshot. When a watchlist name appears in ICPS, the next build promotes it into the main accepted set automatically.</p>
             <div class="callout callout--amber"><strong>Not live data</strong>This page was generated from the snapshot dated ${esc(formatDate(DB.meta.icpsSnapshot))}. Names and distributions may have changed since then. Always check the ICPS resource and the primary literature before making conservation or collection decisions.</div>
           </section>
@@ -2525,11 +2609,18 @@
               <div class="side-card__row"><span>ICPS snapshot</span><span>${esc(formatDate(DB.meta.icpsSnapshot))}</span></div>
               <div class="side-card__row"><span>Accepted taxa</span><span>${fmt(DB.meta.icpsCount)}</span></div>
               <div class="side-card__row"><span>Provisional</span><span>${fmt(DB.meta.provisionalCount)}</span></div>
+              <div class="side-card__row"><span>Registered cultivars</span><span>${fmt(DB.meta.cultivarCount || 0)}</span></div>
               <div class="side-card__row"><span>Genera</span><span>${fmt(DB.meta.genusCount)}</span></div>
               <div class="side-card__row"><span>Families</span><span>${fmt(DB.meta.familyCount)}</span></div>
               <div class="side-card__row"><span>Map markers</span><span>${fmt(DB.meta.mapPointCount)}</span></div>
               <div class="side-card__row"><span>Version</span><span>${esc(DB.meta.version || "1.0.0")}</span></div>
             </div>
+          </section>
+
+          <section class="side-card">
+            <h2>Read-only catalogue</h2>
+            <p>Species, cultivars, care notes and photographs can only be changed by the Plantivorous maintainers, through the build scripts and a new deployment. There is no public editing, commenting or upload path.</p>
+            <p>Your collection and wishlist are different: they live only in this browser's local storage, never in the database. <a href="#/my-plants">Open my plants</a>.</p>
           </section>
 
           <section class="side-card">
@@ -2549,36 +2640,104 @@
     </div>`;
   }
 
-  /* ---------------------------------------------------------------- favourites view */
+  /* ---------------------------------------------------------------- my plants view */
 
-  function favouritesView() {
-    const saved = [...favourites].map((id) => SPECIES_BY_ID.get(id)).filter(Boolean).sort((a, b) => a.name.localeCompare(b.name));
+  function myPlantsView(route) {
+    const requested = route.params.get("list");
+    const active = requested === "wishlist" ? "wishlist" : "collection";
+    const list = SAVE_LISTS[active];
+    const saved = [...savedLists[active]]
+      .map((id) => SPECIES_BY_ID.get(id))
+      .filter(Boolean)
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    const tabs = Object.entries(SAVE_LISTS)
+      .map(([name, meta]) => {
+        const count = savedLists[name].size;
+        const isActive = name === active;
+        return `<a class="my-plants__tab${isActive ? " is-active" : ""}" href="#/my-plants?list=${name}"${isActive ? ' aria-current="page"' : ""}>
+          ${icon(meta.icon)} <span>${meta.title}</span> <b>${fmt(count)}</b>
+        </a>`;
+      })
+      .join("");
+
     return `${pageHead({
-      crumbs: breadcrumb([{ label: "Home", href: "#/" }, { label: "Favourites" }]),
-      eyebrow: "Your collection",
-      title: "Favourites",
-      lede: "A personal shortlist, stored only in this browser. Use it to plan a collection, compare care needs or keep track of species to look for.",
-      stat: fmt(saved.length),
-      statLabel: "Saved taxa",
+      crumbs: breadcrumb([{ label: "Home", href: "#/" }, { label: "My plants" }]),
+      eyebrow: "Your plants",
+      title: "My plants",
+      lede: "Keep a collection list and a wishlist of taxa you want to find. Both lists are stored only in this browser, on this device — never in the database.",
+      stat: fmt(savedTotal()),
+      statLabel: "Saved on this device",
     })}
     <div class="container" style="padding:34px 0 84px">
+      <nav class="my-plants__tabs" aria-label="Saved lists">${tabs}</nav>
+      <div class="my-plants__intro">
+        <p><strong>${esc(list.title)}</strong> — ${esc(list.blurb)} ${fmt(saved.length)} ${saved.length === 1 ? "taxon" : "taxa"} saved.</p>
+        <p class="my-plants__privacy">${icon("shield")} Stored locally in this browser. Nothing is uploaded, and the species database stays read-only.</p>
+      </div>
       ${saved.length ? `<div class="fav-toolbar">
-        <p><strong>${fmt(saved.length)}</strong> ${saved.length === 1 ? "species" : "species"} saved on this device.</p>
+        <p><strong>${fmt(saved.length)}</strong> ${saved.length === 1 ? "taxon" : "taxa"} in your ${esc(list.noun)}.</p>
         <div class="fav-toolbar__actions">
           <button class="btn btn--secondary btn--small" type="button" data-print>${icon("print")} Print list</button>
-          <button class="btn btn--ghost btn--small" type="button" data-clear-favourites>Clear favourites</button>
+          <button class="btn btn--secondary btn--small" type="button" data-export-list="${active}">${icon("share")} Export JSON</button>
+          <button class="btn btn--ghost btn--small" type="button" data-clear-list="${active}">Clear ${esc(list.noun)}</button>
         </div>
       </div>
       <div class="species-grid species-grid--four">${saved.map((species) => speciesCard(species)).join("")}</div>
-      <p style="margin-top:24px;color:var(--muted);font-size:10.5px;line-height:1.6">Favourites are saved in this browser's local storage. They are not sent to a server and will not follow you to another device or browser profile.</p>`
+      <p style="margin-top:24px;color:var(--muted);font-size:10.5px;line-height:1.6">These lists are saved in this browser's local storage under separate collection and wishlist keys. They are not sent to a server, do not modify the catalogue, and will not follow you to another device or browser profile.</p>`
       : `<div class="empty-state fav-empty">
-        <img class="empty-state__art" src="assets/img/genera/dionaea.svg" alt="" loading="lazy">
-        <h2>No favourites yet.</h2>
-        <p>Tap the heart on any species card or detail page to build a shortlist. Everything stays in this browser.</p>
+        <img class="empty-state__art" src="assets/img/genera/${active === "wishlist" ? "nepenthes" : "dionaea"}.svg" alt="" loading="lazy">
+        <h2>${active === "wishlist" ? "Your wishlist is empty." : "No plants in your collection yet."}</h2>
+        <p>${active === "wishlist" ? "Tap the bookmark on any species card or detail page to keep a list of plants to look for." : "Tap the heart on any species card or detail page to start a list of the plants you grow."} Everything stays in this browser.</p>
         <a class="btn btn--primary" href="#/database">Browse the database ${icon("arrow")}</a>
         <a class="btn btn--secondary" href="#/genera">Explore genera</a>
       </div>`}
     </div>`;
+  }
+
+  function exportSavedList(name) {
+    const list = SAVE_LISTS[name];
+    if (!list) return;
+    const records = [...savedLists[name]]
+      .map((id) => SPECIES_BY_ID.get(id))
+      .filter(Boolean)
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((species) => ({
+        name: species.name,
+        authority: species.authors || "",
+        year: species.year || null,
+        genus: species.genus,
+        rank: species.rank,
+        cultivar: Boolean(species.cultivar),
+        parentSpecies: species.parentSpecies || null,
+        nativeRange: species.nativeRange || "",
+        careGroup: species.careGroup || "",
+        difficulty: species.difficulty || "",
+        page: `${location.origin}${location.pathname}#/species/${species.id}`,
+        icpsUrl: species.icpsUrl || "",
+      }));
+    const today = new Date().toISOString().slice(0, 10);
+    const payload = {
+      list: name,
+      exported: today,
+      note: "Personal list exported from the Plantivorous database. It is stored on the user's device and is not part of the catalogue.",
+      count: records.length,
+      plants: records,
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `plantivorous-${name}-${today}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    showToast(
+      `Exported ${records.length} ${records.length === 1 ? "plant" : "plants"} as JSON.`
+    );
   }
 
   /* ---------------------------------------------------------------- routing */
@@ -2630,7 +2789,8 @@
       case "about":
         return "About & sources";
       case "favourites":
-        return "Favourites";
+      case "my-plants":
+        return "My plants";
       default:
         return "Page not found";
     }
@@ -2704,7 +2864,8 @@
         html = aboutView();
         break;
       case "favourites":
-        html = favouritesView();
+      case "my-plants":
+        html = myPlantsView(route);
         break;
       default:
         html = notFoundView(`No route matches “${route.path}”.`);
@@ -2725,7 +2886,7 @@
       }
     } else if (key === "map") initMapPage();
 
-    updateFavouriteButtons();
+    updateSavedButtons();
 
     if (!preserveScroll) {
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -2811,7 +2972,7 @@
       </span>
       <span class="search-result__body">
         <strong>${speciesDisplayName(species)}</strong>
-        <span>${esc(species.cultivar ? "Cultivar of Dionaea muscipula · no wild origin" : `${species.family} · ${species.nativeShort || species.genus}`)}</span>
+        <span>${esc(species.cultivar ? `${species.parentSpecies ? `Cultivar of ${species.parentSpecies}` : "Registered cultivar"} · no wild origin` : `${species.family} · ${species.nativeShort || species.genus}`)}</span>
       </span>
       <span class="search-result__tag">${species.cultivar ? "Cultivar" : species.provisional ? "Provisional" : "Species"}</span>
     </a>`;
@@ -3149,12 +3310,12 @@
       return;
     }
 
-    const favButton = target.closest("[data-fav]");
-    if (favButton) {
+    const saveButton = target.closest("[data-save-list]");
+    if (saveButton) {
       event.preventDefault();
-      const id = favButton.dataset.fav;
-      toggleFavourite(id);
-      if ((parseRoute().parts[0] || "home") === "favourites") {
+      toggleSaved(saveButton.dataset.saveList, saveButton.dataset.saveId);
+      const routeKey = parseRoute().parts[0] || "home";
+      if (routeKey === "my-plants" || routeKey === "favourites") {
         renderRoute({ preserveScroll: true });
       }
       return;
@@ -3255,16 +3416,25 @@
       return;
     }
 
-    const clearFavourites = target.closest("[data-clear-favourites]");
-    if (clearFavourites) {
+    const clearList = target.closest("[data-clear-list]");
+    if (clearList) {
       event.preventDefault();
-      if (!favourites.size) return;
-      if (!window.confirm("Clear every saved favourite? This cannot be undone.")) return;
-      favourites.clear();
-      saveFavourites();
-      updateFavouriteButtons();
+      const name = clearList.dataset.clearList;
+      const list = SAVE_LISTS[name];
+      if (!list || !savedLists[name]?.size) return;
+      if (!window.confirm(`Clear your whole ${list.noun}? This only affects this browser and cannot be undone.`)) return;
+      savedLists[name].clear();
+      saveSavedList(name);
+      updateSavedButtons();
       renderRoute({ preserveScroll: true });
-      showToast("Favourites cleared.");
+      showToast(`Your ${list.noun} was cleared.`);
+      return;
+    }
+
+    const exportList = target.closest("[data-export-list]");
+    if (exportList) {
+      event.preventDefault();
+      exportSavedList(exportList.dataset.exportList);
       return;
     }
 

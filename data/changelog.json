@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09",
+  "generated": "2026-11-27",
   "snapshot": {
     "date": "2026-11-09",
     "source": "ICPS Carnivorous Plant Names Resource",
@@ -33,6 +33,25 @@
         "Nepenthes nebularum",
         "Nepenthes maximoides"
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "type": "update",
+      "title": "All 939 ICPS-registered cultivars added",
+      "summary": "The catalogue now covers every cultivar on the ICPS registered-cultivar list, not just Dionaea: 939 records across Byblis, Cephalotus, Darlingtonia, Dionaea, Drosera, Heliamphora, Nepenthes, Pinguicula, Sarracenia and Utricularia. Each record carries the registration date, authority, originator, registrant, publication, standard, etymology and parent formula where the register records them, plus parent care and native range. Ten cultivars have a verified cultivar-specific open-licensed photograph; the other 929 use a clearly labelled representative parent-species image. Cultivars remain excluded from wild-species counts, country totals and range maps.",
+      "count": 939
+    },
+    {
+      "date": "2026-11-27",
+      "type": "feature",
+      "title": "Collection and wishlist, stored on your device",
+      "summary": "Every species and cultivar page can now be added to a personal collection or wishlist. Both lists live in this browser's local storage only, never in the database, and can be printed or exported as JSON. The catalogue itself stays read-only: only maintainers can change names, care notes or photographs. Old favourites are migrated into the collection automatically."
+    },
+    {
+      "date": "2026-11-27",
+      "type": "monitor",
+      "title": "Monthly ICPS check automated",
+      "summary": "A scheduled GitHub Actions workflow now refreshes the ICPS species and cultivar snapshots on the first day of every month, diffs them against the catalogue, adds new names, records the result in data/icps-check.json, and rebuilds and deploys the site. The same check can be run locally with node scripts/check-icps.mjs."
     }
   ]
 }

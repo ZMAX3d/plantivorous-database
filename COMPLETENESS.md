@@ -1,7 +1,7 @@
-| Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Complete | 2026-11-19 |
+# Completeness tracker
 
 Authoritative taxonomy: [ICPS Carnivorous Plant Names Resource](https://cpnames.carnivorousplants.org/).
-Snapshot refreshed and diffed on **17 November 2026**: **751 accepted species/hybrids**, **86 nested infraspecific taxa**, **21 genera**, **0 nomenclature changes** against the published baseline. Separately, the **164 ICPS-registered *Dionaea* cultivars** are now catalogued with registration facts and parent care.
+Snapshot refreshed and diffed on **27 November 2026**: **751 accepted species/hybrids**, **86 nested infraspecific taxa**, **21 genera**, **0 nomenclature changes** against the published baseline. Separately, **939 ICPS-registered cultivars across 10 genera** are catalogued with registration facts, parent care and parent range.
 
 Photo coverage counts real species-level photographs in `assets/img/species/`. Genus illustration plates are tracked separately and are not counted as species photos.
 
@@ -39,7 +39,27 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 | Triphyophyllum | 1 (0) | 0 | 1 | 1 | 0 | 1 | Complete | 2026-11-19 |
 | Utricularia | 244 (0) | 0 | 244 | 209 | 35 | 0 | Complete | 2026-11-25 |
 
-**Totals:** 751 accepted records, 685 photos, 66 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **687 image records**. Adding the 164 *Dionaea* cultivars brings the catalogue to **924 records**: 760 wild taxa plus 164 registered cultivars. Five cultivar-specific photos are stored alongside 159 labelled representative *D. muscipula* records, giving **692 image files on disk** (687 wild-taxon images + 5 cultivar-specific images).
+**Totals:** 751 accepted records, 685 photos, 66 missing photos. This table counts accepted ICPS names only; the nine provisional watchlist taxa are tracked separately and are not part of the ICPS total. Two provisional taxa also have photos, so the current wild-taxon bundle contains **687 image records**. Adding the **939 ICPS-registered cultivars across 10 genera** brings the catalogue to **1,699 records**: 760 wild taxa plus 939 registered cultivars. Cultivar-specific photos are used where an openly licensed file explicitly identifies the cultivar; every other cultivar shows a labelled representative image of its parent species (or nearest photographed congener). All 939 cultivars have an image.
+
+## Cultivar coverage
+
+The ICPS registered-cultivar list is scraped from all ten genus pages and imported into `data/icps-cultivars.json`. Cultivar records carry the registration date, authority, originator, nominant, registrant, publication, standard, etymology and propagation where recorded, an original factual summary, the parent formula, parent native range and parent care group. They are flagged `rank: "cultivar"` and excluded from wild-country, map, family and species-photo aggregates.
+
+| Genus | ICPS cultivars | Records with an image | Specific cultivar photo | Representative parent image |
+|---|---:|---:|---:|---:|
+| Byblis | 5 | 5 | 0 | 5 |
+| Cephalotus | 17 | 17 | 1 | 16 |
+| Darlingtonia | 2 | 2 | 0 | 2 |
+| Dionaea | 164 | 164 | 5 | 159 |
+| Drosera | 45 | 45 | 0 | 45 |
+| Heliamphora | 5 | 5 | 1 | 4 |
+| Nepenthes | 264 | 264 | 0 | 264 |
+| Pinguicula | 46 | 46 | 3 | 43 |
+| Sarracenia | 372 | 372 | 0 | 372 |
+| Utricularia | 19 | 19 | 0 | 19 |
+| **Total** | **939** | **939** | **10** | **929** |
+
+The specific-photo count is the floor at the time of writing: `scripts/find-cultivar-photos.mjs` runs a strict Commons search (quoted cultivar name, or a title that names both the cultivar and "cultivar") and the count rises as files are verified and imported. A plain word match is never accepted.
 
 ## Completed genus notes
 
@@ -47,7 +67,7 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 
 - ICPS lists exactly one accepted species, *Dionaea muscipula* Soland. ex Ellis (1768), with no hybrids and no infraspecific taxa. The database contains that species record plus all **164 registered cultivars** from the ICPS cultivar register.
 - Record audit: the species has description, etymology, discoverer narrative, authority, publication, type locality, native range, two origin points (North Carolina and South Carolina), conservation status, care group, care notes, genus profile and genus care guide. Each cultivar has its registration date, authority, originator, nominant, registrant, publication, standard, etymology/propagation where recorded, an original factual summary, parent care/range and source links.
-- Aggregate rule: cultivar records are flagged `rank: "cultivar"` and excluded from species counts, country totals, map markers, family/trap aggregates and the species-photo total. The bundle reports 760 wild taxa + 164 cultivars = 924 records.
+- Aggregate rule: cultivar records are flagged `rank: "cultivar"` and excluded from species counts, country totals, map markers, family/trap aggregates and the species-photo total. The full bundle reports 760 wild taxa + 939 cultivars = 1,699 records; *Dionaea* contributes 164 of those cultivars.
 - Photo audit: `assets/img/species/dionaea-muscipula.jpg` is a valid 201 KB JPEG by Noah Elhardt, CC BY-SA 2.5. Five cultivars have verified cultivar-specific Commons photos: 'Akai Ryu' (CC BY-SA 3.0, Matthias Jauernig), 'Alien' (CC BY-SA 4.0, Gabriele Zoppoli), 'B52' (CC BY-SA 4.0, Maronesty), 'Bristle Tooth' (CC BY-SA 3.0, Mucrow) and 'Sonic' (CC BY-SA 4.0, Nano31). The remaining 159 records use the parent-species photo with a visible "representative image" badge and credit note.
 - Genus plate: `assets/img/genera/dionaea.svg` present.
 - **Result: complete — 1 species + 164/164 registered cultivars, 5 cultivar-specific photos and 159 documented representative images.**
@@ -112,12 +132,12 @@ Photo coverage counts real species-level photographs in `assets/img/species/`. G
 - Photo audit: `assets/img/species/aldrovanda-vesiculosa.jpg` is a valid CC BY-SA 3.0 Commons image with a visible credit.
 - **Result: complete, 1/1 photo plus the nested variety.**
 
-### Cephalotus — checked 2026-11-18
+### Cephalotus — checked 2026-11-27
 
-- ICPS lists one accepted species, *Cephalotus follicularis* Labill., with no hybrids or infraspecific taxa. The database contains that record.
-- Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, origin point, Mediterranean care group, care notes and conservation note are present.
-- Photo audit: `assets/img/species/cephalotus-follicularis.jpg` is a valid CC BY-SA 3.0 Commons photograph by H. Zell with a visible credit.
-- **Result: complete, 1/1 photo.**
+- ICPS lists one accepted species, *Cephalotus follicularis* Labill., with no hybrids or infraspecific taxa. The database contains that record plus all **17 ICPS-registered cultivars** listed on the Cephalotus register page.
+- Record audit: description, etymology, discoverer narrative, authority, publication, type locality, native range, origin point, Mediterranean care group, care notes and conservation note are present. Each cultivar carries its registration facts, parent species, parent range and parent care path.
+- Photo audit: `assets/img/species/cephalotus-follicularis.jpg` is a valid CC BY-SA 3.0 Commons photograph by H. Zell with a visible credit. Cultivars use a cultivar-specific photo where an openly licensed file names the cultivar, otherwise the labelled parent-species image; the specific-photo count is maintained in the cultivar coverage table above.
+- **Result: complete, 1/1 species photo and 17/17 cultivar records with an image.**
 
 ### Darlingtonia — checked 2026-11-18
 

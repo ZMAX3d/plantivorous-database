@@ -3,6 +3,7 @@
 **Handover guide for the website creator and host.**
 Live reference: <https://zmax3d.github.io/plantivorous-database/>
 Source: <https://github.com/ZMAX3d/plantivorous-database>
+Shareable/printable HTML version: <https://zmax3d.github.io/plantivorous-database/joomla/handover.html>
 
 ---
 

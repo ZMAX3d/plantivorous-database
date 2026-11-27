@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantivorous database — Joomla handover</title>
+<style>
+  :root {
+    --green: #2ba84a;
+    --green-dark: #245c33;
+    --lime: #aacc44;
+    --ink: #17231a;
+    --muted: #5b655c;
+    --line: #dfe5dc;
+    --paper: #f7f8f5;
+    --amber: #f4ead6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .page { max-width: 900px; margin: 0 auto; padding: 40px 22px 80px; }
+  header.hero {
+    background: var(--green-dark);
+    color: #fff;
+    border-radius: 18px;
+    padding: 38px 40px;
+    margin-bottom: 28px;
+  }
+  header.hero .eyebrow {
+    margin: 0 0 8px;
+    color: var(--lime);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  header.hero h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.15; }
+  header.hero p { margin: 0; color: rgba(255,255,255,.8); max-width: 620px; }
+  header.hero .links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+  header.hero .links a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 999px;
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  header.hero .links a:hover { background: rgba(255,255,255,.12); }
+  h2 { margin: 40px 0 10px; font-size: 24px; line-height: 1.25; }
+  h3 { margin: 24px 0 8px; font-size: 17px; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--green-dark); }
+  code {
+    background: #eef2ec;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+  pre {
+    background: #1d2a20;
+    color: #e8efe7;
+    border-radius: 10px;
+    padding: 16px 18px;
+    overflow-x: auto;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  pre code { background: none; border: 0; padding: 0; color: inherit; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 13.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  th { background: #eef2ec; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+  .card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin: 18px 0;
+  }
+  .card h3 { margin-top: 0; }
+  .callout {
+    border-left: 4px solid var(--green);
+    background: #eef7ec;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+  .callout.amber { border-left-color: #c08b2e; background: var(--amber); }
+  .callout p:last-child { margin-bottom: 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .checklist { list-style: none; padding-left: 0; }
+  .checklist li { padding-left: 26px; position: relative; }
+  .checklist li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--green);
+    border-radius: 4px;
+  }
+  .muted { color: var(--muted); font-size: 12.5px; }
+  footer.doc-footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+  .print-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 14px;
+    border: 0;
+    border-radius: 999px;
+    padding: 9px 16px;
+    background: var(--green);
+    color: #fff;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  @media (max-width: 700px) {
+    .page { padding: 18px 12px 60px; }
+    header.hero { padding: 26px 22px; }
+    header.hero h1 { font-size: 26px; }
+    .grid { grid-template-columns: 1fr; }
+    table { display: block; overflow-x: auto; }
+  }
+  @media print {
+    body { background: #fff; font-size: 10.5pt; }
+    .page { max-width: none; padding: 0; }
+    header.hero { background: #fff; color: #000; border: 2px solid #245c33; border-radius: 0; }
+    header.hero p, header.hero .eyebrow { color: #333; }
+    header.hero .links, .print-btn { display: none; }
+    h2 { page-break-after: avoid; }
+    .card, table, pre { page-break-inside: avoid; }
+    a { color: #000; text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <p class="eyebrow">Handover · Plantivorous database</p>
+  <h1>Putting the carnivorous-plant database on plantivorous.co.za</h1>
+  <p>A static catalogue that runs alongside Joomla. No PHP, MySQL or Joomla extension is required. This page is written for the website creator and the hosting provider.</p>
+  <div class="links">
+    <a href="https://zmax3d.github.io/plantivorous-database/">Live demo</a>
+    <a href="https://github.com/ZMAX3d/plantivorous-database">GitHub repository</a>
+    <a href="https://github.com/ZMAX3d/plantivorous-database/blob/master/JOOMLA-INTEGRATION.md">Markdown version</a>
+  </div>
+  <button class="print-btn" type="button" onclick="window.print()">Print / save as PDF</button>
+</header>
+
+<div class="callout">
+  <p><strong>Short version:</strong> upload <code>index.html</code> and <code>assets/</code> into <code>public_html/database/</code>, then add a Joomla <strong>External URL</strong> menu item pointing to <code>/database/</code>. That is a working deployment. Everything below is optional polish or automation.</p>
+</div>
+
+<h2>1. What is being deployed</h2>
+<p>The catalogue is a static single-page app: HTML, CSS, JavaScript and JPEG/SVG images. Joomla keeps running exactly as it does now. There is no server-side code to install and no database to create.</p>
+<div class="grid">
+  <div class="card">
+    <h3>Upload these</h3>
+    <pre><code>index.html
+assets/
+├── css/
+├── fonts/
+├── img/
+└── js/
+    ├── app.js
+    ├── data.js
+    └── world-map.js</code></pre>
+  </div>
+  <div class="card">
+    <h3>Do not upload</h3>
+    <ul>
+      <li><code>scripts/</code></li>
+      <li><code>node_modules/</code></li>
+      <li><code>data/</code> (maintainer source only)</li>
+      <li><code>.github/</code></li>
+      <li><code>.photo-test/</code></li>
+    </ul>
+    <p class="muted">The ready-made <code>plantivorous-database-static.zip</code> contains only the runtime files.</p>
+  </div>
+</div>
+<p>Disk use is about <strong>105 MB</strong> uncompressed (96 MB of photographs). The app uses hash links such as <code>#/species/cephalotus-bananito</code>, so it needs no URL rewriting and works from any subfolder.</p>
+
+<h2>2. Host requirements</h2>
+<ul>
+  <li>Any normal web host — Apache, LiteSpeed or Nginx — with HTTPS.</li>
+  <li>Write access to a folder such as <code>public_html/database/</code>.</li>
+  <li>Standard MIME types for <code>.html</code>, <code>.css</code>, <code>.js</code>, <code>.jpg</code>, <code>.svg</code> and <code>.woff2</code>.</li>
+  <li>No PHP version requirement, no database, no cron job.</li>
+  <li>Optional, for automatic updates: an FTP, FTPS or SFTP account limited to the database folder.</li>
+</ul>
+
+<h2>3. First deployment (host / cPanel)</h2>
+<ol>
+  <li>Open <strong>cPanel → File Manager → <code>public_html</code></strong>.</li>
+  <li>Create a folder named <code>database</code>.</li>
+  <li>Upload <code>plantivorous-database-static.zip</code> into it and choose <strong>Extract</strong>.</li>
+  <li>Confirm the structure is <code>public_html/database/index.html</code> and <code>public_html/database/assets/...</code> — not a nested folder.</li>
+  <li>If the host requires it, set folders to <code>755</code> and files to <code>644</code>.</li>
+</ol>
+<p>Then test:</p>
+<ul>
+  <li><code>https://www.plantivorous.co.za/database/</code></li>
+  <li><code>https://www.plantivorous.co.za/database/#/species/cephalotus-bananito</code></li>
+</ul>
+
+<h2>4. Joomla menu options</h2>
+<table>
+  <thead><tr><th>Option</th><th>Best for</th><th>Joomla menu type</th><th>URL</th></tr></thead>
+  <tbody>
+    <tr><td><strong>A. Separate page</strong> (recommended)</td><td>Speed, mobile, SEO, zero maintenance</td><td>System Links → External URL</td><td><code>/database/</code></td></tr>
+    <tr><td><strong>B. Inside the Joomla template</strong></td><td>A secondary “Database” tab that keeps the shop header/footer</td><td>System Links → Wrapper</td><td><code>/database/?embed=1</code></td></tr>
+    <tr><td><strong>C. Inside a Joomla article/module</strong></td><td>Embedding on an existing page</td><td>Custom HTML module</td><td>snippet provided</td></tr>
+  </tbody>
+</table>
+
+<div class="card">
+  <h3>A. External URL menu item</h3>
+  <ol>
+    <li><strong>Menus → Main Menu → Add New Menu Item</strong>.</li>
+    <li>Choose <strong>System Links → External URL</strong>.</li>
+    <li>Link: <code>/database/</code>. Title: <code>Plant Database</code>.</li>
+    <li>Optional: set <strong>Target Window → New Window</strong>.</li>
+    <li>Save and open the menu item.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h3>B. Wrapper menu item</h3>
+  <ol>
+    <li>Create the menu item as above, but choose <strong>System Links → Wrapper</strong>.</li>
+    <li>URL: <code>https://www.plantivorous.co.za/database/?embed=1</code>.</li>
+    <li>Width: <code>100%</code>. Height: <code>1200</code> (or whatever suits the template).</li>
+    <li>Enable <strong>Scroll Bars</strong> if Joomla offers the option.</li>
+  </ol>
+  <p><code>?embed=1</code> hides the app’s own header and footer, so there is no double header. It adds a slim dark bar with <strong>← Plantivorous shop</strong> and “Carnivorous plant database”. The shop link opens in the parent window.</p>
+  <p class="muted">Iframes are weaker for SEO and can feel awkward on mobile. Use Option A for the main navigation; use the Wrapper for a secondary tab.</p>
+</div>
+
+<div class="card">
+  <h3>C. Custom HTML module</h3>
+  <p>Paste the contents of <code>joomla/custom-html-embed.html</code> into a <strong>Custom HTML</strong> module assigned to a full-width position. If the editor strips the <code>&lt;iframe&gt;</code>, switch that module’s editor to <strong>No Editor</strong> or paste in the HTML source view.</p>
+  <p>The snippet is responsive: <code>width:100%</code>, <code>height:calc(100vh - 160px)</code>, <code>min-height:720px</code>.</p>
+</div>
+
+<h2>5. Automatic updates from GitHub (FTP / SFTP)</h2>
+<p>The repository contains <code>.github/workflows/deploy-ftp.yml</code>. It uploads only <code>index.html</code> and <code>assets/</code> to the host. It runs on relevant pushes, manually from the Actions tab, and after the monthly ICPS check when new taxa were added.</p>
+<div class="callout amber">
+  <p><strong>Safe by default:</strong> if the secrets below are missing, the workflow skips the upload and reports a notice. It does not fail and does not break the site.</p>
+</div>
+
+<h3>Repository secrets</h3>
+<p>Add them in GitHub: <strong>Settings → Secrets and variables → Actions → New repository secret</strong>.</p>
+<table>
+  <thead><tr><th>Secret</th><th>Example</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td><code>FTP_SERVER</code></td><td><code>ftp.plantivorous.co.za</code></td><td>Hostname only, no <code>ftp://</code></td></tr>
+    <tr><td><code>FTP_USERNAME</code></td><td><code>database-deploy</code></td><td>Dedicated account, not the main cPanel login</td></tr>
+    <tr><td><code>FTP_PASSWORD</code></td><td><code>••••••••</code></td><td>Rotate periodically</td></tr>
+    <tr><td><code>FTP_PROTOCOL</code></td><td><code>ftps</code></td><td><code>ftps</code> (recommended), <code>ftp</code>, or <code>sftp</code></td></tr>
+    <tr><td><code>FTP_PORT</code></td><td><code>21</code></td><td><code>21</code> for FTP/FTPS, <code>22</code> for SFTP</td></tr>
+    <tr><td><code>FTP_SERVER_DIR</code></td><td><code>/public_html/database/</code></td><td><strong>Must end with a slash</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>Host-side setup</h3>
+<ol>
+  <li>Create a dedicated FTP/SFTP user whose start folder is <code>public_html/database/</code>.</li>
+  <li>Enable <strong>FTPS</strong> (explicit TLS) or SFTP. Avoid plain FTP if the host supports encryption.</li>
+  <li>Do not give the deploy user access to <code>public_html</code> root, <code>configuration.php</code> or the Joomla administrator folder.</li>
+  <li>If the host has a firewall, allow FTP/SFTP from GitHub Actions. Runner IPs are dynamic, so use strong credentials and TLS rather than an IP allowlist.</li>
+  <li>The target folder should contain only the catalogue. The workflow does not delete unrelated files, but a dedicated folder avoids surprises.</li>
+</ol>
+<p>First automated deployment: upload the site once manually, add the six secrets, then run <strong>Actions → Deploy static site (FTP/SFTP) → Run workflow</strong>.</p>
+<p class="muted">If the host requires key-based SFTP only, this password-based action will not work. Ask for an FTPS account, use manual uploads, or replace the action with an SFTP key action.</p>
+
+<h2>6. Caching</h2>
+<p>After a deployment the host, Cloudflare or LiteSpeed Cache may still serve old CSS/JS/images.</p>
+<ul>
+  <li>Purge the Joomla/CDN cache after each deploy.</li>
+  <li>Or hard-refresh: <strong>Ctrl+F5</strong> (Windows) / <strong>Cmd+Shift+R</strong> (Mac).</li>
+  <li>Optionally give <code>assets/js/data.js</code> a short cache lifetime (it changes monthly) and images/fonts a longer one. Only do this if <code>mod_headers</code> is enabled.</li>
+</ul>
+
+<h2>7. Troubleshooting</h2>
+<table>
+  <thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Blank page</td><td><code>assets/js/data.js</code> missing or wrong path</td><td>Re-extract the zip; confirm the file exists</td></tr>
+    <tr><td>404 on <code>/database/</code></td><td>Files extracted into a nested folder</td><td>Move <code>index.html</code> and <code>assets/</code> up one level</td></tr>
+    <tr><td>Images missing</td><td><code>assets/img/</code> incomplete, or Linux case mismatch</td><td>Re-upload the folder; keep exact lowercase names</td></tr>
+    <tr><td>Layout unstyled</td><td><code>assets/css/</code> blocked or cached</td><td>Check the browser network tab; purge cache</td></tr>
+    <tr><td>Double headers in Wrapper</td><td><code>?embed=1</code> missing</td><td>Add it to the Wrapper URL</td></tr>
+    <tr><td>Double scrollbars</td><td>Wrapper iframe too short</td><td>Increase height or use Option A</td></tr>
+    <tr><td>Editor removes the iframe</td><td>Joomla editor filters HTML</td><td>Use <strong>No Editor</strong> for that module</td></tr>
+    <tr><td>FTP <code>530</code></td><td>Wrong credentials or protocol</td><td>Re-check secrets; try <code>ftps</code> vs <code>ftp</code></td></tr>
+    <tr><td>FTP <code>425</code></td><td>Passive-mode or firewall problem</td><td>Ask the host to allow passive FTP</td></tr>
+    <tr><td>Old version after deploy</td><td>Cache</td><td>Purge host/CDN cache; hard refresh</td></tr>
+  </tbody>
+</table>
+
+<h2>8. Privacy and licensing</h2>
+<ul>
+  <li>The collection and wishlist are stored in the visitor’s browser (<code>localStorage</code>) only. Nothing is sent to the host or Joomla.</li>
+  <li>The catalogue is read-only for visitors. Only maintainers change it through the repository and a new deployment.</li>
+  <li>Photographs are CC0 / CC BY / CC BY-SA / public domain, with visible attribution and licence links. <strong>Keep the credit panel and licence text intact.</strong></li>
+  <li>Taxonomy and registration facts come from the ICPS Carnivorous Plant Names Resource.</li>
+  <li>The site has no server-side component, so Joomla outages cannot break the catalogue — and the catalogue cannot modify Joomla content or its database.</li>
+</ul>
+
+<h2>9. Handover checklist</h2>
+<ul class="checklist">
+  <li><code>public_html/database/index.html</code> exists and loads.</li>
+  <li><code>public_html/database/assets/</code> contains <code>css</code>, <code>fonts</code>, <code>img</code>, <code>js</code>.</li>
+  <li><code>/database/?embed=1</code> hides the app header/footer and shows the back bar.</li>
+  <li>Joomla menu item added (External URL or Wrapper).</li>
+  <li>Optional: six FTP secrets added and the deploy workflow run successfully.</li>
+  <li>Cache purged; checked in a private window and on mobile.</li>
+  <li>Photo credits and licence text still visible.</li>
+</ul>
+
+<footer class="doc-footer">
+  <p>Plantivorous carnivorous-plant database · handover document · <span id="doc-date">2026</span></p>
+  <p>Live demo: <a href="https://zmax3d.github.io/plantivorous-database/">zmax3d.github.io/plantivorous-database</a> · Source and full guide: <a href="https://github.com/ZMAX3d/plantivorous-database">github.com/ZMAX3d/plantivorous-database</a></p>
+</footer>
+
+</div>
+</body>
+</html>

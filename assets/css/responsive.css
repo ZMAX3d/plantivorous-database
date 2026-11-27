@@ -17,6 +17,9 @@
   .species-grid--four {
     grid-template-columns: repeat(3, 1fr);
   }
+  .recent-strip {
+    grid-template-columns: 1fr 1fr;
+  }
   .hero-inner {
     padding-top: 72px;
   }

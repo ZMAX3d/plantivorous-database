@@ -1038,13 +1038,15 @@
 
 .recent-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
 .recent-item {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  min-width: 0;
+  overflow: hidden;
   padding: 17px 18px;
   border: 1px solid var(--line);
   border-radius: 14px;

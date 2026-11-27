@@ -35,6 +35,12 @@ Every species record shows: discovery location, approximate native-range map, na
 ```
 plantivorous-database/
 ├── index.html                    # Static SPA shell (header, footer, search modal)
+├── JOOMLA-INTEGRATION.md         # Handover guide for the Joomla creator/host
+├── joomla/
+│   └── custom-html-embed.html    # Ready-to-paste Joomla Custom HTML module
+├── .github/workflows/
+│   ├── icps-check.yml            # Monthly ICPS refresh + rebuild + deploy
+│   └── deploy-ftp.yml            # Upload index.html + assets/ to the Joomla host
 ├── assets/
 │   ├── css/
 │   │   ├── styles.css            # Base tokens, header, footer, buttons, search modal
@@ -184,14 +190,17 @@ Taxa on the watchlist (e.g. *Drosera magnifica*) are accepted in the primary lit
 
 ---
 
-## Deployment & attachment to the existing site
+## Deployment & attachment to the existing Joomla site
 
-The database is designed to be dropped into the Plantivorous site as a standalone section later:
+The database is a static SPA that runs independently of Joomla. The full handover guide — host setup, Joomla menu items, Wrapper/embed mode, Custom HTML module, FTP secrets and troubleshooting — is in **[JOOMLA-INTEGRATION.md](JOOMLA-INTEGRATION.md)**.
 
-1. Copy the whole `plantivorous-database/` folder (or just `index.html`, `assets/`, and `data/` if you prefer) into the Plantivorous web root, e.g. `site/plantivorous-database/`.
-2. Link to it from the site navigation: `<a href="/plantivorous-database/">Carnivorous plant database</a>`.
-3. Because it's a self-contained hash-routed SPA, no server-side routing, build step, or backend is required. Any static host (GitHub Pages, Netlify, Apache, Nginx, etc.) works.
-4. If serving from a sub-path, all relative asset links in `index.html` resolve correctly; the only absolute URLs are external source links (ICPS, POWO, Wikimedia), which are user-clicked anchors, not loaded assets.
+Short version:
+
+1. Upload only `index.html` and `assets/` to a folder such as `public_html/database/` (the ready-to-extract `plantivorous-database-static.zip` contains exactly these files).
+2. Link to it from Joomla with an **External URL** menu item (`/database/`), or use a **Wrapper** menu item with `/database/?embed=1` to hide the app's own header/footer and show a slim back-to-shop bar.
+3. No server-side routing, build step, database or Joomla extension is required. Hash routes mean no `.htaccess` rewrites.
+4. `.github/workflows/deploy-ftp.yml` can publish `index.html` + `assets/` to the host over FTPS/SFTP on every relevant push and after the monthly ICPS update. It needs the `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `FTP_PROTOCOL`, `FTP_PORT` and `FTP_SERVER_DIR` repository secrets.
+5. All asset links are relative; the only absolute URLs are external source links (ICPS, POWO, Wikimedia) that users click.
 
 To rebrand the colours or fonts, edit `assets/css/styles.css` (CSS custom properties at the top of the file).
 
@@ -209,7 +218,7 @@ The catalogue is anchored to ICPS snapshots. Monitoring covers both the accepted
 2. Refreshes every ICPS cultivar-register page and rebuilds `data/icps-cultivars.json`.
 3. Diffs both snapshots against the current catalogue.
 4. Adds every new name automatically on the next build, records the result in `data/icps-check.json`, and appends a dated changelog entry when names were added or removed.
-5. Rebuilds `data/species.json` / `assets/js/data.js`, validates the photo credits, and pushes the commit. The push triggers the normal GitHub Pages deployment.
+5. Rebuilds `data/species.json` / `assets/js/data.js`, validates the photo credits, and pushes the commit. The push triggers the normal GitHub Pages deployment; the same run also calls the FTP deploy workflow so the Joomla host receives the update when the secrets are configured.
 
 Newly detected taxa enter with their ICPS registration facts, parent care group and native range; photographs and hand-written care notes are added by the next editorial/photo pass.
 

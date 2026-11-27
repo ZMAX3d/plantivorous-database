@@ -20,6 +20,18 @@
     return;
   }
 
+  /* Optional Joomla / iframe embed mode: /database/?embed=1#/ */
+  const EMBED_MODE = new URLSearchParams(location.search).get("embed") === "1";
+  if (EMBED_MODE) {
+    document.body.classList.add("is-embed");
+    const bar = document.createElement("div");
+    bar.className = "embed-bar";
+    bar.innerHTML = `
+      <a href="https://www.plantivorous.co.za/" target="_top" rel="noopener">← Plantivorous shop</a>
+      <span>Carnivorous plant database</span>`;
+    document.body.prepend(bar);
+  }
+
   /* ---------------------------------------------------------------- helpers */
 
   const $ = (selector, root = document) => root.querySelector(selector);

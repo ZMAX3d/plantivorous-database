@@ -1,0 +1,41 @@
+<!--
+  Plantivorous carnivorous-plant database — Joomla Custom HTML module snippet.
+
+  Use this only if you want the database embedded inside a Joomla page.
+  Paste it into a Custom HTML module (editor set to "No Editor" if the editor
+  strips iframes), or adapt the iframe into an article.
+
+  Requirements:
+    - the static app is deployed at /database/ on the same domain;
+    - /database/?embed=1 is reachable;
+    - the module is assigned to a full-width template position.
+
+  The iframe is same-origin, so the collection/wishlist localStorage and all
+  hash links continue to work. Change the height if your Joomla header is
+  taller or shorter than 160px.
+-->
+<div class="plantivorous-database-embed" style="width:100%;margin:0;padding:0;">
+  <iframe
+    src="/database/?embed=1"
+    title="Plantivorous carnivorous plant database"
+    loading="lazy"
+    allow="fullscreen"
+    style="display:block;width:100%;height:calc(100vh - 160px);min-height:720px;border:0;border-radius:12px;background:#f7f8f5;"
+  ></iframe>
+  <p style="margin:10px 0 0;font-size:12px;line-height:1.5;color:#5b655c;">
+    <a href="/database/" target="_blank" rel="noopener" style="color:#245c33;font-weight:600;">
+      Open the database in a full window
+    </a>
+  </p>
+</div>
+
+<!--
+  If your template's header is very tall on mobile, add this inside the module
+  (or to the template's custom CSS) to give the frame more usable height:
+
+  <style>
+    @media (max-width: 700px) {
+      .plantivorous-database-embed iframe { min-height: 80vh; }
+    }
+  </style>
+-->

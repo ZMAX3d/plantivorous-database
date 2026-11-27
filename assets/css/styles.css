@@ -1072,3 +1072,42 @@ body.nav-open .nav-toggle span:nth-child(3) {
   color: #fff;
   font-size: 14px;
 }
+
+/* ---------------------------------------------------------------- Joomla / iframe embed mode */
+
+body.is-embed .site-header,
+body.is-embed .site-footer {
+  display: none !important;
+}
+body.is-embed {
+  background: #fff;
+}
+.embed-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 9px 16px;
+  background: var(--green-dark);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.embed-bar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.embed-bar a:hover {
+  color: var(--lime);
+}
+.embed-bar span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+body.is-embed .toast {
+  bottom: 16px;
+}

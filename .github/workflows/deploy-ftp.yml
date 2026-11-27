@@ -1,0 +1,80 @@
+name: Deploy static site (FTP/SFTP)
+
+# Uploads only the runtime files (index.html + assets/) to the Joomla host.
+# Configure these repository secrets before enabling it:
+#   FTP_SERVER      e.g. ftp.plantivorous.co.za
+#   FTP_USERNAME    a dedicated FTP user limited to the database folder
+#   FTP_PASSWORD    that user's password
+#   FTP_PROTOCOL    ftps (default), ftp, or sftp
+#   FTP_PORT        21 for FTP/FTPS, 22 for SFTP
+#   FTP_SERVER_DIR  /public_html/database/  (must end with a slash)
+#
+# The workflow is safe to run without secrets: it skips the upload and prints
+# a notice instead. See JOOMLA-INTEGRATION.md for the full handover guide.
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: Git ref or commit SHA to deploy
+        required: false
+        type: string
+        default: ""
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "index.html"
+      - "assets/**"
+      - ".github/workflows/deploy-ftp.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-ftp
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.event.repository.default_branch }}
+
+      - name: Stage runtime files
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp -r assets dist/
+          du -sh dist
+
+      - name: Check deployment secrets
+        id: guard
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          if [ -z "$FTP_SERVER" ] || [ -z "$FTP_USERNAME" ] || [ -z "$FTP_PASSWORD" ]; then
+            echo "::notice title=FTP deploy skipped::Add FTP_SERVER, FTP_USERNAME and FTP_PASSWORD in Settings -> Secrets and variables -> Actions."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload to the Joomla host
+        if: steps.guard.outputs.configured == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_SERVER_DIR || '/public_html/database/' }}
+          dangerous-clean-slate: false
+          log-level: standard

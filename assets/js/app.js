@@ -2477,12 +2477,12 @@
           <article class="monitor-step">
             <span class="monitor-step__num">01</span>
             <h3>Fetch the names resource</h3>
-            <p>Run <code>node scripts/update-database.mjs</code>. The updater walks all 21 ICPS genus pages, reads the accepted-name accordions and stores a dated snapshot.</p>
+            <p>Run <code>node scripts/check-icps.mjs</code>. The updater walks all 21 ICPS genus pages and the registered-cultivar pages for all ten cultivar genera, and stores dated snapshots.</p>
           </article>
           <article class="monitor-step">
             <span class="monitor-step__num">02</span>
             <h3>Diff and report</h3>
-            <p>New accepted names, natural hybrids and infraspecific taxa are compared with the previous snapshot. Additions and removals are written to the changelog with their dates.</p>
+            <p>New accepted names, natural hybrids, infraspecific taxa and registered cultivars are compared with the previous snapshots. Additions and removals are written to the changelog with their dates.</p>
           </article>
           <article class="monitor-step">
             <span class="monitor-step__num">03</span>

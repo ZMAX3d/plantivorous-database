@@ -40,7 +40,7 @@ plantivorous-database/
 │   │   ├── styles.css            # Base tokens, header, footer, buttons, search modal
 │   │   ├── home.css              # Home page
 │   │   ├── pages.css             # Database, species detail, lightbox, care, map
-│   │   ├── more.css              # Genera, what's-new, about, favourites
+│   │   ├── more.css              # Genera, what's-new, about, my plants
 │   │   └── responsive.css        # Breakpoints, mobile filters, print
 │   ├── js/
 │   │   ├── app.js                # SPA: router, views, search, lightbox, map, saved lists
@@ -69,6 +69,7 @@ plantivorous-database/
     ├── scrape-icps-cultivars.mjs # Captures every ICPS cultivar-register page
     ├── import-icps-cultivars.mjs # Builds data/icps-cultivars.json from the register
     ├── find-cultivar-photos.mjs  # Finds Commons files that name a cultivar
+    ├── import-cultivar-photos.mjs # Downloads verified picks, q88, appends credits
     ├── check-icps.mjs            # Monthly fetch + diff + changelog + rebuild
     ├── update-database.mjs       # Diffs ICPS snapshots, updates changelog, rebuilds
     ├── build-locations.mjs       # Origin centroids
@@ -163,7 +164,7 @@ Only real bitmap images are accepted. `scripts/add-photos.mjs` queries Commons w
 
 `scripts/add-gbif-photos.mjs` is the final fallback. It uses GBIF occurrence media only when no living-plant photo is available, which usually means a pressed herbarium specimen. It requires an exact GBIF match and a CC0/CC BY/CC BY-SA media licence, rejects NC/ND media, caps the long edge at 1200px, and links the credit to the specimen record. Specimen images are visibly labelled as such on the species page.
 
-Cultivar photography is stricter: a photo is attached to a cultivar only when the Commons file title, description or category explicitly identifies that cultivar. Cultivars without a verified specific photo display a labelled representative image of their parent species (or the nearest photographed congener) rather than an unidentified plant; this is shown on the card/page and explained in the credit panel. Cultivar records are excluded from wild-country, map and species-photo totals.
+Cultivar photography is stricter: a photo is attached to a cultivar only when the Commons file title, description or category explicitly identifies that cultivar. `scripts/find-cultivar-photos.mjs` requires a quoted cultivar name (or a title that names the cultivar and says "cultivar") and rejects a file that names a different species before the cultivar; a plain word match is never accepted. `scripts/import-cultivar-photos.mjs` downloads the verified pick, re-encodes it at q88 and appends the credit. Cultivars without a verified specific photo display a labelled representative image of their parent species (or the nearest photographed congener) rather than an unidentified plant; this is shown on the card/page and explained in the credit panel. Cultivar records are excluded from wild-country, map and species-photo totals.
 
 `scripts/recompress-images.mjs` re-encodes legacy or oversized images to the same quality 88 and caps the long edge at 1200px, keeping every published photo under 400KB.
 
